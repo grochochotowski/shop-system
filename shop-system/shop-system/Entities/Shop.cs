@@ -14,6 +14,6 @@
         public string PhoneNumber { get; set; }
 
         public int ClothingId { get; set; }
-        public virtual List<Clothing> Clothes { get; set; }
+        public virtual List<Tuple<Clothing, int>> Clothes { get; set; }
     }
 }
