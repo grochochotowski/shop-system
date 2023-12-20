@@ -31,3 +31,5 @@ C:\nonSystem\IT\Code\shop-system\shop-system\shop-system\obj\Debug\net8.0\refint
 C:\nonSystem\IT\Code\shop-system\shop-system\shop-system\obj\Debug\net8.0\shop-system.pdb
 C:\nonSystem\IT\Code\shop-system\shop-system\shop-system\obj\Debug\net8.0\shop-system.genruntimeconfig.cache
 C:\nonSystem\IT\Code\shop-system\shop-system\shop-system\obj\Debug\net8.0\ref\shop-system.dll
+C:\nonSystem\IT\Code\shop-system\shop-system\shop-system\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+C:\nonSystem\IT\Code\shop-system\shop-system\shop-system\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
