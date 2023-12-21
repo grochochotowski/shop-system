@@ -22,6 +22,11 @@ namespace shop_system.Entities
             modelBuilder.Entity<Shop>().Property(s => s.PostalCode).IsRequired();
             modelBuilder.Entity<Shop>().Property(s => s.PhoneNumber).IsRequired();
 
+            modelBuilder.Entity<ClothingAvailability>().Property(c => c.Id).IsRequired();
+            modelBuilder.Entity<ClothingAvailability>().Property(c => c.Quantity).IsRequired();
+            modelBuilder.Entity<ClothingAvailability>().Property(c => c.ClothingId).IsRequired();
+            modelBuilder.Entity<ClothingAvailability>().Property(c => c.Clothing).IsRequired();
+
             modelBuilder.Entity<Clothing>().Property(c => c.Id).IsRequired();
             modelBuilder.Entity<Clothing>().Property(c => c.Category).IsRequired();
             modelBuilder.Entity<Clothing>().Property(c => c.Colour).IsRequired();
