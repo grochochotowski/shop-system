@@ -12,6 +12,6 @@
         public string PostalCode { get; set; }
         public string PhoneNumber { get; set; }
 
-        public virtual List<ClothingAvailability> Clothes { get; set; } // Each element of list contains an id of clothing
+        public virtual List<ClothingAvailability> Clothes { get; set; }
     }
 }

@@ -4,7 +4,7 @@ namespace shop_system.Entities
 {
     public class ShopDbContext : DbContext
     {
-        private string _connectionString = "Server=(localdb)\\mssqllocaldb;Database=RestaurantDb;Trusted_Connection=True;";
+        private string _connectionString = "Server=(localdb)\\mssqllocaldb;Database=ShopDB;Trusted_Connection=True;";
 
         public DbSet<Shop> Shops { get; set; }
         public DbSet<Clothing> Clothes { get; set; }
@@ -25,7 +25,6 @@ namespace shop_system.Entities
             modelBuilder.Entity<ClothingAvailability>().Property(c => c.Id).IsRequired();
             modelBuilder.Entity<ClothingAvailability>().Property(c => c.Quantity).IsRequired();
             modelBuilder.Entity<ClothingAvailability>().Property(c => c.ClothingId).IsRequired();
-            modelBuilder.Entity<ClothingAvailability>().Property(c => c.Clothing).IsRequired();
 
             modelBuilder.Entity<Clothing>().Property(c => c.Id).IsRequired();
             modelBuilder.Entity<Clothing>().Property(c => c.Category).IsRequired();
