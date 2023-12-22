@@ -39,5 +39,15 @@ namespace shop_system.Controllers
             if (shopDto is null) return NotFound($"Shop with id: {id} does not exist");
             return Ok(shopDto);
         }
+
+        [HttpPost]
+        public ActionResult AddShop([FromBody] AddShopDto dto)
+        {
+            var shop = _mapper.Map<Shop>(dto);
+            _context.Shops.Add(shop);
+            _context.SaveChanges();
+
+            return Created($"api/shop/{shop.Id}", null);
+        }
     }
 }
