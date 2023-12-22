@@ -1,4 +1,6 @@
 
+using System.Reflection;
+
 namespace shop_system
 {
     public class Program
@@ -13,6 +15,7 @@ namespace shop_system
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
+            builder.Services.AddAutoMapper(Assembly.GetExecutingAssembly());
 
             var app = builder.Build();
 
