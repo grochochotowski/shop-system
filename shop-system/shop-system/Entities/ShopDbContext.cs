@@ -19,6 +19,7 @@ namespace shop_system.Entities
             modelBuilder.Entity<Shop>().Property(s => s.City).IsRequired();
             modelBuilder.Entity<Shop>().Property(s => s.Street).IsRequired();
             modelBuilder.Entity<Shop>().Property(s => s.Building).IsRequired();
+            modelBuilder.Entity<Shop>().Property(s => s.Premises).IsRequired(false);
             modelBuilder.Entity<Shop>().Property(s => s.PostalCode).IsRequired();
             modelBuilder.Entity<Shop>().Property(s => s.PhoneNumber).IsRequired();
 
