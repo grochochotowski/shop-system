@@ -10,10 +10,12 @@ namespace shop_system
         public ShopMappingProfile()
         {
             CreateMap<Shop, ShopDto>();
+            CreateMap<AddShopDto, Shop>();
+
             CreateMap<ClothingAvailability, ClothingAvailabilityDto>();
+
             CreateMap<Clothing, ClothingDto>();
 
-            CreateMap<AddShopDto, Shop>();
         }
     }
 }
