@@ -4,7 +4,7 @@ namespace shop_system.Entities
 {
     public class ShopDbContext : DbContext
     {
-        private string _connectionString = "Server=(localdb)\\mssqllocaldb;Database=ShopDB;Trusted_Connection=True;";
+        public ShopDbContext(DbContextOptions<ShopDbContext> options) : base(options) { }
 
         public DbSet<Shop> Shops { get; set; }
         public DbSet<Clothing> Clothes { get; set; }
@@ -32,13 +32,6 @@ namespace shop_system.Entities
             modelBuilder.Entity<Clothing>().Property(c => c.Colour).IsRequired();
             modelBuilder.Entity<Clothing>().Property(c => c.Size).IsRequired();
             modelBuilder.Entity<Clothing>().Property(c => c.Price).IsRequired();
-        }
-
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            base.OnConfiguring(optionsBuilder);
-
-            optionsBuilder.UseSqlServer(_connectionString);
         }
     }
 }

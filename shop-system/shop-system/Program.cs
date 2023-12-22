@@ -11,6 +11,7 @@ namespace shop_system
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
+            var configuration = new ConfigurationBuilder().AddJsonFile("appsettings.json").Build();
 
             // Add services to the container.
 
@@ -19,7 +20,7 @@ namespace shop_system
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
             builder.Services.AddAutoMapper(Assembly.GetExecutingAssembly());
-            builder.Services.AddDbContext<ShopDbContext>();
+            builder.Services.AddDbContext<ShopDbContext>(o => o.UseSqlServer(configuration.GetConnectionString("ShopDbConnection")));
 
             var app = builder.Build();
 
