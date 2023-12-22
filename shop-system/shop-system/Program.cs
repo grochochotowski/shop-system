@@ -1,4 +1,7 @@
 
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
+using shop_system.Entities;
 using System.Reflection;
 
 namespace shop_system
@@ -16,6 +19,7 @@ namespace shop_system
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
             builder.Services.AddAutoMapper(Assembly.GetExecutingAssembly());
+            builder.Services.AddDbContext<ShopDbContext>();
 
             var app = builder.Build();
 
