@@ -1,5 +1,7 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using AutoMapper;
+using Microsoft.AspNetCore.Mvc;
 using shop_system.Entities;
+using shop_system.Models;
 
 namespace shop_system.Controllers
 {
@@ -7,28 +9,35 @@ namespace shop_system.Controllers
     public class ShopController : ControllerBase
     {
         private readonly ShopDbContext _context;
-        public ShopController(ShopDbContext context)
+        private readonly IMapper _mapper;
+
+        public ShopController(ShopDbContext context, IMapper mapper)
         {
             _context = context;
+            _mapper = mapper;
         }
 
         [HttpGet]
-        public ActionResult<IEnumerable<Shop>> GetAll()
+        public ActionResult<IEnumerable<ShopDto>> GetAll()
         {
             var shops = _context
                 .Shops
                 .ToList();
-            return Ok(shops);
+            var shopsDtos = _mapper.Map<List<ShopDto>>(shops);
+
+            return Ok(shopsDtos);
         }
 
         [HttpGet("{id}")]
-        public ActionResult<Shop> Get([FromRoute] int id)
+        public ActionResult<ShopDto> Get([FromRoute] int id)
         {
             var shop = _context
                 .Shops
                 .FirstOrDefault(s => s.Id == id);
-            if (shop is null) return NotFound($"Shop with id: {id} does not exist");
-            return Ok(shop);
+            var shopDto = _mapper.Map<ShopDto>(shop);
+
+            if (shopDto is null) return NotFound($"Shop with id: {id} does not exist");
+            return Ok(shopDto);
         }
     }
 }
