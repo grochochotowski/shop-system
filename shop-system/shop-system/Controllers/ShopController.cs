@@ -20,5 +20,15 @@ namespace shop_system.Controllers
                 .ToList();
             return Ok(shops);
         }
+
+        [HttpGet("{id}")]
+        public ActionResult<Shop> Get([FromRoute] int id)
+        {
+            var shop = _context
+                .Shops
+                .FirstOrDefault(s => s.Id == id);
+            if (shop is null) return NotFound($"Shop with id: {id} does not exist");
+            return Ok(shop);
+        }
     }
 }
