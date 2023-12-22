@@ -49,5 +49,19 @@ namespace shop_system.Controllers
 
             return Created($"api/shop/{shop.Id}", null);
         }
+
+        [HttpDelete("{id}")]
+        public ActionResult RemoveShop([FromRoute] int id)
+        {
+            var shop = _context
+                .Shops
+                .FirstOrDefault (s => s.Id == id);
+
+            if (shop is null) return NotFound($"Shop with id: {id} does not exist");
+            _context.Shops.Remove(shop);
+            _context.SaveChanges();
+
+            return NoContent();
+        }
     }
 }
