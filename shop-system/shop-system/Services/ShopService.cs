@@ -9,7 +9,7 @@ namespace shop_system.Serivces
     public interface IShopService
     {
         int Add(AddShopDto dto);
-        void Delete(int id);
+        bool Delete(int id);
         ShopDto Get(int id);
         IEnumerable<ShopDto> GetAll();
     }
@@ -57,9 +57,18 @@ namespace shop_system.Serivces
             return shop.Id;
         } // Add new shop
 
-        public void Delete(int id) // Delete shop by ID
+        public bool Delete(int id) // Delete shop by ID
         {
+            var shop = _context
+                .Shops
+                .FirstOrDefault(s => s.Id == id);
 
+            if (shop is null) return false;
+
+            _context.Shops.Remove(shop);
+            _context.SaveChanges();
+
+            return true;
         }
     }
 }
