@@ -19,42 +19,37 @@ namespace shop_system.Controllers
 
 
         [HttpGet]
-        public ActionResult<IEnumerable<ShopDto>> GetAll() // Get all shops
+        public ActionResult<IEnumerable<ShopDto>> GetAll() 
         {
             var shopsDtos = _shopService.GetAll();
 
             return Ok(shopsDtos);
-        }
+        } // Get all shops
 
         [HttpGet("{id}")]
-        public ActionResult<ShopDto> Get([FromRoute] int id) // Get shop by ID
+        public ActionResult<ShopDto> Get([FromRoute] int id) 
         {
             var shopDto = _shopService.Get(id);
 
             if (shopDto is null) return NotFound($"Shop with id: {id} does not exist");
             return Ok(shopDto);
-        }
+        } // Get shop by ID
 
         [HttpPost]
-        public ActionResult AddShop([FromBody] AddShopDto dto) // Add new shop
+        public ActionResult AddShop([FromBody] AddShopDto dto)
         {
             var newShopId = _shopService.Add(dto);
 
             return Created($"api/shop/{newShopId}", null);
-        }
+        } // Add new shop
 
         [HttpDelete("{id}")]
-        public ActionResult RemoveShop([FromRoute] int id) // Delete shop by ID
+        public ActionResult RemoveShop([FromRoute] int id)
         {
-            var shop = _context
-                .Shops
-                .FirstOrDefault (s => s.Id == id);
+            var shop = _shopService.Delete(id);
 
-            if (shop is null) return NotFound($"Shop with id: {id} does not exist");
-            _context.Shops.Remove(shop);
-            _context.SaveChanges();
-
+            if (!shop) return NotFound($"Shop with id: {id} does not exist");
             return NoContent();
-        }
+        } // Delete shop by ID
     }
 }
