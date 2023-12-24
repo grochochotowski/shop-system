@@ -2,56 +2,49 @@
 using Microsoft.AspNetCore.Mvc;
 using shop_system.Entities;
 using shop_system.Models;
+using shop_system.Serivces;
+using System.Net.WebSockets;
 
 namespace shop_system.Controllers
 {
     [Route("api/shop")]
     public class ShopController : ControllerBase
     {
-        private readonly ShopDbContext _context;
-        private readonly IMapper _mapper;
-
-        public ShopController(ShopDbContext context, IMapper mapper)
+        
+        private readonly IShopService _shopService;
+        public ShopController(IShopService shopService)
         {
-            _context = context;
-            _mapper = mapper;
+            _shopService = shopService;
         }
 
+
         [HttpGet]
-        public ActionResult<IEnumerable<ShopDto>> GetAll()
+        public ActionResult<IEnumerable<ShopDto>> GetAll() // Get all shops
         {
-            var shops = _context
-                .Shops
-                .ToList();
-            var shopsDtos = _mapper.Map<List<ShopDto>>(shops);
+            var shopsDtos = _shopService.GetAll();
 
             return Ok(shopsDtos);
         }
 
         [HttpGet("{id}")]
-        public ActionResult<ShopDto> Get([FromRoute] int id)
+        public ActionResult<ShopDto> Get([FromRoute] int id) // Get shop by ID
         {
-            var shop = _context
-                .Shops
-                .FirstOrDefault(s => s.Id == id);
-            var shopDto = _mapper.Map<ShopDto>(shop);
+           
 
             if (shopDto is null) return NotFound($"Shop with id: {id} does not exist");
             return Ok(shopDto);
         }
 
         [HttpPost]
-        public ActionResult AddShop([FromBody] AddShopDto dto)
+        public ActionResult AddShop([FromBody] AddShopDto dto) // Add new shop
         {
-            var shop = _mapper.Map<Shop>(dto);
-            _context.Shops.Add(shop);
-            _context.SaveChanges();
+            var newShopId = _shopService.Add(dto);
 
-            return Created($"api/shop/{shop.Id}", null);
+            return Created($"api/shop/{newShopId}", null);
         }
 
         [HttpDelete("{id}")]
-        public ActionResult RemoveShop([FromRoute] int id)
+        public ActionResult RemoveShop([FromRoute] int id) // Delete shop by ID
         {
             var shop = _context
                 .Shops
