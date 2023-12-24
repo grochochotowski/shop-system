@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using shop_system.Entities;
+using shop_system.Serivces;
 using System.Reflection;
 
 namespace shop_system
@@ -16,11 +17,12 @@ namespace shop_system
             // Add services to the container.
 
             builder.Services.AddControllers();
-            // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
             builder.Services.AddAutoMapper(Assembly.GetExecutingAssembly());
             builder.Services.AddDbContext<ShopDbContext>(o => o.UseSqlServer(configuration.GetConnectionString("ShopDbConnection")));
+
+            builder.Services.AddScoped<IShopService, ShopService>();
 
             var app = builder.Build();
 
