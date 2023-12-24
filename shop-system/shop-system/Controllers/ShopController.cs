@@ -29,7 +29,7 @@ namespace shop_system.Controllers
         [HttpGet("{id}")]
         public ActionResult<ShopDto> Get([FromRoute] int id) // Get shop by ID
         {
-           
+            var shopDto = _shopService.Get(id);
 
             if (shopDto is null) return NotFound($"Shop with id: {id} does not exist");
             return Ok(shopDto);
