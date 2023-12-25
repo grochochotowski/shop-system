@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using shop_system.Entities;
 using shop_system.Serivces;
+using shop_system.Services;
 using System.Reflection;
 
 namespace shop_system
@@ -23,6 +24,7 @@ namespace shop_system
             builder.Services.AddDbContext<ShopDbContext>(o => o.UseSqlServer(configuration.GetConnectionString("ShopDbConnection")));
 
             builder.Services.AddScoped<IShopService, ShopService>();
+            builder.Services.AddScoped<IClothingService, ClothingService>();
 
             var app = builder.Build();
 
