@@ -2,7 +2,15 @@
 
 namespace shop_system.Services
 {
-    public class ClothingService
+    public interface IClothingService
+    {
+        int Add(ClothingDto dto);
+        bool Delete(int id);
+        ClothingDto Get(int id);
+        IEnumerable<ClothingDto> GetAll();
+    }
+
+    public class ClothingService : IClothingService
     {
         public IEnumerable<ClothingDto> GetAll()
         {
