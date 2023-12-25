@@ -6,7 +6,7 @@ namespace shop_system.Services
 {
     public interface IClothingService
     {
-        int Add(ClothingDto dto);
+        int Add(AddClothingDto dto);
         bool Delete(int id);
         ClothingDto Get(int id);
         IEnumerable<ClothingDto> GetAll();
@@ -46,7 +46,7 @@ namespace shop_system.Services
             return result;
         } // Get clothing by ID
 
-        public int Add(ClothingDto dto)
+        public int Add(AddClothingDto dto)
         {
             var clothing = _mapper.Map<Clothing>(dto);
             _context.Clothes.Add(clothing);
