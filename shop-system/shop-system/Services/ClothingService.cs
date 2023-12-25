@@ -23,8 +23,14 @@ namespace shop_system.Services
             _mapper = mapper;
         }
 
+
         public IEnumerable<ClothingDto> GetAll()
         {
+            var shops = _context
+                .Clothes
+                .ToList();
+
+            var result = _mapper.Map<List<ClothingDto>>(shops);
 
             return result;
         } // Get all clothes
