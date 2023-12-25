@@ -34,8 +34,9 @@ namespace shop_system.Controllers
         [HttpPost]
         public ActionResult AddClothing([FromBody] ClothingDto dto)
         {
+            var newClothingId = _clothingService.Add(dto);
 
-            return Created();
+            return Created($"api/clothing/{newClothingId}", null);
         } // Add new clothing
 
         [HttpDelete("{id}")]
