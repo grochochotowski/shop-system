@@ -15,7 +15,7 @@ namespace shop_system
             CreateMap<ClothingAvailability, ClothingAvailabilityDto>();
 
             CreateMap<Clothing, ClothingDto>();
-
+            CreateMap<AddClothingDto, Clothing>();
         }
     }
 }
