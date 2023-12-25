@@ -1,4 +1,6 @@
-﻿using shop_system.Models;
+﻿using AutoMapper;
+using shop_system.Entities;
+using shop_system.Models;
 
 namespace shop_system.Services
 {
@@ -12,6 +14,15 @@ namespace shop_system.Services
 
     public class ClothingService : IClothingService
     {
+        private readonly ShopDbContext _context;
+        private readonly IMapper _mapper;
+
+        public ClothingService(ShopDbContext context, IMapper mapper)
+        {
+            _context = context;
+            _mapper = mapper;
+        }
+
         public IEnumerable<ClothingDto> GetAll()
         {
 
