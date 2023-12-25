@@ -14,7 +14,7 @@ namespace shop_system.Controllers
             _availabilityService = availabilityService;
         }
         [HttpPost]
-        public ActionResult Post([FromRoute] int shopId, ClothingAvailabilityDto dto)
+        public ActionResult Post([FromRoute] int shopId, [FromBody] CreateClothingAvailabilityDto dto)
         {
             var newClothingAvailability = _availabilityService.Create(shopId, dto);
             if (newClothingAvailability == -1) return NotFound($"Shop with id: {shopId} does not exist");
