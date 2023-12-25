@@ -26,18 +26,23 @@ namespace shop_system.Services
 
         public IEnumerable<ClothingDto> GetAll()
         {
-            var shops = _context
+            var clothes = _context
                 .Clothes
                 .ToList();
 
-            var result = _mapper.Map<List<ClothingDto>>(shops);
+            var result = _mapper.Map<List<ClothingDto>>(clothes);
 
             return result;
         } // Get all clothes
 
         public ClothingDto Get(int id)
         {
+            var clothing = _context
+                .Clothes
+                .FirstOrDefault(c => c.Id == id);
 
+            if (clothing is null) return null;
+            var result = _mapper.Map<ClothingDto>(clothing);
             return result;
         } // Get clothing by ID
 
