@@ -24,6 +24,7 @@ namespace shop_system
             builder.Services.AddDbContext<ShopDbContext>(o => o.UseSqlServer(configuration.GetConnectionString("ShopDbConnection")));
 
             builder.Services.AddScoped<IShopService, ShopService>();
+            builder.Services.AddScoped<IClothingAvailabilityService, ClothingAvailabilityService>();
             builder.Services.AddScoped<IClothingService, ClothingService>();
 
             var app = builder.Build();
