@@ -7,6 +7,7 @@ namespace shop_system.Entities
         public ShopDbContext(DbContextOptions<ShopDbContext> options) : base(options) { }
 
         public DbSet<Shop> Shops { get; set; }
+        public DbSet<ClothingAvailability> ClothingAvailability { get; set; }
         public DbSet<Clothing> Clothes { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
