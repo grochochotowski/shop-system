@@ -48,8 +48,11 @@ namespace shop_system.Services
 
         public int Add(ClothingDto dto)
         {
+            var clothing = _mapper.Map<Clothing>(dto);
+            _context.Clothes.Add(clothing);
+            _context.SaveChanges();
 
-            return result;
+            return clothing.Id;
         } // Add new clothing
 
         public bool Delete(int id)
