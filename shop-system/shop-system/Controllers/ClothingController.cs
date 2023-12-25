@@ -27,6 +27,7 @@ namespace shop_system.Controllers
         [HttpGet("{id}")]
         public ActionResult<ShopDto> Get([FromRoute] int id)
         {
+            var clothesDtos = _clothingService.GetAll();
             return Ok();
         } // Get clothing by ID
 
