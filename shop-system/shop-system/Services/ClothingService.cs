@@ -57,7 +57,14 @@ namespace shop_system.Services
 
         public bool Delete(int id)
         {
+            var clothing = _context
+                .Clothes
+                .FirstOrDefault(c => c.Id == id);
 
+            if (clothing is null) return false;
+
+            _context.Clothes.Remove(clothing);
+            _context.SaveChanges();
 
             return true;
         } // Delete clothing by ID
