@@ -6,7 +6,7 @@ using shop_system.Services;
 namespace shop_system.Controllers
 {
     [Route("api/clothing")]
-    public class ClothingController
+    public class ClothingController : ControllerBase
     {
         private readonly IClothingService _clothingService;
 
@@ -15,17 +15,18 @@ namespace shop_system.Controllers
             _clothingService = clothingService;
         }
 
+
         [HttpGet]
         public ActionResult<IEnumerable<ClothingDto>> GetAll()
         {
+            var clothesDtos = _clothingService.GetAll();
 
-            return Ok();
+            return Ok(clothesDtos);
         } // Get all clothes
 
         [HttpGet("{id}")]
         public ActionResult<ShopDto> Get([FromRoute] int id)
         {
-
             return Ok();
         } // Get clothing by ID
 
