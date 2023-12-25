@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
+using shop_system.Entities;
 using shop_system.Models;
 using shop_system.Services;
 
@@ -27,8 +28,10 @@ namespace shop_system.Controllers
         [HttpGet("{id}")]
         public ActionResult<ShopDto> Get([FromRoute] int id)
         {
-            var clothesDtos = _clothingService.GetAll();
-            return Ok();
+            var clothingDto = _clothingService.GetAll();
+
+            if (clothingDto is null) return NotFound($"Clothing with id: {id} does not exist");
+            return Ok(clothingDto);
         } // Get clothing by ID
 
         [HttpPost]
