@@ -6,7 +6,7 @@ namespace shop_system.Services
 {
     public interface IClothingAvailabilityService
     {
-        int Create(int shopId, ClothingAvailabilityDto dto);
+        int Create(int shopId, CreateClothingAvailabilityDto dto);
     }
 
     public class ClothingAvailabilityService : IClothingAvailabilityService
@@ -21,7 +21,7 @@ namespace shop_system.Services
         }
 
 
-        public int Create(int shopId, ClothingAvailabilityDto dto)
+        public int Create(int shopId, CreateClothingAvailabilityDto dto)
         {
             var shop = _context
                 .Shops
