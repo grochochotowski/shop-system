@@ -7,6 +7,7 @@ namespace shop_system.Services
     public interface IClothingAvailabilityService
     {
         int Create(int shopId, CreateClothingAvailabilityDto dto);
+        IEnumerable<GetClothesFromShopDto> Get(int shopId);
     }
 
     public class ClothingAvailabilityService : IClothingAvailabilityService
@@ -21,6 +22,18 @@ namespace shop_system.Services
         }
 
 
+        public IEnumerable<GetClothesFromShopDto> Get(int shopId)
+        {
+            var availability = _context
+                .ClothingAvailability
+                .Where(ca => ca.ShopId == shopId)
+                .ToList();
+
+            var result = _mapper.Map<List<GetClothesFromShopDto>>(availability);
+
+            return result;
+        } // Get all clothes that are in a shop by ID
+
         public int Create(int shopId, CreateClothingAvailabilityDto dto)
         {
             var shop = _context
@@ -33,6 +46,6 @@ namespace shop_system.Services
             _context.ClothingAvailability.Add(availabilityEntity);
             _context.SaveChanges();
             return availabilityEntity.Id;
-        }
+        } // Add clothing to shop by ID
     }
 }
