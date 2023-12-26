@@ -29,6 +29,7 @@ namespace shop_system.Services
             if (shop is null) return -1;
 
             var availabilityEntity = _mapper.Map<ClothingAvailability>(dto);
+            availabilityEntity.ShopId = shopId;
             _context.ClothingAvailability.Add(availabilityEntity);
             _context.SaveChanges();
             return availabilityEntity.Id;
