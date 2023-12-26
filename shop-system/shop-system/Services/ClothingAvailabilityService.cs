@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Microsoft.EntityFrameworkCore;
 using shop_system.Entities;
 using shop_system.Models;
 
@@ -26,6 +27,7 @@ namespace shop_system.Services
         {
             var availability = _context
                 .ClothingAvailability
+                .Include(ca => ca.Clothing)
                 .Where(ca => ca.ShopId == shopId)
                 .ToList();
 
