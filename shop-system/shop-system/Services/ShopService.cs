@@ -31,6 +31,7 @@ namespace shop_system.Serivces
             var shops = _context
                 .Shops
                 .Include(s => s.Clothes)
+                    .ThenInclude(ca => ca.Clothing)
                 .ToList();
 
             var result = _mapper.Map<List<ShopDto>>(shops);
