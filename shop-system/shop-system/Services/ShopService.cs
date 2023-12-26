@@ -30,6 +30,7 @@ namespace shop_system.Serivces
         {
             var shops = _context
                 .Shops
+                .Include(s => s.Clothes)
                 .ToList();
 
             var result = _mapper.Map<List<ShopDto>>(shops);
@@ -41,6 +42,7 @@ namespace shop_system.Serivces
         {
             var shop = _context
                 .Shops
+                .Include(s => s.Clothes)
                 .FirstOrDefault(s => s.Id == id);
 
             if (shop is null) return null;
