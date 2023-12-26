@@ -70,6 +70,8 @@ namespace shop_system.Serivces
             _context.Shops.Remove(shop);
             _context.SaveChanges();
 
+            // it is needed here to remove all clothes with ShopId == id from ClothingAvailability
+
             return true;
         }
     }
