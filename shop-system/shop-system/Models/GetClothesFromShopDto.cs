@@ -4,5 +4,8 @@
     {
         public int Quantity { get; set; }
         public int ClothingId { get; set; }
+
+
+        public ClothingDto Clothing { get; set; }
     }
 }
