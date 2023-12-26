@@ -13,6 +13,12 @@ namespace shop_system.Controllers
         {
             _availabilityService = availabilityService;
         }
+        [HttpGet]
+        public ActionResult Get([FromRoute] int shopId)
+        {
+
+        }
+
         [HttpPost]
         public ActionResult Post([FromRoute] int shopId, [FromBody] CreateClothingAvailabilityDto dto)
         {
