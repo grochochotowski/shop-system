@@ -13,6 +13,8 @@ namespace shop_system.Controllers
         {
             _availabilityService = availabilityService;
         }
+
+
         [HttpGet]
         public ActionResult<IEnumerable<GetClothesFromShopDto>> Get([FromRoute] int shopId)
         {
