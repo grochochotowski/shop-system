@@ -44,6 +44,7 @@ namespace shop_system.Serivces
             var shop = _context
                 .Shops
                 .Include(s => s.Clothes)
+                    .ThenInclude(ca => ca.Clothing)
                 .FirstOrDefault(s => s.Id == id);
 
             if (shop is null) return null;
