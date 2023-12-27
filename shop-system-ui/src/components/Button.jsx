@@ -1,6 +1,6 @@
 function Button(props) {
     return(
-        <div>
+        <div className="welcome-button">
             <h1>{props.title}</h1>
             {props.isShopDependant ? (
                 <input type="text" placeholder="Shop ID" />
