@@ -1,0 +1,65 @@
+html, body {
+    background-color: rgb(200, 151, 94);
+    color: azure;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+button {
+    order: 1;
+    margin: 1rem 0;
+    background-color: rgb(78, 53, 9);
+    color: azure;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid azure;
+    outline: none;
+}
+
+button:hover, button:active {
+    background-color: rgb(135, 92, 19);
+    cursor: pointer;
+}
+
+input[type=text] {
+    order: 2;
+    background-color: rgb(78, 53, 9);
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid azure;
+    outline: none;
+    margin: 1rem 0;
+    color: azure;
+}
+
+input::placeholder {
+    color: azure;
+}
+
+.buttons {
+    display: flex;
+}
+
+.welcome-button {
+    position: relative;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    border-radius: 20px;
+    border: solid 5px azure;
+    width: 15vw;
+    margin: 0 2rem;
+    padding: 2rem;
+    text-align: center;
+    height: 50vh;
+}
+
+.welcome-button > h1 {
+    order: 3;
+    position: absolute;
+    top: 0;
+}
