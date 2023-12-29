@@ -4,11 +4,14 @@ function Button(props) {
     console.log(background);
 
     return(
-        <div className="go-to-panel" style={background}>
-            <h3>{props.title}</h3>
-            {props.isShopDependant ? (
-                <input type="text" placeholder="Shop ID" />
-            ) : null}
+        <div className="go-to-panel">
+            <div className="bg" style={background}></div>
+            <div className="content">
+                <h3>{props.title}</h3>
+                {props.isShopDependant ? (
+                    <input type="text" placeholder="Shop ID" />
+                ) : null}
+            </div>
         </div>
     );
 }
