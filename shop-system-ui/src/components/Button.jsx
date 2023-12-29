@@ -1,7 +1,7 @@
 function Button(props) {
     return(
         <div className="go-to-panel">
-            <h1>{props.title}</h1>
+            <h3>{props.title}</h3>
             {props.isShopDependant ? (
                 <input type="text" placeholder="Shop ID" />
             ) : null}
