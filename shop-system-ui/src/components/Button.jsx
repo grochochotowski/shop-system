@@ -1,6 +1,6 @@
 function Button(props) {
     return(
-        <div className="go-to-button">
+        <div className="go-to-panel">
             <h1>{props.title}</h1>
             {props.isShopDependant ? (
                 <input type="text" placeholder="Shop ID" />
