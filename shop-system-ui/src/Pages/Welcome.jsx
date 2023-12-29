@@ -12,7 +12,7 @@ function Welcome() {
             <section>
                 <Button title = "Company Manager" isShopDependant={false} img="company.jpg"/>
                 <Button title = "Shop Manager" isShopDependant={true} img="shop.jpg"/>
-                <Button title = "Cash Register" isShopDependant={true} img="shopping-machine.jpg"/>
+                <Button title = "Cash Register" isShopDependant={true} img="cash-machine.jpg"/>
             </section>
         </>
     );

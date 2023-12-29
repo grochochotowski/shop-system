@@ -22,7 +22,6 @@ section {
     display: flex;
 }
 .go-to-panel{
-    background-image: url("../images/company.jpg");
     background-size: cover;
     flex-grow: 1;
     padding: 3% 0;
