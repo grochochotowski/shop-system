@@ -1,7 +1,6 @@
 function Button(props) {
 
     const background = {backgroundImage: `url("../images/${props.img}")`}
-    console.log(background);
 
     return(
         <div className="go-to-panel">

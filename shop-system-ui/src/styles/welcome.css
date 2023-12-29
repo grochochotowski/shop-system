@@ -1,5 +1,6 @@
 header {
     z-index: 10;
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -8,6 +9,21 @@ header {
     min-height: 15%;
     padding: 1% 0;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+    background-image: radial-gradient(circle, rgba(255, 241, 57, 0.25) 10%, rgba(233, 65, 58, 0.25) 25%, rgba(233, 65, 58, 0.0) 65%);
+    background-size: 10000px;
+    background-position-x: 0%;
+    animation: roll;
+    animation-duration: 120s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes roll {
+    0% {
+        background-position-x: 0%;
+    }
+    100% {
+        background-position-x: 100%;
+    }
 }
 h1 {
     font-size: 2.5rem;
