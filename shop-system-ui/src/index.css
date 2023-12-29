@@ -1,6 +1,15 @@
+:root {
+    --clr-bg-1: #323233;
+    --clr-bg-2: #252526;
+    --clr-accent-1: #fff139;
+    --clr-accent-2: #e9413a;
+
+    --clr-txt: azure;
+}
+
 html, body {
-    background-color: rgb(200, 151, 94);
-    color: azure;
+    background: linear-gradient(90deg, var(--clr-bg-1) 10%, var(--clr-bg-2) 90%);
+    color: var(--clr-txt);
 }
 
 main {
@@ -13,7 +22,7 @@ button {
     order: 1;
     margin: 1rem 0;
     background-color: rgb(78, 53, 9);
-    color: azure;
+    color: var(--clr-txt);
     padding: 10px;
     border-radius: 10px;
     border: 2px solid azure;
@@ -33,11 +42,11 @@ input[type=text] {
     border: 2px solid azure;
     outline: none;
     margin: 1rem 0;
-    color: azure;
+    color: var(--clr-txt);
 }
 
 input::placeholder {
-    color: azure;
+    color: var(--clr-txt);
 }
 
 .buttons {
