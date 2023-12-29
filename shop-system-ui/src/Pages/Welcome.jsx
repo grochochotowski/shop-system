@@ -5,8 +5,8 @@ function Welcome() {
     return (
         <>
             <header>
-                <h1>Welcome to the future of shop user interface</h1>
-                <h3>Choose what you want to do:</h3>
+                <h1>Welcome to the future of shop interface</h1>
+                <h2>Choose what you want to do:</h2>
             </header>
             <section className="buttons">
                 <Button title = "Company Manager" isShopDependant={false}/>
