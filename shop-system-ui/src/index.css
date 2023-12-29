@@ -10,6 +10,7 @@
 html, body {
     background: linear-gradient(90deg, var(--clr-bg-1) 10%, var(--clr-bg-2) 90%);
     color: var(--clr-txt);
+    font-family: 'Roboto', sans-serif;
 }
 
 main {
