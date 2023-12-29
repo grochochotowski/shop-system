@@ -5,7 +5,6 @@ function Button(props) {
             {props.isShopDependant ? (
                 <input type="text" placeholder="Shop ID" />
             ) : null}
-            <button>Go to {props.title}</button>
         </div>
     );
 }
