@@ -10,9 +10,9 @@ function Welcome() {
                 <h2>Choose what you want to do:</h2>
             </header>
             <section>
-                <Button title = "Company Manager" isShopDependant={false}/>
-                <Button title = "Shop Manager" isShopDependant={true}/>
-                <Button title = "Cash Register" isShopDependant={true}/>
+                <Button title = "Company Manager" isShopDependant={false} img="company.jpg"/>
+                <Button title = "Shop Manager" isShopDependant={true} img="shop.jpg"/>
+                <Button title = "Cash Register" isShopDependant={true} img="shopping-machine.jpg"/>
             </section>
         </>
     );
