@@ -1,12 +1,13 @@
+import Button from "../components/Button";
 import React from "react";
 
 function Welcome() {
     return (
         <>
-            <head>
+            <header>
                 <h1>Welcome to the future of shop user interface</h1>
                 <h3>Choose what you want to do:</h3>
-            </head>
+            </header>
             <section className="buttons">
                 <Button title = "Company Manager" isShopDependant={false}/>
                 <Button title = "Shop Manager" isShopDependant={true}/>
