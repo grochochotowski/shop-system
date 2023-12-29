@@ -1,6 +1,6 @@
 import Button from "../components/Button";
 import React from "react";
-import "../css/welcome.css";
+import "../styles/welcome.css";
 
 function Welcome() {
     return (
