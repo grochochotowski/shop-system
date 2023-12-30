@@ -29,6 +29,8 @@ namespace shop_system.Entities
             modelBuilder.Entity<ClothingAvailability>().Property(c => c.ClothingId).IsRequired();
 
             modelBuilder.Entity<Clothing>().Property(c => c.Id).IsRequired();
+            modelBuilder.Entity<Clothing>().Property(c => c.Season).IsRequired();
+            modelBuilder.Entity<Clothing>().Property(c => c.Code).IsRequired();
             modelBuilder.Entity<Clothing>().Property(c => c.Category).IsRequired();
             modelBuilder.Entity<Clothing>().Property(c => c.Colour).IsRequired();
             modelBuilder.Entity<Clothing>().Property(c => c.Size).IsRequired();
