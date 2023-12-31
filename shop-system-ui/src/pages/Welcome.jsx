@@ -5,7 +5,7 @@ import "../styles/welcome.css";
 function Welcome() {
 
     return (
-        <>
+        <div className="welcome">
             <header>
                 <h4>Choose your option</h4>
             </header>
@@ -14,7 +14,7 @@ function Welcome() {
                 <Button title = "Shop Manager" isShopDependant={true} img="shop.jpg"/>
                 <Button title = "Cash Register" isShopDependant={true} img="cash-machine.jpg"/>
             </section>
-        </>
+        </div>
     );
 }
 
