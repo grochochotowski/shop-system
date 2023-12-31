@@ -1,10 +1,13 @@
-header {
+.welcome {
+    height: 100%;
+}
+.welcome > header {
     height: 5%;
     font-size: 1.5rem;
     text-align: center;
 }
 
-section {
+.welcome > section {
     display: flex;
     gap: 10px;
     margin: 0 10px;
@@ -33,7 +36,11 @@ section {
     filter: grayscale(0) blur(0) opacity(0.5);
     cursor: pointer;
 }
-.content {
+.welcome .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -42,7 +49,10 @@ section {
     height: 20%;
     padding: 3% 0;
 }
-h3{
+.welcome .content:hover {
+    cursor: pointer;
+}
+.welcome h3{
     user-select: none;
     margin-bottom: 10%;
     color: var(--clr-acc-1);
@@ -56,15 +66,15 @@ h3{
     text-shadow: 1px 1px 2px black, 0 0 1em var(--clr-acc-2), 0 0 0.2em var(--clr-acc-2);
     cursor: pointer;
 }
-input {
+.welcome input {
     height: 5%;
-    width: 100%;
+    width: 90%;
     outline: none;
     border: solid var(--clr-acc-1) 3px;
     border-radius: 7px;
     font-size: 1rem;
     text-align: center;
-    padding: 10px;
+    padding: 10px 0;
     box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0);
     transition: 250ms ease-in-out;
 }
