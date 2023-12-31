@@ -81,6 +81,6 @@
 .go-to-panel:hover input {
     height: 20%;
     font-size: 1.5rem;
-    border-color:var(--clr-acc-1);
+    border-color: var(--clr-acc-1);
     box-shadow: 1px 1px 2px black, 0 0 1em var(--clr-acc-2), 0 0 0.2em var(--clr-acc-2);
 }
