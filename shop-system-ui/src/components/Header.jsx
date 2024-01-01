@@ -3,7 +3,7 @@ import React from "react";
 function Header(props) {
 
     return (
-        <header>
+        <header className="mainHeader">
             <ul>
                 <li className={props.selected === "option-1"? "selected" : ""}>Option 1</li>
                 <li className={props.selected === "option-2"? "selected" : ""}>Option 2</li>
