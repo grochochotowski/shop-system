@@ -1,7 +1,14 @@
-import React from "react";
+import React, {useState} from "react";
 import Header from "../components/Header";
 
 function CreateUser() {
+
+    const [position, setPosition] = useState("");
+
+    function setNewPosition(e) {
+        if (e.target.value === "choose") setPosition("");
+        else setPosition(e.target.value);
+    } 
 
     return (
         <>
@@ -13,7 +20,7 @@ function CreateUser() {
                 <input type="text" className="add-login" placeholder="Login"/>
                 <input type="password" className="add-password" placeholder="Password"/>
 
-                <select name="position" id="position">
+                <select name="position" id="position" onChange={setNewPosition}>
                     <option value="choose">-- Choose Position --</option>
                     <option value="ceo">CEO</option>
                     <option value="accountant">Accountant</option>
