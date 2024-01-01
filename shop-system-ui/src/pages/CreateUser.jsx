@@ -8,7 +8,13 @@ function CreateUser() {
     function setNewPosition(e) {
         if (e.target.value === "choose") setPosition("");
         else setPosition(e.target.value);
-    } 
+    }
+
+    function RenderShopIdInput() {
+        if (["manager", "deputy-manager", "decorator", "shop-assistant"].includes(position))
+            return <input type="text" className="add-shopID" placeholder="ShopID"/>
+        return null;
+    }   
 
     return (
         <>
@@ -29,6 +35,8 @@ function CreateUser() {
                     <option value="decorator">Decorator</option>
                     <option value="shop-assistant">Shop Assistant</option>
                 </select>
+
+                <RenderShopIdInput />
 
                 <button className="add-button">Add user</button>
             </section>
