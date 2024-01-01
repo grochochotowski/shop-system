@@ -7,7 +7,23 @@ function CreateUser() {
         <>
             <Header selected="create-user"/>
             <section>
-                here will be form for creating a user
+                <input type="text" className="add-1st-name" placeholder="First Name" />
+                <input type="text" className="add-2nd-name" placeholder="Second Name" />
+                <input type="text" className="add-name" placeholder="First Name"/>
+                <input type="text" className="add-login" placeholder="Login"/>
+                <input type="password" className="add-password" placeholder="Password"/>
+
+                <select name="position" id="position">
+                    <option value="choose">-- Choose Position --</option>
+                    <option value="ceo">CEO</option>
+                    <option value="accountant">Accountant</option>
+                    <option value="manager">Manager</option>
+                    <option value="deputy-manager">Deputy Manager</option>
+                    <option value="decorator">Decorator</option>
+                    <option value="shop-assistant">Shop Assistant</option>
+                </select>
+
+                <button className="add-button">Add user</button>
             </section>
         </>
     );
