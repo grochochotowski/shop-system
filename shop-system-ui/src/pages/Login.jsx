@@ -5,11 +5,15 @@ function Login() {
     
     
     return(
-        <div className="login">
-            <input type="text" placeholder="Login"/>
-            <input type="password" placeholder="Password"/>
-            <button>Log in</button>
-        </div>
+        <>
+            <div className="login-container"></div>
+            <div className="login">
+                <input type="text" placeholder="Login"/>
+                <input type="password" placeholder="Password"/>
+                <button>Log in</button>
+                
+            </div>
+        </>
     );
 } 
 

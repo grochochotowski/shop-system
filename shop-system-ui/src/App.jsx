@@ -5,7 +5,8 @@ import CreateUser from "./pages/CreateUser";
 function App() {
     return(
         <>
-            <CreateUser />
+            <Welcome />
+            <Login />
         </>
     );
 }
