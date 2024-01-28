@@ -17,3 +17,35 @@ html, body, #root {
     height: 100%;
     overflow-x: hidden;
 }
+
+.close-window {
+    position: absolute;
+    top: 3vh;
+    right: 3vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 31px;
+    height: 16px;
+    padding: 0;
+
+    background-color: var(--clr-bg-2);
+    border-radius: 50%;
+
+    border: solid var(--clr-acc-1) 3px;
+
+    transition: 250ms ease-in-out;
+}
+.close-window-pt {
+    position: absolute;
+    transform: rotate(0deg);
+
+    width: 25px;
+    height: 10px;
+
+    background-color: var(--clr-bg-2);
+    border-radius: 50%;
+
+    transition: 250ms ease-in-out;
+}
