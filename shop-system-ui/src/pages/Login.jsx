@@ -10,8 +10,8 @@ function Login() {
             <div className="login">
                 <input type="text" placeholder="Login"/>
                 <input type="password" placeholder="Password"/>
-                <button>Log in</button>
-                
+                <button className="submit">Log in</button>
+                <button className="close-window"></button>
             </div>
         </>
     );
