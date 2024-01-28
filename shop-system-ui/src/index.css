@@ -49,3 +49,18 @@ html, body, #root {
 
     transition: 250ms ease-in-out;
 }
+.close-window:hover {
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+.close-window:hover .pt1 {
+    width: 35px;
+    transform: rotate(45deg);
+    background-color: red;
+}
+.close-window:hover .pt2 {
+    width: 35px;
+    transform: rotate(-45deg);
+    background-color: red;
+}
