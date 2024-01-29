@@ -12,6 +12,7 @@ function Login() {
                 <input type="password" placeholder="Password"/>
                 <button className="submit">Log in</button>
                 <button className="close-window">
+                    <p className="close-text">Close</p>
                     <div className="close-window-pt pt1"></div>
                     <div className="close-window-pt pt2"></div>
                 </button>
