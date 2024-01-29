@@ -20,20 +20,28 @@ html, body, #root {
 
 .close-window {
     position: absolute;
-    top: 3vh;
-    right: 3vh;
+    top: 1vh;
+    right: 1vh;
 
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 31px;
-    height: 16px;
+    /*width: 31px;
+    height: 16px;*/
     padding: 0;
 
-    background-color: var(--clr-bg-2);
+    background: none;
+    border: none;
+    /*background-color: var(--clr-bg-2);
     border-radius: 50%;
 
-    border: solid var(--clr-acc-1) 3px;
+    border: solid var(--clr-acc-1) 3px;*/
+
+    transition: 250ms ease-in-out;
+}
+.close-text {
+    color: white;
+    font-size: 1.5rem;
 
     transition: 250ms ease-in-out;
 }
@@ -41,26 +49,28 @@ html, body, #root {
     position: absolute;
     transform: rotate(0deg);
 
-    width: 25px;
+    width: 15px;
     height: 10px;
 
-    background-color: var(--clr-bg-2);
+    /*background-color: var(--clr-bg-2);*/
     border-radius: 50%;
 
-    transition: 250ms ease-in-out;
+    transition: 450ms ease-in-out;
 }
 .close-window:hover {
     cursor: pointer;
-    background: none;
-    border: none;
+}
+.close-window:hover .close-text {
+    color: rgba(0, 0, 0, 0);
+    font-size: 2rem;
 }
 .close-window:hover .pt1 {
-    width: 35px;
+    width: 45px;
     transform: rotate(45deg);
     background-color: red;
 }
 .close-window:hover .pt2 {
-    width: 35px;
+    width: 45px;
     transform: rotate(-45deg);
     background-color: red;
 }
