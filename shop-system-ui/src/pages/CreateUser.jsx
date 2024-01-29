@@ -19,7 +19,7 @@ function CreateUser() {
     return (
         <>
             <CompanyHeader selected="create-user"/>
-            <section>
+            <section className="create-user-form">
                 <input type="text" className="add-1st-name" placeholder="First Name" />
                 <input type="text" className="add-2nd-name" placeholder="Second Name" />
                 <input type="text" className="add-name" placeholder="First Name"/>
@@ -39,6 +39,9 @@ function CreateUser() {
                 <RenderShopIdInput />
 
                 <button className="add-button">Add user</button>
+            </section>
+            <section className="user-list">
+                
             </section>
         </>
     );
