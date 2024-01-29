@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import Header from "../components/CompanyHeader";
+import CompanyHeader from "../components/CompanyHeader";
 
 function CreateUser() {
 
@@ -18,7 +18,7 @@ function CreateUser() {
 
     return (
         <>
-            <Header selected="create-user"/>
+            <CompanyHeader selected="create-user"/>
             <section>
                 <input type="text" className="add-1st-name" placeholder="First Name" />
                 <input type="text" className="add-2nd-name" placeholder="Second Name" />

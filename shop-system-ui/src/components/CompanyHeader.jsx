@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/companyHeader.css"
 
-function Header(props) {
+function CompanyHeader(props) {
 
     return (
         <header className="main-header">
@@ -22,4 +22,4 @@ function Header(props) {
 
 }
 
-export default Header;
+export default CompanyHeader;
