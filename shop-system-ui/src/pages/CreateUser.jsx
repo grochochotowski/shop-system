@@ -19,30 +19,32 @@ function CreateUser() {
     return (
         <>
             <CompanyHeader selected="create-user"/>
-            <section className="create-user-form">
-                <input type="text" className="add-1st-name" placeholder="First Name" />
-                <input type="text" className="add-2nd-name" placeholder="Second Name" />
-                <input type="text" className="add-name" placeholder="First Name"/>
-                <input type="text" className="add-login" placeholder="Login"/>
-                <input type="password" className="add-password" placeholder="Password"/>
+            <div className="container">
+                <section className="create-user-form">
+                    <input type="text" className="add-1st-name" placeholder="First Name" />
+                    <input type="text" className="add-2nd-name" placeholder="Second Name" />
+                    <input type="text" className="add-name" placeholder="First Name"/>
+                    <input type="text" className="add-login" placeholder="Login"/>
+                    <input type="password" className="add-password" placeholder="Password"/>
 
-                <select name="position" id="position" onChange={setNewPosition}>
-                    <option value="choose">-- Choose Position --</option>
-                    <option value="ceo">CEO</option>
-                    <option value="accountant">Accountant</option>
-                    <option value="manager">Manager</option>
-                    <option value="deputy-manager">Deputy Manager</option>
-                    <option value="decorator">Decorator</option>
-                    <option value="shop-assistant">Shop Assistant</option>
-                </select>
+                    <select name="position" id="position" onChange={setNewPosition}>
+                        <option value="choose">-- Choose Position --</option>
+                        <option value="ceo">CEO</option>
+                        <option value="accountant">Accountant</option>
+                        <option value="manager">Manager</option>
+                        <option value="deputy-manager">Deputy Manager</option>
+                        <option value="decorator">Decorator</option>
+                        <option value="shop-assistant">Shop Assistant</option>
+                    </select>
 
-                <RenderShopIdInput />
+                    <RenderShopIdInput />
 
-                <button className="add-button">Add user</button>
-            </section>
-            <section className="user-list">
-                
-            </section>
+                    <button className="add-button">Add user</button>
+                </section>
+                <section className="user-list">
+                    
+                </section>
+            </div>
         </>
     );
 
