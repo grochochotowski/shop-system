@@ -26,6 +26,7 @@
 
     border-left: solid black 1px;
     border-right: solid black 1px;
+    border-radius: 10px;
 
     background-image: radial-gradient(circle, var(--clr-acc-1), var(--clr-acc-2));
     background-size: 0% 10%;
