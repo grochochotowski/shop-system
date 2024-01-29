@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import CompanyHeader from "../components/CompanyHeader";
+import "../styles/createUser.css"
 
 function CreateUser() {
 
