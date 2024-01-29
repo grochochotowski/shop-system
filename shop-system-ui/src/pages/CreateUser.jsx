@@ -1,10 +1,27 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import CompanyHeader from "../components/CompanyHeader";
 import "../styles/createUser.css"
 
 function CreateUser() {
 
     const [position, setPosition] = useState("");
+    const [containerHeight, setContainerHeight] = useState("");
+
+    useEffect(() => {
+        const updateContainerHeight = () => {
+            const header = document.getElementsByTagName('header')[0]
+            const headerHeight = header.getBoundingClientRect().height;
+            setContainerHeight(`calc(100% - ${headerHeight}px)`);
+        };
+
+        window.addEventListener('resize', updateContainerHeight);
+
+        updateContainerHeight();
+
+        return () => {
+          window.removeEventListener('resize', updateContainerHeight);
+        };
+      }, []); 
 
     function setNewPosition(e) {
         if (e.target.value === "choose") setPosition("");
@@ -20,7 +37,7 @@ function CreateUser() {
     return (
         <>
             <CompanyHeader selected="create-user"/>
-            <div className="container">
+            <div className="container" style={{ height: containerHeight }}>
                 <section className="create-user-form">
                     <input type="text" className="add-1st-name" placeholder="First Name" />
                     <input type="text" className="add-2nd-name" placeholder="Second Name" />
