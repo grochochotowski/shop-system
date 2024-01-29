@@ -40,7 +40,7 @@ html, body, #root {
     transition: 250ms ease-in-out;
 }
 .close-text {
-    color: white;
+    color: var(--clr-txt);
     font-size: 1.5rem;
 
     transition: 250ms ease-in-out;
@@ -49,7 +49,7 @@ html, body, #root {
     position: absolute;
     transform: rotate(0deg);
 
-    width: 15px;
+    width: 100%;
     height: 10px;
 
     /*background-color: var(--clr-bg-2);*/
@@ -65,12 +65,12 @@ html, body, #root {
     font-size: 2rem;
 }
 .close-window:hover .pt1 {
-    width: 45px;
+    width: 35px;
     transform: rotate(45deg);
-    background-color: red;
+    background-color: var(--clr-txt);
 }
 .close-window:hover .pt2 {
-    width: 45px;
+    width: 35px;
     transform: rotate(-45deg);
-    background-color: red;
+    background-color: var(--clr-txt);
 }
