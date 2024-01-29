@@ -1,0 +1,13 @@
+.container {
+    display: flex;
+}
+section.create-user-form {
+    background-color: red;
+    width: 75%;
+}
+
+
+section.user-list {
+    background-color: green;
+    width: 25%;
+}
