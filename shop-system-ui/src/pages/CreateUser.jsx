@@ -27,17 +27,17 @@ function CreateUser() {
                 setListWidth(`calc(100% - ${sizeBarLeftOffset}px)`);
             }
         };
-        const handleMouseClick = () => {
-            setIsResizing(prev => !prev);
+        const handle2ndMouseClick = () => {
+            setIsResizing(false);
         }
 
         if (isResizing) {
             document.addEventListener("mousemove", handleMouseMove);
-            document.addEventListener("mousedown", handleMouseClick);
+            document.addEventListener("mousedown", handle2ndMouseClick);
         }
         return () => {
             document.removeEventListener("mousemove", handleMouseMove);
-            document.removeEventListener("mousedown", handleMouseClick);
+            document.removeEventListener("mousedown", handle2ndMouseClick);
         };
     }, [isResizing]);
 
