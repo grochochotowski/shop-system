@@ -1,5 +1,7 @@
 .container {
+    position: relative;
     display: flex;
+    z-index: 99;
 }
 
 .size-bar {
