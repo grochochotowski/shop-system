@@ -34,6 +34,7 @@ section.create-user-form {
 
 
 section.user-list {
-    background-color: green;
+    background-color: var(--clr-bg-2);
+    box-shadow: -5px 0 2px 0 rgba(0, 0, 0, 0.2);
     width: 25%;
 }
