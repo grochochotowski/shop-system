@@ -4,7 +4,7 @@
 
 .size-bar {
     width: 8px;
-
+    background-color: rgb(227, 227, 227);
     background-image: radial-gradient( var(--clr-acc-1), var(--clr-acc-2));
     background-repeat: no-repeat;
     background-size: 0% 100%;
@@ -14,7 +14,12 @@
 }
 .size-bar:hover {
     cursor: e-resize;
+    background-color: rgba(0, 0, 0 ,0);
     background-size: 100% 100%;
+}
+.size-bar.resizing {
+    background-size: 100% 10%;
+    background-repeat: repeat;
 }
 
 
