@@ -11,7 +11,7 @@ function CreateUser() {
     const [isResizing, setIsResizing] = useState(false);
 
 
-    // Calculate thw width of 2 main dives based on size-bar position
+    // Calculate width of 2 main sections based on size-bar position
     useEffect(() => {
         const handleMouseMove = (e) => {
             if (isResizing) {
