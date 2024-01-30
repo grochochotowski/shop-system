@@ -59,6 +59,7 @@ function CreateUser() {
 
                     <button className="add-button">Add user</button>
                 </section>
+                <div className="size-bar"></div>
                 <section className="user-list">
                     
                 </section>
