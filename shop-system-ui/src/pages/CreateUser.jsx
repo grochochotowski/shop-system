@@ -15,45 +15,35 @@ function CreateUser() {
     useEffect(() => {
         const handleMouseMove = (e) => {
             if (isResizing) {
-              const sizeBarRect = document.querySelector(".size-bar").getBoundingClientRect();
-              const containerRect = document.querySelector(".container").getBoundingClientRect();
+                const sizeBarRect = document.querySelector(".size-bar").getBoundingClientRect();
+                const containerRect = document.querySelector(".container").getBoundingClientRect();
               
-              const mouseX = e.clientX;
-              let sizeBarLeftOffset = mouseX - sizeBarRect.width / 2 - containerRect.left;
+                const cursorPosition = e.clientX - containerRect.left;
+                let sizeBarLeftOffset = cursorPosition - sizeBarRect.width / 2;
       
-              sizeBarLeftOffset = Math.max(containerRect.width * 0.2, Math.min(containerRect.width * 0.8, sizeBarLeftOffset));
-      
-              setFormWidth(`${sizeBarLeftOffset}px`);
-              setListWidth(`calc(100% - ${sizeBarLeftOffset}px)`);
+                sizeBarLeftOffset = Math.max(containerRect.width * 0.2, Math.min(containerRect.width * 0.8, sizeBarLeftOffset));
+
+                setFormWidth(`${sizeBarLeftOffset}px`);
+                setListWidth(`calc(100% - ${sizeBarLeftOffset}px)`);
             }
-          };
+        };
+        const handleMouseClick = () => {
+            setIsResizing(prev => !prev);
+        }
+
         if (isResizing) {
             document.addEventListener("mousemove", handleMouseMove);
+            document.addEventListener("mousedown", handleMouseClick);
         }
         return () => {
             document.removeEventListener("mousemove", handleMouseMove);
-          };
+            document.removeEventListener("mousedown", handleMouseClick);
+        };
     }, [isResizing]);
 
     const handleClick = () => {
         setIsResizing(prev => !prev);
     };
-
-    /*const handleMouseMove = (e) => {
-        const sizeBarRect = document.querySelector('.size-bar').getBoundingClientRect();
-        const mouseX = e.clientX;
-        const containerRect = document.querySelector('.container').getBoundingClientRect();
-        let sizeBarLeftOffset = mouseX - sizeBarRect.width / 2 - containerRect.left;
-
-        if (sizeBarLeftOffset < containerRect.width * 0.2)
-            sizeBarLeftOffset = containerRect.width * 0.2;
-        else if (sizeBarLeftOffset > containerRect.width * 0.8)
-            sizeBarLeftOffset = containerRect.width * 0.8;
-
-        setFormWidth(`${sizeBarLeftOffset}px`);
-        setListWidth(`calc(100% - ${sizeBarLeftOffset}px)`);
-    };*/
-
 
     // Calculate the height of container
     useEffect(() => {
