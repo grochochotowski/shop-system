@@ -105,7 +105,7 @@ function CreateUser() {
                     <button className="add-button">Add user</button>
                 </section>
                 <div className={`size-bar ${isResizing ? 'resizing' : ''}`} onClick={handleClick}></div>
-                <section className="user-list" style={{ width: listWidth }}>
+                <section className="user-list" style={{ width: listWidth}}>
                     
                 </section>
             </div>
