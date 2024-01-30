@@ -3,11 +3,18 @@
 }
 
 .size-bar {
-    width: 5px;
-    background-color: white;
+    width: 8px;
+
+    background-image: radial-gradient( var(--clr-acc-1), var(--clr-acc-2));
+    background-repeat: no-repeat;
+    background-size: 0% 100%;
+    background-position: right;
+
+    transition: 250ms ease-in-out;
 }
 .size-bar:hover {
     cursor: e-resize;
+    background-size: 100% 100%;
 }
 
 
