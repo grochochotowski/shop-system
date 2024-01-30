@@ -35,11 +35,13 @@ function CreateUser() {
         };
 
         if (isResizing) {
+            document.body.style.cursor = 'none';
             document.addEventListener("mousemove", handleMouseMove);
             document.addEventListener("mousedown", handle2ndMouseClick);
         }
-        
+
         return () => {
+            document.body.style.cursor = 'auto';
             document.removeEventListener("mousemove", handleMouseMove);
             document.removeEventListener("mousedown", handle2ndMouseClick);
         };

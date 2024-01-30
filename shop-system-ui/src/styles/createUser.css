@@ -18,6 +18,7 @@
     background-size: 100% 100%;
 }
 .size-bar.resizing {
+    cursor: none;
     background-size: 100% 10%;
     background-repeat: repeat;
 }
