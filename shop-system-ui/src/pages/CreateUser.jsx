@@ -12,33 +12,46 @@ function CreateUser() {
 
 
     // Calculate thw width of 2 main dives based on size-bar position
-    const handleMouseDown = (e) => {
-        setIsResizing(true);
+    useEffect(() => {
+        const handleMouseMove = (e) => {
+            if (isResizing) {
+              const sizeBarRect = document.querySelector(".size-bar").getBoundingClientRect();
+              const mouseX = e.clientX;
+              const containerRect = document.querySelector(".container").getBoundingClientRect();
+              let sizeBarLeftOffset = mouseX - sizeBarRect.width / 2 - containerRect.left;
       
-        document.addEventListener('mousemove', handleMouseMove);
-        document.addEventListener('mouseup', handleMouseUp);
+              sizeBarLeftOffset = Math.max(containerRect.width * 0.2, Math.min(containerRect.width * 0.8, sizeBarLeftOffset));
+      
+              setFormWidth(`${sizeBarLeftOffset}px`);
+              setListWidth(`calc(100% - ${sizeBarLeftOffset}px)`);
+            }
+          };
+        if (isResizing) {
+            document.addEventListener("mousemove", handleMouseMove);
+        }
+        return () => {
+            document.removeEventListener("mousemove", handleMouseMove);
+          };
+    }, [isResizing]);
+
+    const handleClick = () => {
+        setIsResizing(prev => !prev);
     };
-    const handleMouseMove = (e) => {
+
+    /*const handleMouseMove = (e) => {
         const sizeBarRect = document.querySelector('.size-bar').getBoundingClientRect();
         const mouseX = e.clientX;
         const containerRect = document.querySelector('.container').getBoundingClientRect();
         let sizeBarLeftOffset = mouseX - sizeBarRect.width / 2 - containerRect.left;
 
-        if (sizeBarLeftOffset < containerRect.width * 0.2) {
+        if (sizeBarLeftOffset < containerRect.width * 0.2)
             sizeBarLeftOffset = containerRect.width * 0.2;
-        } else if (sizeBarLeftOffset > containerRect.width * 0.8) {
+        else if (sizeBarLeftOffset > containerRect.width * 0.8)
             sizeBarLeftOffset = containerRect.width * 0.8;
-        }
 
         setFormWidth(`${sizeBarLeftOffset}px`);
         setListWidth(`calc(100% - ${sizeBarLeftOffset}px)`);
-    };
-    const handleMouseUp = () => {
-        setIsResizing(false);
-      
-            document.removeEventListener('mousemove', handleMouseMove);
-            document.removeEventListener('mouseup', handleMouseUp);
-    };
+    };*/
 
 
     // Calculate the height of container
@@ -94,7 +107,7 @@ function CreateUser() {
 
                     <button className="add-button">Add user</button>
                 </section>
-                <div className={`size-bar ${isResizing ? 'resizing' : ''}`} onMouseDown={handleMouseDown}></div>
+                <div className={`size-bar ${isResizing ? 'resizing' : ''}`} onClick={handleClick}></div>
                 <section className="user-list" style={{ width: listWidth }}>
                     
                 </section>
