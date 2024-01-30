@@ -27,14 +27,18 @@ function CreateUser() {
                 setListWidth(`calc(100% - ${sizeBarLeftOffset}px)`);
             }
         };
-        const handle2ndMouseClick = () => {
-            setIsResizing(false);
-        }
+        const handle2ndMouseClick = (e) => {
+            const sizeBar = document.querySelector(".size-bar");
+            if (sizeBar && !sizeBar.contains(e.target)) {
+                setIsResizing(false);
+            }
+        };
 
         if (isResizing) {
             document.addEventListener("mousemove", handleMouseMove);
             document.addEventListener("mousedown", handle2ndMouseClick);
         }
+        
         return () => {
             document.removeEventListener("mousemove", handleMouseMove);
             document.removeEventListener("mousedown", handle2ndMouseClick);
