@@ -16,8 +16,9 @@ function CreateUser() {
         const handleMouseMove = (e) => {
             if (isResizing) {
               const sizeBarRect = document.querySelector(".size-bar").getBoundingClientRect();
-              const mouseX = e.clientX;
               const containerRect = document.querySelector(".container").getBoundingClientRect();
+              
+              const mouseX = e.clientX;
               let sizeBarLeftOffset = mouseX - sizeBarRect.width / 2 - containerRect.left;
       
               sizeBarLeftOffset = Math.max(containerRect.width * 0.2, Math.min(containerRect.width * 0.8, sizeBarLeftOffset));
