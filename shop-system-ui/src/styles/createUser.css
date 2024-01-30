@@ -1,8 +1,22 @@
 .container {
     display: flex;
 }
+
+.size-bar {
+    width: 5px;
+    background-color: white;
+}
+.size-bar:hover {
+    cursor: e-resize;
+}
+
+
 section.create-user-form {
-    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
     width: 75%;
 }
 
