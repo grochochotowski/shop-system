@@ -1,5 +1,5 @@
 import Welcome from "./pages/Welcome";
-import Header from "./components/CompanyHeader";
+import CompanyHeader from "./components/CompanyHeader";
 import Login from "./pages/Login";
 import CreateUser from "./pages/CreateUser";
 
@@ -7,6 +7,7 @@ import CreateUser from "./pages/CreateUser";
 function App() {
     return(
         <>
+            <CompanyHeader selected="create-user"/>
             <CreateUser />
         </>
     );

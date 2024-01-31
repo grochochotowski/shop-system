@@ -1,5 +1,4 @@
 import React, {useState, useEffect} from "react";
-import CompanyHeader from "../components/CompanyHeader";
 import "../styles/createUser.css"
 
 function CreateUser() {
@@ -80,7 +79,6 @@ function CreateUser() {
     // Render
     return (
         <>
-            <CompanyHeader selected="create-user"/>
             <div className="container" style={{ height: containerHeight }}>
                 <section className="create-user-form" style={{ width: formWidth }}>
                     <input type="text" className="add-1st-name" placeholder="First Name" />
