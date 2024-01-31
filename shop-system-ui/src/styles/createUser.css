@@ -1,9 +1,11 @@
+/* ---- Main container ---- */
 .container {
     position: relative;
     display: flex;
     z-index: 99;
 }
 
+/* ---- Size bar ---- */
 .size-bar {
     width: 8px;
     background-image: radial-gradient( var(--clr-acc-1), var(--clr-acc-2));
@@ -26,7 +28,7 @@
     background-repeat: repeat;
 }
 
-
+/* ---- Create user form ---- */
 section.create-user-form {
     display: flex;
     justify-content: center;
@@ -36,7 +38,7 @@ section.create-user-form {
     width: 75%;
 }
 
-
+/* ---- Users list ---- */
 section.user-list {
     background-color: var(--clr-bg-2);
     box-shadow: -3px 0px 5px 0px rgba(0, 0, 0, 0.5);
