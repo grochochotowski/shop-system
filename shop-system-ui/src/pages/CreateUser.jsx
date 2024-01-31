@@ -27,27 +27,24 @@ function CreateUser() {
                 setListWidth(`calc(100% - ${sizeBarLeftOffset}px)`);
             }
         };
-        const handle2ndMouseClick = (e) => {
-            const sizeBar = document.querySelector(".size-bar");
-            if (sizeBar && !sizeBar.contains(e.target)) {
-                setIsResizing(false);
-            }
+        const handleMouseUp = (e) => {
+            setIsResizing(false);
         };
 
         if (isResizing) {
             document.body.style.cursor = 'none';
             document.addEventListener("mousemove", handleMouseMove);
-            document.addEventListener("mousedown", handle2ndMouseClick);
+            document.addEventListener("mouseup", handleMouseUp);
         }
 
         return () => {
             document.body.style.cursor = 'auto';
             document.removeEventListener("mousemove", handleMouseMove);
-            document.removeEventListener("mousedown", handle2ndMouseClick);
+            document.removeEventListener("mouseup", handleMouseUp);
         };
     }, [isResizing]);
 
-    const handleClick = () => {
+    const handleMouseDown = () => {
         setIsResizing(prev => !prev);
     };
 
@@ -104,7 +101,7 @@ function CreateUser() {
 
                     <button className="add-button">Add user</button>
                 </section>
-                <div className={`size-bar ${isResizing ? 'resizing' : ''}`} onClick={handleClick}></div>
+                <div className={`size-bar ${isResizing ? 'resizing' : ''}`} onMouseDown={handleMouseDown}></div>
                 <section className="user-list" style={{ width: listWidth}}>
                     
                 </section>
