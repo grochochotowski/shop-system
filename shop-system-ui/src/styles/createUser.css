@@ -8,6 +8,7 @@
 /* ---- Size bar ---- */
 .size-bar {
     width: 8px;
+    
     background-image: radial-gradient( var(--clr-acc-1), var(--clr-acc-2));
     background-repeat: no-repeat;
     background-size: 0% 100%;
