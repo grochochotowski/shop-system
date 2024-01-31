@@ -1,3 +1,4 @@
+/* ---- Containers ---- */
 .login-container {
     position: absolute;
     height: 100vh;
@@ -8,7 +9,6 @@
     backdrop-filter: sepia(100%);
     transition: 250ms ease-in-out;
 }
-
 .login {
     position: absolute;
     top: 50%;
@@ -32,6 +32,7 @@
     background-color: rgba(255, 241, 57, 0.25);
 }
 
+/* ---- Text inputs ---- */
 .login input {
     height: 7%;
     width: 75%;
@@ -50,12 +51,12 @@
     
     transition: 250ms ease-in-out;
 }
-
 .login input:focus {
     border-color: var(--clr-acc-2);
     box-shadow: 1px 1px 2px black, 0 0 1em var(--clr-acc-1), 0 0 0.2em var(--clr-acc-1);
 }
 
+/* ---- Button inputs ---- */
 .login button.submit {
     width: 25%;
     padding: 10px 0;
