@@ -99,7 +99,7 @@ function CreateUser() {
 
                     <RenderShopIdInput />
 
-                    <button className="add-button">Add user</button>
+                    <button className="submit">Add user</button>
                 </section>
                 <div className={`size-bar ${isResizing ? 'resizing' : ''}`} onMouseDown={handleMouseDown}></div>
                 <section className="user-list" style={{ width: listWidth}}>
