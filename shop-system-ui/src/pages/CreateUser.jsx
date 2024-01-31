@@ -91,7 +91,7 @@ function CreateUser() {
 
                     <select name="position" id="position" onChange={setNewPosition}>
                         <option value="choose">-- Choose Position --</option>
-                        <option value="ceo">COO</option>
+                        <option value="coo">COO</option>
                         <option value="accountant">Accountant</option>
                         <option value="manager">Manager</option>
                         <option value="deputy-manager">Deputy Manager</option>
