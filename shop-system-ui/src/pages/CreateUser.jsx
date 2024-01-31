@@ -32,12 +32,14 @@ function CreateUser() {
         };
 
         if (isResizing) {
+            document.body.style.userSelect = 'none';
             document.body.style.cursor = 'none';
             document.addEventListener("mousemove", handleMouseMove);
             document.addEventListener("mouseup", handleMouseUp);
         }
 
         return () => {
+            document.body.style.userSelect = 'auto';
             document.body.style.cursor = 'auto';
             document.removeEventListener("mousemove", handleMouseMove);
             document.removeEventListener("mouseup", handleMouseUp);
