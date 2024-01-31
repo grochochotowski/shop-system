@@ -1,3 +1,4 @@
+/* ---- Containers ---- */
 .welcome {
     height: 100%;
 }
@@ -6,13 +7,14 @@
     font-size: 1.5rem;
     text-align: center;
 }
-
 .welcome > section {
     display: flex;
     gap: 10px;
     margin: 0 10px;
     height: 93%;
 }
+
+/* ---- Go to page panels ---- */
 .go-to-panel{
     position: relative;
     flex-basis: 10%;
@@ -52,6 +54,8 @@
 .welcome .content:hover {
     cursor: pointer;
 }
+
+/* ---- H3 title ---- */
 .welcome h3{
     user-select: none;
     margin-bottom: 10%;
@@ -66,6 +70,8 @@
     text-shadow: 1px 1px 2px black, 0 0 1em var(--clr-acc-2), 0 0 0.2em var(--clr-acc-2);
     cursor: pointer;
 }
+
+/* ---- Inputs on go to page ---- */
 .welcome input {
     height: 5%;
     width: 90%;
