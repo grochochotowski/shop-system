@@ -40,6 +40,59 @@ section.create-user-form {
 
     background-color: var(--clr-bg-1);
 }
+/* ---- Text inputs ---- */
+.create-user-form input {
+    height: 7%;
+    width: 75%;
+    padding: 10px 0;
+
+    outline: none;
+    border: solid var(--clr-acc-1) 3px;
+    border-radius: 7px;
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0);
+
+    color: var(--clr-txt);
+    font-size: 1.5rem;
+    text-align: center;
+
+    background-color: var(--clr-bg-1);
+    
+    transition: 250ms ease-in-out;
+}
+.create-user-form input:focus {
+    border-color: var(--clr-acc-2);
+    box-shadow: 1px 1px 2px black, 0 0 1em var(--clr-acc-1), 0 0 0.2em var(--clr-acc-1);
+}
+
+/* ---- Button inputs ---- */
+.create-user-form button.submit {
+    width: 25%;
+    padding: 10px 0;
+    margin-top: 1em;
+
+    outline: none;
+    border: solid var(--clr-acc-1) 3px;
+    border-radius: 7px;
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0);
+
+    color: var(--clr-txt);
+    font-size: 1.5rem;
+    text-align: center;
+
+    background-color: var(--clr-bg-1);
+
+    transition: 250ms ease-in-out;
+}
+.create-user-form button.submit:hover {
+    border-color: var(--clr-acc-2);
+    box-shadow: 1px 1px 2px black, 0 0 1em var(--clr-acc-1), 0 0 0.2em var(--clr-acc-1);
+    background-color: rgba(255, 241, 57, 0.75);
+
+    color: var(--clr-bg-1);
+    font-weight: 600;
+    
+    cursor: pointer;
+}
 
 /* ---- Users list ---- */
 section.user-list {
