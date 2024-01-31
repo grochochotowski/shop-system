@@ -11,6 +11,8 @@
     background-size: 0% 100%;
     background-position: right;
 
+    border-left: 3px solid var(--clr-bg-2);
+
     transition: 250ms ease-in-out;
 }
 .size-bar:hover {
