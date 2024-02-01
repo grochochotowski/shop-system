@@ -83,7 +83,7 @@ function CreateUser() {
                 <section className="create-user-form" style={{ width: formWidth }}>
                     <input type="text" className="add-1st-name" placeholder="First Name" />
                     <input type="text" className="add-2nd-name" placeholder="Second Name" />
-                    <input type="text" className="add-name" placeholder="First Name"/>
+                    <input type="text" className="add-last-name" placeholder="Last Name"/>
                     <input type="text" className="add-login" placeholder="Login"/>
                     <input type="password" className="add-password" placeholder="Password"/>
 
