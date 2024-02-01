@@ -41,7 +41,7 @@ section.create-user-form {
 
     background-color: var(--clr-bg-1);
 }
-/* Text inputs */
+/*
 .create-user-form input {
     height: 4%;
     width: 75%;
@@ -65,7 +65,6 @@ section.create-user-form {
     box-shadow: 1px 1px 2px black, 0 0 1em var(--clr-acc-1), 0 0 0.2em var(--clr-acc-1);
 }
 
-/* Button inputs */
 .create-user-form button.submit {
     width: 25%;
     padding: 10px 0;
