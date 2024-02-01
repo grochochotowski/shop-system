@@ -15,7 +15,7 @@ function CreateUser() {
         const handleMouseMove = (e) => {
             if (isResizing) {
                 const sizeBarRect = document.querySelector(".size-bar").getBoundingClientRect();
-                const containerRect = document.querySelector(".container").getBoundingClientRect();
+                const containerRect = document.querySelector(".create-user-container").getBoundingClientRect();
               
                 const cursorPosition = e.clientX - containerRect.left;
                 let sizeBarLeftOffset = cursorPosition - sizeBarRect.width / 2;
@@ -79,7 +79,7 @@ function CreateUser() {
     // Render
     return (
         <>
-            <div className="container" style={{ height: containerHeight }}>
+            <div className="create-user-container" style={{ height: containerHeight }}>
                 <section className="create-user-form" style={{ width: formWidth }}>
                     <div className="personal-section">
                         <input type="text" className="add-1st-name" placeholder="First Name" />
