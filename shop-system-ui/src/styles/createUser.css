@@ -41,6 +41,16 @@ section.create-user-form {
 
     background-color: var(--clr-bg-1);
 }
+
+.personal-section {
+    background-color: red;
+}
+.other-section{
+    background-color: green;
+}
+.position-section {
+    background-color: blue;
+}
 /*
 .create-user-form input {
     height: 4%;
