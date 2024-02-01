@@ -45,7 +45,7 @@ section.create-user-form {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 3%;
+    gap: 5%;
 
     width: 35%;
 
@@ -54,29 +54,15 @@ section.create-user-form {
     background-color: var(--clr-bg-1);
 }
 
-.personal-section {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-
-    width: 100%;
-    background-color: red;
-}
-.info-section{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-
-    width: 100%;
-    background-color: green;
-}
+.personal-section,
+.info-section,
 .shop-section {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 
     width: 100%;
-    background-color: blue;
+    background-color: rgba(255, 241, 57, 0.25);
 }
 
 .create-user-form input,
