@@ -42,12 +42,12 @@
 /* ---- Create user form ---- */
 section.create-user-form {
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
     gap: 5%;
 
     width: 35%;
+    padding: 2% 0;
 
     overflow-y: scroll;
 
