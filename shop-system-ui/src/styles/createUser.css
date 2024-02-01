@@ -66,6 +66,7 @@ section.create-user-form {
     width: 100%;
     background-color: blue;
 }
+
 .create-user-form input,
 .create-user-form select {
     height: 3rem;
@@ -86,7 +87,6 @@ section.create-user-form {
     
     transition: 250ms ease-in-out;
 }
-
 .personal-section input,
 .info-section input {
     flex-basis: 30%;
@@ -95,13 +95,14 @@ section.create-user-form {
 .shop-section select {
     flex-basis: 40%;
 }
-
-/*
-.create-user-form input:focus {
+.create-user-form input:focus,
+.create-user-form select:focus {
     border-color: var(--clr-acc-2);
     box-shadow: 1px 1px 2px black, 0 0 1em var(--clr-acc-1), 0 0 0.2em var(--clr-acc-1);
 }
 
+
+/*
 .create-user-form button.submit {
     width: 25%;
     padding: 10px 0;
