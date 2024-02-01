@@ -81,26 +81,32 @@ function CreateUser() {
         <>
             <div className="container" style={{ height: containerHeight }}>
                 <section className="create-user-form" style={{ width: formWidth }}>
-                    <input type="text" className="add-1st-name" placeholder="First Name" />
-                    <input type="text" className="add-2nd-name" placeholder="Second Name" />
-                    <input type="text" className="add-last-name" placeholder="Last Name"/>
-                    <input type="text" className="add-personal-number" placeholder="Personal Number"/>
-                    <input type="email" className="add-email" placeholder="E-mail"/>
-                    <input type="text" className="add-phone" placeholder="Phone Number"/>
-                    <input type="text" className="add-login" placeholder="Login"/>
-                    <input type="password" className="add-password" placeholder="Password"/>
+                    <div className="personal-section">
+                        <input type="text" className="add-1st-name" placeholder="First Name" />
+                        <input type="text" className="add-2nd-name" placeholder="Second Name" />
+                        <input type="text" className="add-last-name" placeholder="Last Name"/>
+                        <input type="text" className="add-personal-number" placeholder="Personal Number"/>
+                    </div>
 
-                    <select name="position" id="position" onChange={setNewPosition}>
-                        <option value="choose">-- Choose Position --</option>
-                        <option value="coo">COO</option>
-                        <option value="accountant">Accountant</option>
-                        <option value="manager">Manager</option>
-                        <option value="deputy-manager">Deputy Manager</option>
-                        <option value="decorator">Decorator</option>
-                        <option value="shop-assistant">Shop Assistant</option>
-                    </select>
+                    <div className="other-section">
+                        <input type="email" className="add-email" placeholder="E-mail"/>
+                        <input type="text" className="add-phone" placeholder="Phone Number"/>
+                        <input type="text" className="add-login" placeholder="Login"/>
+                        <input type="password" className="add-password" placeholder="Password"/>
+                    </div>
 
-                    <RenderShopIdInput />
+                    <div className="position-section">
+                        <select name="position" id="position" onChange={setNewPosition}>
+                            <option value="choose">-- Choose Position --</option>
+                            <option value="coo">COO</option>
+                            <option value="accountant">Accountant</option>
+                            <option value="manager">Manager</option>
+                            <option value="deputy-manager">Deputy Manager</option>
+                            <option value="decorator">Decorator</option>
+                            <option value="shop-assistant">Shop Assistant</option>
+                        </select>
+                        <RenderShopIdInput />
+                    </div>
 
                     <button className="submit">Add user</button>
                 </section>
