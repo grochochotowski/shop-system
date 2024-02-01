@@ -53,7 +53,7 @@ section.create-user-form {
 
     background-color: var(--clr-bg-1);
 }
-
+/*Main containers*/
 .personal-section,
 .info-section,
 .shop-section {
@@ -67,14 +67,14 @@ section.create-user-form {
 
     background-color: rgba(255, 241, 57, 0.25);
 }
-
+/*Title*/
 .create-user-form h3{
     flex-basis: 90%;
     text-align: center;
     margin-top: 10px;
     font-size: 1.5rem;
 }
-
+/*Inputs*/
 .create-user-form input,
 .create-user-form select {
     height: 3rem;
@@ -108,7 +108,7 @@ section.create-user-form {
     border-color: var(--clr-acc-2);
     box-shadow: 1px 1px 2px black, 0 0 1em var(--clr-acc-1), 0 0 0.2em var(--clr-acc-1);
 }
-
+/*Button*/
 .create-user-form button.submit {
     width: fit-content;
     padding: 10px;
