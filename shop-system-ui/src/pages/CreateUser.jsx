@@ -88,14 +88,16 @@ function CreateUser() {
                         <input type="text" className="add-personal-number" placeholder="Personal Number"/>
                     </div>
 
-                    <div className="other-section">
+                    <div className="info-section">
                         <input type="email" className="add-email" placeholder="E-mail"/>
-                        <input type="text" className="add-phone" placeholder="Phone Number"/>
-                        <input type="text" className="add-login" placeholder="Login"/>
-                        <input type="password" className="add-password" placeholder="Password"/>
+                        <input type="text" className="add-phone-number" placeholder="Phone Number"/>
+                        <input type="text" className="add-account-number" placeholder="Account Number"/>
                     </div>
 
-                    <div className="position-section">
+                    <div className="shop-section">
+                        <input type="text" className="add-login" placeholder="Login"/>
+                        <input type="password" className="add-password" placeholder="Password"/>
+
                         <select name="position" id="position" onChange={setNewPosition}>
                             <option value="choose">-- Choose Position --</option>
                             <option value="coo">COO</option>
