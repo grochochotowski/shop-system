@@ -51,16 +51,23 @@ section.create-user-form {
     background-color: red;
 }
 .info-section{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
     width: 100%;
     background-color: green;
 }
 .shop-section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
     width: 100%;
     background-color: blue;
 }
 .create-user-form input {
     height: 3rem;
-    flex-basis: 30%;
     flex-grow: 1;
     padding: 0;
     margin: 10px;
@@ -78,6 +85,16 @@ section.create-user-form {
     
     transition: 250ms ease-in-out;
 }
+
+.personal-section input,
+.info-section input {
+    flex-basis: 30%;
+}
+.shop-section input,
+.shop-section select {
+    flex-basis: 40%;
+}
+
 /*
 .create-user-form input:focus {
     border-color: var(--clr-acc-2);
