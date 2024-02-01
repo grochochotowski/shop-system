@@ -84,6 +84,9 @@ function CreateUser() {
                     <input type="text" className="add-1st-name" placeholder="First Name" />
                     <input type="text" className="add-2nd-name" placeholder="Second Name" />
                     <input type="text" className="add-last-name" placeholder="Last Name"/>
+                    <input type="text" className="add-personal-number" placeholder="Personal Number"/>
+                    <input type="email" className="add-email" placeholder="E-mail"/>
+                    <input type="text" className="add-phone" placeholder="Phone Number"/>
                     <input type="text" className="add-login" placeholder="Login"/>
                     <input type="password" className="add-password" placeholder="Password"/>
 
