@@ -39,6 +39,8 @@ section.create-user-form {
 
     width: 35%;
 
+    overflow-y: scroll;
+
     background-color: var(--clr-bg-1);
 }
 
