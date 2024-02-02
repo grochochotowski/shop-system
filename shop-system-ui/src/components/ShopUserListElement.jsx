@@ -27,8 +27,8 @@ function ShopUserListElement(props) {
     }
 
     return (
-        <div className="shop-user-element" onClick={handleClick}>
-            <p>Shop id number</p>
+        <div className="shop-user-element">
+            <p onClick={handleClick}>Shop id number</p>
             <GenerateList />
         </div>
     );
