@@ -102,7 +102,11 @@ section.create-user-form {
 .shop-section select {
     flex-basis: 40%;
 }
-.create-user-form input:focus,
+.create-user-form input:focus {
+    background-color: rgba(255, 241, 57, 0.3);
+    border-color: var(--clr-acc-2);
+    box-shadow: 1px 1px 2px black, 0 0 1em var(--clr-acc-1), 0 0 0.2em var(--clr-acc-1);
+}
 .create-user-form select:focus {
     border-color: var(--clr-acc-2);
     box-shadow: 1px 1px 2px black, 0 0 1em var(--clr-acc-1), 0 0 0.2em var(--clr-acc-1);
