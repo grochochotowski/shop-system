@@ -35,7 +35,7 @@
 }
 .create-user-container ::-webkit-scrollbar-thumb {
     border-radius: 5px;
-    background-color: rgba(0, 0, 0, .5);
+    background: linear-gradient(rgba(255, 241, 57, 0.5) 75%, rgba(233, 65, 58, 0.9) 100%);
     box-shadow: 0 0 1px rgba(255, 255, 255, .5);
 }
 
@@ -65,7 +65,7 @@ section.create-user-form {
 
     border-radius: 20px;
 
-    background-color: rgba(255, 241, 57, 0.25);
+    background-color: rgba(255, 241, 57, 0.1);
 }
 /*Title*/
 .create-user-form h3{
