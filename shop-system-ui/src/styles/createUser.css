@@ -129,9 +129,9 @@ section.create-user-form {
 .create-user-form button.submit:hover {
     border-color: var(--clr-acc-2);
     box-shadow: 1px 1px 2px black, 0 0 1em var(--clr-acc-1), 0 0 0.2em var(--clr-acc-1);
-    background-color: rgba(255, 241, 57, 0.75);
+    background-color: rgba(255, 241, 57, 0.5);
 
-    color: var(--clr-bg-1);
+    color: var(--clr-bg-2);
     font-weight: 600;
     
     cursor: pointer;
