@@ -64,8 +64,6 @@ section.create-user-form {
     width: 100%;
 
     border-radius: 20px;
-
-    background-color: rgba(255, 241, 57, 0.1);
 }
 /*Title*/
 .create-user-form h3{
@@ -91,6 +89,7 @@ section.create-user-form {
     font-size: 1rem;
     text-align: center;
 
+    
     background-color: var(--clr-bg-1);
     
     transition: 250ms ease-in-out;
