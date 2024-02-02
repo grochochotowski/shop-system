@@ -16,7 +16,7 @@ html, body, #root {
     color: var(--clr-txt);
     font-family: 'Roboto', sans-serif;
     height: 100%;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 /* ---- Close button ---- */
