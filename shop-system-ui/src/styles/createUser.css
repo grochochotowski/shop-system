@@ -3,6 +3,7 @@
     position: relative;
     display: flex;
     z-index: 99;
+    overflow: hidden;
 }
 
 /* ---- Size bar ---- */
@@ -29,6 +30,7 @@
     background-repeat: repeat;
 }
 
+/* ---- Scroll bar ---- */
 .create-user-container ::-webkit-scrollbar {
     -webkit-appearance: none;
     width: 10px;
