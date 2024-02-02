@@ -143,8 +143,18 @@ section.create-user-form {
 }
 
 /* ---- Users list ---- */
-section.user-list {
+section.user-list {    
+    width: 65%;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    gap: 5%;
+
+    width: 65%;
+    padding: 1.5% 1%;
+
+    overflow-y: scroll;
+
     background-color: var(--clr-bg-2);
     box-shadow: -3px 0px 5px 0px rgba(0, 0, 0, 0.5);
-    width: 65%;
 }
