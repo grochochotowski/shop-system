@@ -133,11 +133,11 @@ function CreateUser() {
                         </div>
                         <div className="box">
                             <input type="checkbox" id="last-name"/>
-                            <label htmlFor="Last name">Last name</label>
+                            <label htmlFor="last-name">Last name</label>
                         </div>
                         <div className="box">
                             <input type="checkbox" id="position"/>
-                            <label htmlFor="Position">Position</label>
+                            <label htmlFor="position">Position</label>
                         </div>
                         <div className="box">
                             <input type="checkbox" id="email"/>
