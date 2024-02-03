@@ -193,8 +193,8 @@ section.user-list {
     
     margin: 0;
     font: inherit;
-    width: 1.15em;
-    height: 1.15em;
+    height: 1.15rem;
+    aspect-ratio: 1;
 
     border: 0.15em solid white;
     border-radius: 7px;
