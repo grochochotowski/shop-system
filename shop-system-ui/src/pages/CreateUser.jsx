@@ -125,27 +125,27 @@ function CreateUser() {
                         </div>
                         <div className="box">
                             <input type="checkbox" id="first-name"/>
-                            <label htmlFor="First name">First Name</label>
+                            <label htmlFor="first-name">First name</label>
                         </div>
                         <div className="box">
                             <input type="checkbox" id="second-name"/>
-                            <label htmlFor="Second name">First Name</label>
+                            <label htmlFor="second-name">Second Name</label>
                         </div>
                         <div className="box">
                             <input type="checkbox" id="last-name"/>
-                            <label htmlFor="Last name">First Name</label>
+                            <label htmlFor="Last name">Last name</label>
                         </div>
                         <div className="box">
                             <input type="checkbox" id="position"/>
-                            <label htmlFor="Position">First Name</label>
+                            <label htmlFor="Position">Position</label>
                         </div>
                         <div className="box">
                             <input type="checkbox" id="email"/>
-                            <label htmlFor="E-mail">First Name</label>
+                            <label htmlFor="email">E-mail</label>
                         </div>
                         <div className="box">
                             <input type="checkbox" id="phone-number"/>
-                            <label htmlFor="Phone number">First Name</label>
+                            <label htmlFor="phone-number">Phone number</label>
                         </div>
                     </div>
                     <ShopUserListElement collapsed="true"/>
