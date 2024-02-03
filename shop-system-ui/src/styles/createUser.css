@@ -162,7 +162,7 @@ section.user-list {
 /*Options*/
 .user-list .options {
     width: 100%;
-    
+
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -182,12 +182,41 @@ section.user-list {
 
     border-left: 2px solid var(--clr-acc-1);
     border-right: 2px solid var(--clr-acc-1);
-    border-radius: 5px
+    border-radius: 5px;
+
+    user-select: none;
 }
 
-.user-list .box input {
+/*Checkbox*/
+.user-list .box input[type="checkbox"] {
+    appearance: none;
+    
+    margin: 0;
+    font: inherit;
+    width: 1.15em;
+    height: 1.15em;
 
+    border: 0.15em solid white;
+    border-radius: 7px;
+    background-color: var(--clr-bg-1);
+
+    transition: 250ms ease-in-out;
 }
+.user-list .box input[type="checkbox"]:checked {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-color: var(--clr-acc-1);
+    background-color: rgba(255, 241, 57, 0.5);
+}
+.user-list .box input[type="checkbox"]:checked:after {
+    content: "X";
+    color: white;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+/*Label*/
 .user-list .box label {
     margin: 0 10px;
 
