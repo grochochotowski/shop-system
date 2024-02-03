@@ -48,7 +48,7 @@ section.create-user-form {
     flex-direction: column;
     gap: 5%;
 
-    width: 35%;
+    width: 50%;
     padding: 1.5% 1%;
 
     overflow-y: scroll;
@@ -143,14 +143,13 @@ section.create-user-form {
 }
 
 /* ---- Users list ---- */
-section.user-list {    
-    width: 65%;
+section.user-list {
     display: flex;
     align-items: start;
     flex-direction: column;
     gap: 5%;
 
-    width: 65%;
+    width: 50%;
     padding: 1.5% 1%;
 
     overflow-y: scroll;
