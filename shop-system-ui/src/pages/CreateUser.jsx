@@ -136,8 +136,8 @@ function CreateUser() {
                             <label htmlFor="last-name">Last name</label>
                         </div>
                         <div className="box">
-                            <input type="checkbox" id="position"/>
-                            <label htmlFor="position">Position</label>
+                            <input type="checkbox" id="position-check"/>
+                            <label htmlFor="position-check">Position</label>
                         </div>
                         <div className="box">
                             <input type="checkbox" id="email"/>
