@@ -119,13 +119,34 @@ function CreateUser() {
                 <div className={`size-bar ${isResizing ? 'resizing' : ''}`} onMouseDown={handleMouseDown}></div>
                 <section className="user-list" style={{ width: listWidth}}>
                     <div className="options">
-                        <input type="checkbox" id="user-id"/> <label htmlFor="user-id">User ID</label>
-                        <input type="checkbox" id="first-name"/> <label htmlFor="First name">First Name</label>
-                        <input type="checkbox" id="second-name"/> <label htmlFor="Second name">First Name</label>
-                        <input type="checkbox" id="last-name"/> <label htmlFor="Last name">First Name</label>
-                        <input type="checkbox" id="position"/> <label htmlFor="Position">First Name</label>
-                        <input type="checkbox" id="email"/> <label htmlFor="E-mail">First Name</label>
-                        <input type="checkbox" id="phone-number"/> <label htmlFor="Phone number">First Name</label>
+                        <div className="box">
+                            <input type="checkbox" id="user-id"/>
+                            <label htmlFor="user-id">User ID</label>
+                        </div>
+                        <div className="box">
+                            <input type="checkbox" id="first-name"/>
+                            <label htmlFor="First name">First Name</label>
+                        </div>
+                        <div className="box">
+                            <input type="checkbox" id="second-name"/>
+                            <label htmlFor="Second name">First Name</label>
+                        </div>
+                        <div className="box">
+                            <input type="checkbox" id="last-name"/>
+                            <label htmlFor="Last name">First Name</label>
+                        </div>
+                        <div className="box">
+                            <input type="checkbox" id="position"/>
+                            <label htmlFor="Position">First Name</label>
+                        </div>
+                        <div className="box">
+                            <input type="checkbox" id="email"/>
+                            <label htmlFor="E-mail">First Name</label>
+                        </div>
+                        <div className="box">
+                            <input type="checkbox" id="phone-number"/>
+                            <label htmlFor="Phone number">First Name</label>
+                        </div>
                     </div>
                     <ShopUserListElement collapsed="true"/>
                     <ShopUserListElement collapsed="true"/>
