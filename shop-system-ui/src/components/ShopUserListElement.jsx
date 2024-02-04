@@ -5,7 +5,7 @@ function ShopUserListElement(props) {
     const [isCollapsed, setIsCollapsed] = useState(props.isCollapsed);
 
     function GenerateList() {
-        if (!isCollapsed) {
+        if (isCollapsed) {
             return (
                 <ul>
                     <li>User 1</li>
@@ -27,7 +27,7 @@ function ShopUserListElement(props) {
     }
 
     return (
-        <div className={`shop-user-element ${isCollapsed ? "collapsed" : "not-collapsed"}`}>
+        <div className={`shop-user-element ${isCollapsed ? "not-collapsed" : "collapsed"}`}>
             <p onClick={handleClick}>Shop id number</p>
             <GenerateList />
         </div>
