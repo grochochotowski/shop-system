@@ -222,6 +222,7 @@ section.user-list {
 }
 .shop-user-element {
     padding: 2%;
+    padding-left: 5%;
     border: solid  2px transparent;
 
     cursor: pointer;
@@ -234,7 +235,38 @@ section.user-list {
     border-color: var(--clr-txt);
 }
 .shop-user-element p{
+    position: relative;
     cursor: pointer;
+}
+.shop-user-element.collapsed p:before {
+    content: '';
+    position: absolute;
+    left: -5%;
+    top: 50%;
+    
+    width: 0.5rem;
+    height: 0.5rem;
+    border-top: solid white 2px;
+    border-right: solid white 2px;
+
+    transform: rotate(45deg) translateY(-100%);
+ 
+    transition: 250ms ease-in-out;
+ }
+.shop-user-element.not-collapsed p:before {
+    content: '';
+    position: absolute;
+    left: -5%;
+    top: 0;
+
+    width: 0.5rem;
+    height: 0.5rem;
+    border-top: solid white 2px;
+    border-right: solid white 2px;
+    
+    transform: rotate(135deg) translate(-50%, -50%);
+ 
+    transition: 250ms ease-in-out;
 }
 .shop-user-element li{
     width: fit-content;
