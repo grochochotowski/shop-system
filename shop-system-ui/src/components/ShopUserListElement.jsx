@@ -27,7 +27,7 @@ function ShopUserListElement(props) {
     }
 
     return (
-        <div className="shop-user-element">
+        <div className={`shop-user-element ${isCollapsed ? "collapsed" : "not-collapsed"}`}>
             <p onClick={handleClick}>Shop id number</p>
             <GenerateList />
         </div>
