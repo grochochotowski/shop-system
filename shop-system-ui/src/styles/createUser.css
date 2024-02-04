@@ -221,7 +221,7 @@ section.user-list {
     margin-top: 2%;
 }
 .shop-user-element {
-    padding: 2%;
+    margin: 2%;
     border: solid  2px transparent;
 
     cursor: pointer;
@@ -235,7 +235,7 @@ section.user-list {
 }
 .shop-user-element p{
     padding-left: 5%;
-
+    
     position: relative;
     cursor: pointer;
 }
