@@ -215,3 +215,17 @@ section.user-list {
     text-align: center;
     font-size: 1.2rem;
 }
+
+/*List*/
+.user-list-elements {
+    margin-top: 2%;
+}
+.shop-user-element {
+    margin-top: 2%;
+}
+.shop-user-element ul{
+    margin-top: 2%;
+}
+.shop-user-element li{
+    margin-top: 2%;
+}
