@@ -249,6 +249,7 @@ section.user-list {
     height: 0.5rem;
     border-top: solid white 2px;
     border-right: solid white 2px;
+    border-radius: 2px;
 
     transform: rotate(45deg) translateY(-100%);
  
@@ -258,12 +259,13 @@ section.user-list {
     content: '';
     position: absolute;
     left: 0;
-    top: 25%;
+    top: 30%;
 
     width: 0.5rem;
     height: 0.5rem;
     border-top: solid white 2px;
     border-right: solid white 2px;
+    border-radius: 2px;
     
     transform: rotate(135deg) translate(-50%, -50%);
  
