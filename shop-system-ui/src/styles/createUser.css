@@ -222,9 +222,11 @@ section.user-list {
 }
 .shop-user-element {
     padding: 2%;
-    cursor: pointer;
     border: solid  2px transparent;
+    
+    cursor: pointer;
     user-select: none;
+
     transition: 250ms ease-in-out;
 }
 .shop-user-element:hover {
