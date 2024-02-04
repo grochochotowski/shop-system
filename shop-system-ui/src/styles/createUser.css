@@ -238,7 +238,8 @@ section.user-list {
 }
 .shop-user-element li{
     width: fit-content;
-    
+    margin-top: 1%;
+
     cursor: pointer;
     list-style: none;
     
