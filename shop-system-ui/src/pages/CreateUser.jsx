@@ -148,13 +148,15 @@ function CreateUser() {
                             <label htmlFor="phone-number">Phone number</label>
                         </div>
                     </div>
-                    <ShopUserListElement collapsed="true"/>
-                    <ShopUserListElement collapsed="true"/>
-                    <ShopUserListElement collapsed="true"/>
-                    <ShopUserListElement collapsed="true"/>
-                    <ShopUserListElement collapsed="true"/>
-                    <ShopUserListElement collapsed="true"/>
-                    <ShopUserListElement collapsed="true"/>
+                    <div className="user-list-elements">
+                        <ShopUserListElement collapsed="true"/>
+                        <ShopUserListElement collapsed="true"/>
+                        <ShopUserListElement collapsed="true"/>
+                        <ShopUserListElement collapsed="true"/>
+                        <ShopUserListElement collapsed="true"/>
+                        <ShopUserListElement collapsed="true"/>
+                        <ShopUserListElement collapsed="true"/>
+                    </div>
                 </section>
             </div>
         </>
