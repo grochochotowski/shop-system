@@ -221,7 +221,7 @@ section.user-list {
     margin-top: 2%;
 }
 .shop-user-element {
-    padding: 2%;
+    margin: 2%;
     border: solid  2px transparent;
 
     cursor: pointer;
@@ -230,10 +230,10 @@ section.user-list {
     transition: 250ms ease-in-out;
 }
 .shop-user-element:hover {
-    cursor: pointer;
     border-color: var(--clr-txt);
 }
 .shop-user-element p{
+    padding: 2%;
     padding-left: 5%;
     
     position: relative;
@@ -258,7 +258,7 @@ section.user-list {
     content: '';
     position: absolute;
     left: 0;
-    top: 0;
+    top: 25%;
 
     width: 0.5rem;
     height: 0.5rem;
@@ -271,7 +271,7 @@ section.user-list {
 }
 .shop-user-element li{
     width: fit-content;
-    margin-top: 1%;
+    padding: 1% 0;
 
     cursor: pointer;
     list-style: none;
