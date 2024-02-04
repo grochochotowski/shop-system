@@ -231,3 +231,6 @@ section.user-list {
     cursor: pointer;
     border-color: var(--clr-txt);
 }
+.shop-user-element p{
+    cursor: pointer;
+}
