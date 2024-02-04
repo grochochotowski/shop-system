@@ -282,5 +282,5 @@ section.user-list {
 }
 .shop-user-element li:hover{
     cursor: pointer;
-    text-decoration: underline;
+    color: var(--clr-acc-1);
 }
