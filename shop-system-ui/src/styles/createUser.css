@@ -234,3 +234,13 @@ section.user-list {
 .shop-user-element p{
     cursor: pointer;
 }
+.shop-user-element li{
+    cursor: pointer;
+    list-style: none;
+    
+    transition: 250ms ease-in-out;
+}
+.shop-user-element li:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
