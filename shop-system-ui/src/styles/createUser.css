@@ -221,11 +221,13 @@ section.user-list {
     margin-top: 2%;
 }
 .shop-user-element {
-    margin-top: 2%;
+    padding: 2%;
+    cursor: pointer;
+    border: solid  2px transparent;
+    user-select: none;
+    transition: 250ms ease-in-out;
 }
-.shop-user-element ul{
-    margin-top: 2%;
-}
-.shop-user-element li{
-    margin-top: 2%;
+.shop-user-element:hover {
+    cursor: pointer;
+    border-color: var(--clr-txt);
 }
