@@ -223,7 +223,7 @@ section.user-list {
 .shop-user-element {
     padding: 2%;
     border: solid  2px transparent;
-    
+
     cursor: pointer;
     user-select: none;
 
@@ -237,6 +237,8 @@ section.user-list {
     cursor: pointer;
 }
 .shop-user-element li{
+    width: fit-content;
+    
     cursor: pointer;
     list-style: none;
     
