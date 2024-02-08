@@ -2,7 +2,7 @@ import React, {useState, useEffect} from "react"
 import ShopUserListElement from "../components/ShopUserListElement"
 import "../styles/userCeo.css"
 
-function CreateUser() {
+function UserCeo() {
 
     const [position, setPosition] = useState("");
     const [containerHeight, setContainerHeight] = useState("");
@@ -16,7 +16,7 @@ function CreateUser() {
         const handleMouseMove = (e) => {
             if (isResizing) {
                 const sizeBarRect = document.querySelector(".size-bar").getBoundingClientRect();
-                const containerRect = document.querySelector(".create-user-container").getBoundingClientRect();
+                const containerRect = document.querySelector(".user-ceo-container").getBoundingClientRect();
               
                 const cursorPosition = e.clientX - containerRect.left;
                 let sizeBarLeftOffset = cursorPosition - sizeBarRect.width / 2;
@@ -80,8 +80,8 @@ function CreateUser() {
     // Render
     return (
         <>
-            <div className="create-user-container" style={{ height: containerHeight }}>
-                <section className="create-user-form" style={{ width: formWidth }}>
+            <div className="user-ceo-container" style={{ height: containerHeight }}>
+                <section className="user-ceo-form" style={{ width: formWidth }}>
                     <div className="personal-section">
                         <h3>Personal information</h3>
                         <input type="text" className="add-1st-name" placeholder="First Name" />
@@ -164,4 +164,4 @@ function CreateUser() {
 
 }
 
-export default CreateUser;
+export default UserCeo;

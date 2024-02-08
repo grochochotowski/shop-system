@@ -1,5 +1,5 @@
 /* ---- Main container ---- */
-.create-user-container {
+.user-ceo-container {
     position: relative;
     display: flex;
     z-index: 99;
@@ -31,18 +31,18 @@
 }
 
 /* ---- Scroll bar ---- */
-.create-user-container ::-webkit-scrollbar {
+.user-ceo-container ::-webkit-scrollbar {
     -webkit-appearance: none;
     width: 10px;
 }
-.create-user-container ::-webkit-scrollbar-thumb {
+.user-ceo-container ::-webkit-scrollbar-thumb {
     border-radius: 5px;
     background: linear-gradient(rgba(255, 241, 57, 0.5) 75%, rgba(233, 65, 58, 0.9) 100%);
     box-shadow: 0 0 1px rgba(255, 255, 255, .5);
 }
 
 /* ---- Create user form ---- */
-section.create-user-form {
+section.user-ceo-form {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -68,15 +68,15 @@ section.create-user-form {
     border-radius: 20px;
 }
 /*Title*/
-.create-user-form h3{
+.user-ceo-form h3{
     flex-basis: 90%;
     text-align: center;
     margin-top: 10px;
     font-size: 1.5rem;
 }
 /*Inputs*/
-.create-user-form input,
-.create-user-form select {
+.user-ceo-form input,
+.user-ceo-form select {
     height: 3rem;
     flex-grow: 1;
     padding: 0;
@@ -104,17 +104,17 @@ section.create-user-form {
 .shop-section select {
     flex-basis: 40%;
 }
-.create-user-form input:focus {
+.user-ceo-form input:focus {
     background-color: rgba(255, 241, 57, 0.3);
     border-color: var(--clr-acc-2);
     box-shadow: 1px 1px 2px black, 0 0 1em var(--clr-acc-1), 0 0 0.2em var(--clr-acc-1);
 }
-.create-user-form select:focus {
+.user-ceo-form select:focus {
     border-color: var(--clr-acc-2);
     box-shadow: 1px 1px 2px black, 0 0 1em var(--clr-acc-1), 0 0 0.2em var(--clr-acc-1);
 }
 /*Button*/
-.create-user-form button.submit {
+.user-ceo-form button.submit {
     width: fit-content;
     padding: 10px;
 
@@ -131,7 +131,7 @@ section.create-user-form {
 
     transition: 250ms ease-in-out;
 }
-.create-user-form button.submit:hover {
+.user-ceo-form button.submit:hover {
     border-color: var(--clr-acc-2);
     box-shadow: 1px 1px 2px black, 0 0 1em var(--clr-acc-1), 0 0 0.2em var(--clr-acc-1);
     background-color: rgba(255, 241, 57, 0.5);
