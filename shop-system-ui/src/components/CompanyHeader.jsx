@@ -14,7 +14,7 @@ function CompanyHeader(props) {
                 <li className={props.selected === "option-6"? "selected" : ""}>Option 6</li>
                 <li className={props.selected === "option-7"? "selected" : ""}>Option 7</li>
                 <li className={props.selected === "option-8"? "selected" : ""}>Option 8</li>
-                <li className={props.selected === "option-9"? "selected" : ""}>Option 9</li>
+                <li className={props.selected === "shops"? "selected" : ""}>Shops</li>
                 <li className={props.selected === "user"? "selected" : ""}>User</li>
             </ul>
         </header>
