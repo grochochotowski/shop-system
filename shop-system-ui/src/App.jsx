@@ -1,5 +1,5 @@
 import Welcome from "./pages/Welcome";
-import CompanyHeader from "./components/CompanyHeader";
+import HeaderCeo from "./components/HeaderCeo";
 import Login from "./pages/Login";
 import UserCeo from "./pages/UserCeo";
 
@@ -7,7 +7,7 @@ import UserCeo from "./pages/UserCeo";
 function App() {
     return(
         <>
-            <CompanyHeader selected="user"/>
+            <HeaderCeo selected="user"/>
             <UserCeo />
         </>
     );
