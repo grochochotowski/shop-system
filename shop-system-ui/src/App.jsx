@@ -7,7 +7,7 @@ import UserCeo from "./pages/UserCeo";
 function App() {
     return(
         <>
-            <CompanyHeader selected="create-user"/>
+            <CompanyHeader selected="user"/>
             <UserCeo />
         </>
     );
