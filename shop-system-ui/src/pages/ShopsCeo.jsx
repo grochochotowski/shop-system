@@ -8,7 +8,6 @@ function ShopsCeo() {
     const [listWidth, setListWidth] = useState("");
     const [isResizing, setIsResizing] = useState(false);
 
-
     // Calculate width of 2 main sections based on size-bar position
     useEffect(() => {
         const handleMouseMove = (e) => {
