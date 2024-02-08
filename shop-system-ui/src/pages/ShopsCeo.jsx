@@ -68,7 +68,7 @@ function ShopsCeo() {
         <>
             <div className="shop-ceo-container" style={{ height: containerHeight }}>
                 <section className="shop-ceo-form" style={{ width: formWidth }}>
-                    <div className="shop-address">
+                    <div className="shop-address-section">
                         <h3>Address</h3>
                         <input type="text" className="add-country" placeholder="Country" />
                         <input type="text" className="add-region" placeholder="Region" />
@@ -122,7 +122,7 @@ function ShopsCeo() {
                             <label htmlFor="phone-number">Phone number</label>
                         </div>
                     </div>
-                    <ul>
+                    <ul className="shop-list-element">
                         <li>Shop 1</li>
                         <li>Shop 2</li>
                         <li>Shop 3</li>
