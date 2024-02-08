@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from "react"
 import ShopUserListElement from "../components/ShopUserListElement"
-import "../styles/createUser.css"
+import "../styles/userCeo.css"
 
 function CreateUser() {
 
