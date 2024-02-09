@@ -115,7 +115,7 @@ section.user-ceo-form {
 }
 /*Button*/
 .user-ceo-form button.submit {
-    width: fit-content;
+    width: 30%;
     padding: 10px;
 
     outline: none;

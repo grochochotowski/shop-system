@@ -104,7 +104,7 @@ section.shop-ceo-form {
 }
 /*Button*/
 .shop-ceo-form button.submit {
-    width: fit-content;
+    width: 30%;
     padding: 10px;
 
     outline: none;
