@@ -10,8 +10,8 @@ import ShopsCeo from "./pages/ShopsCeo";
 function App() {
     return(
         <>
-            <HeaderCeo selected="shops"/>
-            <ShopsCeo />
+            <HeaderCeo selected="user"/>
+            <UserCeo />
         </>
     );
 }
