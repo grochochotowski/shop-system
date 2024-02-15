@@ -40,7 +40,7 @@ namespace shop_system.Entities
 
             modelBuilder.Entity<User>().Property(u => u.Id).IsRequired();
             modelBuilder.Entity<User>().Property(u => u.FirstName).IsRequired();
-            modelBuilder.Entity<User>().Property(u => u.SecondName).IsRequired();
+            modelBuilder.Entity<User>().Property(u => u.SecondName).IsRequired(false);
             modelBuilder.Entity<User>().Property(u => u.LastName).IsRequired();
             modelBuilder.Entity<User>().Property(u => u.Login).IsRequired();
             modelBuilder.Entity<User>().Property(u => u.Email).IsRequired();
