@@ -12,6 +12,19 @@ namespace shop_system.Services
         {
             _context = context;
         }
-        
+        public void RegisterUser(RegisterUserDto dto)
+        {
+            var newUser = new User
+            {
+                FirstName = dto.FirstName,
+                SecondName = dto.SecondName,
+                LastName = dto.LastName,
+                Login = dto.Login,
+                Email = dto.Email,
+                PhoneNumber = dto.PhoneNumber,
+                ShopId = dto.ShopId,
+                PositionId = dto.PositionId
+            };
+        }
     }
 }
