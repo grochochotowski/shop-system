@@ -10,6 +10,7 @@ namespace shop_system.Entities
         public DbSet<ClothingAvailability> ClothingAvailability { get; set; }
         public DbSet<Clothing> Clothes { get; set; }
         public DbSet<User> Users { get; set; }
+        public DbSet<Position> Positions { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -41,9 +42,12 @@ namespace shop_system.Entities
             modelBuilder.Entity<User>().Property(u => u.FirstName).IsRequired();
             modelBuilder.Entity<User>().Property(u => u.SecondName).IsRequired();
             modelBuilder.Entity<User>().Property(u => u.LastName).IsRequired();
-            modelBuilder.Entity<User>().Property(u => u.Position).IsRequired();
             modelBuilder.Entity<User>().Property(u => u.Email).IsRequired();
             modelBuilder.Entity<User>().Property(u => u.PhoneNumber).IsRequired();
+            modelBuilder.Entity<User>().Property(u => u.PositionId).IsRequired();
+
+            modelBuilder.Entity<Position>().Property(p => p.Id).IsRequired();
+            modelBuilder.Entity<Position>().Property(p => p.Name).IsRequired();
         }
     }
 }
