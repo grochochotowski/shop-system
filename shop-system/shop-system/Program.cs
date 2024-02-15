@@ -27,6 +27,7 @@ namespace shop_system
             builder.Services.AddScoped<IShopService, ShopService>();
             builder.Services.AddScoped<IClothingAvailabilityService, ClothingAvailabilityService>();
             builder.Services.AddScoped<IClothingService, ClothingService>();
+            builder.Services.AddScoped<IAccountService, AccountService>();
 
             var app = builder.Build();
             var scope = app.Services.CreateScope();
