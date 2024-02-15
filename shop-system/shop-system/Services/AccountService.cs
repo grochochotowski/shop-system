@@ -34,6 +34,8 @@ namespace shop_system.Services
                 ShopId = dto.ShopId,
                 PositionId = dto.PositionId
             };
+            var hashedPassword = _passwordHasher.HashPassword(newUser, dto.Password);
+            newUser.Password = hashedPassword;
         }
     }
 }
