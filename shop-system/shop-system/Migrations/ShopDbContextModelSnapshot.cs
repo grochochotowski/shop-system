@@ -82,6 +82,23 @@ namespace shop_system.Migrations
                     b.ToTable("ClothingAvailability");
                 });
 
+            modelBuilder.Entity("shop_system.Entities.Position", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Positions");
+                });
+
             modelBuilder.Entity("shop_system.Entities.Shop", b =>
                 {
                     b.Property<int>("Id")
@@ -150,9 +167,8 @@ namespace shop_system.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Position")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("PositionId")
+                        .HasColumnType("int");
 
                     b.Property<string>("SecondName")
                         .IsRequired()
