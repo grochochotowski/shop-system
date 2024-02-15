@@ -44,6 +44,7 @@ namespace shop_system.Entities
             modelBuilder.Entity<User>().Property(u => u.LastName).IsRequired();
             modelBuilder.Entity<User>().Property(u => u.Email).IsRequired();
             modelBuilder.Entity<User>().Property(u => u.PhoneNumber).IsRequired();
+            modelBuilder.Entity<User>().Property(u => u.ShopId).IsRequired(false);
             modelBuilder.Entity<User>().Property(u => u.PositionId).IsRequired();
 
             modelBuilder.Entity<Position>().Property(p => p.Id).IsRequired();
