@@ -2,13 +2,15 @@
 
 namespace shop_system
 {
-    public class Shopseeder
+    public class ShopSeeder
     {
         private readonly ShopDbContext _context;
 
-        public Shopseeder(ShopDbContext context)
+        public ShopSeeder(ShopDbContext context)
         {
             _context = context;
         }
+
+
     }
 }
