@@ -23,6 +23,7 @@ namespace shop_system
             builder.Services.AddAutoMapper(Assembly.GetExecutingAssembly());
             builder.Services.AddDbContext<ShopDbContext>(o => o.UseSqlServer(configuration.GetConnectionString("ShopDbConnection")));
 
+            builder.Services.AddScoped<ShopSeeder>();
             builder.Services.AddScoped<IShopService, ShopService>();
             builder.Services.AddScoped<IClothingAvailabilityService, ClothingAvailabilityService>();
             builder.Services.AddScoped<IClothingService, ClothingService>();
