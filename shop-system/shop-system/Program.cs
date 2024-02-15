@@ -28,6 +28,10 @@ namespace shop_system
             builder.Services.AddScoped<IClothingService, ClothingService>();
 
             var app = builder.Build();
+            var scope = app.Services.CreateScope();
+            var seeder = scope.ServiceProvider.GetRequiredService<ShopSeeder>();
+
+            seeder.Seed();
 
             // Configure the HTTP request pipeline.
             if (app.Environment.IsDevelopment())
