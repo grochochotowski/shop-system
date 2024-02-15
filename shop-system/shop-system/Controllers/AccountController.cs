@@ -18,7 +18,8 @@ namespace shop_system.Controllers
         [HttpPost("register")]
         public ActionResult RegisterUser([FromBody] RegisterUserDto dto)
         {
-
+            _accountService.RegisterUser(dto);
+            return Ok();
         }
     }
 }
