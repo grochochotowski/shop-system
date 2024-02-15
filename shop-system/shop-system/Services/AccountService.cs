@@ -8,7 +8,8 @@ namespace shop_system.Services
     {
         void RegisterUser(RegisterUserDto dto);
     }
-    public class AccountService
+
+    public class AccountService : IAccountService
     {
         private readonly ShopDbContext _context;
 
@@ -16,6 +17,7 @@ namespace shop_system.Services
         {
             _context = context;
         }
+
         public void RegisterUser(RegisterUserDto dto)
         {
             var newUser = new User
