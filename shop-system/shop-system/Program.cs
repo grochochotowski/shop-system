@@ -1,4 +1,5 @@
 
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using shop_system.Entities;
@@ -24,6 +25,7 @@ namespace shop_system
             builder.Services.AddDbContext<ShopDbContext>(o => o.UseSqlServer(configuration.GetConnectionString("ShopDbConnection")));
 
             builder.Services.AddScoped<ShopSeeder>();
+            builder.Services.AddScoped<IPasswordHasher<User>, PasswordHasher<User>>();
             builder.Services.AddScoped<IShopService, ShopService>();
             builder.Services.AddScoped<IClothingAvailabilityService, ClothingAvailabilityService>();
             builder.Services.AddScoped<IClothingService, ClothingService>();

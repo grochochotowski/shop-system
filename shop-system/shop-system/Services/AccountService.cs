@@ -1,4 +1,5 @@
-﻿using shop_system.Entities;
+﻿using Microsoft.AspNetCore.Identity;
+using shop_system.Entities;
 using shop_system.Models;
 using System.ComponentModel.DataAnnotations;
 
@@ -12,10 +13,12 @@ namespace shop_system.Services
     public class AccountService : IAccountService
     {
         private readonly ShopDbContext _context;
+        private readonly IPasswordHasher<User> _passwordHasher;
 
-        public AccountService(ShopDbContext context)
+        public AccountService(ShopDbContext context, IPasswordHasher<User> passwordHasher)
         {
             _context = context;
+            _passwordHasher = passwordHasher;
         }
 
         public void RegisterUser(RegisterUserDto dto)
