@@ -4,6 +4,10 @@ using System.ComponentModel.DataAnnotations;
 
 namespace shop_system.Services
 {
+    public interface IAccountService
+    {
+        void RegisterUser(RegisterUserDto dto);
+    }
     public class AccountService
     {
         private readonly ShopDbContext _context;
