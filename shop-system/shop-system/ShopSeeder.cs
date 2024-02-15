@@ -28,12 +28,12 @@ namespace shop_system
         {
             var postions = new List<Position>()
             {
-                new Position { Id = 1, Name = "COO"},
-                new Position { Id = 2, Name = "Accountant"},
-                new Position { Id = 3, Name = "Manager"},
-                new Position { Id = 4, Name = "Deputy Manager"},
-                new Position { Id = 5, Name = "Decorator"},
-                new Position { Id = 6, Name = "Shop Assistant"}
+                new Position { Name = "COO"},
+                new Position { Name = "Accountant"},
+                new Position { Name = "Manager"},
+                new Position { Name = "Deputy Manager"},
+                new Position { Name = "Decorator"},
+                new Position { Name = "Shop Assistant"}
             };
 
             return postions;
