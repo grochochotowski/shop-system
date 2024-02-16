@@ -59,6 +59,9 @@ namespace shop_system.Services
                 expires: expires,
                 signingCredentials: cred
                 );
+
+            var tokenHandler = new JwtSecurityTokenHandler();
+            return tokenHandler.WriteToken( tokent );
         } // login user
         public void RegisterUser(RegisterUserDto dto)
         {            
