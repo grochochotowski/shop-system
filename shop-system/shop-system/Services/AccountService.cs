@@ -1,8 +1,12 @@
 ﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
 using shop_system.Entities;
 using shop_system.Exceptions;
 using shop_system.Models;
 using System.ComponentModel.DataAnnotations;
+using System.Security.Claims;
+using System.Text;
 
 namespace shop_system.Services
 {
@@ -25,12 +29,23 @@ namespace shop_system.Services
 
         public string LoginUser(LoginDto dto)
         {
-            var user = _context.Users.FirstOrDefault(u => u.Email == dto.Email || u.Login == dto.Login);
+            var user = _context.Users
+                .Include(u => u.Position)
+                .FirstOrDefault(u => u.Email == dto.Email || u.Login == dto.Login);
 
             if (user == null) throw new BadRequestException("Invalid login or password");
 
             var result = _passwordHasher.VerifyHashedPassword(user, user.Password, dto.Password);
             if(result == PasswordVerificationResult.Failed) throw new BadRequestException("Invalid login or password");
+
+            var claims = new List<Claim>()
+            {
+                new Claim(ClaimTypes.NameIdentifier, user.Login),
+                new Claim(ClaimTypes.Name, $"{user.FirstName} {user.LastName}"),
+                new Claim(ClaimTypes.Position, $"{user.Position.Name}"),
+            };
+
+            var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_authenticationSettings.JWTKey));
         } // login user
         public void RegisterUser(RegisterUserDto dto)
         {            
