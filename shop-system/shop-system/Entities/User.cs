@@ -14,5 +14,7 @@ namespace shop_system.Entities
         public string PhoneNumber { get; set; }
         public int? ShopId { get; set; }
         public int PositionId { get; set; }
+        
+        public virtual Position Position { get; set; }
     }
 }
