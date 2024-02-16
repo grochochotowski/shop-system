@@ -5,6 +5,7 @@ using shop_system.Entities;
 using shop_system.Exceptions;
 using shop_system.Models;
 using System.ComponentModel.DataAnnotations;
+using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
 
@@ -50,6 +51,14 @@ namespace shop_system.Services
             var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_authenticationSettings.JwtKey));
             var cred = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
             var expires = DateTime.Now.AddDays(_authenticationSettings.JwtExpiresDays);
+
+            var tokent = new JwtSecurityToken(
+                _authenticationSettings.JwtIssuer,
+                _authenticationSettings.JwtIssuer,
+                claims,
+                expires: expires,
+                signingCredentials: cred
+                );
         } // login user
         public void RegisterUser(RegisterUserDto dto)
         {            
