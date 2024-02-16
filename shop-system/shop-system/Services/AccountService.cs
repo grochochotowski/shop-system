@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using shop_system.Entities;
+using shop_system.Exceptions;
 using shop_system.Models;
 using System.ComponentModel.DataAnnotations;
 
@@ -24,7 +25,12 @@ namespace shop_system.Services
 
         public string LoginUser(LoginDto dto)
         {
+            var user = _context.Users.FirstOrDefault(u => u.Email == dto.Email || u.Login == dto.Login);
 
+            if (user == null)
+            {
+                throw new BadRequestException("Invalid login or password");
+            }
         } // login user
         public void RegisterUser(RegisterUserDto dto)
         {            
