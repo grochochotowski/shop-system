@@ -140,3 +140,4 @@ C:\nonSystem\IT\Code\shop-system\shop-system\shop-system\bin\Debug\net8.0\AutoMa
 C:\nonSystem\IT\Code\shop-system\shop-system\shop-system\bin\Debug\net8.0\FluentValidation.dll
 C:\nonSystem\IT\Code\shop-system\shop-system\shop-system\bin\Debug\net8.0\FluentValidation.AspNetCore.dll
 C:\nonSystem\IT\Code\shop-system\shop-system\shop-system\bin\Debug\net8.0\FluentValidation.DependencyInjectionExtensions.dll
+C:\nonSystem\IT\Code\shop-system\shop-system\shop-system\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
