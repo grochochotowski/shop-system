@@ -34,7 +34,7 @@ namespace shop_system.Services
         {
             var user = _context.Users
                 .Include(u => u.Position)
-                .FirstOrDefault(u => u.Email == dto.Email || u.Login == dto.Login);
+                .FirstOrDefault(u => u.Email == dto.Login || u.Login == dto.Login);
 
             if (user == null) throw new BadRequestException("Invalid login or password");
 
