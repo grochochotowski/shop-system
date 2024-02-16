@@ -20,11 +20,13 @@ namespace shop_system.Services
     {
         private readonly ShopDbContext _context;
         private readonly IPasswordHasher<User> _passwordHasher;
+        private readonly AuthenticationSettings _authenticationSettings;
 
-        public AccountService(ShopDbContext context, IPasswordHasher<User> passwordHasher)
+        public AccountService(ShopDbContext context, IPasswordHasher<User> passwordHasher, AuthenticationSettings authenticationSettings)
         {
             _context = context;
             _passwordHasher = passwordHasher;
+            _authenticationSettings = authenticationSettings;
         } // constructor
 
         public string LoginUser(LoginDto dto)
@@ -45,7 +47,7 @@ namespace shop_system.Services
                 new Claim(ClaimTypes.Position, $"{user.Position.Name}"),
             };
 
-            var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_authenticationSettings.JWTKey));
+            var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_authenticationSettings.JwtKey));
         } // login user
         public void RegisterUser(RegisterUserDto dto)
         {            
