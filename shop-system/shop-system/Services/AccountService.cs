@@ -36,6 +36,9 @@ namespace shop_system.Services
             };
             var hashedPassword = _passwordHasher.HashPassword(newUser, dto.Password);
             newUser.Password = hashedPassword;
+
+            _context.Users.Add(newUser);
+            _context.SaveChanges();
         }
     }
 }
