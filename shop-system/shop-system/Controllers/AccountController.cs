@@ -27,7 +27,7 @@ namespace shop_system.Controllers
         public ActionResult LoginUser([FromBody] LoginDto dto)
         {
             var token = _accountService.LoginUser(dto);
-            return Ok();
+            return Ok(token);
         } // login user
     }
 }
