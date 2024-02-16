@@ -7,7 +7,7 @@ namespace shop_system.Services
 {
     public interface IAccountService
     {
-        bool RegisterUser(RegisterUserDto dto);
+        void RegisterUser(RegisterUserDto dto);
     }
 
     public class AccountService : IAccountService
@@ -21,10 +21,8 @@ namespace shop_system.Services
             _passwordHasher = passwordHasher;
         }
 
-        public bool RegisterUser(RegisterUserDto dto)
-        {
-            if (dto.Password != dto.ConfirmPassword) return false;
-            
+        public void RegisterUser(RegisterUserDto dto)
+        {            
             var newUser = new User
             {
                 FirstName = dto.FirstName,
@@ -38,8 +36,6 @@ namespace shop_system.Services
             };
             var hashedPassword = _passwordHasher.HashPassword(newUser, dto.Password);
             newUser.Password = hashedPassword;
-
-            return true;
         }
     }
 }
