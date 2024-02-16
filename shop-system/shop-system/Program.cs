@@ -28,6 +28,7 @@ namespace shop_system
 
             // Add services to the container.
 
+            builder.Services.AddSingleton(authenticationSettings);
             builder.Services.AddControllers();
             builder.Services.AddControllers().AddFluentValidation();
             builder.Services.AddEndpointsApiExplorer();
