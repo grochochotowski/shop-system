@@ -7,6 +7,7 @@ namespace shop_system.Services
 {
     public interface IAccountService
     {
+        string LoginUser(LoginDto dto);
         void RegisterUser(RegisterUserDto dto);
     }
 
@@ -19,8 +20,12 @@ namespace shop_system.Services
         {
             _context = context;
             _passwordHasher = passwordHasher;
-        }
+        } // constructor
 
+        public string LoginUser(LoginDto dto)
+        {
+
+        } // login user
         public void RegisterUser(RegisterUserDto dto)
         {            
             var newUser = new User
@@ -39,6 +44,6 @@ namespace shop_system.Services
 
             _context.Users.Add(newUser);
             _context.SaveChanges();
-        }
+        } // register user
     }
 }
