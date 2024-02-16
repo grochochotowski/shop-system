@@ -45,7 +45,7 @@ namespace shop_system.Services
             {
                 new Claim(ClaimTypes.NameIdentifier, user.Login),
                 new Claim(ClaimTypes.Name, $"{user.FirstName} {user.LastName}"),
-                new Claim(ClaimTypes.Position, $"{user.Position.Name}"),
+                new Claim(ClaimTypes.Role, $"{user.Position.Name}"),
             };
 
             var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_authenticationSettings.JwtKey));
