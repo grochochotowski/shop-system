@@ -7,7 +7,7 @@ namespace shop_system.Services
 {
     public interface IAccountService
     {
-        void RegisterUser(RegisterUserDto dto);
+        bool RegisterUser(RegisterUserDto dto);
     }
 
     public class AccountService : IAccountService
