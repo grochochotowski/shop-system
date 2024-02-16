@@ -27,10 +27,10 @@ namespace shop_system.Services
         {
             var user = _context.Users.FirstOrDefault(u => u.Email == dto.Email || u.Login == dto.Login);
 
-            if (user == null)
-            {
-                throw new BadRequestException("Invalid login or password");
-            }
+            if (user == null) throw new BadRequestException("Invalid login or password");
+
+            var result = _passwordHasher.VerifyHashedPassword(user, user.Password, dto.Password);
+            if(result == PasswordVerificationResult.Failed) throw new BadRequestException("Invalid login or password");
         } // login user
         public void RegisterUser(RegisterUserDto dto)
         {            
