@@ -7,6 +7,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
 using shop_system.Entities;
+using shop_system.Middleware;
 using shop_system.Models;
 using shop_system.Models.Validators;
 using shop_system.Serivces;
@@ -49,6 +50,7 @@ namespace shop_system
             });
 
             builder.Services.AddScoped<ShopSeeder>();
+            builder.Services.AddScoped<ErrorHandlingMiddleware>();
 
             builder.Services.AddScoped<IShopService, ShopService>();
             builder.Services.AddScoped<IClothingAvailabilityService, ClothingAvailabilityService>();
