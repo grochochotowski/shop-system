@@ -21,8 +21,10 @@ namespace shop_system.Services
             _passwordHasher = passwordHasher;
         }
 
-        public void RegisterUser(RegisterUserDto dto)
+        public bool RegisterUser(RegisterUserDto dto)
         {
+            if (dto.Password != dto.ConfirmPassword) return false;
+            
             var newUser = new User
             {
                 FirstName = dto.FirstName,
@@ -36,6 +38,8 @@ namespace shop_system.Services
             };
             var hashedPassword = _passwordHasher.HashPassword(newUser, dto.Password);
             newUser.Password = hashedPassword;
+
+            return true;
         }
     }
 }
