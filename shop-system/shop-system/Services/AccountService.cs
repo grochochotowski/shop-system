@@ -49,6 +49,7 @@ namespace shop_system.Services
 
             var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_authenticationSettings.JwtKey));
             var cred = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
+            var expires = DateTime.Now.AddDays(_authenticationSettings.JwtExpiresDays);
         } // login user
         public void RegisterUser(RegisterUserDto dto)
         {            
