@@ -2,14 +2,17 @@
 using FluentValidation;
 using FluentValidation.AspNetCore;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc.ModelBinding.Metadata;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
+using Microsoft.IdentityModel.Tokens;
 using shop_system.Entities;
 using shop_system.Models;
 using shop_system.Models.Validators;
 using shop_system.Serivces;
 using shop_system.Services;
 using System.Reflection;
+using System.Text;
 
 namespace shop_system
 {
@@ -19,6 +22,8 @@ namespace shop_system
         {
             var builder = WebApplication.CreateBuilder(args);
             var configuration = new ConfigurationBuilder().AddJsonFile("appsettings.json").Build();
+            var authenticationSettings = new AuthenticationSettings();
+            configuration.GetSection("Authentication").Bind(authenticationSettings);
 
             // Add services to the container.
 
@@ -28,6 +33,20 @@ namespace shop_system
             builder.Services.AddSwaggerGen();
             builder.Services.AddAutoMapper(Assembly.GetExecutingAssembly());
             builder.Services.AddDbContext<ShopDbContext>(o => o.UseSqlServer(configuration.GetConnectionString("ShopDbConnection")));
+            builder.Services.AddAuthentication(option => {
+                option.DefaultAuthenticateScheme = "Bearer";
+                option.DefaultScheme = "Bearer";
+                option.DefaultChallengeScheme = "Bearer";
+            }).AddJwtBearer(cfg => {
+                cfg.RequireHttpsMetadata = false;
+                cfg.SaveToken = true;
+                cfg.TokenValidationParameters = new TokenValidationParameters
+                {
+                    ValidIssuer = authenticationSettings.JwtIssuer,
+                    ValidAudience = authenticationSettings.JwtIssuer,
+                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(authenticationSettings.JwtKey)),
+                };
+            });
 
             builder.Services.AddScoped<ShopSeeder>();
 
@@ -51,6 +70,8 @@ namespace shop_system
                 app.UseSwagger();
                 app.UseSwaggerUI();
             }
+
+            app.UseAuthentication();
 
             app.UseHttpsRedirection();
 
