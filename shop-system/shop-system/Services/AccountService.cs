@@ -33,9 +33,9 @@ namespace shop_system.Services
         public string LoginUser(LoginDto dto)
         {
             var user = _context.Users
-                //.Include(u => u.Position)
+                .Include(u => u.Position)
                 .FirstOrDefault(u => u.Login == dto.Login);
-            //Console.WriteLine(user.Email);
+
             if (user == null) throw new BadRequestException("Invalid login or password");
 
             Console.WriteLine(user.Email);
@@ -47,7 +47,7 @@ namespace shop_system.Services
             {
                 new Claim(ClaimTypes.NameIdentifier, user.Login),
                 new Claim(ClaimTypes.Name, $"{user.FirstName} {user.LastName}"),
-                //new Claim(ClaimTypes.Role, $"{user.Position.Name}"),
+                new Claim(ClaimTypes.Role, $"{user.Position.Name}"),
             };
 
             var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_authenticationSettings.JwtKey));
