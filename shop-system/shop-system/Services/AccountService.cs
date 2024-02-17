@@ -38,7 +38,7 @@ namespace shop_system.Services
             //Console.WriteLine(user.Email);
             if (user == null) throw new BadRequestException("Invalid login or password");
 
-            Console.WriteLine(user);
+            Console.WriteLine(user.Email);
 
             var result = _passwordHasher.VerifyHashedPassword(user, user.Password, dto.Password);
             if(result == PasswordVerificationResult.Failed) throw new BadRequestException("Invalid login or password");
