@@ -60,6 +60,11 @@ namespace shop_system.Services
                 signingCredentials: cred
                 );
 
+            Console.WriteLine(key);
+            Console.WriteLine(cred);
+            Console.WriteLine(expires);
+            Console.WriteLine(token);
+
             var tokenHandler = new JwtSecurityTokenHandler();
             return tokenHandler.WriteToken(token);
         } // login user
