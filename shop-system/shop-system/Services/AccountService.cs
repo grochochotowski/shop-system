@@ -38,8 +38,6 @@ namespace shop_system.Services
 
             if (user == null) throw new BadRequestException("Invalid login or password");
 
-            Console.WriteLine(user.Email);
-
             var result = _passwordHasher.VerifyHashedPassword(user, user.Password, dto.Password);
             if(result == PasswordVerificationResult.Failed) throw new BadRequestException("Invalid login or password");
 
@@ -54,7 +52,7 @@ namespace shop_system.Services
             var cred = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
             var expires = DateTime.Now.AddDays(_authenticationSettings.JwtExpiresDays);
 
-            var tokent = new JwtSecurityToken(
+            var token = new JwtSecurityToken(
                 _authenticationSettings.JwtIssuer,
                 _authenticationSettings.JwtIssuer,
                 claims,
@@ -63,7 +61,7 @@ namespace shop_system.Services
                 );
 
             var tokenHandler = new JwtSecurityTokenHandler();
-            return tokenHandler.WriteToken( tokent );
+            return tokenHandler.WriteToken(token);
         } // login user
         public void RegisterUser(RegisterUserDto dto)
         {            
