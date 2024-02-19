@@ -45,9 +45,7 @@ namespace shop_system.Controllers
         [HttpDelete("{id}")]
         public ActionResult RemoveClothing([FromRoute] int id)
         {
-            var clothing = _clothingService.Delete(id);
-
-            if (!clothing) return NotFound($"Clothing with id: {id} does not exist");
+            _clothingService.Delete(id);
             return NoContent();
         } // Delete clothing by ID
     }
