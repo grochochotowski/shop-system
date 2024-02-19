@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc.ModelBinding.Metadata;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
+using NLog.Web;
 using shop_system.Entities;
 using shop_system.Middleware;
 using shop_system.Models;
@@ -25,6 +26,11 @@ namespace shop_system
             var configuration = new ConfigurationBuilder().AddJsonFile("appsettings.json").Build();
             var authenticationSettings = new AuthenticationSettings();
             configuration.GetSection("Authentication").Bind(authenticationSettings);
+
+            // NLog: Setup NLog for Dependency injection
+            builder.Logging.ClearProviders();
+            builder.Logging.SetMinimumLevel(LogLevel.Trace);
+            builder.Host.UseNLog();
 
             // Add services to the container.
 
