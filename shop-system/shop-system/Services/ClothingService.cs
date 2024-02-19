@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using shop_system.Entities;
+using shop_system.Exceptions;
 using shop_system.Models;
 
 namespace shop_system.Services
@@ -41,7 +42,7 @@ namespace shop_system.Services
                 .Clothes
                 .FirstOrDefault(c => c.Id == id);
 
-            if (clothing is null) return null;
+            if (clothing is null) throw new NotFoundException("Clothing not found");
             var result = _mapper.Map<ClothingDto>(clothing);
             return result;
         } // Get clothing by ID
@@ -61,7 +62,7 @@ namespace shop_system.Services
                 .Clothes
                 .FirstOrDefault(c => c.Id == id);
 
-            if (clothing is null) return false;
+            if (clothing is null) throw new NotFoundException("Clothing not found");
 
             _context.Clothes.Remove(clothing);
             _context.SaveChanges();
