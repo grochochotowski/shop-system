@@ -45,8 +45,10 @@ namespace shop_system.Services
 
             var availabilityEntity = _mapper.Map<ClothingAvailability>(dto);
             availabilityEntity.ShopId = shopId;
+
             _context.ClothingAvailability.Add(availabilityEntity);
             _context.SaveChanges();
+
             return availabilityEntity.Id;
         } // Add clothing to shop by ID
     }
