@@ -22,6 +22,8 @@ namespace shop_system.Middleware
 
             catch (BadRequestException badRequestException)
             {
+                _logger.LogError(badRequestException, badRequestException.Message);
+
                 context.Response.StatusCode = 400;
                 await context.Response.WriteAsync(badRequestException.Message);
             }
