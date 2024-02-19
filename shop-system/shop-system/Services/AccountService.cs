@@ -36,8 +36,11 @@ namespace shop_system.Services
                 .Include(u => u.Position)
                 .FirstOrDefault(u => u.Login == dto.Login);
 
+
             if (user == null) user = _context.Users.Include(u => u.Position).FirstOrDefault(u => u.Email == dto.Login);
             if (user == null) throw new BadRequestException("Invalid login or password");
+
+            Console.WriteLine(user.Email);
 
             var result = _passwordHasher.VerifyHashedPassword(user, user.Password, dto.Password);
             if(result == PasswordVerificationResult.Failed) throw new BadRequestException("Invalid login or password");
