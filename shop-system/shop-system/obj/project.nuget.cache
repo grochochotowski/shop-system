@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "VXxMCjHDVK4iFCT/VpkdyNfOhJjxZQxTyjfNaiHqYM9wWyl2Q9kTYC1Dt5BdOpEIE/dZNPKgY2qP+JwFKjXUWw==",
+  "dgSpecHash": "h4hkZIwgda6SZR2dAXC3ZKE3XBPsZjhvVOGGYNFVdCgMnl60hg25PgZIevCrv2GCP7OiwPupF82ym8VheJF+ww==",
   "success": true,
   "projectFilePath": "C:\\nonSystem\\IT\\Code\\shop-system\\shop-system\\shop-system\\shop-system.csproj",
   "expectedPackageFiles": [
@@ -52,6 +52,9 @@
     "C:\\Users\\gmich\\.nuget\\packages\\microsoft.sqlserver.server\\1.0.0\\microsoft.sqlserver.server.1.0.0.nupkg.sha512",
     "C:\\Users\\gmich\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
     "C:\\Users\\gmich\\.nuget\\packages\\mono.texttemplating\\2.2.1\\mono.texttemplating.2.2.1.nupkg.sha512",
+    "C:\\Users\\gmich\\.nuget\\packages\\nlog\\5.2.8\\nlog.5.2.8.nupkg.sha512",
+    "C:\\Users\\gmich\\.nuget\\packages\\nlog.extensions.logging\\5.3.8\\nlog.extensions.logging.5.3.8.nupkg.sha512",
+    "C:\\Users\\gmich\\.nuget\\packages\\nlog.web.aspnetcore\\5.3.8\\nlog.web.aspnetcore.5.3.8.nupkg.sha512",
     "C:\\Users\\gmich\\.nuget\\packages\\swashbuckle.aspnetcore\\6.5.0\\swashbuckle.aspnetcore.6.5.0.nupkg.sha512",
     "C:\\Users\\gmich\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.5.0\\swashbuckle.aspnetcore.swagger.6.5.0.nupkg.sha512",
     "C:\\Users\\gmich\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.5.0\\swashbuckle.aspnetcore.swaggergen.6.5.0.nupkg.sha512",
