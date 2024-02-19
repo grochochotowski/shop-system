@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Conventions;
 using shop_system.Entities;
+using shop_system.Exceptions;
 using shop_system.Models;
 
 namespace shop_system.Serivces
@@ -9,7 +10,7 @@ namespace shop_system.Serivces
     public interface IShopService
     {
         int Add(AddShopDto dto);
-        bool Delete(int id);
+        void Delete(int id);
         ShopDto Get(int id);
         IEnumerable<ShopDto> GetAll();
     }
@@ -47,7 +48,7 @@ namespace shop_system.Serivces
                     .ThenInclude(ca => ca.Clothing)
                 .FirstOrDefault(s => s.Id == id);
 
-            if (shop is null) return null;
+            if (shop is null) throw new NotFoundException("Shop not found");
             var result = _mapper.Map<ShopDto>(shop);
             return result;
         } // Get shop by ID
@@ -61,20 +62,18 @@ namespace shop_system.Serivces
             return shop.Id;
         } // Add new shop
 
-        public bool Delete(int id) // Delete shop by ID
+        public void Delete(int id) // Delete shop by ID
         {
             var shop = _context
                 .Shops
                 .FirstOrDefault(s => s.Id == id);
 
-            if (shop is null) return false;
+            if (shop is null) throw new NotFoundException("Shop not found");
 
             _context.Shops.Remove(shop);
             _context.SaveChanges();
 
             // it is needed here to remove all clothes with ShopId == id from ClothingAvailability
-
-            return true;
         }
     }
 }
