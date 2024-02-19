@@ -8,7 +8,7 @@ namespace shop_system.Services
     public interface IClothingService
     {
         int Add(AddClothingDto dto);
-        bool Delete(int id);
+        void Delete(int id);
         ClothingDto Get(int id);
         IEnumerable<ClothingDto> GetAll();
     }
@@ -56,7 +56,7 @@ namespace shop_system.Services
             return clothing.Id;
         } // Add new clothing
 
-        public bool Delete(int id)
+        public void Delete(int id)
         {
             var clothing = _context
                 .Clothes
@@ -66,8 +66,6 @@ namespace shop_system.Services
 
             _context.Clothes.Remove(clothing);
             _context.SaveChanges();
-
-            return true;
         } // Delete clothing by ID
     }
 }
