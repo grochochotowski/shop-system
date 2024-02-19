@@ -40,8 +40,6 @@ namespace shop_system.Services
             if (user == null) user = _context.Users.Include(u => u.Position).FirstOrDefault(u => u.Email == dto.Login);
             if (user == null) throw new BadRequestException("Invalid login or password");
 
-            Console.WriteLine(user.Email);
-
             var result = _passwordHasher.VerifyHashedPassword(user, user.Password, dto.Password);
             if(result == PasswordVerificationResult.Failed) throw new BadRequestException("Invalid login or password");
 
@@ -63,11 +61,6 @@ namespace shop_system.Services
                 expires: expires,
                 signingCredentials: cred
                 );
-
-            Console.WriteLine(key);
-            Console.WriteLine(cred);
-            Console.WriteLine(expires);
-            Console.WriteLine(token);
 
             var tokenHandler = new JwtSecurityTokenHandler();
             return tokenHandler.WriteToken(token);
