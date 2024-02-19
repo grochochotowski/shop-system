@@ -74,6 +74,8 @@ namespace shop_system
                 app.UseSwaggerUI();
             }
 
+            app.UseMiddleware<ErrorHandlingMiddleware>();
+
             app.UseAuthentication();
 
             app.UseHttpsRedirection();
