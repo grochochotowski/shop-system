@@ -15,6 +15,7 @@ namespace shop_system.Controllers
         }
 
 
+
         [HttpGet]
         public ActionResult<IEnumerable<GetClothesFromShopDto>> Get([FromRoute] int shopId)
         {

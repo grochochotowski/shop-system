@@ -27,6 +27,7 @@ namespace shop_system.Serivces
         }
 
 
+
         public IEnumerable<ShopDto> GetAll()
         {
             var shops = _context
@@ -62,7 +63,7 @@ namespace shop_system.Serivces
             return shop.Id;
         } // Add new shop
 
-        public void Delete(int id) // Delete shop by ID
+        public void Delete(int id) // !!! Delete shop by ID
         {
             var shop = _context
                 .Shops

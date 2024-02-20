@@ -25,6 +25,7 @@ namespace shop_system.Services
         }
 
 
+
         public IEnumerable<ClothingDto> GetAll()
         {
             var clothes = _context

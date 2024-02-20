@@ -18,6 +18,7 @@ namespace shop_system.Controllers
         }
 
 
+
         [HttpGet]
         public ActionResult<IEnumerable<ShopDto>> GetAll() 
         {

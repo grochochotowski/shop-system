@@ -141,3 +141,7 @@ C:\nonSystem\IT\Code\shop-system\shop-system\shop-system\bin\Debug\net8.0\Fluent
 C:\nonSystem\IT\Code\shop-system\shop-system\shop-system\bin\Debug\net8.0\FluentValidation.AspNetCore.dll
 C:\nonSystem\IT\Code\shop-system\shop-system\shop-system\bin\Debug\net8.0\FluentValidation.DependencyInjectionExtensions.dll
 C:\nonSystem\IT\Code\shop-system\shop-system\shop-system\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\nonSystem\IT\Code\shop-system\shop-system\shop-system\bin\Debug\net8.0\nlog.config
+C:\nonSystem\IT\Code\shop-system\shop-system\shop-system\bin\Debug\net8.0\NLog.dll
+C:\nonSystem\IT\Code\shop-system\shop-system\shop-system\bin\Debug\net8.0\NLog.Extensions.Logging.dll
+C:\nonSystem\IT\Code\shop-system\shop-system\shop-system\bin\Debug\net8.0\NLog.Web.AspNetCore.dll

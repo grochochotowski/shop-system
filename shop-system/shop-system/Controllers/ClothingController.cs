@@ -17,6 +17,7 @@ namespace shop_system.Controllers
         }
 
 
+
         [HttpGet]
         public ActionResult<IEnumerable<ClothingDto>> GetAll()
         {
