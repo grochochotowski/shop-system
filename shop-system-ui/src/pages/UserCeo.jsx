@@ -124,6 +124,14 @@ function UserCeo() {
                             <label htmlFor="user-id">User ID</label>
                         </div>
                         <div className="box">
+                            <input type="checkbox" id="position-check"/>
+                            <label htmlFor="position-check">Position</label>
+                        </div>
+                        <div className="box">
+                            <input type="checkbox" id="login"/>
+                            <label htmlFor="login">Login</label>
+                        </div>
+                        <div className="box">
                             <input type="checkbox" id="first-name"/>
                             <label htmlFor="first-name">First name</label>
                         </div>
@@ -134,10 +142,6 @@ function UserCeo() {
                         <div className="box">
                             <input type="checkbox" id="last-name"/>
                             <label htmlFor="last-name">Last name</label>
-                        </div>
-                        <div className="box">
-                            <input type="checkbox" id="position-check"/>
-                            <label htmlFor="position-check">Position</label>
                         </div>
                         <div className="box">
                             <input type="checkbox" id="email"/>
