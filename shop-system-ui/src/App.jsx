@@ -11,7 +11,7 @@ function App() {
     return(
         <>
             <HeaderCeo selected="user"/>
-            <UserCeo />
+            <ShopsCeo />
         </>
     );
 }
