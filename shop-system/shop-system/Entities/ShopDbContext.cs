@@ -18,6 +18,7 @@ namespace shop_system.Entities
 
             // shop table
             modelBuilder.Entity<Shop>().Property(s => s.Id).IsRequired();
+            modelBuilder.Entity<Shop>().Property(s => s.Code).IsRequired();
             modelBuilder.Entity<Shop>().Property(s => s.Country).IsRequired();
             modelBuilder.Entity<Shop>().Property(s => s.Region).IsRequired();
             modelBuilder.Entity<Shop>().Property(s => s.City).IsRequired();
