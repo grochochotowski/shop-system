@@ -9,7 +9,8 @@ namespace shop_system.Models.Validators
             // Email
             RuleFor(x => x.Email)
                 .NotEmpty()
-                .EmailAddress()
+                .EmailAddress();
+            RuleFor(x => x.Email)
                 .Custom((value, context) =>
                 {
                     var emailInUse = dbContext.Users.Any(u => u.Email == value);
@@ -21,7 +22,8 @@ namespace shop_system.Models.Validators
             RuleFor(x => x.ConfirmPassword).Equal(e => e.Password);
 
             // Login
-            RuleFor(x => x.Login).NotEmpty()
+            RuleFor(x => x.Login).NotEmpty();
+            RuleFor(x => x.Login)
                 .Custom((value, context) =>
                 {
                     var loginInUse = dbContext.Users.Any(u => u.Login == value);
