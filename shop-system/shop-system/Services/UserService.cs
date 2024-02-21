@@ -42,20 +42,6 @@ namespace shop_system.Services
                         };
 
             var shopsWithUsers = query.ToList();
-            /*join u in _context.Users on s.Id equals u.ShopId into userGroup
-                              from user in userGroup.DefaultIfEmpty()
-                              orderby s.Id, user != null ? user.PositionId : 0
-                              select new
-                              {
-                                  Code = s.Code,
-                                  PositionId = user != null ? user.PositionId : 0,
-                                  Login = user != null ? user.Login : null,
-                                  FirstName = user != null ? user.FirstName : null,
-                                  SecondName = user != null ? user.SecondName : null,
-                                  LastName = user != null ? user.LastName : null,
-                                  Email = user != null ? user.Email : null,
-                                  PhoneNumber = user != null ? user.PhoneNumber : null
-                              }).ToList();*/
 
             var result = _mapper.Map<List<GetUsersWShop>>(shopsWithUsers);
 
