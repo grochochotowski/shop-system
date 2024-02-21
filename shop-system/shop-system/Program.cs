@@ -82,6 +82,7 @@ namespace shop_system
             }
 
             app.UseMiddleware<ErrorHandlingMiddleware>();
+            app.UseMiddleware<RequestTimeMiddleware>();
 
             app.UseAuthentication();
 
