@@ -7,12 +7,12 @@ namespace shop_system.Services
 {
     public class UserService
     {
-        public interface IShopService
+        public interface IUserService
         {
             IEnumerable<GetUsersWithShopDto> GetAllUsersWithShop();
         }
 
-        public class ShopService : IShopService
+        public class ShopService : IUserService
         {
             private readonly ShopDbContext _context;
             private readonly IMapper _mapper;
