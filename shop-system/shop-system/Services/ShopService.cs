@@ -19,11 +19,13 @@ namespace shop_system.Serivces
     {
         private readonly ShopDbContext _context;
         private readonly IMapper _mapper;
+        private readonly ILogger<ShopService> _logger;
 
-        public ShopService(ShopDbContext context, IMapper mapper)
+        public ShopService(ShopDbContext context, IMapper mapper, ILogger<ShopService> logger)
         {
             _context = context;
             _mapper = mapper;
+            _logger = logger;
         }
 
 
@@ -65,6 +67,8 @@ namespace shop_system.Serivces
 
         public void Delete(int id) // !!! Delete shop by ID
         {
+            _logger.LogWarning($"Shop delete action invoked: id = {id}");
+
             var shop = _context
                 .Shops
                 .FirstOrDefault(s => s.Id == id);
