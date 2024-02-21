@@ -27,7 +27,7 @@ namespace shop_system.Services
 
             public IEnumerable<GetUsersWithShopDto> GetAllUsersWithShop()
             {
-                var shopsWithUsers = from s in _context.Shops
+                var shopsWithUsers = (from s in _context.Shops
                                      join u in _context.Users on s.Id equals u.ShopId into userGroup
                                      from user in userGroup.DefaultIfEmpty()
                                      orderby s.Id, user.PositionId
@@ -35,13 +35,13 @@ namespace shop_system.Services
                                      {
                                          Code = s.Code,
                                          PositionId = user.PositionId,
-                                         Login = user.Login,    
+                                         Login = user.Login,
                                          FirstName = user.FirstName,
                                          SecondName = user.SecondName,
                                          LastName = user.LastName,
                                          Email = user.Email,
                                          PhoneNumber = user.PhoneNumber
-                                     };
+                                     }).ToList();
 
                 var result = _mapper.Map<List<GetUsersWithShopDto>>(shopsWithUsers);
 
