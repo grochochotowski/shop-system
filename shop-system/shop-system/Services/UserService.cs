@@ -8,7 +8,7 @@ namespace shop_system.Services
 {
     public interface IUserService
     {
-        IEnumerable<GetUsersWithShopDto> GetAllUsersWithShop();
+        IEnumerable<GetShopsWithUsers> GetAllUsersWithShop();
     }
 
     public class UserService : IUserService
@@ -22,7 +22,7 @@ namespace shop_system.Services
             _mapper = mapper;
         }
 
-        public IEnumerable<GetUsersWithShopDto> GetAllUsersWithShop()
+        public IEnumerable<GetShopsWithUsers> GetAllUsersWithShop()
         {
             var shopsWithUsers = (from s in _context.Shops
                                   join u in _context.Users on s.Id equals u.ShopId into userGroup
@@ -40,7 +40,7 @@ namespace shop_system.Services
                                       PhoneNumber = user.PhoneNumber
                                   }).ToList();
 
-            var result = _mapper.Map<List<GetUsersWithShopDto>>(shopsWithUsers);
+            var result = _mapper.Map<List<GetShopsWithUsers>>(shopsWithUsers);
 
             return result;
         } // Get all users with their shops

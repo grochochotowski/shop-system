@@ -17,7 +17,7 @@ namespace shop_system.Controllers
 
 
         [HttpGet]
-        public ActionResult<IEnumerable<GetUsersWithShopDto>> GetAllUsersWithShop()
+        public ActionResult<IEnumerable<GetShopsWithUsers>> GetAllUsersWithShop()
         {
             var usersWithShopDto = _userService.GetAllUsersWithShop();
 
