@@ -76,14 +76,15 @@ namespace shop_system
             seeder.Seed();
 
             // Configure the HTTP request pipeline.
+
+            app.UseMiddleware<ErrorHandlingMiddleware>();
+            app.UseMiddleware<RequestTimeMiddleware>();
+
             if (app.Environment.IsDevelopment())
             {
                 app.UseSwagger();
                 app.UseSwaggerUI();
             }
-
-            app.UseMiddleware<ErrorHandlingMiddleware>();
-            app.UseMiddleware<RequestTimeMiddleware>();
 
             app.UseAuthentication();
 
