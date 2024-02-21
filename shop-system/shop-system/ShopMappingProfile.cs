@@ -18,6 +18,8 @@ namespace shop_system
 
             CreateMap<Clothing, ClothingDto>();
             CreateMap<AddClothingDto, Clothing>();
+
+            CreateMap<GetUsersWithShopDto, User>();
         }
     }
 }
