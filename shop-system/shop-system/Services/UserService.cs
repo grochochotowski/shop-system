@@ -41,9 +41,9 @@ namespace shop_system.Services
                             user.PhoneNumber
                         };
 
-            var shopsWithUsers = query.ToList();
+            var usersWShop = query.ToList();
 
-            var result = _mapper.Map<List<GetUsersWShop>>(shopsWithUsers);
+            var result = _mapper.Map<List<GetUsersWShop>>(usersWShop);
 
             return result;
         } // Get all users with their shops
