@@ -14,6 +14,5 @@
         public string PhoneNumber { get; set; }
 
         public virtual List<ClothingAvailability> Clothes { get; set; }
-        public virtual List<User> Users { get; set; }
     }
 }
