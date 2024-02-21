@@ -12,7 +12,8 @@ namespace shop_system.Middleware
             _stopWatch = new Stopwatch();
             _logger = logger;
         }
-        public async void InvokeAsync(HttpContext context, RequestDelegate next)
+
+        public async Task InvokeAsync(HttpContext context, RequestDelegate next)
         {
             _stopWatch.Start();
             await next.Invoke(context);
