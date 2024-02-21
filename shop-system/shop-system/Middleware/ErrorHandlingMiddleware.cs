@@ -1,6 +1,4 @@
-﻿
-using Microsoft.AspNetCore.Http;
-using shop_system.Exceptions;
+﻿using shop_system.Exceptions;
 
 namespace shop_system.Middleware
 {
