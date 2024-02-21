@@ -9,7 +9,7 @@ namespace shop_system.Services
     {
         public interface IShopService
         {
-            IEnumerable<ShopDto> GetAll();
+            IEnumerable<GetUsersWithShopDto> GetAllUsersWithShop();
         }
 
         public class ShopService : IShopService
@@ -25,7 +25,7 @@ namespace shop_system.Services
 
 
 
-            public IEnumerable<GetUsersWithShopDto> GetAll()
+            public IEnumerable<GetUsersWithShopDto> GetAllUsersWithShop()
             {
                 var shopsWithUsers = from s in _context.Shops
                                      join u in _context.Users on s.Id equals u.ShopId into userGroup
@@ -35,7 +35,7 @@ namespace shop_system.Services
                                      {
                                          Code = s.Code,
                                          PositionId = user.PositionId,
-                                         Login = user.Login,
+                                         Login = user.Login,    
                                          FirstName = user.FirstName,
                                          SecondName = user.SecondName,
                                          LastName = user.LastName,
