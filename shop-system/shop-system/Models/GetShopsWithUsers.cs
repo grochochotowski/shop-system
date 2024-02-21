@@ -2,7 +2,7 @@
 
 namespace shop_system.Models
 {
-    public class GetUsersWithShopDto
+    public class GetShopsWithUsers
     {
         public string? Code { get; set; }
         public int PositionId { get; set; }
