@@ -58,6 +58,7 @@ namespace shop_system
 
             builder.Services.AddScoped<ShopSeeder>();
             builder.Services.AddScoped<ErrorHandlingMiddleware>();
+            builder.Services.AddScoped<RequestTimeMiddleware>();
 
             builder.Services.AddScoped<IShopService, ShopService>();
             builder.Services.AddScoped<IClothingAvailabilityService, ClothingAvailabilityService>();
