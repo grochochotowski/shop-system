@@ -6,7 +6,7 @@ using static shop_system.Services.UserService;
 namespace shop_system.Controllers
 {
     [Route("api/user")]
-    public class UserController
+    public class UserController : ControllerBase
     {
         private readonly IUserService _userService;
 
