@@ -68,6 +68,7 @@ namespace shop_system
             builder.Services.AddScoped<IPasswordHasher<User>, PasswordHasher<User>>();
             builder.Services.AddScoped<IValidator<RegisterUserDto>, RegisterUserDtoValidator>();
 
+
             var app = builder.Build();
             var scope = app.Services.CreateScope();
             var seeder = scope.ServiceProvider.GetRequiredService<ShopSeeder>();
