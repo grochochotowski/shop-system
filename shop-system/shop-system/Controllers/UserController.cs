@@ -1,22 +1,23 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using shop_system.Models;
 using shop_system.Services;
+using static shop_system.Services.UserService;
 
 namespace shop_system.Controllers
 {
     [Route("api/user")]
     public class UserController
     {
-        private readonly IUserSerivce _userService;
+        private readonly IUserService _userService;
 
-        public UserController(IUserSerivce userService)
+        public UserController(IUserService userService)
         {
             _userService = userService;
         }
 
 
         [HttpGet]
-        public ActionResult<IEnumerable<ShopDto>> GetAll()
+        public ActionResult<IEnumerable<GetUsersWithShopDto>> GetAllUsersWithShop()
         {
             var usersWithShopDto = _userService.GetAll();
 
