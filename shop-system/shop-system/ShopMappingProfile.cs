@@ -19,7 +19,8 @@ namespace shop_system
             CreateMap<Clothing, ClothingDto>();
             CreateMap<AddClothingDto, Clothing>();
 
-            CreateMap<GetShopsWithUsers, Shop>(); 
+            CreateMap<GetShopsWithUsers, UserWShop>()
+                .ForMember(dest => dest.SecondName, opt => opt.MapFrom(src => src.SecondName ?? ""));
         }
     }
 }
