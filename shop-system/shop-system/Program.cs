@@ -7,6 +7,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
 using NLog.Web;
+using shop_system.Controllers;
 using shop_system.Entities;
 using shop_system.Middleware;
 using shop_system.Models;
@@ -15,6 +16,7 @@ using shop_system.Serivces;
 using shop_system.Services;
 using System.Reflection;
 using System.Text;
+using static shop_system.Services.UserService;
 
 namespace shop_system
 {
@@ -64,6 +66,7 @@ namespace shop_system
             builder.Services.AddScoped<IClothingAvailabilityService, ClothingAvailabilityService>();
             builder.Services.AddScoped<IClothingService, ClothingService>();
             builder.Services.AddScoped<IAccountService, AccountService>();
+            builder.Services.AddScoped<IUserService, UserService>();
 
             builder.Services.AddScoped<IPasswordHasher<User>, PasswordHasher<User>>();
             builder.Services.AddScoped<IValidator<RegisterUserDto>, RegisterUserDtoValidator>();
