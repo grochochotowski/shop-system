@@ -31,7 +31,7 @@ namespace shop_system.Services
                         orderby userShop.Id, user.PositionId
                         select new
                         {
-                            Code = userShop.Code,
+                            userShop.Code,
                             user.PositionId,
                             user.Login,
                             user.FirstName,
