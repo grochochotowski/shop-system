@@ -29,13 +29,10 @@ function UserCeo() {
         if (users.length > 0) {
             var usersInShop;
             if (shopId !== 0) {
-                console.log(shopId);
                 usersInShop =
                     users
-                    .filter(user => user.shopId === shopId);
-                    console.log(usersInShop);
-                    /*.map((user) => {
-                        console.log(user);
+                    .filter(user => user.shop && user.shop.id === shopId)
+                    .map((user) => {
                         return (
                             {
                                 userId: user.id,
@@ -47,7 +44,7 @@ function UserCeo() {
                                 position: user.position.name
                             }
                         );
-                    });*/
+                    });
             }
             else {
                 usersInShop =
