@@ -5,7 +5,6 @@ namespace shop_system.Models
 {
     public class UserWShopDto
     {
-        public int PositionId { get; set; }
         public string Login { get; set; }
         public string FirstName { get; set; }
         public string? SecondName { get; set; }
