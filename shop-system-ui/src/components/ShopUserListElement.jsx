@@ -11,10 +11,22 @@ function ShopUserListElement(props) {
                     {props.elements.map((user) => {
                         return (
                             <li key={props.userId}>
-                                <p><b>ID: </b>{user.userId},</p>
-                                <p><b>NAME: </b>{user.firstName} {user.secondName} {user.lastName},</p>
-                                <p><b>DATA: </b>{user.login} - {user.phoneNumber},</p>
-                                <p><b>POSITION: </b>{user.position}</p>
+                                {props.checkedBoxes.idCheck && <p><b>ID: </b>{user.userId},</p>}
+                                {props.checkedBoxes.positionCheck && <p><b>POSITION: </b>{user.position}</p>}
+                                {props.checkedBoxes.firstNameCheck &&
+                                props.checkedBoxes.secondNameCheck &&
+                                props.checkedBoxes.lastNameCheck &&
+                                    <p><b>NAME: </b>
+                                        {props.checkedBoxes.firstNameCheck && user.firstName}
+                                        {props.checkedBoxes.secondNameCheck && user.secondName}
+                                        {props.checkedBoxes.lastNameCheck && user.lastName}
+                                    ,</p>}
+                                {props.checkedBoxes.loginCheck &&
+                                props.checkedBoxes.phoneNumberCheck &&
+                                    <p><b>INFO: </b>
+                                        {props.checkedBoxes.loginCheck && user.login},
+                                        {props.checkedBoxes.phoneNumberCheck && user.phoneNumber}
+                                    </p>}
                             </li>
                         );
                     })}
