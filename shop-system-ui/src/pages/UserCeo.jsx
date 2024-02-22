@@ -85,6 +85,13 @@ function UserCeo() {
         }
     }
     
+    // check boxes changing handler
+    function checkBoxChangeHandler(what) {
+        setCheckBoxObj((prev) => ({
+            ...prev,
+            what: !prev.what
+        }));
+    }
 
     // Calculate width of 2 main sections based on size-bar position
     useEffect(() => {
