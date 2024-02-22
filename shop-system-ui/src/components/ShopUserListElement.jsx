@@ -13,6 +13,7 @@ function ShopUserListElement(props) {
                             <li key={props.userId}>
                                 {props.checkedBoxes.idCheck && <p><b>ID: </b>{user.userId},</p>}
                                 {props.checkedBoxes.positionCheck && <p><b>POSITION: </b>{user.position}</p>}
+                                {props.checkedBoxes.loginCheck && <p><b>LOGIN: </b>{user.login}</p>}
                                 {(props.checkedBoxes.firstNameCheck ||
                                 props.checkedBoxes.secondNameCheck ||
                                 props.checkedBoxes.lastNameCheck) &&
@@ -21,10 +22,9 @@ function ShopUserListElement(props) {
                                         {props.checkedBoxes.secondNameCheck && user.secondName}
                                         {props.checkedBoxes.lastNameCheck && user.lastName}
                                     ,</p>}
-                                {(props.checkedBoxes.loginCheck ||
+                                {(props.checkedBoxes.emailCheck ||
                                 props.checkedBoxes.phoneNumberCheck) &&
-                                    <p><b>INFO: </b>
-                                        {props.checkedBoxes.loginCheck && user.login},
+                                    <p><b>CONTANCT: </b>
                                         {props.checkedBoxes.emailCheck && user.email},
                                         {props.checkedBoxes.phoneNumberCheck && user.phoneNumber}
                                     </p>}
