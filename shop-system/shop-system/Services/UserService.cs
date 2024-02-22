@@ -25,23 +25,12 @@ namespace shop_system.Services
 
         public IEnumerable<UserWShopDto> GetAllUsersWithShop()
         {
-            var query = from user in _context.Users
-                        join shop in _context.Shops on user.ShopId equals shop.Id into userShopJoin
-                        from userShop in userShopJoin.DefaultIfEmpty()
-                        orderby userShop.Id, user.PositionId
-                        select new
-                        {
-                            userShop.Code,
-                            user.PositionId,
-                            user.Login,
-                            user.FirstName,
-                            user.SecondName,
-                            user.LastName,
-                            user.Email,
-                            user.PhoneNumber
-                        };
-
-            var usersWShop = query.ToList();
+            var usersWShop =
+                _context.Users
+                .Include(u => u.Shop)
+                .Include(u => u.Position)
+                .OrderBy(s => s.Shop.Code)
+                .OrderBy(p => p.PositionId);
 
             var result = _mapper.Map<List<UserWShopDto>>(usersWShop);
 
