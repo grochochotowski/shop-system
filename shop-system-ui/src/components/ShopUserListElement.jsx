@@ -18,14 +18,14 @@ function ShopUserListElement(props) {
                                 props.checkedBoxes.secondNameCheck ||
                                 props.checkedBoxes.lastNameCheck) &&
                                     <p><b>NAME: </b>
-                                        {props.checkedBoxes.firstNameCheck && user.firstName}
-                                        {props.checkedBoxes.secondNameCheck && user.secondName}
+                                        {props.checkedBoxes.firstNameCheck && <span>{user.firstName}&nbsp;</span>}
+                                        {props.checkedBoxes.secondNameCheck && <span>{user.secondName}&nbsp;</span>}
                                         {props.checkedBoxes.lastNameCheck && user.lastName}
                                     ,</p>}
                                 {(props.checkedBoxes.emailCheck ||
                                 props.checkedBoxes.phoneNumberCheck) &&
                                     <p><b>CONTANCT: </b>
-                                        {props.checkedBoxes.emailCheck && user.email},
+                                        {props.checkedBoxes.emailCheck && <span>{user.email},&nbsp;</span>}
                                         {props.checkedBoxes.phoneNumberCheck && user.phoneNumber}
                                     </p>}
                             </li>
