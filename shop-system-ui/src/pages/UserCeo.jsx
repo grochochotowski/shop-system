@@ -89,7 +89,7 @@ function UserCeo() {
     function checkBoxChangeHandler(what) {
         setCheckBoxObj((prev) => ({
             ...prev,
-            what: !prev.what
+            [what]: !prev[what]
         }));
     }
 
@@ -204,7 +204,7 @@ function UserCeo() {
                 <section className="user-list" style={{ width: listWidth}}>
                     <div className="options">
                         <div className="box">
-                            <input type="checkbox" id="user-id"/>
+                            <input type="checkbox" id="user-id" onClick={() => checkBoxChangeHandler("idCheck")}/>
                             <label htmlFor="user-id">User ID</label>
                         </div>
                         <div className="box">
