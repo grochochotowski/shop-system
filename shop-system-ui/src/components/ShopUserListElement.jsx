@@ -15,11 +15,11 @@ function ShopUserListElement(props) {
                                 {props.checkedBoxes.positionCheck && <p><b>POSITION: </b>{user.position}</p>}
                                 {props.checkedBoxes.loginCheck && <p><b>LOGIN: </b>{user.login}</p>}
                                 {(props.checkedBoxes.firstNameCheck ||
-                                props.checkedBoxes.secondNameCheck ||
+                                (props.checkedBoxes.secondNameCheck || props.elements.secondName) ||
                                 props.checkedBoxes.lastNameCheck) &&
                                     <p><b>NAME: </b>
                                         {props.checkedBoxes.firstNameCheck && <span>{user.firstName}&nbsp;</span>}
-                                        {props.checkedBoxes.secondNameCheck && <span>{user.secondName}&nbsp;</span>}
+                                        {(props.checkedBoxes.secondNameCheck || props.elements.secondName) && <span>{user.secondName}&nbsp;</span>}
                                         {props.checkedBoxes.lastNameCheck && user.lastName}
                                     </p>}
                                 {(props.checkedBoxes.emailCheck ||
