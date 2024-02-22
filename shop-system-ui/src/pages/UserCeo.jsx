@@ -10,7 +10,6 @@ function UserCeo() {
     const [listWidth, setListWidth] = useState("");
     const [isResizing, setIsResizing] = useState(false);
     const [users, setUsers] = useState([]);
-    const uniqueShopIds = [null, 6, 7];
 
 
     // fetch api data - get info about users and thir shops
@@ -18,9 +17,10 @@ function UserCeo() {
         async function getUserData() {
             const response = await fetch("https://localhost:7057/api/user");
             const data = await response.json();
-            setUsers(data);
+            console.log(data);
         }
-        getUserData();
+        setUsers(getUserData());
+        console.log(users);
     }, []);
 
 
@@ -71,7 +71,6 @@ function UserCeo() {
         );
     }
     
-
 
     // Calculate width of 2 main sections based on size-bar position
     useEffect(() => {
@@ -217,19 +216,20 @@ function UserCeo() {
                         </div>
                     </div>
                     <div className="user-list-elements">
-                        {uniqueShopIds.forEach(shopId => getShopWithUsers(shopId))}
+                        
+                        <ShopUserListElement collapsed="true" users={[]}/>
+                        <ShopUserListElement collapsed="true" users={[]}/>
+                        <ShopUserListElement collapsed="true" users={[]}/>
+                        <ShopUserListElement collapsed="true" users={[]}/>
+                        <ShopUserListElement collapsed="true" users={[]}/>
+                        <ShopUserListElement collapsed="true" users={[]}/>
+                        <ShopUserListElement collapsed="true" users={[]}/>
                     </div>
                 </section>
             </div>
         </>
     );
-                            /*<ShopUserListElement collapsed="true" users={[]}/>
-                            <ShopUserListElement collapsed="true" users={[]}/>
-                            <ShopUserListElement collapsed="true" users={[]}/>
-                            <ShopUserListElement collapsed="true" users={[]}/>
-                            <ShopUserListElement collapsed="true" users={[]}/>
-                            <ShopUserListElement collapsed="true" users={[]}/>
-                            <ShopUserListElement collapsed="true" users={[]}/>*/
+
 }
 
 export default UserCeo;
