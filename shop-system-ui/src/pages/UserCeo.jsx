@@ -11,6 +11,14 @@ function UserCeo() {
     const [isResizing, setIsResizing] = useState(false);
 
 
+    // fetch api data - get info about users and thir shops
+    const fetchData = async () => {
+        const response = await fetch("https://localhost:7057/api/user");
+        const data = await response.json();
+        console.log(data);
+    }
+
+
     // Calculate width of 2 main sections based on size-bar position
     useEffect(() => {
         const handleMouseMove = (e) => {
