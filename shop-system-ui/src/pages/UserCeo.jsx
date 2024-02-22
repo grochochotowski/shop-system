@@ -208,31 +208,31 @@ function UserCeo() {
                             <label htmlFor="user-id">User ID</label>
                         </div>
                         <div className="box">
-                            <input type="checkbox" id="position-check"/>
+                            <input type="checkbox" id="position-check" onClick={() => checkBoxChangeHandler("positionCheck")}/>
                             <label htmlFor="position-check">Position</label>
                         </div>
                         <div className="box">
-                            <input type="checkbox" id="login"/>
+                            <input type="checkbox" id="login" onClick={() => checkBoxChangeHandler("loginCheck")}/>
                             <label htmlFor="login">Login</label>
                         </div>
                         <div className="box">
-                            <input type="checkbox" id="first-name"/>
+                            <input type="checkbox" id="first-name" onClick={() => checkBoxChangeHandler("firstNameCheck")}/>
                             <label htmlFor="first-name">First name</label>
                         </div>
                         <div className="box">
-                            <input type="checkbox" id="second-name"/>
+                            <input type="checkbox" id="second-name" onClick={() => checkBoxChangeHandler("secondNameCheck")}/>
                             <label htmlFor="second-name">Second Name</label>
                         </div>
                         <div className="box">
-                            <input type="checkbox" id="last-name"/>
+                            <input type="checkbox" id="last-name" onClick={() => checkBoxChangeHandler("lastNameCheck")}/>
                             <label htmlFor="last-name">Last name</label>
                         </div>
                         <div className="box">
-                            <input type="checkbox" id="email"/>
+                            <input type="checkbox" id="email" onClick={() => checkBoxChangeHandler("emailCheck")}/>
                             <label htmlFor="email">E-mail</label>
                         </div>
                         <div className="box">
-                            <input type="checkbox" id="phone-number"/>
+                            <input type="checkbox" id="phone-number" onClick={() => checkBoxChangeHandler("phoneNumberCheck")}/>
                             <label htmlFor="phone-number">Phone number</label>
                         </div>
                     </div>
