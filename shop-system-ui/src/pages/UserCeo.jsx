@@ -10,6 +10,7 @@ function UserCeo() {
     const [listWidth, setListWidth] = useState("");
     const [isResizing, setIsResizing] = useState(false);
     const [users, setUsers] = useState([]);
+    const uniqueShopIds = [...new Set(users.map(user => user.shop.id))];
 
 
     // fetch api data - get info about users and thir shops
@@ -217,13 +218,20 @@ function UserCeo() {
                         </div>
                     </div>
                     <div className="user-list-elements">
-                        <ShopUserListElement collapsed="true" users={[]}/>
-                        <ShopUserListElement collapsed="true" users={[]}/>
-                        <ShopUserListElement collapsed="true" users={[]}/>
-                        <ShopUserListElement collapsed="true" users={[]}/>
-                        <ShopUserListElement collapsed="true" users={[]}/>
-                        <ShopUserListElement collapsed="true" users={[]}/>
-                        <ShopUserListElement collapsed="true" users={[]}/>
+                        {
+                            uniqueShopIds.forEach(shopId => {
+                                getShopWithUsers(shopId);
+                            });
+                            /*
+                            <ShopUserListElement collapsed="true" users={[]}/>
+                            <ShopUserListElement collapsed="true" users={[]}/>
+                            <ShopUserListElement collapsed="true" users={[]}/>
+                            <ShopUserListElement collapsed="true" users={[]}/>
+                            <ShopUserListElement collapsed="true" users={[]}/>
+                            <ShopUserListElement collapsed="true" users={[]}/>
+                            <ShopUserListElement collapsed="true" users={[]}/>
+                            */
+                        }
                     </div>
                 </section>
             </div>
