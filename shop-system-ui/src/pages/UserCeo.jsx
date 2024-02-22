@@ -80,6 +80,7 @@ function UserCeo() {
                     title={shopId} 
                     collapsed={true}
                     elements={usersInShop}
+                    checkedBoxes={checkBoxObj}
                 />
             );
         }
