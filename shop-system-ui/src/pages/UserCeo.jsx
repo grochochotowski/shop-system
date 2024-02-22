@@ -10,7 +10,7 @@ function UserCeo() {
     const [listWidth, setListWidth] = useState("");
     const [isResizing, setIsResizing] = useState(false);
     const [users, setUsers] = useState([]);
-    const uniqueShops = [6, 7];
+    const uniqueShopIds = [6, 7];
 
 
     // fetch api data - get info about users and thir shops
@@ -18,60 +18,64 @@ function UserCeo() {
         async function getUserData() {
             const response = await fetch("https://localhost:7057/api/user");
             const data = await response.json();
-            console.log(data);
+            setUsers(data);
         }
-        setUsers(getUserData());
-        console.log(users);
+        getUserData();
     }, []);
 
 
     // create user list in a shop
     function getShopWithUsers(shopId) {
-        var usersInShop;
-        if (shopId != null) {
-            usersInShop =
-                users
-                .filter(user => user.shopId === shopId)
-                .map((user) => {
-                    return (
-                        {
-                            userId: user.id,
-                            firstName: user.firstName,
-                            secondName: user.secondName,
-                            lastName: user.lastName,
-                            login: user.login,
-                            phoneNumber: user.phoneNumber,
-                            position: user.position.name
-                        }
-                    );
-                });
+        if (users.length > 0) {
+            var usersInShop;
+            if (shopId !== 0) {
+                console.log(shopId);
+                usersInShop =
+                    users
+                    .filter(user => user.shopId === shopId);
+                    console.log(usersInShop);
+                    /*.map((user) => {
+                        console.log(user);
+                        return (
+                            {
+                                userId: user.id,
+                                firstName: user.firstName,
+                                secondName: user.secondName,
+                                lastName: user.lastName,
+                                login: user.login,
+                                phoneNumber: user.phoneNumber,
+                                position: user.position.name
+                            }
+                        );
+                    });*/
+            }
+            else {
+                usersInShop =
+                    users
+                    .filter(user => user.shopId === null)
+                    .map((user) => {
+                        return (
+                            {
+                                userId: user.id,
+                                firstName: user.firstName,
+                                secondName: user.secondName,
+                                lastName: user.lastName,
+                                login: user.login,
+                                phoneNumber: user.phoneNumber,
+                                position: user.position.name
+                            }
+                        );
+                    });
+            }
+            return(
+                <ShopUserListElement
+                    key={shopId}
+                    title={shopId} 
+                    collapsed={true}
+                    elements={usersInShop}
+                />
+            );
         }
-        else {
-            usersInShop =
-                users
-                .filter(user => user.shopId === shopId)
-                .map((user) => {
-                    return (
-                        {
-                            userId: user.id,
-                            firstName: user.firstName,
-                            secondName: user.secondName,
-                            lastName: user.lastName,
-                            login: user.login,
-                            phoneNumber: user.phoneNumber,
-                            position: user.position.name
-                        }
-                    );
-                });
-        }
-        return(
-            <ShopUserListElement
-                key={shopId}
-                title={shopId} 
-                collapsed={true}
-                elements={usersInShop}
-            />
-        );
     }
     
 
@@ -219,9 +223,11 @@ function UserCeo() {
                         </div>
                     </div>
                     <div className="user-list-elements">
-                        {uniqueShops.forEach(shop => {
-                            getShopWithUsers(shop.id);
-                        })}
+                        {
+                            uniqueShopIds.forEach(id => {
+                                getShopWithUsers(id);
+                            })
+                        }
                     </div>
                 </section>
             </div>
