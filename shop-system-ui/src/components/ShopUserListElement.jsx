@@ -25,7 +25,8 @@ function ShopUserListElement(props) {
                                 {(props.checkedBoxes.emailCheck ||
                                 props.checkedBoxes.phoneNumberCheck) &&
                                     <p><b>CONTANCT: </b>
-                                        {props.checkedBoxes.emailCheck && <span>{user.email}&nbsp; - &nbsp;</span>}
+                                        {props.checkedBoxes.emailCheck && user.email}
+                                        {props.checkedBoxes.phoneNumberCheck && props.checkedBoxes.emailCheck && <span>&nbsp; - &nbsp;</span>}
                                         {props.checkedBoxes.phoneNumberCheck && user.phoneNumber}
                                     </p>}
                             </li>
