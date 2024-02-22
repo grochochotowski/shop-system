@@ -16,5 +16,6 @@ namespace shop_system.Entities
         public int PositionId { get; set; }
         
         public virtual Position Position { get; set; }
+        public virtual Shop Shop { get; set; }
     }
 }
