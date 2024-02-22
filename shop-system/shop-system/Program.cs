@@ -85,6 +85,7 @@ namespace shop_system
             var scope = app.Services.CreateScope();
             var seeder = scope.ServiceProvider.GetRequiredService<ShopSeeder>();
 
+            app.UseCors();
             seeder.Seed();
 
             // Configure the HTTP request pipeline.
