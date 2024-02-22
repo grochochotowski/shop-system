@@ -68,6 +68,7 @@ function UserCeo() {
                                 secondName: user.secondName,
                                 lastName: user.lastName,
                                 login: user.login,
+                                email: user.email,
                                 phoneNumber: user.phoneNumber,
                                 position: user.position.name
                             }
