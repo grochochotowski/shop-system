@@ -60,7 +60,7 @@ function UserCeo() {
             else {
                 usersInShop =
                     users
-                    .filter(user => user.shopId === null)
+                    .filter(user => user.shopId == null)
                     .map((user) => {
                         return (
                             {
