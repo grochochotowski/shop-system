@@ -19,7 +19,7 @@ namespace shop_system
             CreateMap<Clothing, ClothingDto>();
             CreateMap<AddClothingDto, Clothing>();
 
-            CreateMap<UserWShop, GetUsersWShop>();
+            CreateMap<UserWShop, UsersWShopDto>();
         }
     }
 }
