@@ -64,6 +64,7 @@ function UserCeo() {
                         );
                     });
             }
+            console.log(usersInShop);
             return(
                 <ShopUserListElement
                     key={shopId}
