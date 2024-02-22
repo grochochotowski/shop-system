@@ -36,6 +36,15 @@ namespace shop_system
 
             // Add services to the container.
 
+            builder.Services.AddCors(options =>
+            {
+                options.AddPolicy("FrontEndClient", builder =>
+                {
+                    builder.AllowAnyMethod()
+                    .AllowAnyHeader()
+                    .WithOrigins("http://localhost:3000");
+                });
+            });
             builder.Services.AddSingleton(authenticationSettings);
             builder.Services.AddControllers();
             builder.Services.AddControllers().AddFluentValidation();
