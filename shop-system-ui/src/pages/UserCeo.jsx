@@ -220,9 +220,7 @@ function UserCeo() {
                         </div>
                     </div>
                     <div className="user-list-elements">
-                        {
-                            uniqueShopIds.map((id) => getShopWithUsers(id) )
-                        }
+                        { uniqueShopIds.map((id) => getShopWithUsers(id)) }
                     </div>
                 </section>
             </div>
