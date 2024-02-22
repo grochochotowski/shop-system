@@ -25,10 +25,6 @@ function UserCeo() {
         }
 
         getUserData();
-        
-        return () => {
-            console.log("cleanup");
-        }
     }, []);
 
 
