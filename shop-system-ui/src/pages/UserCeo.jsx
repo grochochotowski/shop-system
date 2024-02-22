@@ -26,31 +26,49 @@ function UserCeo() {
 
     // create user list in a shop
     function getShopWithUsers(shopId) {
-        const usersInShop = users
-        .filter(user => user.shopId === shopId)
-        .map((user) => {
-            return (
-                {
-                    userId: user.id,
-                    firstName: user.firstName,
-                    secondName: user.secondName,
-                    lastName: user.lastName,
-                    login: user.login,
-                    phoneNumber: user.phoneNumber,
-                    position: user.position.name
-                }
-            );
-        });
-
-        const element =
+        var usersInShop;
+        if (shopId != null) {
+            usersInShop = users
+            .filter(user => user.shopId === shopId)
+            .map((user) => {
+                return (
+                    {
+                        userId: user.id,
+                        firstName: user.firstName,
+                        secondName: user.secondName,
+                        lastName: user.lastName,
+                        login: user.login,
+                        phoneNumber: user.phoneNumber,
+                        position: user.position.name
+                    }
+                );
+            });
+        }
+        else {
+            usersInShop = users
+            .filter(user => user.shopId === shopId)
+            .map((user) => {
+                return (
+                    {
+                        userId: user.id,
+                        firstName: user.firstName,
+                        secondName: user.secondName,
+                        lastName: user.lastName,
+                        login: user.login,
+                        phoneNumber: user.phoneNumber,
+                        position: user.position.name
+                    }
+                );
+            });
+        }
+        return(
             <ShopUserListElement
                 key={shopId}
                 title={users[1].Shop.Code} 
                 collapsed={true}
                 elements={usersInShop}
             />
-
-        return element;
+        );
     }
     
 
