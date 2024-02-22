@@ -13,19 +13,13 @@ function UserCeo() {
 
     // fetch api data - get info about users and thir shops
     useEffect(() => {
-        fetch("https://localhost:7057/api/user")
-        .then(response => response.json())
-        .then(response => console.log(response));
-    }, []);
-
-    /*useEffect(() => {
         async function getUserData() {
             const response = await fetch("https://localhost:7057/api/user");
             const data = await response.json();
             console.log(data);
         }
         getUserData();
-    }, []);*/
+    }, []);
 
 
     // Calculate width of 2 main sections based on size-bar position
