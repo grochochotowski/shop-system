@@ -10,7 +10,7 @@ function UserCeo() {
     const [listWidth, setListWidth] = useState("");
     const [isResizing, setIsResizing] = useState(false);
     const [users, setUsers] = useState([]);
-    const uniqueShopIds = [...new Set(users.map(user => user.shop.id))];
+    const uniqueShopIds = [null, 6, 7];
 
 
     // fetch api data - get info about users and thir shops
