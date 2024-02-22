@@ -10,6 +10,7 @@ function UserCeo() {
     const [listWidth, setListWidth] = useState("");
     const [isResizing, setIsResizing] = useState(false);
     const [users, setUsers] = useState([]);
+    const [checkBoxList, setCheckBoxList] = useState([true, true, true, true, true, true, true, true]);
     const uniqueShopIds = [0, 6, 7];
 
 
