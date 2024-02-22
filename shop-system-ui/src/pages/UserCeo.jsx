@@ -79,6 +79,7 @@ function UserCeo() {
         };
     }, []); 
 
+
     // Function which are connected to postition drop down menu
     function setNewPosition(e) {
         if (e.target.value === "choose") setPosition("")
@@ -90,6 +91,7 @@ function UserCeo() {
         return null;
     }
 
+    
     // Render
     return (
         <>
