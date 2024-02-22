@@ -13,16 +13,16 @@ function ShopUserListElement(props) {
                             <li key={props.userId}>
                                 {props.checkedBoxes.idCheck && <p><b>ID: </b>{user.userId},</p>}
                                 {props.checkedBoxes.positionCheck && <p><b>POSITION: </b>{user.position}</p>}
-                                {props.checkedBoxes.firstNameCheck &&
-                                props.checkedBoxes.secondNameCheck &&
-                                props.checkedBoxes.lastNameCheck &&
+                                {(props.checkedBoxes.firstNameCheck ||
+                                props.checkedBoxes.secondNameCheck ||
+                                props.checkedBoxes.lastNameCheck) &&
                                     <p><b>NAME: </b>
                                         {props.checkedBoxes.firstNameCheck && user.firstName}
                                         {props.checkedBoxes.secondNameCheck && user.secondName}
                                         {props.checkedBoxes.lastNameCheck && user.lastName}
                                     ,</p>}
-                                {props.checkedBoxes.loginCheck &&
-                                props.checkedBoxes.phoneNumberCheck &&
+                                {(props.checkedBoxes.loginCheck ||
+                                props.checkedBoxes.phoneNumberCheck) &&
                                     <p><b>INFO: </b>
                                         {props.checkedBoxes.loginCheck && user.login},
                                         {props.checkedBoxes.phoneNumberCheck && user.phoneNumber}
