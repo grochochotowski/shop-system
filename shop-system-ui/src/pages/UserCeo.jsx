@@ -18,9 +18,17 @@ function UserCeo() {
         console.log(data);
     }*/
     useEffect(() => {
-        fetch("https://localhost:7057/api/user")
-        .then(response => response.json())
-        .then(response => console.log(response));
+        async function getUserData() {
+            const response = await fetch("https://localhost:7057/api/user");
+            const data = await response.json();
+            console.log(data);
+        }
+
+        getUserData();
+        
+        return () => {
+            console.log("cleanup");
+        }
     }, []);
 
 
