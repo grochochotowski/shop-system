@@ -24,6 +24,40 @@ function UserCeo() {
     }, []);
 
 
+    // create user list in a shop
+    function getShopWithUsers(shopId) {
+        const element =
+            <ShopUserListElement
+                key={shopId}
+                title={} 
+                collapsed={true}
+                elements={[]}
+            />
+        const usersInShop = users
+        .filter(user => user.shopId === shopId)
+        .map((user) => {
+            return (
+                
+                    elements={[
+                        {
+                            userId: user.id,
+                            firstName: user.firstName,
+                            secondName: user.secondName,
+                            lastName: user.lastName,
+                            login: user.login,
+                            phoneNumber: user.phoneNumber,
+                            position: user.position.name
+                        }
+                    }]
+                />
+            );
+        });
+
+        return element;
+    }
+    
+
+
     // Calculate width of 2 main sections based on size-bar position
     useEffect(() => {
         const handleMouseMove = (e) => {
@@ -91,7 +125,7 @@ function UserCeo() {
         return null;
     }
 
-    
+
     // Render
     return (
         <>
@@ -168,13 +202,13 @@ function UserCeo() {
                         </div>
                     </div>
                     <div className="user-list-elements">
-                        <ShopUserListElement collapsed="true"/>
-                        <ShopUserListElement collapsed="true"/>
-                        <ShopUserListElement collapsed="true"/>
-                        <ShopUserListElement collapsed="true"/>
-                        <ShopUserListElement collapsed="true"/>
-                        <ShopUserListElement collapsed="true"/>
-                        <ShopUserListElement collapsed="true"/>
+                        <ShopUserListElement collapsed="true" users={[]}/>
+                        <ShopUserListElement collapsed="true" users={[]}/>
+                        <ShopUserListElement collapsed="true" users={[]}/>
+                        <ShopUserListElement collapsed="true" users={[]}/>
+                        <ShopUserListElement collapsed="true" users={[]}/>
+                        <ShopUserListElement collapsed="true" users={[]}/>
+                        <ShopUserListElement collapsed="true" users={[]}/>
                     </div>
                 </section>
             </div>
