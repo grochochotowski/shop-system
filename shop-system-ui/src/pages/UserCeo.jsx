@@ -26,32 +26,29 @@ function UserCeo() {
 
     // create user list in a shop
     function getShopWithUsers(shopId) {
-        const element =
-            <ShopUserListElement
-                key={shopId}
-                title={} 
-                collapsed={true}
-                elements={[]}
-            />
         const usersInShop = users
         .filter(user => user.shopId === shopId)
         .map((user) => {
             return (
-                
-                    elements={[
-                        {
-                            userId: user.id,
-                            firstName: user.firstName,
-                            secondName: user.secondName,
-                            lastName: user.lastName,
-                            login: user.login,
-                            phoneNumber: user.phoneNumber,
-                            position: user.position.name
-                        }
-                    }]
-                />
+                {
+                    userId: user.id,
+                    firstName: user.firstName,
+                    secondName: user.secondName,
+                    lastName: user.lastName,
+                    login: user.login,
+                    phoneNumber: user.phoneNumber,
+                    position: user.position.name
+                }
             );
         });
+
+        const element =
+            <ShopUserListElement
+                key={shopId}
+                title={users[1].Shop.Code} 
+                collapsed={true}
+                elements={usersInShop}
+            />
 
         return element;
     }
