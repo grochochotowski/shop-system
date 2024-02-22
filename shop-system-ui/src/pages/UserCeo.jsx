@@ -38,11 +38,13 @@ function UserCeo() {
     function getShopWithUsers(shopId) {
         if (users.length > 0) {
             var usersInShop;
+            var title;
             if (shopId !== 0) {
                 usersInShop =
                     users
                     .filter(user => user.shop && user.shop.id === shopId)
                     .map((user) => {
+                        if (!title) title = user.shop.code;
                         return (
                             {
                                 userId: user.id,
@@ -62,6 +64,7 @@ function UserCeo() {
                     users
                     .filter(user => user.shopId == null)
                     .map((user) => {
+                        if (!title) title = "No Shop";
                         return (
                             {
                                 userId: user.id,
@@ -79,7 +82,7 @@ function UserCeo() {
             return(
                 <ShopUserListElement
                     key={shopId}
-                    title={shopId} 
+                    title={title} 
                     collapsed={true}
                     elements={usersInShop}
                     checkedBoxes={checkBoxObj}
