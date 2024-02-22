@@ -10,7 +10,7 @@ function UserCeo() {
     const [listWidth, setListWidth] = useState("");
     const [isResizing, setIsResizing] = useState(false);
     const [users, setUsers] = useState([]);
-    const uniqueShopIds = [6, 7];
+    const uniqueShopIds = [0, 6, 7];
 
 
     // fetch api data - get info about users and thir shops
@@ -221,9 +221,7 @@ function UserCeo() {
                     </div>
                     <div className="user-list-elements">
                         {
-                            uniqueShopIds.forEach(id => {
-                                getShopWithUsers(id);
-                            })
+                            uniqueShopIds.map((id) => getShopWithUsers(id) )
                         }
                     </div>
                 </section>
