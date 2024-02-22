@@ -9,6 +9,7 @@ function UserCeo() {
     const [formWidth, setFormWidth] = useState("");
     const [listWidth, setListWidth] = useState("");
     const [isResizing, setIsResizing] = useState(false);
+    const [users, setUsers] = useState([]);
 
 
     // fetch api data - get info about users and thir shops
@@ -18,7 +19,8 @@ function UserCeo() {
             const data = await response.json();
             console.log(data);
         }
-        getUserData();
+        setUsers(getUserData());
+        console.log(users);
     }, []);
 
 
