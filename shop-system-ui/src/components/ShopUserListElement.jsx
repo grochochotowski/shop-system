@@ -8,16 +8,16 @@ function ShopUserListElement(props) {
         if (isCollapsed) {
             return (
                 <ul>
-                    <li>User 1</li>
-                    <li>User 2</li>
-                    <li>User 3</li>
-                    <li>User 4</li>
-                    <li>User 5</li>
-                    <li>User 6</li>
-                    <li>User 7</li>
-                    <li>User 8</li>
-                    <li>User 9</li>
-                    <li>User 10</li>
+                    {props.elements.map((user) => {
+                        return (
+                            <li key={props.userId}>
+                                <p><b>ID: </b>{user.userId},</p>
+                                <p><b>NAME: </b>{user.firstName} {user.secondName} {user.lastName},</p>
+                                <p><b>DATA: </b>{user.login} - {user.phoneNumber},</p>
+                                <p><b>POSITION: </b>{user.position}</p>
+                            </li>
+                        );
+                    })}
                 </ul>
             )
         }
@@ -28,7 +28,7 @@ function ShopUserListElement(props) {
 
     return (
         <div className={`shop-user-element ${isCollapsed ? "not-collapsed" : "collapsed"}`}>
-            <p onClick={handleClick}>Shop id number</p>
+            <p className="shopP" onClick={handleClick}>{props.title}</p>
             <GenerateList />
         </div>
     );
