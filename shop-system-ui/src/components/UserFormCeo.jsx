@@ -69,8 +69,8 @@ function UserFormCeo(props) {
                 />
             </div>
 
-            <div className="info-section">
-                <h3>Contract information</h3>
+            <div className="contact-section">
+                <h3>Contact information</h3>
                 <input 
                     type="email"
                     id="add-email"
@@ -89,7 +89,7 @@ function UserFormCeo(props) {
                 />
             </div>
 
-            <div className="shop-section">
+            <div className="account-section">
                 <h3>Shop information</h3>
                 <input 
                     type="text"
@@ -115,22 +115,23 @@ function UserFormCeo(props) {
                     onChange={handleInputChange}
                     value={formInputs.confirmPassword}
                 />
-
-                <select
-                id="position"
-                name="position"
-                onChange={handleInputChange}
-                value={formInputs.position}
-                >
-                    <option value="choose">-- Choose Position --</option>
-                    <option value="coo">COO</option>
-                    <option value="accountant">Accountant</option>
-                    <option value="manager">Manager</option>
-                    <option value="deputy-manager">Deputy Manager</option>
-                    <option value="decorator">Decorator</option>
-                    <option value="shop-assistant">Shop Assistant</option>
-                </select>
-                <RenderShopIdInput />
+                <div className="account-section">
+                    <select
+                    id="position"
+                    name="position"
+                    onChange={handleInputChange}
+                    value={formInputs.position}
+                    >
+                        <option value="choose">-- Choose Position --</option>
+                        <option value="coo">COO</option>
+                        <option value="accountant">Accountant</option>
+                        <option value="manager">Manager</option>
+                        <option value="deputy-manager">Deputy Manager</option>
+                        <option value="decorator">Decorator</option>
+                        <option value="shop-assistant">Shop Assistant</option>
+                    </select>
+                    <RenderShopIdInput />
+                </div>
             </div>
 
             <button className="submit">Add user</button>
