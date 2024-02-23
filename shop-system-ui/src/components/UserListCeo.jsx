@@ -117,35 +117,35 @@ function UserListCeo(props) {
             <section className="user-list" style={{ width: props.listWidth}}>
                 <div className="options">
                     <div className="box">
-                        <input type="checkbox" id="user-id" onClick={() => checkBoxChangeHandler("idCheck")} checked={checkBoxObj.idCheck}/>
+                        <input type="checkbox" id="user-id" onChange={() => checkBoxChangeHandler("idCheck")} checked={checkBoxObj.idCheck}/>
                         <label htmlFor="user-id">User ID</label>
                     </div>
                     <div className="box">
-                        <input type="checkbox" id="position-check" onClick={() => checkBoxChangeHandler("positionCheck")} checked={checkBoxObj.positionCheck}/>
+                        <input type="checkbox" id="position-check" onChange={() => checkBoxChangeHandler("positionCheck")} checked={checkBoxObj.positionCheck}/>
                         <label htmlFor="position-check">Position</label>
                     </div>
                     <div className="box">
-                        <input type="checkbox" id="login" onClick={() => checkBoxChangeHandler("loginCheck")} checked={checkBoxObj.loginCheck}/>
+                        <input type="checkbox" id="login" onChange={() => checkBoxChangeHandler("loginCheck")} checked={checkBoxObj.loginCheck}/>
                         <label htmlFor="login">Login</label>
                     </div>
                     <div className="box">
-                        <input type="checkbox" id="first-name" onClick={() => checkBoxChangeHandler("firstNameCheck")} checked={checkBoxObj.firstNameCheck}/>
+                        <input type="checkbox" id="first-name" onChange={() => checkBoxChangeHandler("firstNameCheck")} checked={checkBoxObj.firstNameCheck}/>
                         <label htmlFor="first-name">First name</label>
                     </div>
                     <div className="box">
-                        <input type="checkbox" id="second-name" onClick={() => checkBoxChangeHandler("secondNameCheck")} checked={checkBoxObj.secondNameCheck}/>
+                        <input type="checkbox" id="second-name" onChange={() => checkBoxChangeHandler("secondNameCheck")} checked={checkBoxObj.secondNameCheck}/>
                         <label htmlFor="second-name">Second Name</label>
                     </div>
                     <div className="box">
-                        <input type="checkbox" id="last-name" onClick={() => checkBoxChangeHandler("lastNameCheck")} checked={checkBoxObj.lastNameCheck}/>
+                        <input type="checkbox" id="last-name" onChange={() => checkBoxChangeHandler("lastNameCheck")} checked={checkBoxObj.lastNameCheck}/>
                         <label htmlFor="last-name">Last name</label>
                     </div>
                     <div className="box">
-                        <input type="checkbox" id="email" onClick={() => checkBoxChangeHandler("emailCheck")} checked={checkBoxObj.emailCheck}/>
+                        <input type="checkbox" id="email" onChange={() => checkBoxChangeHandler("emailCheck")} checked={checkBoxObj.emailCheck}/>
                         <label htmlFor="email">E-mail</label>
                     </div>
                     <div className="box">
-                        <input type="checkbox" id="phone-number" onClick={() => checkBoxChangeHandler("phoneNumberCheck")} checked={checkBoxObj.phoneNumberCheck}/>
+                        <input type="checkbox" id="phone-number" onChange={() => checkBoxChangeHandler("phoneNumberCheck")} checked={checkBoxObj.phoneNumberCheck}/>
                         <label htmlFor="phone-number">Phone number</label>
                     </div>
                 </div>
