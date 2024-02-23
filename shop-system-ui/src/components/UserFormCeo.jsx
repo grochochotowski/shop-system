@@ -23,7 +23,6 @@ function UserFormCeo(props) {
                 <input type="text" className="add-1st-name" placeholder="First Name" />
                 <input type="text" className="add-2nd-name" placeholder="Second Name" />
                 <input type="text" className="add-last-name" placeholder="Last Name"/>
-                <input type="text" className="add-personal-number" placeholder="Personal Number"/>
             </div>
 
             <div className="info-section">
