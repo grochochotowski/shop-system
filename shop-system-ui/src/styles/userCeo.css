@@ -57,7 +57,8 @@ section.user-ceo-form {
 }
 /*Main containers*/
 .personal-section,
-.info-section,
+.contact-section,
+.account-section,
 .shop-section {
     display: flex;
     justify-content: center;
@@ -97,7 +98,8 @@ section.user-ceo-form {
     transition: 250ms ease-in-out;
 }
 .personal-section input,
-.info-section input {
+.contact-section input,
+.account-section input {
     flex-basis: 30%;
 }
 .shop-section input,
