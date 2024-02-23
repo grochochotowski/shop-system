@@ -27,7 +27,7 @@ function UserFormCeo(props) {
         });
     }
 
-    // Make API call to create new user
+    // Check if inputs are correct
     function checkData() {
         let correct = true;
 
@@ -82,13 +82,16 @@ function UserFormCeo(props) {
 
         if (correct) sendData();
     }
+
+    
+    // Make API call to create new user
     function sendData() {
         console.log(formInputs);
     }
 
     // Function which are connected to postition drop down menu
     function RenderShopIdInput() {
-        if (["manager", "deputy-manager", "decorator", "shop-assistant"].includes(formInputs.position))
+        if ([3, 4, 5, 6].includes(formInputs.position))
             return (
             <input
                 type="text"
