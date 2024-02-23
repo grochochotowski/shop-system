@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from "react"
+import React, {useState} from "react"
 
 function UserFormCeo(props) {
     const [formInputs, setFormInputs] = useState(
@@ -89,7 +89,7 @@ function UserFormCeo(props) {
         console.log(formInputs);
     }
 
-    
+
     // Render
     return (
         <section className="user-ceo-form" style={{ width: props.formWidth }}>
