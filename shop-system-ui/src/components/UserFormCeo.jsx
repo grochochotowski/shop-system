@@ -11,8 +11,8 @@ function UserFormCeo(props) {
             phoneNumber: "",
             password: "",
             confirmPassword: "",
-            shopId: 0,
-            position: 0
+            shopId: "",
+            position: ""
         }
     );
 
@@ -192,13 +192,13 @@ function UserFormCeo(props) {
                 onChange={handleInputChange}
                 value={formInputs.position}
                 >
-                    <option value={0}>-- Choose Position --</option>
-                    <option value={1}>COO</option>
-                    <option value={2}>Accountant</option>
-                    <option value={3}>Manager</option>
-                    <option value={4}>Deputy Manager</option>
-                    <option value={5}>Decorator</option>
-                    <option value={6}>Shop Assistant</option>
+                    <option value="">-- Choose Position --</option>
+                    <option value="1">COO</option>
+                    <option value="2">Accountant</option>
+                    <option value="3">Manager</option>
+                    <option value="4">Deputy Manager</option>
+                    <option value="5">Decorator</option>
+                    <option value="6">Shop Assistant</option>
                 </select>
                 <RenderShopIdInput />
             </div>
