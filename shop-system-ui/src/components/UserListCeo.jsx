@@ -45,6 +45,7 @@ function UserListCeo(props) {
         generateListOfShopIds();
     }, [users]);
 
+    
     // create user list in a shop
     function getShopWithUsers(shopId) {
         if (users.length > 0) {
