@@ -3,10 +3,26 @@ import React, {useState, useEffect} from "react"
 function UserFormCeo(props) {
 
     const [position, setPosition] = useState("");
-    const [info, setInfo] = useState([]);
+    const [info, setInfo] = useState([
+        {
+            firstName: "",
+            secondName: "",
+            lastName: "",
+            login: "",
+            email: "",
+            phoneNumber: "",
+            password: "",
+            confirmPassword: "",
+            shopId: "",
+            positionId: ""
+        }
+    ]);
 
 
-    // Get data from form
+    // Get data from inputs
+    useEffect(() => {
+        console.log("test");
+    }, [document.getElementBy("add-1st-name").value]);
 
 
     // Make API call to create new user
@@ -29,22 +45,22 @@ function UserFormCeo(props) {
         <section className="user-ceo-form" style={{ width: props.formWidth }}>
             <div className="personal-section">
                 <h3>Personal information</h3>
-                <input type="text" className="add-1st-name" placeholder="First Name" />
-                <input type="text" className="add-2nd-name" placeholder="Second Name" />
-                <input type="text" className="add-last-name" placeholder="Last Name"/>
+                <input type="text" id="add-1st-name" placeholder="First Name" />
+                <input type="text" id="add-2nd-name" placeholder="Second Name" />
+                <input type="text" id="add-last-name" placeholder="Last Name"/>
             </div>
 
             <div className="info-section">
                 <h3>Contract information</h3>
-                <input type="email" className="add-email" placeholder="E-mail"/>
-                <input type="text" className="add-phone-number" placeholder="Phone Number"/>
-                <input type="text" className="add-account-number" placeholder="Account Number"/>
+                <input type="email" id="add-email" placeholder="E-mail"/>
+                <input type="text" id="add-phone-number" placeholder="Phone Number"/>
+                <input type="text" id="add-account-number" placeholder="Account Number"/>
             </div>
 
             <div className="shop-section">
                 <h3>Shop information</h3>
-                <input type="text" className="add-login" placeholder="Login"/>
-                <input type="password" className="add-password" placeholder="Password"/>
+                <input type="text" id="add-login" placeholder="Login"/>
+                <input type="password" id="add-password" placeholder="Password"/>
 
                 <select name="position" id="position" onChange={setNewPosition}>
                     <option value="choose">-- Choose Position --</option>
