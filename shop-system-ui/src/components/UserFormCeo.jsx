@@ -28,6 +28,10 @@ function UserFormCeo(props) {
     }
 
     // Make API call to create new user
+    function checkData() {
+        let correct = true;
+        if (correct) sendData();
+    }
     function sendData() {
         console.log(formInputs);
     }
@@ -137,7 +141,7 @@ function UserFormCeo(props) {
                 <RenderShopIdInput />
             </div>
 
-            <button className="submit" onClick={sendData}>Add user</button>
+            <button className="submit" onClick={checkData}>Add user</button>
         </section>
     );
 }
