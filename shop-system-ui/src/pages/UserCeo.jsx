@@ -2,8 +2,6 @@ import React, {useState, useEffect} from "react"
 import "../styles/userCeo.css"
 
 function UserCeo() {
-
-    const [position, setPosition] = useState("");
     const [containerHeight, setContainerHeight] = useState("");
     const [formWidth, setFormWidth] = useState("");
     const [listWidth, setListWidth] = useState("");
