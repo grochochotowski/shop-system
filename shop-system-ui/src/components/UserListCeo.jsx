@@ -3,6 +3,19 @@ import ShopUserListElement from "../components/ShopUserListElement"
 
 function UserListCeo() {
 
+    const [users, setUsers] = useState([]);
+    const [checkBoxObj, setCheckBoxObj] = useState({
+        idCheck: true,
+        positionCheck: true,
+        loginCheck: true,
+        firstNameCheck: true,
+        secondNameCheck: true,
+        lastNameCheck: true,
+        emailCheck: true,
+        phoneNumberCheck: true
+    });
+    const uniqueShopIds = [0, 6, 7];
+    
     // fetch api data - get info about users and thir shops
     useEffect(() => {
         async function getUserData() {

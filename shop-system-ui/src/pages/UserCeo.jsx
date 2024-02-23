@@ -8,18 +8,6 @@ function UserCeo() {
     const [formWidth, setFormWidth] = useState("");
     const [listWidth, setListWidth] = useState("");
     const [isResizing, setIsResizing] = useState(false);
-    const [users, setUsers] = useState([]);
-    const [checkBoxObj, setCheckBoxObj] = useState({
-        idCheck: true,
-        positionCheck: true,
-        loginCheck: true,
-        firstNameCheck: true,
-        secondNameCheck: true,
-        lastNameCheck: true,
-        emailCheck: true,
-        phoneNumberCheck: true
-    });
-    const uniqueShopIds = [0, 6, 7];
 
 
     
