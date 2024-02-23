@@ -2,6 +2,84 @@ import React, {useState, useEffect} from "react"
 import ShopUserListElement from "../components/ShopUserListElement"
 
 function UserListCeo() {
+
+    // fetch api data - get info about users and thir shops
+    useEffect(() => {
+        async function getUserData() {
+            const response = await fetch("https://localhost:7057/api/user");
+            const data = await response.json();
+            setUsers(data);
+        }
+        getUserData();
+    }, []);
+
+
+    // create user list in a shop
+    function getShopWithUsers(shopId) {
+        if (users.length > 0) {
+            var usersInShop;
+            var title;
+            if (shopId !== 0) {
+                usersInShop =
+                    users
+                    .filter(user => user.shop && user.shop.id === shopId)
+                    .map((user) => {
+                        if (!title) title = user.shop.code;
+                        return (
+                            {
+                                userId: user.id,
+                                firstName: user.firstName,
+                                secondName: user.secondName,
+                                lastName: user.lastName,
+                                login: user.login,
+                                email: user.email,
+                                phoneNumber: user.phoneNumber,
+                                position: user.position.name
+                            }
+                        );
+                    });
+            }
+            else {
+                usersInShop =
+                    users
+                    .filter(user => user.shopId == null)
+                    .map((user) => {
+                        if (!title) title = "No Shop";
+                        return (
+                            {
+                                userId: user.id,
+                                firstName: user.firstName,
+                                secondName: user.secondName,
+                                lastName: user.lastName,
+                                login: user.login,
+                                email: user.email,
+                                phoneNumber: user.phoneNumber,
+                                position: user.position.name
+                            }
+                        );
+                    });
+            }
+            return(
+                <ShopUserListElement
+                    key={shopId}
+                    title={title} 
+                    collapsed={true}
+                    elements={usersInShop}
+                    checkedBoxes={checkBoxObj}
+                />
+            );
+        }
+    }
+
+// check boxes changing handler
+function checkBoxChangeHandler(what) {
+    setCheckBoxObj((prev) => ({
+        ...prev,
+        [what]: !prev[what]
+    }));
+}
+
+
 // Render
     return (
         <>
