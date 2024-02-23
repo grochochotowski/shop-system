@@ -3,7 +3,7 @@ import React, {useState, useEffect} from "react"
 function UserFormCeo(props) {
 
     const [position, setPosition] = useState("");
-    const [info, setInfo] = useState([
+    const [formInputs, setFormInputs] = useState([
         {
             firstName: "",
             secondName: "",
