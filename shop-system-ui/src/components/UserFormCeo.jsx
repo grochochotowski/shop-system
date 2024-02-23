@@ -1,7 +1,7 @@
 import React, {useState} from "react"
 
 function UserFormCeo(props) {
-    const [formInputs, setFormInputs] = useState([
+    const [formInputs, setFormInputs] = useState(
         {
             firstName: "",
             secondName: "",
@@ -14,7 +14,7 @@ function UserFormCeo(props) {
             shopId: "",
             positionId: ""
         }
-    ]);
+    );
 
 
     // Get data from inputs
