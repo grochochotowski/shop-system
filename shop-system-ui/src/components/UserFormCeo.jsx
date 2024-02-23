@@ -27,7 +27,6 @@ function UserFormCeo(props) {
                 [event.target.name]: event.target.value
             }
         });
-        console.log(formInputs);
     }
 
     // Make API call to create new user
