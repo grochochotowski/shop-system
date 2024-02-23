@@ -91,26 +91,25 @@ function UserFormCeo(props) {
 
     // Display shopId input if needed
     const [shopIdInput, setrShopIdInput] = useState(null);
-    function RenderShopIdInput(){
-        useEffect( () => {
-            function InputGenerator() {
-                if (["3", "4", "5", "6"].includes(formInputs.position))
-                    setrShopIdInput (
-                        <input
-                            type="text"
-                            className="add-shopID"
-                            placeholder="ShopID"
-                            name="shopId"
-                            onChange={handleInputChange}
-                            value={formInputs.shopId}
-                        />
-                    )
-                setrShopIdInput(null);
+    useEffect( () => {
+        function InputGenerator() {
+            console.log("test");
+            if (["3", "4", "5", "6"].includes(formInputs.position)) {
+                setrShopIdInput (
+                    <input
+                        type="text"
+                        className="add-shopID"
+                        placeholder="ShopID"
+                        name="shopId"
+                        onChange={handleInputChange}
+                        value={formInputs.shopId}
+                    />
+                )
             }
-            InputGenerator();
-        }, [formInputs.position]);
-        return null;
-    }
+            else setrShopIdInput(null);
+        }
+        InputGenerator();
+    }, [formInputs.position]);
 
     // Render
     return (
@@ -206,7 +205,7 @@ function UserFormCeo(props) {
                     <option value="5">Decorator</option>
                     <option value="6">Shop Assistant</option>
                 </select>
-                {console.log(shopIdInput)}
+                {shopIdInput}
             </div>
 
             <button className="submit" onClick={checkData}>Add user</button>
