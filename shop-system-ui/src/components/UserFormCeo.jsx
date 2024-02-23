@@ -11,8 +11,8 @@ function UserFormCeo(props) {
             phoneNumber: "",
             password: "",
             confirmPassword: "",
-            shopId: "",
-            positionId: ""
+            shopId: null,
+            positionId: 0
         }
     );
 
@@ -30,6 +30,17 @@ function UserFormCeo(props) {
     // Make API call to create new user
     function checkData() {
         let correct = true;
+
+        if (formInputs.firstName === "") correct = false;
+        if (formInputs.secondName === "") correct = false;
+        if (formInputs.lastName === "") correct = false;
+        if (formInputs.login === "") correct = false;
+        if (formInputs.email === "") correct = false;
+        if (formInputs.phoneNumber === "") correct = false;
+        if (formInputs.password === "") correct = false;
+        if (formInputs.confirmPassword === "") correct = false;
+        if (formInputs.positionId === 0) correct = false;
+
         if (correct) sendData();
     }
     function sendData() {
@@ -130,13 +141,13 @@ function UserFormCeo(props) {
                 onChange={handleInputChange}
                 value={formInputs.position}
                 >
-                    <option value="choose">-- Choose Position --</option>
-                    <option value="coo">COO</option>
-                    <option value="accountant">Accountant</option>
-                    <option value="manager">Manager</option>
-                    <option value="deputy-manager">Deputy Manager</option>
-                    <option value="decorator">Decorator</option>
-                    <option value="shop-assistant">Shop Assistant</option>
+                    <option value={0}>-- Choose Position --</option>
+                    <option value={1}>COO</option>
+                    <option value={2}>Accountant</option>
+                    <option value={3}>Manager</option>
+                    <option value={4}>Deputy Manager</option>
+                    <option value={5}>Decorator</option>
+                    <option value={6}>Shop Assistant</option>
                 </select>
                 <RenderShopIdInput />
             </div>
