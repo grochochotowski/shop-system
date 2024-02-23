@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from "react"
 import ShopUserListElement from "../components/ShopUserListElement"
 
-function UserListCeo() {
+function UserListCeo(props) {
 
     const [users, setUsers] = useState([]);
     const [checkBoxObj, setCheckBoxObj] = useState({
@@ -15,7 +15,7 @@ function UserListCeo() {
         phoneNumberCheck: true
     });
     const uniqueShopIds = [0, 6, 7];
-    
+
     // fetch api data - get info about users and thir shops
     useEffect(() => {
         async function getUserData() {
@@ -96,7 +96,7 @@ function checkBoxChangeHandler(what) {
 // Render
     return (
         <>
-            <section className="user-list" style={{ width: listWidth}}>
+            <section className="user-list" style={{ width: props.listWidth}}>
                 <div className="options">
                     <div className="box">
                         <input type="checkbox" id="user-id" onClick={() => checkBoxChangeHandler("idCheck")} checked={checkBoxObj.idCheck}/>
