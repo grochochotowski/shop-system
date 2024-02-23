@@ -14,8 +14,9 @@ function UserListCeo(props) {
         emailCheck: true,
         phoneNumberCheck: true
     });
-    const uniqueShopIds = [0, 6, 7];
+    const [uniqueShopIds, setUniqueShopIds] = useState([]);
 
+    // Do at the begginning
     // fetch api data - get info about users and thir shops
     useEffect(() => {
         async function getUserData() {
@@ -26,6 +27,23 @@ function UserListCeo(props) {
         getUserData();
     }, []);
 
+
+    // generate list of unique shop ids on users list change
+    useEffect(() => {
+        function generateListOfShopIds() {
+            let list = [];
+            users.forEach(user => {
+                if (user.shopId !== null && !list.includes(user.shopId))
+                    list.push(user.shopId);
+                else if (user.shopId === null && !list.includes(0))
+                    list.push(0);
+            });
+            console.log(list);
+            console.log(users);
+            setUniqueShopIds(list);
+        }
+        generateListOfShopIds();
+    }, [users]);
 
     // create user list in a shop
     function getShopWithUsers(shopId) {
