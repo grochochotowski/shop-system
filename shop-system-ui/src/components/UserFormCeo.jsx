@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from "react"
+import React, {useState} from "react"
 
 function UserFormCeo(props) {
 
@@ -20,10 +20,12 @@ function UserFormCeo(props) {
 
 
     // Get data from inputs
-    useEffect(() => {
-        console.log("test");
-    }, [document.getElementBy("add-1st-name").value]);
-
+    function handleInputChange(event) {
+        setFormInputs( prev => {
+            ...prev,
+            []
+        });
+    }
 
     // Make API call to create new user
 
@@ -45,22 +47,23 @@ function UserFormCeo(props) {
         <section className="user-ceo-form" style={{ width: props.formWidth }}>
             <div className="personal-section">
                 <h3>Personal information</h3>
-                <input type="text" id="add-1st-name" placeholder="First Name" />
-                <input type="text" id="add-2nd-name" placeholder="Second Name" />
-                <input type="text" id="add-last-name" placeholder="Last Name"/>
+                <input type="text" id="add-1st-name" placeholder="First Name" name="firstName"/>
+                <input type="text" id="add-2nd-name" placeholder="Second Name" name="secondName"/>
+                <input type="text" id="add-last-name" placeholder="Last Name" name="lastName"/>
             </div>
 
             <div className="info-section">
                 <h3>Contract information</h3>
-                <input type="email" id="add-email" placeholder="E-mail"/>
-                <input type="text" id="add-phone-number" placeholder="Phone Number"/>
-                <input type="text" id="add-account-number" placeholder="Account Number"/>
+                <input type="email" id="add-email" placeholder="E-mail" name="email"/>
+                <input type="text" id="add-phone-number" placeholder="Phone Number" name="phoneNumber"/>
+                {/*<input type="text" id="add-account-number" placeholder="Account Number" name=""/>*/}
             </div>
 
             <div className="shop-section">
                 <h3>Shop information</h3>
-                <input type="text" id="add-login" placeholder="Login"/>
-                <input type="password" id="add-password" placeholder="Password"/>
+                <input type="text" id="add-login" placeholder="Login" name="login"/>
+                <input type="password" id="add-password" placeholder="Password" name="password"/>
+                <input type="password" id="add-password" placeholder="Password" name="confirmPassword"/>
 
                 <select name="position" id="position" onChange={setNewPosition}>
                     <option value="choose">-- Choose Position --</option>
