@@ -115,24 +115,24 @@ function UserFormCeo(props) {
                     onChange={handleInputChange}
                     value={formInputs.confirmPassword}
                 />
-                <div className="shop-section">
+            </div>
+            <div className="shop-section">
                 <h3>Shop information</h3>
-                    <select
-                    id="position"
-                    name="position"
-                    onChange={handleInputChange}
-                    value={formInputs.position}
-                    >
-                        <option value="choose">-- Choose Position --</option>
-                        <option value="coo">COO</option>
-                        <option value="accountant">Accountant</option>
-                        <option value="manager">Manager</option>
-                        <option value="deputy-manager">Deputy Manager</option>
-                        <option value="decorator">Decorator</option>
-                        <option value="shop-assistant">Shop Assistant</option>
-                    </select>
-                    <RenderShopIdInput />
-                </div>
+                <select
+                id="position"
+                name="position"
+                onChange={handleInputChange}
+                value={formInputs.position}
+                >
+                    <option value="choose">-- Choose Position --</option>
+                    <option value="coo">COO</option>
+                    <option value="accountant">Accountant</option>
+                    <option value="manager">Manager</option>
+                    <option value="deputy-manager">Deputy Manager</option>
+                    <option value="decorator">Decorator</option>
+                    <option value="shop-assistant">Shop Assistant</option>
+                </select>
+                <RenderShopIdInput />
             </div>
 
             <button className="submit">Add user</button>
