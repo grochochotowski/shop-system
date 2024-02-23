@@ -15,7 +15,7 @@ function UserFormCeo(props) {
         return null;
     }
 
-// Render
+    // Render
     return (
         <section className="user-ceo-form" style={{ width: props.formWidth }}>
             <div className="personal-section">
