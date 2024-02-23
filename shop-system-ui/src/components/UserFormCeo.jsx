@@ -1,6 +1,6 @@
 import React, {useState} from "react"
 
-function UserFormCeo() {
+function UserFormCeo(props) {
 
     const [position, setPosition] = useState("");
 
@@ -17,7 +17,7 @@ function UserFormCeo() {
 
 // Render
     return (
-        <section className="user-ceo-form" style={{ width: formWidth }}>
+        <section className="user-ceo-form" style={{ width: props.formWidth }}>
             <div className="personal-section">
                 <h3>Personal information</h3>
                 <input type="text" className="add-1st-name" placeholder="First Name" />
