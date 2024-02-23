@@ -257,7 +257,7 @@ section.user-list {
  
     transition: 250ms ease-in-out;
  }
-.shop-user-element.not-collapsed p:before {
+.shop-user-element.not-collapsed p.shopP:before {
     content: '';
     position: absolute;
     left: 0;
