@@ -1,6 +1,20 @@
 import React, {useState, useEffect} from "react"
 
 function UserFormCeo() {
+
+
+
+// Function which are connected to postition drop down menu
+function setNewPosition(e) {
+    if (e.target.value === "choose") setPosition("")
+    else setPosition(e.target.value);
+}
+function RenderShopIdInput() {
+    if (["manager", "deputy-manager", "decorator", "shop-assistant"].includes(position))
+        return <input type="text" className="add-shopID" placeholder="ShopID"/>
+    return null;
+}
+
 // Render
     return (
         <section className="user-ceo-form" style={{ width: formWidth }}>
