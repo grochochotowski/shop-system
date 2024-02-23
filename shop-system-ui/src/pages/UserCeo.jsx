@@ -1,5 +1,3 @@
-import React, {useState, useEffect} from "react"
-import ShopUserListElement from "../components/ShopUserListElement"
 import "../styles/userCeo.css"
 
 function UserCeo() {
@@ -171,84 +169,13 @@ function UserCeo() {
     return (
         <>
             <div className="user-ceo-container" style={{ height: containerHeight }}>
-                <section className="user-ceo-form" style={{ width: formWidth }}>
-                    <div className="personal-section">
-                        <h3>Personal information</h3>
-                        <input type="text" className="add-1st-name" placeholder="First Name" />
-                        <input type="text" className="add-2nd-name" placeholder="Second Name" />
-                        <input type="text" className="add-last-name" placeholder="Last Name"/>
-                        <input type="text" className="add-personal-number" placeholder="Personal Number"/>
-                    </div>
-
-                    <div className="info-section">
-                        <h3>Contract information</h3>
-                        <input type="email" className="add-email" placeholder="E-mail"/>
-                        <input type="text" className="add-phone-number" placeholder="Phone Number"/>
-                        <input type="text" className="add-account-number" placeholder="Account Number"/>
-                    </div>
-
-                    <div className="shop-section">
-                        <h3>Shop information</h3>
-                        <input type="text" className="add-login" placeholder="Login"/>
-                        <input type="password" className="add-password" placeholder="Password"/>
-
-                        <select name="position" id="position" onChange={setNewPosition}>
-                            <option value="choose">-- Choose Position --</option>
-                            <option value="coo">COO</option>
-                            <option value="accountant">Accountant</option>
-                            <option value="manager">Manager</option>
-                            <option value="deputy-manager">Deputy Manager</option>
-                            <option value="decorator">Decorator</option>
-                            <option value="shop-assistant">Shop Assistant</option>
-                        </select>
-                        <RenderShopIdInput />
-                    </div>
-
-                    <button className="submit">Add user</button>
-                </section>
+                
                 <div className={`size-bar ${isResizing ? 'resizing' : ''}`} onMouseDown={handleMouseDown}></div>
-                <section className="user-list" style={{ width: listWidth}}>
-                    <div className="options">
-                        <div className="box">
-                            <input type="checkbox" id="user-id" onClick={() => checkBoxChangeHandler("idCheck")} checked={checkBoxObj.idCheck}/>
-                            <label htmlFor="user-id">User ID</label>
-                        </div>
-                        <div className="box">
-                            <input type="checkbox" id="position-check" onClick={() => checkBoxChangeHandler("positionCheck")} checked={checkBoxObj.positionCheck}/>
-                            <label htmlFor="position-check">Position</label>
-                        </div>
-                        <div className="box">
-                            <input type="checkbox" id="login" onClick={() => checkBoxChangeHandler("loginCheck")} checked={checkBoxObj.loginCheck}/>
-                            <label htmlFor="login">Login</label>
-                        </div>
-                        <div className="box">
-                            <input type="checkbox" id="first-name" onClick={() => checkBoxChangeHandler("firstNameCheck")} checked={checkBoxObj.firstNameCheck}/>
-                            <label htmlFor="first-name">First name</label>
-                        </div>
-                        <div className="box">
-                            <input type="checkbox" id="second-name" onClick={() => checkBoxChangeHandler("secondNameCheck")} checked={checkBoxObj.secondNameCheck}/>
-                            <label htmlFor="second-name">Second Name</label>
-                        </div>
-                        <div className="box">
-                            <input type="checkbox" id="last-name" onClick={() => checkBoxChangeHandler("lastNameCheck")} checked={checkBoxObj.lastNameCheck}/>
-                            <label htmlFor="last-name">Last name</label>
-                        </div>
-                        <div className="box">
-                            <input type="checkbox" id="email" onClick={() => checkBoxChangeHandler("emailCheck")} checked={checkBoxObj.emailCheck}/>
-                            <label htmlFor="email">E-mail</label>
-                        </div>
-                        <div className="box">
-                            <input type="checkbox" id="phone-number" onClick={() => checkBoxChangeHandler("phoneNumberCheck")} checked={checkBoxObj.phoneNumberCheck}/>
-                            <label htmlFor="phone-number">Phone number</label>
-                        </div>
-                    </div>
-                    <div className="user-list-elements">
-                        { uniqueShopIds.map((id) => getShopWithUsers(id)) }
-                    </div>
-                </section>
+                
             </div>
         </>
     );
+                
 
 }
 
