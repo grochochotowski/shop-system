@@ -1,8 +1,16 @@
-import React, {useState} from "react"
+import React, {useState, useEffect} from "react"
 
 function UserFormCeo(props) {
 
     const [position, setPosition] = useState("");
+    const [info, setInfo] = useState([]);
+
+
+    // Get data from form
+
+
+    // Make API call to create new user
+
 
     // Function which are connected to postition drop down menu
     function setNewPosition(e) {
@@ -14,6 +22,7 @@ function UserFormCeo(props) {
             return <input type="text" className="add-shopID" placeholder="ShopID"/>
         return null;
     }
+
 
     // Render
     return (
