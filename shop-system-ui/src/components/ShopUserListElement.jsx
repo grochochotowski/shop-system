@@ -10,7 +10,7 @@ function ShopUserListElement(props) {
                 <ul>
                     {props.elements.map((user) => {
                         return (
-                            <li key={props.userId}>
+                            <li key={user.userId}>
                                 {props.checkedBoxes.idCheck && <p><b>ID: </b>{user.userId}</p>}
                                 {props.checkedBoxes.positionCheck && <p><b>POSITION: </b>{user.position}</p>}
                                 {props.checkedBoxes.loginCheck && <p><b>LOGIN: </b>{user.login}</p>}
