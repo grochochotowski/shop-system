@@ -12,7 +12,7 @@ function UserFormCeo(props) {
             password: "",
             confirmPassword: "",
             shopId: null,
-            positionId: 0
+            position: 0
         }
     );
 
@@ -31,15 +31,54 @@ function UserFormCeo(props) {
     function checkData() {
         let correct = true;
 
-        if (formInputs.firstName === "") correct = false;
-        if (formInputs.secondName === "") correct = false;
-        if (formInputs.lastName === "") correct = false;
-        if (formInputs.login === "") correct = false;
-        if (formInputs.email === "") correct = false;
-        if (formInputs.phoneNumber === "") correct = false;
-        if (formInputs.password === "") correct = false;
-        if (formInputs.confirmPassword === "") correct = false;
-        if (formInputs.positionId === 0) correct = false;
+        if (formInputs.firstName === "")
+        {
+            console.log("first name is empty");
+            correct = false;
+        }
+        if (formInputs.secondName === "")
+        {
+            console.log("second name is empty");
+            correct = false;
+        }
+        if (formInputs.lastName === "")
+        {
+            console.log("last name is empty");
+            correct = false;
+        }
+        if (formInputs.login === "")
+        {
+            console.log("login is empty");
+            correct = false;
+        }
+        if (formInputs.email === "")
+        {
+            console.log("email is empty");
+            correct = false;
+        }
+        if (formInputs.phoneNumber === "")
+        {
+            console.log("phone number is empty");
+            correct = false;
+        }
+        if (formInputs.password === "")
+        {
+            console.log("password is empty");
+            correct = false;
+        }
+        if (formInputs.confirmPassword === "")
+        {
+            console.log("confirmPassword is empty");
+            correct = false;
+        }
+        if (formInputs.position === 0) {
+            console.log("positionId is empty"); 
+            correct = false;
+        }
+        if ([3, 4, 5, 6].includes(formInputs.position)) {
+            console.log("shopId is empty"); 
+            correct = false;
+        }
 
         if (correct) sendData();
     }
@@ -50,7 +89,16 @@ function UserFormCeo(props) {
     // Function which are connected to postition drop down menu
     function RenderShopIdInput() {
         if (["manager", "deputy-manager", "decorator", "shop-assistant"].includes(formInputs.position))
-            return <input type="text" className="add-shopID" placeholder="ShopID"/>
+            return (
+            <input
+                type="text"
+                className="add-shopID"
+                placeholder="ShopID"
+                name="shopId"
+                onChange={handleInputChange}
+                value={formInputs.shopId}
+            />
+            )
         return null;
     }
 
