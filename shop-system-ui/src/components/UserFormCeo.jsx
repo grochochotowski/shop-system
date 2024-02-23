@@ -90,7 +90,7 @@ function UserFormCeo(props) {
             </div>
 
             <div className="account-section">
-                <h3>Shop information</h3>
+                <h3>Account information</h3>
                 <input 
                     type="text"
                     id="add-login"
@@ -115,7 +115,8 @@ function UserFormCeo(props) {
                     onChange={handleInputChange}
                     value={formInputs.confirmPassword}
                 />
-                <div className="account-section">
+                <div className="shop-section">
+                <h3>Shop information</h3>
                     <select
                     id="position"
                     name="position"
