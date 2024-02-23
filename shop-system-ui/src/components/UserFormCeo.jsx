@@ -11,7 +11,7 @@ function UserFormCeo(props) {
             phoneNumber: "",
             password: "",
             confirmPassword: "",
-            shopId: null,
+            shopId: 0,
             position: 0
         }
     );
@@ -83,13 +83,13 @@ function UserFormCeo(props) {
         if (correct) sendData();
     }
 
-    
+
     // Make API call to create new user
     function sendData() {
         console.log(formInputs);
     }
 
-    // Function which are connected to postition drop down menu
+    // Display shopId input if needed
     function RenderShopIdInput() {
         if ([3, 4, 5, 6].includes(formInputs.position))
             return (
