@@ -1,5 +1,7 @@
 import React, {useState, useEffect} from "react"
 import "../styles/userCeo.css"
+import UserFormCeo from "../components/UserFormCeo";
+import UserListCeo from "../components/UserListCeo";
 
 function UserCeo() {
     const [containerHeight, setContainerHeight] = useState("");
@@ -70,9 +72,9 @@ function UserCeo() {
     return (
         <>
             <div className="user-ceo-container" style={{ height: containerHeight }}>
-                
+                <UserFormCeo />
                 <div className={`size-bar ${isResizing ? 'resizing' : ''}`} onMouseDown={handleMouseDown}></div>
-                
+                <UserListCeo />
             </div>
         </>
     );
