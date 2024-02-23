@@ -33,19 +33,17 @@ function UserListCeo(props) {
         function generateListOfShopIds() {
             let list = [];
             users.forEach(user => {
-                if (user.shopId !== null && !list.includes(user.shopId))
-                    list.push(user.shopId);
-                else if (user.shopId === null && !list.includes(0))
+                if (user.shop !== null && !list.includes(user.shop.id))
+                    list.push(user.shop.id);
+                else if (user.shop === null && !list.includes(0))
                     list.push(0);
             });
-            console.log(list);
-            console.log(users);
             setUniqueShopIds(list);
         }
         generateListOfShopIds();
     }, [users]);
 
-    
+
     // create user list in a shop
     function getShopWithUsers(shopId) {
         if (users.length > 0) {
