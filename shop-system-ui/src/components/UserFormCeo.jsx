@@ -1,8 +1,6 @@
 import React, {useState} from "react"
 
 function UserFormCeo(props) {
-
-    const [position, setPosition] = useState("");
     const [formInputs, setFormInputs] = useState([
         {
             firstName: "",
@@ -33,12 +31,8 @@ function UserFormCeo(props) {
 
 
     // Function which are connected to postition drop down menu
-    function setNewPosition(e) {
-        if (e.target.value === "choose") setPosition("")
-        else setPosition(e.target.value);
-    }
     function RenderShopIdInput() {
-        if (["manager", "deputy-manager", "decorator", "shop-assistant"].includes(position))
+        if (["manager", "deputy-manager", "decorator", "shop-assistant"].includes(formInputs.position))
             return <input type="text" className="add-shopID" placeholder="ShopID"/>
         return null;
     }
