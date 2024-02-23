@@ -72,9 +72,9 @@ function UserCeo() {
     return (
         <>
             <div className="user-ceo-container" style={{ height: containerHeight }}>
-                <UserFormCeo />
+                <UserFormCeo formWidth={formWidth}/>
                 <div className={`size-bar ${isResizing ? 'resizing' : ''}`} onMouseDown={handleMouseDown}></div>
-                <UserListCeo />
+                <UserListCeo listWidth={listWidth}/>
             </div>
         </>
     );
