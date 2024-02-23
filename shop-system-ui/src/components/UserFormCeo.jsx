@@ -21,10 +21,13 @@ function UserFormCeo(props) {
 
     // Get data from inputs
     function handleInputChange(event) {
-        setFormInputs( prev => {
-            ...prev,
-            []
+        setFormInputs( (prev) => {
+            return {
+                ...prev,
+                [event.target.name]: event.target.value
+            }
         });
+        console.log(formInputs);
     }
 
     // Make API call to create new user
@@ -47,25 +50,85 @@ function UserFormCeo(props) {
         <section className="user-ceo-form" style={{ width: props.formWidth }}>
             <div className="personal-section">
                 <h3>Personal information</h3>
-                <input type="text" id="add-1st-name" placeholder="First Name" name="firstName"/>
-                <input type="text" id="add-2nd-name" placeholder="Second Name" name="secondName"/>
-                <input type="text" id="add-last-name" placeholder="Last Name" name="lastName"/>
+                <input 
+                    type="text"
+                    id="add-1st-name"
+                    placeholder="First Name"
+                    name="firstName"
+                    onChange={handleInputChange}
+                    value={formInputs.firstName}
+                />
+                <input 
+                    type="text"
+                    id="add-2nd-name"
+                    placeholder="Second Name"
+                    name="secondName"
+                    onChange={handleInputChange}
+                    value={formInputs.secondName}
+                />
+                <input 
+                    type="text"
+                    id="add-last-name"
+                    placeholder="Last Name"
+                    name="lastName"
+                    onChange={handleInputChange}
+                    value={formInputs.lastName}
+                />
             </div>
 
             <div className="info-section">
                 <h3>Contract information</h3>
-                <input type="email" id="add-email" placeholder="E-mail" name="email"/>
-                <input type="text" id="add-phone-number" placeholder="Phone Number" name="phoneNumber"/>
-                {/*<input type="text" id="add-account-number" placeholder="Account Number" name=""/>*/}
+                <input 
+                    type="email"
+                    id="add-email"
+                    placeholder="E-mail"
+                    name="email"
+                    onChange={handleInputChange}
+                    value={formInputs.email}
+                />
+                <input 
+                    type="text"
+                    id="add-phone-number"
+                    placeholder="Phone Number"
+                    name="phoneNumber"
+                    onChange={handleInputChange}
+                    value={formInputs.phoneNumber}
+                />
             </div>
 
             <div className="shop-section">
                 <h3>Shop information</h3>
-                <input type="text" id="add-login" placeholder="Login" name="login"/>
-                <input type="password" id="add-password" placeholder="Password" name="password"/>
-                <input type="password" id="add-password" placeholder="Password" name="confirmPassword"/>
+                <input 
+                    type="text"
+                    id="add-login"
+                    placeholder="Login"
+                    name="login"
+                    onChange={handleInputChange}
+                    value={formInputs.login}
+                />
+                <input 
+                    type="password"
+                    id="add-password"
+                    placeholder="Password"
+                    name="password"
+                    onChange={handleInputChange}
+                    value={formInputs.password}
+                />
+                <input 
+                    type="password"
+                    id="add-confirm-password"
+                    placeholder="Confirm Password"
+                    name="confirmPassword"
+                    onChange={handleInputChange}
+                    value={formInputs.confirmPassword}
+                />
 
-                <select name="position" id="position" onChange={setNewPosition}>
+                <select
+                id="position"
+                name="position"
+                onChange={handleInputChange}
+                value={formInputs.position}
+                >
                     <option value="choose">-- Choose Position --</option>
                     <option value="coo">COO</option>
                     <option value="accountant">Accountant</option>
