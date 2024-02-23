@@ -28,7 +28,9 @@ function UserFormCeo(props) {
     }
 
     // Make API call to create new user
-
+    function sendData() {
+        console.log(formInputs);
+    }
 
     // Function which are connected to postition drop down menu
     function RenderShopIdInput() {
@@ -135,7 +137,7 @@ function UserFormCeo(props) {
                 <RenderShopIdInput />
             </div>
 
-            <button className="submit">Add user</button>
+            <button className="submit" onClick={sendData}>Add user</button>
         </section>
     );
 }
