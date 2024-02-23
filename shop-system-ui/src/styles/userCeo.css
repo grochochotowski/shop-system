@@ -104,7 +104,7 @@ section.user-ceo-form {
 }
 .shop-section input,
 .shop-section select {
-    flex-basis: 40%;
+    flex-basis: 60%;
 }
 .user-ceo-form input:focus {
     background-color: rgba(255, 241, 57, 0.3);
