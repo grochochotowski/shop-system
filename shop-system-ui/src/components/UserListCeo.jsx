@@ -84,16 +84,17 @@ function UserListCeo(props) {
         }
     }
 
-// check boxes changing handler
-function checkBoxChangeHandler(what) {
-    setCheckBoxObj((prev) => ({
-        ...prev,
-        [what]: !prev[what]
-    }));
-}
+
+    // check boxes changing handler
+    function checkBoxChangeHandler(what) {
+        setCheckBoxObj((prev) => ({
+            ...prev,
+            [what]: !prev[what]
+        }));
+    }
 
 
-// Render
+    // Render
     return (
         <>
             <section className="user-list" style={{ width: props.listWidth}}>
