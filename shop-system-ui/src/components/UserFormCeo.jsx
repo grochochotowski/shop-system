@@ -1,4 +1,4 @@
-import React, {useState} from "react"
+import React, {useState, useEffect} from "react"
 
 function UserFormCeo(props) {
     const [formInputs, setFormInputs] = useState(
@@ -71,11 +71,11 @@ function UserFormCeo(props) {
             console.log("confirmPassword is empty");
             correct = false;
         }
-        if (formInputs.position === 0) {
+        if (formInputs.position === "0") {
             console.log("positionId is empty"); 
             correct = false;
         }
-        if ([3, 4, 5, 6].includes(formInputs.position)) {
+        if (["3", "4", "5", "6"].includes(formInputs.position)) {
             console.log("shopId is empty"); 
             correct = false;
         }
@@ -90,21 +90,27 @@ function UserFormCeo(props) {
     }
 
     // Display shopId input if needed
-    function RenderShopIdInput() {
-        if ([3, 4, 5, 6].includes(formInputs.position))
-            return (
-            <input
-                type="text"
-                className="add-shopID"
-                placeholder="ShopID"
-                name="shopId"
-                onChange={handleInputChange}
-                value={formInputs.shopId}
-            />
-            )
+    const [shopIdInput, setrShopIdInput] = useState(null);
+    function RenderShopIdInput(){
+        useEffect( () => {
+            function InputGenerator() {
+                if (["3", "4", "5", "6"].includes(formInputs.position))
+                    setrShopIdInput (
+                        <input
+                            type="text"
+                            className="add-shopID"
+                            placeholder="ShopID"
+                            name="shopId"
+                            onChange={handleInputChange}
+                            value={formInputs.shopId}
+                        />
+                    )
+                setrShopIdInput(null);
+            }
+            InputGenerator();
+        }, [formInputs.position]);
         return null;
     }
-
 
     // Render
     return (
@@ -200,7 +206,7 @@ function UserFormCeo(props) {
                     <option value="5">Decorator</option>
                     <option value="6">Shop Assistant</option>
                 </select>
-                <RenderShopIdInput />
+                {console.log(shopIdInput)}
             </div>
 
             <button className="submit" onClick={checkData}>Add user</button>
