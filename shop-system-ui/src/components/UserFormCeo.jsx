@@ -1,9 +1,9 @@
-import React, {useState, useEffect} from "react"
+import React, {useState} from "react"
 
 function UserFormCeo() {
 
     const [position, setPosition] = useState("");
-    
+
     // Function which are connected to postition drop down menu
     function setNewPosition(e) {
         if (e.target.value === "choose") setPosition("")
