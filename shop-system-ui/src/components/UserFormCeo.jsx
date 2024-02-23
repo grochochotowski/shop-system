@@ -89,23 +89,7 @@ function UserFormCeo(props) {
         console.log(formInputs);
     }
 
-    // Display shopId input if needed
-    function RenderShopIdInput() {
-        if (["3", "4", "5", "6"].includes(formInputs.position))
-            return (
-            <input
-                type="text"
-                className="add-shopID"
-                placeholder="ShopID"
-                name="shopId"
-                onChange={handleInputChange}
-                value={formInputs.shopId}
-            />
-            )
-        return null;
-    }
-
-
+    
     // Render
     return (
         <section className="user-ceo-form" style={{ width: props.formWidth }}>
