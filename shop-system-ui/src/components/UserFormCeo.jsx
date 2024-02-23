@@ -1,4 +1,4 @@
-import React, {useState} from "react"
+import React, {useEffect, useState} from "react"
 
 function UserFormCeo(props) {
     const [formInputs, setFormInputs] = useState(
@@ -200,7 +200,16 @@ function UserFormCeo(props) {
                     <option value="5">Decorator</option>
                     <option value="6">Shop Assistant</option>
                 </select>
-                <RenderShopIdInput />
+                {["3", "4", "5", "6"].includes(formInputs.position) && (
+                    <input
+                        type="text"
+                        className="add-shopID"
+                        placeholder="ShopID"
+                        name="shopId"
+                        onChange={handleInputChange}
+                        value={formInputs.shopId}
+                    />
+                )}
             </div>
 
             <button className="submit" onClick={checkData}>Add user</button>
