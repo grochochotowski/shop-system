@@ -102,8 +102,8 @@ function UserFormCeo(props) {
             method: 'POST', 
             mode: 'cors', 
             body: JSON.stringify(jsonBody)
-
         })
+        console.log(jsonBody);
     }
 
 
