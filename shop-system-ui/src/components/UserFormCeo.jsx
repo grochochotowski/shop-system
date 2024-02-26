@@ -95,12 +95,15 @@ function UserFormCeo(props) {
             "phoneNumber": formInputs.phoneNumber,
             "password": formInputs.password,
             "confirmPassword": formInputs.confirmPassword,
-            "shopId": formInputs.shopId,
-            "positionId": formInputs.position
+            "shopId": parseInt(formInputs.shopId),
+            "positionId": parseInt(formInputs.position)
         }
         fetch('https://localhost:7057/api/account/register', {
             method: 'POST', 
             mode: 'cors', 
+            headers: {
+              'Content-Type': 'application/json'
+            },
             body: JSON.stringify(jsonBody)
         })
         console.log(jsonBody);
