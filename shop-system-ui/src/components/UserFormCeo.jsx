@@ -86,7 +86,18 @@ function UserFormCeo(props) {
 
     // Make API call to create new user
     function sendData() {
-        console.log(formInputs);
+        var jsonBody = {
+            "firstName": formInputs.firstName,
+            "secondName": formInputs.secondName,
+            "lastName": formInputs.lastName,
+            "login": formInputs.login,
+            "email": formInputs.email,
+            "phoneNumber": formInputs.phoneNumber,
+            "password": formInputs.password,
+            "shopId": formInputs.shopId,
+            "positionId": formInputs.position
+        }
+        console.log(jsonBody);
     }
 
 
