@@ -98,7 +98,7 @@ function UserFormCeo(props) {
             "shopId": formInputs.shopId,
             "positionId": formInputs.position
         }
-        fetch('http://------------:8080/', {
+        fetch('https://localhost:7057/api/account/register', {
             method: 'POST', 
             mode: 'cors', 
             body: JSON.stringify(jsonBody)
