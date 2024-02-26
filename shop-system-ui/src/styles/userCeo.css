@@ -52,8 +52,6 @@ section.user-ceo-form {
     padding: 1.5% 1%;
 
     overflow-y: scroll;
-
-    background-color: var(--clr-bg-1);
 }
 /*Main containers*/
 .personal-section,
