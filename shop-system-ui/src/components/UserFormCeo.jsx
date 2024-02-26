@@ -94,10 +94,16 @@ function UserFormCeo(props) {
             "email": formInputs.email,
             "phoneNumber": formInputs.phoneNumber,
             "password": formInputs.password,
+            "confirmPassword": formInputs.confirmPassword,
             "shopId": formInputs.shopId,
             "positionId": formInputs.position
         }
-        console.log(jsonBody);
+        fetch('http://------------:8080/', {
+            method: 'POST', 
+            mode: 'cors', 
+            body: JSON.stringify(jsonBody)
+
+        })
     }
 
 
