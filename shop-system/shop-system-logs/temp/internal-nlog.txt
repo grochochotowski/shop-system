@@ -1,0 +1,407 @@
+2024-02-21 10:16:03.8086 Info Registered target NLog.Targets.FileTarget(Name=exceptions)
+2024-02-21 10:16:03.8343 Info Registered target NLog.Targets.FileTarget(Name=request-time)
+2024-02-21 10:16:03.8343 Info Registered target NLog.Targets.FileTarget(Name=error)
+2024-02-21 10:16:03.8500 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.8.2366. Product version: 5.2.8+f586f1341c46fa38aaaff4c641e7f0fa7e813943. GlobalAssemblyCache: False
+2024-02-21 10:16:03.8624 Info Validating config: TargetNames=exceptions, request-time, error, ConfigItems=44, FilePath=C:\nonSystem\IT\Code\shop-system\shop-system\shop-system\NLog.config
+2024-02-21 10:16:03.8737 Info Configuration initialized.
+2024-02-21 10:17:57.0891 Info Registered target NLog.Targets.FileTarget(Name=exceptions)
+2024-02-21 10:17:57.1074 Info Registered target NLog.Targets.FileTarget(Name=request-time)
+2024-02-21 10:17:57.1074 Info Registered target NLog.Targets.FileTarget(Name=error)
+2024-02-21 10:17:57.1199 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.8.2366. Product version: 5.2.8+f586f1341c46fa38aaaff4c641e7f0fa7e813943. GlobalAssemblyCache: False
+2024-02-21 10:17:57.1199 Info Validating config: TargetNames=exceptions, request-time, error, ConfigItems=44, FilePath=C:\nonSystem\IT\Code\shop-system\shop-system\shop-system\NLog.config
+2024-02-21 10:17:57.1394 Info Configuration initialized.
+2024-02-21 10:24:43.8046 Info Registered target NLog.Targets.FileTarget(Name=exceptions)
+2024-02-21 10:24:43.8295 Info Registered target NLog.Targets.FileTarget(Name=request-time)
+2024-02-21 10:24:43.8295 Info Registered target NLog.Targets.FileTarget(Name=error)
+2024-02-21 10:24:43.8616 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.8.2366. Product version: 5.2.8+f586f1341c46fa38aaaff4c641e7f0fa7e813943. GlobalAssemblyCache: False
+2024-02-21 10:24:43.8744 Info Validating config: TargetNames=exceptions, request-time, error, ConfigItems=44, FilePath=C:\nonSystem\IT\Code\shop-system\shop-system\shop-system\NLog.config
+2024-02-21 10:24:43.8881 Info Configuration initialized.
+2024-02-21 10:33:40.0976 Info Registered target NLog.Targets.FileTarget(Name=exceptions)
+2024-02-21 10:33:40.1331 Info Registered target NLog.Targets.FileTarget(Name=request-time)
+2024-02-21 10:33:40.1331 Info Registered target NLog.Targets.FileTarget(Name=error)
+2024-02-21 10:33:40.1491 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.8.2366. Product version: 5.2.8+f586f1341c46fa38aaaff4c641e7f0fa7e813943. GlobalAssemblyCache: False
+2024-02-21 10:33:40.1618 Info Validating config: TargetNames=exceptions, request-time, error, ConfigItems=44, FilePath=C:\nonSystem\IT\Code\shop-system\shop-system\shop-system\NLog.config
+2024-02-21 10:33:40.1732 Info Configuration initialized.
+2024-02-21 10:35:10.6313 Info Registered target NLog.Targets.FileTarget(Name=exceptions)
+2024-02-21 10:35:10.6545 Info Registered target NLog.Targets.FileTarget(Name=request-time)
+2024-02-21 10:35:10.6545 Info Registered target NLog.Targets.FileTarget(Name=error)
+2024-02-21 10:35:10.6728 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.8.2366. Product version: 5.2.8+f586f1341c46fa38aaaff4c641e7f0fa7e813943. GlobalAssemblyCache: False
+2024-02-21 10:35:10.6822 Info Validating config: TargetNames=exceptions, request-time, error, ConfigItems=44, FilePath=C:\nonSystem\IT\Code\shop-system\shop-system\shop-system\NLog.config
+2024-02-21 10:35:10.6822 Info Configuration initialized.
+2024-02-21 10:47:30.0027 Info Registered target NLog.Targets.FileTarget(Name=exceptions)
+2024-02-21 10:47:30.0163 Info Registered target NLog.Targets.FileTarget(Name=request-time)
+2024-02-21 10:47:30.0163 Info Registered target NLog.Targets.FileTarget(Name=error)
+2024-02-21 10:47:30.0284 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.8.2366. Product version: 5.2.8+f586f1341c46fa38aaaff4c641e7f0fa7e813943. GlobalAssemblyCache: False
+2024-02-21 10:47:30.0284 Info Validating config: TargetNames=exceptions, request-time, error, ConfigItems=44, FilePath=C:\nonSystem\IT\Code\shop-system\shop-system\shop-system\NLog.config
+2024-02-21 10:47:30.0444 Info Configuration initialized.
+2024-02-21 10:55:11.4372 Info Registered target NLog.Targets.FileTarget(Name=allFile)
+2024-02-21 10:55:11.4503 Info Registered target NLog.Targets.FileTarget(Name=exceptions)
+2024-02-21 10:55:11.4503 Info Registered target NLog.Targets.FileTarget(Name=request-time)
+2024-02-21 10:55:11.4503 Info Registered target NLog.Targets.FileTarget(Name=error)
+2024-02-21 10:55:11.4651 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.8.2366. Product version: 5.2.8+f586f1341c46fa38aaaff4c641e7f0fa7e813943. GlobalAssemblyCache: False
+2024-02-21 10:55:11.4651 Info Validating config: TargetNames=allFile, exceptions, request-time, error, ConfigItems=60, FilePath=C:\nonSystem\IT\Code\shop-system\shop-system\shop-system\NLog.config
+2024-02-21 10:55:11.4837 Info Configuration initialized.
+2024-02-21 11:10:41.7599 Info Registered target NLog.Targets.FileTarget(Name=allFile)
+2024-02-21 11:10:41.7787 Info Registered target NLog.Targets.FileTarget(Name=exceptions)
+2024-02-21 11:10:41.7787 Info Registered target NLog.Targets.FileTarget(Name=request-time)
+2024-02-21 11:10:41.7787 Info Registered target NLog.Targets.FileTarget(Name=error)
+2024-02-21 11:10:41.7988 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.8.2366. Product version: 5.2.8+f586f1341c46fa38aaaff4c641e7f0fa7e813943. GlobalAssemblyCache: False
+2024-02-21 11:10:41.8100 Info Validating config: TargetNames=allFile, exceptions, request-time, error, ConfigItems=60, FilePath=C:\nonSystem\IT\Code\shop-system\shop-system\shop-system\NLog.config
+2024-02-21 11:10:41.8237 Info Configuration initialized.
+2024-02-21 11:12:36.0749 Info Registered target NLog.Targets.FileTarget(Name=allFile)
+2024-02-21 11:12:36.0933 Info Registered target NLog.Targets.FileTarget(Name=exceptions)
+2024-02-21 11:12:36.0933 Info Registered target NLog.Targets.FileTarget(Name=request-time)
+2024-02-21 11:12:36.0933 Info Registered target NLog.Targets.FileTarget(Name=error)
+2024-02-21 11:12:36.1100 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.8.2366. Product version: 5.2.8+f586f1341c46fa38aaaff4c641e7f0fa7e813943. GlobalAssemblyCache: False
+2024-02-21 11:12:36.1100 Info Validating config: TargetNames=allFile, exceptions, request-time, error, ConfigItems=60, FilePath=C:\nonSystem\IT\Code\shop-system\shop-system\shop-system\NLog.config
+2024-02-21 11:12:36.1260 Info Configuration initialized.
+2024-02-21 11:14:16.5089 Info Registered target NLog.Targets.FileTarget(Name=allFile)
+2024-02-21 11:14:16.5272 Info Registered target NLog.Targets.FileTarget(Name=exceptions)
+2024-02-21 11:14:16.5272 Info Registered target NLog.Targets.FileTarget(Name=request-time)
+2024-02-21 11:14:16.5272 Info Registered target NLog.Targets.FileTarget(Name=error)
+2024-02-21 11:14:16.5473 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.8.2366. Product version: 5.2.8+f586f1341c46fa38aaaff4c641e7f0fa7e813943. GlobalAssemblyCache: False
+2024-02-21 11:14:16.5565 Info Validating config: TargetNames=allFile, exceptions, request-time, error, ConfigItems=60, FilePath=C:\nonSystem\IT\Code\shop-system\shop-system\shop-system\NLog.config
+2024-02-21 11:14:16.5565 Info Configuration initialized.
+2024-02-21 11:17:16.7751 Info Registered target NLog.Targets.FileTarget(Name=allFile)
+2024-02-21 11:17:16.7907 Info Registered target NLog.Targets.FileTarget(Name=exceptions)
+2024-02-21 11:17:16.7921 Info Registered target NLog.Targets.FileTarget(Name=request-time)
+2024-02-21 11:17:16.7921 Info Registered target NLog.Targets.FileTarget(Name=error)
+2024-02-21 11:17:16.7921 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.8.2366. Product version: 5.2.8+f586f1341c46fa38aaaff4c641e7f0fa7e813943. GlobalAssemblyCache: False
+2024-02-21 11:17:16.8093 Info Validating config: TargetNames=allFile, exceptions, request-time, error, ConfigItems=60, FilePath=C:\nonSystem\IT\Code\shop-system\shop-system\shop-system\NLog.config
+2024-02-21 11:17:16.8093 Info Configuration initialized.
+2024-02-21 11:21:42.6550 Info Registered target NLog.Targets.FileTarget(Name=allFile)
+2024-02-21 11:21:42.6791 Info Registered target NLog.Targets.FileTarget(Name=exceptions)
+2024-02-21 11:21:42.6817 Info Registered target NLog.Targets.FileTarget(Name=request-time)
+2024-02-21 11:21:42.6817 Info Registered target NLog.Targets.FileTarget(Name=error)
+2024-02-21 11:21:42.6817 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.8.2366. Product version: 5.2.8+f586f1341c46fa38aaaff4c641e7f0fa7e813943. GlobalAssemblyCache: False
+2024-02-21 11:21:42.7025 Info Validating config: TargetNames=allFile, exceptions, request-time, error, ConfigItems=60, FilePath=C:\nonSystem\IT\Code\shop-system\shop-system\shop-system\NLog.config
+2024-02-21 11:21:42.7140 Info Configuration initialized.
+2024-02-21 11:27:24.7600 Info Registered target NLog.Targets.FileTarget(Name=allFile)
+2024-02-21 11:27:24.7808 Info Registered target NLog.Targets.FileTarget(Name=exceptions)
+2024-02-21 11:27:24.7808 Info Registered target NLog.Targets.FileTarget(Name=request-time)
+2024-02-21 11:27:24.7808 Info Registered target NLog.Targets.FileTarget(Name=error)
+2024-02-21 11:27:24.7994 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.8.2366. Product version: 5.2.8+f586f1341c46fa38aaaff4c641e7f0fa7e813943. GlobalAssemblyCache: False
+2024-02-21 11:27:24.7994 Info Validating config: TargetNames=allFile, exceptions, request-time, error, ConfigItems=60, FilePath=C:\nonSystem\IT\Code\shop-system\shop-system\shop-system\NLog.config
+2024-02-21 11:27:24.8137 Info Configuration initialized.
+2024-02-21 11:28:12.2519 Info Registered target NLog.Targets.FileTarget(Name=allFile)
+2024-02-21 11:28:12.2667 Info Registered target NLog.Targets.FileTarget(Name=exceptions)
+2024-02-21 11:28:12.2667 Info Registered target NLog.Targets.FileTarget(Name=request-time)
+2024-02-21 11:28:12.2667 Info Registered target NLog.Targets.FileTarget(Name=error)
+2024-02-21 11:28:12.2796 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.8.2366. Product version: 5.2.8+f586f1341c46fa38aaaff4c641e7f0fa7e813943. GlobalAssemblyCache: False
+2024-02-21 11:28:12.2796 Info Validating config: TargetNames=allFile, exceptions, request-time, error, ConfigItems=60, FilePath=C:\nonSystem\IT\Code\shop-system\shop-system\shop-system\NLog.config
+2024-02-21 11:28:12.2983 Info Configuration initialized.
+2024-02-21 11:31:03.1046 Info Registered target NLog.Targets.FileTarget(Name=allFile)
+2024-02-21 11:31:03.1270 Info Registered target NLog.Targets.FileTarget(Name=exceptions)
+2024-02-21 11:31:03.1270 Info Registered target NLog.Targets.FileTarget(Name=request-time)
+2024-02-21 11:31:03.1270 Info Registered target NLog.Targets.FileTarget(Name=error)
+2024-02-21 11:31:03.1429 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.8.2366. Product version: 5.2.8+f586f1341c46fa38aaaff4c641e7f0fa7e813943. GlobalAssemblyCache: False
+2024-02-21 11:31:03.1516 Info Validating config: TargetNames=allFile, exceptions, request-time, error, ConfigItems=60, FilePath=C:\nonSystem\IT\Code\shop-system\shop-system\shop-system\NLog.config
+2024-02-21 11:31:03.1516 Info Configuration initialized.
+2024-02-21 11:34:12.2066 Info Registered target NLog.Targets.FileTarget(Name=allFile)
+2024-02-21 11:34:12.2305 Info Registered target NLog.Targets.FileTarget(Name=exceptions)
+2024-02-21 11:34:12.2305 Info Registered target NLog.Targets.FileTarget(Name=request-time)
+2024-02-21 11:34:12.2305 Info Registered target NLog.Targets.FileTarget(Name=error)
+2024-02-21 11:34:12.2480 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.8.2366. Product version: 5.2.8+f586f1341c46fa38aaaff4c641e7f0fa7e813943. GlobalAssemblyCache: False
+2024-02-21 11:34:12.2480 Info Validating config: TargetNames=allFile, exceptions, request-time, error, ConfigItems=60, FilePath=C:\nonSystem\IT\Code\shop-system\shop-system\shop-system\NLog.config
+2024-02-21 11:34:12.2729 Info Configuration initialized.
+2024-02-21 11:40:37.6103 Info Registered target NLog.Targets.FileTarget(Name=allFile)
+2024-02-21 11:40:37.6272 Info Registered target NLog.Targets.FileTarget(Name=exceptions)
+2024-02-21 11:40:37.6272 Info Registered target NLog.Targets.FileTarget(Name=request-time)
+2024-02-21 11:40:37.6272 Info Registered target NLog.Targets.FileTarget(Name=error)
+2024-02-21 11:40:37.6418 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.8.2366. Product version: 5.2.8+f586f1341c46fa38aaaff4c641e7f0fa7e813943. GlobalAssemblyCache: False
+2024-02-21 11:40:37.6418 Info Validating config: TargetNames=allFile, exceptions, request-time, error, ConfigItems=60, FilePath=C:\nonSystem\IT\Code\shop-system\shop-system\shop-system\NLog.config
+2024-02-21 11:40:37.6593 Info Configuration initialized.
+2024-02-21 11:42:39.7154 Info Registered target NLog.Targets.FileTarget(Name=allFile)
+2024-02-21 11:42:39.7298 Info Registered target NLog.Targets.FileTarget(Name=exceptions)
+2024-02-21 11:42:39.7298 Info Registered target NLog.Targets.FileTarget(Name=request-time)
+2024-02-21 11:42:39.7298 Info Registered target NLog.Targets.FileTarget(Name=error)
+2024-02-21 11:42:39.7447 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.8.2366. Product version: 5.2.8+f586f1341c46fa38aaaff4c641e7f0fa7e813943. GlobalAssemblyCache: False
+2024-02-21 11:42:39.7447 Info Validating config: TargetNames=allFile, exceptions, request-time, error, ConfigItems=60, FilePath=C:\nonSystem\IT\Code\shop-system\shop-system\shop-system\NLog.config
+2024-02-21 11:42:39.7724 Info Configuration initialized.
+2024-02-21 11:44:42.5988 Info Registered target NLog.Targets.FileTarget(Name=allFile)
+2024-02-21 11:44:42.6344 Info Registered target NLog.Targets.FileTarget(Name=exceptions)
+2024-02-21 11:44:42.6390 Info Registered target NLog.Targets.FileTarget(Name=request-time)
+2024-02-21 11:44:42.6390 Info Registered target NLog.Targets.FileTarget(Name=error)
+2024-02-21 11:44:42.6620 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.8.2366. Product version: 5.2.8+f586f1341c46fa38aaaff4c641e7f0fa7e813943. GlobalAssemblyCache: False
+2024-02-21 11:44:42.6791 Info Validating config: TargetNames=allFile, exceptions, request-time, error, ConfigItems=60, FilePath=C:\nonSystem\IT\Code\shop-system\shop-system\shop-system\NLog.config
+2024-02-21 11:44:42.7069 Info Configuration initialized.
+2024-02-21 11:47:39.6143 Info Registered target NLog.Targets.FileTarget(Name=allFile)
+2024-02-21 11:47:39.6286 Info Registered target NLog.Targets.FileTarget(Name=exceptions)
+2024-02-21 11:47:39.6286 Info Registered target NLog.Targets.FileTarget(Name=request-time)
+2024-02-21 11:47:39.6286 Info Registered target NLog.Targets.FileTarget(Name=error)
+2024-02-21 11:47:39.6410 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.8.2366. Product version: 5.2.8+f586f1341c46fa38aaaff4c641e7f0fa7e813943. GlobalAssemblyCache: False
+2024-02-21 11:47:39.6410 Info Validating config: TargetNames=allFile, exceptions, request-time, error, ConfigItems=60, FilePath=C:\nonSystem\IT\Code\shop-system\shop-system\shop-system\NLog.config
+2024-02-21 11:47:39.6568 Info Configuration initialized.
+2024-02-21 11:49:23.3741 Info Registered target NLog.Targets.FileTarget(Name=allFile)
+2024-02-21 11:49:23.3922 Info Registered target NLog.Targets.FileTarget(Name=exceptions)
+2024-02-21 11:49:23.3922 Info Registered target NLog.Targets.FileTarget(Name=request-time)
+2024-02-21 11:49:23.3922 Info Registered target NLog.Targets.FileTarget(Name=error)
+2024-02-21 11:49:23.4050 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.8.2366. Product version: 5.2.8+f586f1341c46fa38aaaff4c641e7f0fa7e813943. GlobalAssemblyCache: False
+2024-02-21 11:49:23.4050 Info Validating config: TargetNames=allFile, exceptions, request-time, error, ConfigItems=60, FilePath=C:\nonSystem\IT\Code\shop-system\shop-system\shop-system\NLog.config
+2024-02-21 11:49:23.4195 Info Configuration initialized.
+2024-02-21 11:54:41.0695 Info Registered target NLog.Targets.FileTarget(Name=allFile)
+2024-02-21 11:54:41.0879 Info Registered target NLog.Targets.FileTarget(Name=exceptions)
+2024-02-21 11:54:41.0908 Info Registered target NLog.Targets.FileTarget(Name=request-time)
+2024-02-21 11:54:41.0908 Info Registered target NLog.Targets.FileTarget(Name=error)
+2024-02-21 11:54:41.1078 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.8.2366. Product version: 5.2.8+f586f1341c46fa38aaaff4c641e7f0fa7e813943. GlobalAssemblyCache: False
+2024-02-21 11:54:41.1078 Info Validating config: TargetNames=allFile, exceptions, request-time, error, ConfigItems=60, FilePath=C:\nonSystem\IT\Code\shop-system\shop-system\shop-system\NLog.config
+2024-02-21 11:54:41.1322 Info Configuration initialized.
+2024-02-21 11:55:32.4247 Info Registered target NLog.Targets.FileTarget(Name=allFile)
+2024-02-21 11:55:32.4410 Info Registered target NLog.Targets.FileTarget(Name=exceptions)
+2024-02-21 11:55:32.4410 Info Registered target NLog.Targets.FileTarget(Name=request-time)
+2024-02-21 11:55:32.4410 Info Registered target NLog.Targets.FileTarget(Name=error)
+2024-02-21 11:55:32.4555 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.8.2366. Product version: 5.2.8+f586f1341c46fa38aaaff4c641e7f0fa7e813943. GlobalAssemblyCache: False
+2024-02-21 11:55:32.4636 Info Validating config: TargetNames=allFile, exceptions, request-time, error, ConfigItems=60, FilePath=C:\nonSystem\IT\Code\shop-system\shop-system\shop-system\NLog.config
+2024-02-21 11:55:32.4788 Info Configuration initialized.
+2024-02-21 12:00:17.1049 Info Registered target NLog.Targets.FileTarget(Name=allFile)
+2024-02-21 12:00:17.1205 Info Registered target NLog.Targets.FileTarget(Name=exceptions)
+2024-02-21 12:00:17.1205 Info Registered target NLog.Targets.FileTarget(Name=request-time)
+2024-02-21 12:00:17.1205 Info Registered target NLog.Targets.FileTarget(Name=error)
+2024-02-21 12:00:17.1407 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.8.2366. Product version: 5.2.8+f586f1341c46fa38aaaff4c641e7f0fa7e813943. GlobalAssemblyCache: False
+2024-02-21 12:00:17.1407 Info Validating config: TargetNames=allFile, exceptions, request-time, error, ConfigItems=60, FilePath=C:\nonSystem\IT\Code\shop-system\shop-system\shop-system\NLog.config
+2024-02-21 12:00:17.1719 Info Configuration initialized.
+2024-02-21 12:01:33.5005 Info Registered target NLog.Targets.FileTarget(Name=allFile)
+2024-02-21 12:01:33.5156 Info Registered target NLog.Targets.FileTarget(Name=exceptions)
+2024-02-21 12:01:33.5156 Info Registered target NLog.Targets.FileTarget(Name=request-time)
+2024-02-21 12:01:33.5156 Info Registered target NLog.Targets.FileTarget(Name=error)
+2024-02-21 12:01:33.5289 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.8.2366. Product version: 5.2.8+f586f1341c46fa38aaaff4c641e7f0fa7e813943. GlobalAssemblyCache: False
+2024-02-21 12:01:33.5289 Info Validating config: TargetNames=allFile, exceptions, request-time, error, ConfigItems=60, FilePath=C:\nonSystem\IT\Code\shop-system\shop-system\shop-system\NLog.config
+2024-02-21 12:01:33.5451 Info Configuration initialized.
+2024-02-21 13:36:22.5983 Info Registered target NLog.Targets.FileTarget(Name=allFile)
+2024-02-21 13:36:22.6202 Info Registered target NLog.Targets.FileTarget(Name=exceptions)
+2024-02-21 13:36:22.6202 Info Registered target NLog.Targets.FileTarget(Name=request-time)
+2024-02-21 13:36:22.6202 Info Registered target NLog.Targets.FileTarget(Name=error)
+2024-02-21 13:36:22.6383 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.8.2366. Product version: 5.2.8+f586f1341c46fa38aaaff4c641e7f0fa7e813943. GlobalAssemblyCache: False
+2024-02-21 13:36:22.6383 Info Validating config: TargetNames=allFile, exceptions, request-time, error, ConfigItems=60, FilePath=C:\nonSystem\IT\Code\shop-system\shop-system\shop-system\NLog.config
+2024-02-21 13:36:22.6549 Info Configuration initialized.
+2024-02-21 13:40:22.4275 Info Registered target NLog.Targets.FileTarget(Name=allFile)
+2024-02-21 13:40:22.4513 Info Registered target NLog.Targets.FileTarget(Name=exceptions)
+2024-02-21 13:40:22.4513 Info Registered target NLog.Targets.FileTarget(Name=request-time)
+2024-02-21 13:40:22.4513 Info Registered target NLog.Targets.FileTarget(Name=error)
+2024-02-21 13:40:22.4721 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.8.2366. Product version: 5.2.8+f586f1341c46fa38aaaff4c641e7f0fa7e813943. GlobalAssemblyCache: False
+2024-02-21 13:40:22.4834 Info Validating config: TargetNames=allFile, exceptions, request-time, error, ConfigItems=60, FilePath=C:\nonSystem\IT\Code\shop-system\shop-system\shop-system\NLog.config
+2024-02-21 13:40:22.5002 Info Configuration initialized.
+2024-02-21 13:41:18.3499 Info Registered target NLog.Targets.FileTarget(Name=allFile)
+2024-02-21 13:41:18.3676 Info Registered target NLog.Targets.FileTarget(Name=exceptions)
+2024-02-21 13:41:18.3704 Info Registered target NLog.Targets.FileTarget(Name=request-time)
+2024-02-21 13:41:18.3704 Info Registered target NLog.Targets.FileTarget(Name=error)
+2024-02-21 13:41:18.3704 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.8.2366. Product version: 5.2.8+f586f1341c46fa38aaaff4c641e7f0fa7e813943. GlobalAssemblyCache: False
+2024-02-21 13:41:18.3936 Info Validating config: TargetNames=allFile, exceptions, request-time, error, ConfigItems=60, FilePath=C:\nonSystem\IT\Code\shop-system\shop-system\shop-system\NLog.config
+2024-02-21 13:41:18.4035 Info Configuration initialized.
+2024-02-21 13:46:56.3061 Info Registered target NLog.Targets.FileTarget(Name=allFile)
+2024-02-21 13:46:56.3233 Info Registered target NLog.Targets.FileTarget(Name=exceptions)
+2024-02-21 13:46:56.3233 Info Registered target NLog.Targets.FileTarget(Name=request-time)
+2024-02-21 13:46:56.3233 Info Registered target NLog.Targets.FileTarget(Name=error)
+2024-02-21 13:46:56.3441 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.8.2366. Product version: 5.2.8+f586f1341c46fa38aaaff4c641e7f0fa7e813943. GlobalAssemblyCache: False
+2024-02-21 13:46:56.3539 Info Validating config: TargetNames=allFile, exceptions, request-time, error, ConfigItems=60, FilePath=C:\nonSystem\IT\Code\shop-system\shop-system\shop-system\NLog.config
+2024-02-21 13:46:56.3539 Info Configuration initialized.
+2024-02-22 10:35:07.5842 Info Registered target NLog.Targets.FileTarget(Name=allFile)
+2024-02-22 10:35:07.6175 Info Registered target NLog.Targets.FileTarget(Name=exceptions)
+2024-02-22 10:35:07.6175 Info Registered target NLog.Targets.FileTarget(Name=request-time)
+2024-02-22 10:35:07.6175 Info Registered target NLog.Targets.FileTarget(Name=error)
+2024-02-22 10:35:07.6406 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.8.2366. Product version: 5.2.8+f586f1341c46fa38aaaff4c641e7f0fa7e813943. GlobalAssemblyCache: False
+2024-02-22 10:35:07.6406 Info Validating config: TargetNames=allFile, exceptions, request-time, error, ConfigItems=60, FilePath=C:\nonSystem\IT\Code\shop-system\shop-system\shop-system\NLog.config
+2024-02-22 10:35:07.6671 Info Configuration initialized.
+2024-02-22 10:40:37.8706 Info Registered target NLog.Targets.FileTarget(Name=allFile)
+2024-02-22 10:40:37.8870 Info Registered target NLog.Targets.FileTarget(Name=exceptions)
+2024-02-22 10:40:37.8870 Info Registered target NLog.Targets.FileTarget(Name=request-time)
+2024-02-22 10:40:37.8904 Info Registered target NLog.Targets.FileTarget(Name=error)
+2024-02-22 10:40:37.9066 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.8.2366. Product version: 5.2.8+f586f1341c46fa38aaaff4c641e7f0fa7e813943. GlobalAssemblyCache: False
+2024-02-22 10:40:37.9066 Info Validating config: TargetNames=allFile, exceptions, request-time, error, ConfigItems=60, FilePath=C:\nonSystem\IT\Code\shop-system\shop-system\shop-system\NLog.config
+2024-02-22 10:40:37.9228 Info Configuration initialized.
+2024-02-22 10:41:37.1923 Info Registered target NLog.Targets.FileTarget(Name=allFile)
+2024-02-22 10:41:37.2071 Info Registered target NLog.Targets.FileTarget(Name=exceptions)
+2024-02-22 10:41:37.2071 Info Registered target NLog.Targets.FileTarget(Name=request-time)
+2024-02-22 10:41:37.2071 Info Registered target NLog.Targets.FileTarget(Name=error)
+2024-02-22 10:41:37.2202 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.8.2366. Product version: 5.2.8+f586f1341c46fa38aaaff4c641e7f0fa7e813943. GlobalAssemblyCache: False
+2024-02-22 10:41:37.2202 Info Validating config: TargetNames=allFile, exceptions, request-time, error, ConfigItems=60, FilePath=C:\nonSystem\IT\Code\shop-system\shop-system\shop-system\NLog.config
+2024-02-22 10:41:37.2354 Info Configuration initialized.
+2024-02-22 10:52:37.4162 Info Registered target NLog.Targets.FileTarget(Name=allFile)
+2024-02-22 10:52:37.4312 Info Registered target NLog.Targets.FileTarget(Name=exceptions)
+2024-02-22 10:52:37.4312 Info Registered target NLog.Targets.FileTarget(Name=request-time)
+2024-02-22 10:52:37.4312 Info Registered target NLog.Targets.FileTarget(Name=error)
+2024-02-22 10:52:37.4453 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.8.2366. Product version: 5.2.8+f586f1341c46fa38aaaff4c641e7f0fa7e813943. GlobalAssemblyCache: False
+2024-02-22 10:52:37.4453 Info Validating config: TargetNames=allFile, exceptions, request-time, error, ConfigItems=60, FilePath=C:\nonSystem\IT\Code\shop-system\shop-system\shop-system\NLog.config
+2024-02-22 10:52:37.4603 Info Configuration initialized.
+2024-02-22 10:55:38.9661 Info Registered target NLog.Targets.FileTarget(Name=allFile)
+2024-02-22 10:55:38.9823 Info Registered target NLog.Targets.FileTarget(Name=exceptions)
+2024-02-22 10:55:38.9842 Info Registered target NLog.Targets.FileTarget(Name=request-time)
+2024-02-22 10:55:38.9842 Info Registered target NLog.Targets.FileTarget(Name=error)
+2024-02-22 10:55:38.9842 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.8.2366. Product version: 5.2.8+f586f1341c46fa38aaaff4c641e7f0fa7e813943. GlobalAssemblyCache: False
+2024-02-22 10:55:39.0054 Info Validating config: TargetNames=allFile, exceptions, request-time, error, ConfigItems=60, FilePath=C:\nonSystem\IT\Code\shop-system\shop-system\shop-system\NLog.config
+2024-02-22 10:55:39.0054 Info Configuration initialized.
+2024-02-22 10:56:54.6556 Info Registered target NLog.Targets.FileTarget(Name=allFile)
+2024-02-22 10:56:54.6710 Info Registered target NLog.Targets.FileTarget(Name=exceptions)
+2024-02-22 10:56:54.6727 Info Registered target NLog.Targets.FileTarget(Name=request-time)
+2024-02-22 10:56:54.6727 Info Registered target NLog.Targets.FileTarget(Name=error)
+2024-02-22 10:56:54.6727 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.8.2366. Product version: 5.2.8+f586f1341c46fa38aaaff4c641e7f0fa7e813943. GlobalAssemblyCache: False
+2024-02-22 10:56:54.6941 Info Validating config: TargetNames=allFile, exceptions, request-time, error, ConfigItems=60, FilePath=C:\nonSystem\IT\Code\shop-system\shop-system\shop-system\NLog.config
+2024-02-22 10:56:54.7043 Info Configuration initialized.
+2024-02-22 10:59:52.1194 Info Registered target NLog.Targets.FileTarget(Name=allFile)
+2024-02-22 10:59:52.1431 Info Registered target NLog.Targets.FileTarget(Name=exceptions)
+2024-02-22 10:59:52.1431 Info Registered target NLog.Targets.FileTarget(Name=request-time)
+2024-02-22 10:59:52.1431 Info Registered target NLog.Targets.FileTarget(Name=error)
+2024-02-22 10:59:52.1619 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.8.2366. Product version: 5.2.8+f586f1341c46fa38aaaff4c641e7f0fa7e813943. GlobalAssemblyCache: False
+2024-02-22 10:59:52.1619 Info Validating config: TargetNames=allFile, exceptions, request-time, error, ConfigItems=60, FilePath=C:\nonSystem\IT\Code\shop-system\shop-system\shop-system\NLog.config
+2024-02-22 10:59:52.1819 Info Configuration initialized.
+2024-02-22 11:09:31.9053 Info Registered target NLog.Targets.FileTarget(Name=allFile)
+2024-02-22 11:09:31.9304 Info Registered target NLog.Targets.FileTarget(Name=exceptions)
+2024-02-22 11:09:31.9304 Info Registered target NLog.Targets.FileTarget(Name=request-time)
+2024-02-22 11:09:31.9304 Info Registered target NLog.Targets.FileTarget(Name=error)
+2024-02-22 11:09:31.9484 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.8.2366. Product version: 5.2.8+f586f1341c46fa38aaaff4c641e7f0fa7e813943. GlobalAssemblyCache: False
+2024-02-22 11:09:31.9586 Info Validating config: TargetNames=allFile, exceptions, request-time, error, ConfigItems=60, FilePath=C:\nonSystem\IT\Code\shop-system\shop-system\shop-system\NLog.config
+2024-02-22 11:09:31.9708 Info Configuration initialized.
+2024-02-22 11:27:35.0572 Info Registered target NLog.Targets.FileTarget(Name=allFile)
+2024-02-22 11:27:35.0790 Info Registered target NLog.Targets.FileTarget(Name=exceptions)
+2024-02-22 11:27:35.0790 Info Registered target NLog.Targets.FileTarget(Name=request-time)
+2024-02-22 11:27:35.0790 Info Registered target NLog.Targets.FileTarget(Name=error)
+2024-02-22 11:27:35.0969 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.8.2366. Product version: 5.2.8+f586f1341c46fa38aaaff4c641e7f0fa7e813943. GlobalAssemblyCache: False
+2024-02-22 11:27:35.0969 Info Validating config: TargetNames=allFile, exceptions, request-time, error, ConfigItems=60, FilePath=C:\nonSystem\IT\Code\shop-system\shop-system\shop-system\NLog.config
+2024-02-22 11:27:35.1148 Info Configuration initialized.
+2024-02-22 11:34:24.1469 Info Registered target NLog.Targets.FileTarget(Name=allFile)
+2024-02-22 11:34:24.1700 Info Registered target NLog.Targets.FileTarget(Name=exceptions)
+2024-02-22 11:34:24.1723 Info Registered target NLog.Targets.FileTarget(Name=request-time)
+2024-02-22 11:34:24.1723 Info Registered target NLog.Targets.FileTarget(Name=error)
+2024-02-22 11:34:24.1880 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.8.2366. Product version: 5.2.8+f586f1341c46fa38aaaff4c641e7f0fa7e813943. GlobalAssemblyCache: False
+2024-02-22 11:34:24.1880 Info Validating config: TargetNames=allFile, exceptions, request-time, error, ConfigItems=60, FilePath=C:\nonSystem\IT\Code\shop-system\shop-system\shop-system\NLog.config
+2024-02-22 11:34:24.2114 Info Configuration initialized.
+2024-02-22 12:23:27.8920 Info Registered target NLog.Targets.FileTarget(Name=allFile)
+2024-02-22 12:23:27.9193 Info Registered target NLog.Targets.FileTarget(Name=exceptions)
+2024-02-22 12:23:27.9219 Info Registered target NLog.Targets.FileTarget(Name=request-time)
+2024-02-22 12:23:27.9219 Info Registered target NLog.Targets.FileTarget(Name=error)
+2024-02-22 12:23:27.9402 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.8.2366. Product version: 5.2.8+f586f1341c46fa38aaaff4c641e7f0fa7e813943. GlobalAssemblyCache: False
+2024-02-22 12:23:27.9402 Info Validating config: TargetNames=allFile, exceptions, request-time, error, ConfigItems=60, FilePath=C:\nonSystem\IT\Code\shop-system\shop-system\shop-system\NLog.config
+2024-02-22 12:23:27.9714 Info Configuration initialized.
+2024-02-22 12:32:43.6340 Info Registered target NLog.Targets.FileTarget(Name=allFile)
+2024-02-22 12:32:43.6515 Info Registered target NLog.Targets.FileTarget(Name=exceptions)
+2024-02-22 12:32:43.6515 Info Registered target NLog.Targets.FileTarget(Name=request-time)
+2024-02-22 12:32:43.6515 Info Registered target NLog.Targets.FileTarget(Name=error)
+2024-02-22 12:32:43.6714 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.8.2366. Product version: 5.2.8+f586f1341c46fa38aaaff4c641e7f0fa7e813943. GlobalAssemblyCache: False
+2024-02-22 12:32:43.6714 Info Validating config: TargetNames=allFile, exceptions, request-time, error, ConfigItems=60, FilePath=C:\nonSystem\IT\Code\shop-system\shop-system\shop-system\NLog.config
+2024-02-22 12:32:43.6909 Info Configuration initialized.
+2024-02-22 12:52:47.0628 Info Registered target NLog.Targets.FileTarget(Name=allFile)
+2024-02-22 12:52:47.0786 Info Registered target NLog.Targets.FileTarget(Name=exceptions)
+2024-02-22 12:52:47.0786 Info Registered target NLog.Targets.FileTarget(Name=request-time)
+2024-02-22 12:52:47.0786 Info Registered target NLog.Targets.FileTarget(Name=error)
+2024-02-22 12:52:47.0935 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.8.2366. Product version: 5.2.8+f586f1341c46fa38aaaff4c641e7f0fa7e813943. GlobalAssemblyCache: False
+2024-02-22 12:52:47.0935 Info Validating config: TargetNames=allFile, exceptions, request-time, error, ConfigItems=60, FilePath=C:\nonSystem\IT\Code\shop-system\shop-system\shop-system\NLog.config
+2024-02-22 12:52:47.1102 Info Configuration initialized.
+2024-02-22 13:10:48.5019 Info Registered target NLog.Targets.FileTarget(Name=allFile)
+2024-02-22 13:10:48.5158 Info Registered target NLog.Targets.FileTarget(Name=exceptions)
+2024-02-22 13:10:48.5158 Info Registered target NLog.Targets.FileTarget(Name=request-time)
+2024-02-22 13:10:48.5158 Info Registered target NLog.Targets.FileTarget(Name=error)
+2024-02-22 13:10:48.5158 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.8.2366. Product version: 5.2.8+f586f1341c46fa38aaaff4c641e7f0fa7e813943. GlobalAssemblyCache: False
+2024-02-22 13:10:48.5354 Info Validating config: TargetNames=allFile, exceptions, request-time, error, ConfigItems=60, FilePath=C:\nonSystem\IT\Code\shop-system\shop-system\shop-system\NLog.config
+2024-02-22 13:10:48.5354 Info Configuration initialized.
+2024-02-22 13:23:07.9358 Info Registered target NLog.Targets.FileTarget(Name=allFile)
+2024-02-22 13:23:07.9514 Info Registered target NLog.Targets.FileTarget(Name=exceptions)
+2024-02-22 13:23:07.9535 Info Registered target NLog.Targets.FileTarget(Name=request-time)
+2024-02-22 13:23:07.9535 Info Registered target NLog.Targets.FileTarget(Name=error)
+2024-02-22 13:23:07.9701 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.8.2366. Product version: 5.2.8+f586f1341c46fa38aaaff4c641e7f0fa7e813943. GlobalAssemblyCache: False
+2024-02-22 13:23:07.9701 Info Validating config: TargetNames=allFile, exceptions, request-time, error, ConfigItems=60, FilePath=C:\nonSystem\IT\Code\shop-system\shop-system\shop-system\NLog.config
+2024-02-22 13:23:07.9924 Info Configuration initialized.
+2024-02-22 13:30:56.3880 Info Registered target NLog.Targets.FileTarget(Name=allFile)
+2024-02-22 13:30:56.4107 Info Registered target NLog.Targets.FileTarget(Name=exceptions)
+2024-02-22 13:30:56.4107 Info Registered target NLog.Targets.FileTarget(Name=request-time)
+2024-02-22 13:30:56.4107 Info Registered target NLog.Targets.FileTarget(Name=error)
+2024-02-22 13:30:56.4441 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.8.2366. Product version: 5.2.8+f586f1341c46fa38aaaff4c641e7f0fa7e813943. GlobalAssemblyCache: False
+2024-02-22 13:30:56.4563 Info Validating config: TargetNames=allFile, exceptions, request-time, error, ConfigItems=60, FilePath=C:\nonSystem\IT\Code\shop-system\shop-system\shop-system\NLog.config
+2024-02-22 13:30:56.4720 Info Configuration initialized.
+2024-02-22 13:49:02.5590 Info Registered target NLog.Targets.FileTarget(Name=allFile)
+2024-02-22 13:49:02.5778 Info Registered target NLog.Targets.FileTarget(Name=exceptions)
+2024-02-22 13:49:02.5802 Info Registered target NLog.Targets.FileTarget(Name=request-time)
+2024-02-22 13:49:02.5802 Info Registered target NLog.Targets.FileTarget(Name=error)
+2024-02-22 13:49:02.5942 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.8.2366. Product version: 5.2.8+f586f1341c46fa38aaaff4c641e7f0fa7e813943. GlobalAssemblyCache: False
+2024-02-22 13:49:02.5942 Info Validating config: TargetNames=allFile, exceptions, request-time, error, ConfigItems=60, FilePath=C:\nonSystem\IT\Code\shop-system\shop-system\shop-system\NLog.config
+2024-02-22 13:49:02.6109 Info Configuration initialized.
+2024-02-22 13:56:32.2641 Info Registered target NLog.Targets.FileTarget(Name=allFile)
+2024-02-22 13:56:32.2800 Info Registered target NLog.Targets.FileTarget(Name=exceptions)
+2024-02-22 13:56:32.2820 Info Registered target NLog.Targets.FileTarget(Name=request-time)
+2024-02-22 13:56:32.2820 Info Registered target NLog.Targets.FileTarget(Name=error)
+2024-02-22 13:56:32.2969 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.8.2366. Product version: 5.2.8+f586f1341c46fa38aaaff4c641e7f0fa7e813943. GlobalAssemblyCache: False
+2024-02-22 13:56:32.2969 Info Validating config: TargetNames=allFile, exceptions, request-time, error, ConfigItems=60, FilePath=C:\nonSystem\IT\Code\shop-system\shop-system\shop-system\NLog.config
+2024-02-22 13:56:32.3172 Info Configuration initialized.
+2024-02-22 14:26:36.7419 Info Registered target NLog.Targets.FileTarget(Name=allFile)
+2024-02-22 14:26:36.7590 Info Registered target NLog.Targets.FileTarget(Name=exceptions)
+2024-02-22 14:26:36.7590 Info Registered target NLog.Targets.FileTarget(Name=request-time)
+2024-02-22 14:26:36.7590 Info Registered target NLog.Targets.FileTarget(Name=error)
+2024-02-22 14:26:36.7733 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.8.2366. Product version: 5.2.8+f586f1341c46fa38aaaff4c641e7f0fa7e813943. GlobalAssemblyCache: False
+2024-02-22 14:26:36.7810 Info Validating config: TargetNames=allFile, exceptions, request-time, error, ConfigItems=60, FilePath=C:\nonSystem\IT\Code\shop-system\shop-system\shop-system\NLog.config
+2024-02-22 14:26:36.7810 Info Configuration initialized.
+2024-02-22 14:42:42.3247 Info Registered target NLog.Targets.FileTarget(Name=allFile)
+2024-02-22 14:42:42.3413 Info Registered target NLog.Targets.FileTarget(Name=exceptions)
+2024-02-22 14:42:42.3433 Info Registered target NLog.Targets.FileTarget(Name=request-time)
+2024-02-22 14:42:42.3433 Info Registered target NLog.Targets.FileTarget(Name=error)
+2024-02-22 14:42:42.3595 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.8.2366. Product version: 5.2.8+f586f1341c46fa38aaaff4c641e7f0fa7e813943. GlobalAssemblyCache: False
+2024-02-22 14:42:42.3595 Info Validating config: TargetNames=allFile, exceptions, request-time, error, ConfigItems=60, FilePath=C:\nonSystem\IT\Code\shop-system\shop-system\shop-system\NLog.config
+2024-02-22 14:42:42.3821 Info Configuration initialized.
+2024-02-23 09:57:44.0451 Info Registered target NLog.Targets.FileTarget(Name=allFile)
+2024-02-23 09:57:44.0672 Info Registered target NLog.Targets.FileTarget(Name=exceptions)
+2024-02-23 09:57:44.0672 Info Registered target NLog.Targets.FileTarget(Name=request-time)
+2024-02-23 09:57:44.0672 Info Registered target NLog.Targets.FileTarget(Name=error)
+2024-02-23 09:57:44.0848 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.8.2366. Product version: 5.2.8+f586f1341c46fa38aaaff4c641e7f0fa7e813943. GlobalAssemblyCache: False
+2024-02-23 09:57:44.0947 Info Validating config: TargetNames=allFile, exceptions, request-time, error, ConfigItems=60, FilePath=C:\nonSystem\IT\Code\shop-system\shop-system\shop-system\NLog.config
+2024-02-23 09:57:44.0947 Info Configuration initialized.
+2024-02-23 11:46:03.4558 Info Registered target NLog.Targets.FileTarget(Name=allFile)
+2024-02-23 11:46:03.4743 Info Registered target NLog.Targets.FileTarget(Name=exceptions)
+2024-02-23 11:46:03.4743 Info Registered target NLog.Targets.FileTarget(Name=request-time)
+2024-02-23 11:46:03.4743 Info Registered target NLog.Targets.FileTarget(Name=error)
+2024-02-23 11:46:03.4919 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.8.2366. Product version: 5.2.8+f586f1341c46fa38aaaff4c641e7f0fa7e813943. GlobalAssemblyCache: False
+2024-02-23 11:46:03.4981 Info Validating config: TargetNames=allFile, exceptions, request-time, error, ConfigItems=60, FilePath=C:\nonSystem\IT\Code\shop-system\shop-system\shop-system\NLog.config
+2024-02-23 11:46:03.4981 Info Configuration initialized.
+2024-02-23 11:55:52.1426 Info Registered target NLog.Targets.FileTarget(Name=allFile)
+2024-02-23 11:55:52.1615 Info Registered target NLog.Targets.FileTarget(Name=exceptions)
+2024-02-23 11:55:52.1615 Info Registered target NLog.Targets.FileTarget(Name=request-time)
+2024-02-23 11:55:52.1615 Info Registered target NLog.Targets.FileTarget(Name=error)
+2024-02-23 11:55:52.1778 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.8.2366. Product version: 5.2.8+f586f1341c46fa38aaaff4c641e7f0fa7e813943. GlobalAssemblyCache: False
+2024-02-23 11:55:52.1849 Info Validating config: TargetNames=allFile, exceptions, request-time, error, ConfigItems=60, FilePath=C:\nonSystem\IT\Code\shop-system\shop-system\shop-system\NLog.config
+2024-02-23 11:55:52.1849 Info Configuration initialized.
+2024-02-23 13:16:36.4093 Info Registered target NLog.Targets.FileTarget(Name=allFile)
+2024-02-23 13:16:36.4303 Info Registered target NLog.Targets.FileTarget(Name=exceptions)
+2024-02-23 13:16:36.4334 Info Registered target NLog.Targets.FileTarget(Name=request-time)
+2024-02-23 13:16:36.4334 Info Registered target NLog.Targets.FileTarget(Name=error)
+2024-02-23 13:16:36.4498 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.8.2366. Product version: 5.2.8+f586f1341c46fa38aaaff4c641e7f0fa7e813943. GlobalAssemblyCache: False
+2024-02-23 13:16:36.4637 Info Validating config: TargetNames=allFile, exceptions, request-time, error, ConfigItems=60, FilePath=C:\nonSystem\IT\Code\shop-system\shop-system\shop-system\NLog.config
+2024-02-23 13:16:36.4637 Info Configuration initialized.
+2024-02-26 16:10:10.8886 Info Registered target NLog.Targets.FileTarget(Name=allFile)
+2024-02-26 16:10:10.9699 Info Registered target NLog.Targets.FileTarget(Name=exceptions)
+2024-02-26 16:10:10.9757 Info Registered target NLog.Targets.FileTarget(Name=request-time)
+2024-02-26 16:10:10.9757 Info Registered target NLog.Targets.FileTarget(Name=error)
+2024-02-26 16:10:11.0514 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.8.2366. Product version: 5.2.8+f586f1341c46fa38aaaff4c641e7f0fa7e813943. GlobalAssemblyCache: False
+2024-02-26 16:10:11.0781 Info Validating config: TargetNames=allFile, exceptions, request-time, error, ConfigItems=60, FilePath=C:\nonSystem\IT\Code\shop-system\shop-system\shop-system\NLog.config
+2024-02-26 16:10:11.1143 Info Configuration initialized.
+2024-02-26 17:10:33.3541 Info Registered target NLog.Targets.FileTarget(Name=allFile)
+2024-02-26 17:10:33.4531 Info Registered target NLog.Targets.FileTarget(Name=exceptions)
+2024-02-26 17:10:33.4588 Info Registered target NLog.Targets.FileTarget(Name=request-time)
+2024-02-26 17:10:33.4588 Info Registered target NLog.Targets.FileTarget(Name=error)
+2024-02-26 17:10:33.5399 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.8.2366. Product version: 5.2.8+f586f1341c46fa38aaaff4c641e7f0fa7e813943. GlobalAssemblyCache: False
+2024-02-26 17:10:33.5666 Info Validating config: TargetNames=allFile, exceptions, request-time, error, ConfigItems=60, FilePath=C:\nonSystem\IT\Code\shop-system\shop-system\shop-system\NLog.config
+2024-02-26 17:10:33.5955 Info Configuration initialized.
+2024-02-26 17:50:58.7764 Info Registered target NLog.Targets.FileTarget(Name=allFile)
+2024-02-26 17:50:58.8772 Info Registered target NLog.Targets.FileTarget(Name=exceptions)
+2024-02-26 17:50:58.8772 Info Registered target NLog.Targets.FileTarget(Name=request-time)
+2024-02-26 17:50:58.8772 Info Registered target NLog.Targets.FileTarget(Name=error)
+2024-02-26 17:50:58.9397 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.8.2366. Product version: 5.2.8+f586f1341c46fa38aaaff4c641e7f0fa7e813943. GlobalAssemblyCache: False
+2024-02-26 17:50:58.9510 Info Validating config: TargetNames=allFile, exceptions, request-time, error, ConfigItems=60, FilePath=C:\nonSystem\IT\Code\shop-system\shop-system\shop-system\NLog.config
+2024-02-26 17:50:58.9641 Info Configuration initialized.
+2024-02-26 18:00:17.4926 Info Registered target NLog.Targets.FileTarget(Name=allFile)
+2024-02-26 18:00:17.5174 Info Registered target NLog.Targets.FileTarget(Name=exceptions)
+2024-02-26 18:00:17.5198 Info Registered target NLog.Targets.FileTarget(Name=request-time)
+2024-02-26 18:00:17.5198 Info Registered target NLog.Targets.FileTarget(Name=error)
+2024-02-26 18:00:17.5386 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.8.2366. Product version: 5.2.8+f586f1341c46fa38aaaff4c641e7f0fa7e813943. GlobalAssemblyCache: False
+2024-02-26 18:00:17.5574 Info Validating config: TargetNames=allFile, exceptions, request-time, error, ConfigItems=60, FilePath=C:\nonSystem\IT\Code\shop-system\shop-system\shop-system\NLog.config
+2024-02-26 18:00:17.5760 Info Configuration initialized.
+2024-02-26 18:06:32.2524 Info Registered target NLog.Targets.FileTarget(Name=allFile)
+2024-02-26 18:06:32.2834 Info Registered target NLog.Targets.FileTarget(Name=exceptions)
+2024-02-26 18:06:32.2834 Info Registered target NLog.Targets.FileTarget(Name=request-time)
+2024-02-26 18:06:32.2834 Info Registered target NLog.Targets.FileTarget(Name=error)
+2024-02-26 18:06:32.3109 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.8.2366. Product version: 5.2.8+f586f1341c46fa38aaaff4c641e7f0fa7e813943. GlobalAssemblyCache: False
+2024-02-26 18:06:32.3257 Info Validating config: TargetNames=allFile, exceptions, request-time, error, ConfigItems=60, FilePath=C:\nonSystem\IT\Code\shop-system\shop-system\shop-system\NLog.config
+2024-02-26 18:06:32.3458 Info Configuration initialized.
+2024-02-26 18:12:54.1787 Info Registered target NLog.Targets.FileTarget(Name=allFile)
+2024-02-26 18:12:54.2089 Info Registered target NLog.Targets.FileTarget(Name=exceptions)
+2024-02-26 18:12:54.2089 Info Registered target NLog.Targets.FileTarget(Name=request-time)
+2024-02-26 18:12:54.2089 Info Registered target NLog.Targets.FileTarget(Name=error)
+2024-02-26 18:12:54.2307 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.8.2366. Product version: 5.2.8+f586f1341c46fa38aaaff4c641e7f0fa7e813943. GlobalAssemblyCache: False
+2024-02-26 18:12:54.2446 Info Validating config: TargetNames=allFile, exceptions, request-time, error, ConfigItems=60, FilePath=C:\nonSystem\IT\Code\shop-system\shop-system\shop-system\NLog.config
+2024-02-26 18:12:54.2596 Info Configuration initialized.
