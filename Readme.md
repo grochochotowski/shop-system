@@ -18,3 +18,5 @@ What is included in project:
   1.1.
 3. Cash register:
   1.1.
+
+Project progress pasued
