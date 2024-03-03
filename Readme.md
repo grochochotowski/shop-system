@@ -9,10 +9,10 @@ To test the current state of a project:
 
 What is included in project: <br/>
 1.Company menager:<br/>
-  1.1. User <br/>
-    1.1.1. Register <br/>
-    1.1.2. Display users by shops <br/>
-  1.2. Shop <br/>
+  &emsp;1.1. User <br/>
+    &emsp;&emsp;1.1.1. Register <br/>
+    &emsp;&emsp;1.1.2. Display users by shops <br/>
+  &emsp;1.2. Shop <br/>
 2. Shop menager: <br/>
 3. Cash register: <br/>
 
