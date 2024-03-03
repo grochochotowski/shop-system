@@ -13,10 +13,7 @@ What is included in project:
     1.1.1. Register
     1.1.2. Display users by shops
   1.2. Shop
-  1.3.
 2. Shop menager:
-  1.1.
 3. Cash register:
-  1.1.
 
 Project in hold due to another project - KropkaNet - System for stocktaking purposes
