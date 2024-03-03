@@ -1,6 +1,6 @@
 #Shop system
 This is my project just to practise programming in react and .NET
-Idea came from my job for 1.5 year - I have been working as shop assistant in 4F and I really don't like the system that we got there. :)
+Idea came from my job for 2 year - I have been working as shop assistant in 4F and I really don't like the system that we got there. ;)
 
 To test the current state of a project:
 1. Copy repository
