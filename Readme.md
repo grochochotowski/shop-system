@@ -9,11 +9,11 @@ To test the current state of a project:
 
 What is included in project:
 1.Company menager:
-  1.1. User
-    1.1.1. Register
-    1.1.2. Display users by shops
-  1.2. Shop
-2. Shop menager:
-3. Cash register:
+  1.1. User 
+    1.1.1. Register 
+    1.1.2. Display users by shops 
+  1.2. Shop 
+2. Shop menager: 
+3. Cash register: 
 
 Project in hold due to another project - KropkaNet - System for stocktaking purposes
