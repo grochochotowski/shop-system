@@ -19,4 +19,4 @@ What is included in project:
 3. Cash register:
   1.1.
 
-!!!Project in hold!!!
+Project in hold due to another project
