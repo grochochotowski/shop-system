@@ -7,13 +7,13 @@ To test the current state of a project:
 2. Start front-end live server (VS Code recommended)
 3. Start back-end live server (Visual Studio recommended)
 
-What is included in project:
-1.Company menager:
-  1.1. User 
-    1.1.1. Register 
-    1.1.2. Display users by shops 
-  1.2. Shop 
-2. Shop menager: 
-3. Cash register: 
+What is included in project: <br/>
+1.Company menager:<br/>
+  1.1. User <br/>
+    1.1.1. Register <br/>
+    1.1.2. Display users by shops <br/>
+  1.2. Shop <br/>
+2. Shop menager: <br/>
+3. Cash register: <br/>
 
 Project in hold due to another project - KropkaNet - System for stocktaking purposes
