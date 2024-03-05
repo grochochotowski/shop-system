@@ -1,0 +1,775 @@
+2024-03-05 23:10:43.0660|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|An 'IServiceProvider' was created for internal use by Entity Framework. 
+2024-03-05 23:10:43.7716|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 8.0.2 initialized 'ShopDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.2' with options: None 
+2024-03-05 23:10:43.7962|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Creating DbConnection. 
+2024-03-05 23:10:43.8369|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Created DbConnection. (37ms). 
+2024-03-05 23:10:43.8423|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'ShopDB' on server '(localdb)\mssqllocaldb'. 
+2024-03-05 23:10:46.1685|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'ShopDB' on server '(localdb)\mssqllocaldb'. 
+2024-03-05 23:10:46.1685|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteNonQuery'. 
+2024-03-05 23:10:46.1685|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteNonQuery' (5ms). 
+2024-03-05 23:10:46.1685|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Initialized DbCommand for 'ExecuteNonQuery' (9ms). 
+2024-03-05 23:10:46.1853|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1 
+2024-03-05 23:10:46.2060|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (19ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1 
+2024-03-05 23:10:46.2060|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'ShopDB' on server '(localdb)\mssqllocaldb'. 
+2024-03-05 23:10:46.2129|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'ShopDB' on server '(localdb)\mssqllocaldb' (3ms). 
+2024-03-05 23:10:46.3298|DEBUG|Microsoft.EntityFrameworkCore.Query|Compiling query expression: 
+'DbSet<Position>()
+    .Any()' 
+2024-03-05 23:10:46.4606|DEBUG|Microsoft.EntityFrameworkCore.Query|Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<bool>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.QueryExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> 0
+        SELECT EXISTS (
+            SELECT 1
+            FROM Positions AS p)), 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, bool>, 
+    shop_system.Entities.ShopDbContext, 
+    False, 
+    False, 
+    True
+)
+    .Single()' 
+2024-03-05 23:10:46.4953|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'ShopDB' on server '(localdb)\mssqllocaldb'. 
+2024-03-05 23:10:46.4953|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'ShopDB' on server '(localdb)\mssqllocaldb'. 
+2024-03-05 23:10:46.4953|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteReader'. 
+2024-03-05 23:10:46.4953|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteReader' (0ms). 
+2024-03-05 23:10:46.4953|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Initialized DbCommand for 'ExecuteReader' (0ms). 
+2024-03-05 23:10:46.4953|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Positions] AS [p]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END 
+2024-03-05 23:10:46.4953|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (11ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Positions] AS [p]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END 
+2024-03-05 23:10:46.5136|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Closing data reader to 'ShopDB' on server '(localdb)\mssqllocaldb'. 
+2024-03-05 23:10:46.5136|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|A data reader for 'ShopDB' on server '(localdb)\mssqllocaldb' is being disposed after spending 7ms reading results. 
+2024-03-05 23:10:46.5136|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'ShopDB' on server '(localdb)\mssqllocaldb'. 
+2024-03-05 23:10:46.5136|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'ShopDB' on server '(localdb)\mssqllocaldb' (0ms). 
+2024-03-05 23:10:46.6323|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ModelBinderFactory|Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider 
+2024-03-05 23:10:46.6720|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting starting 
+2024-03-05 23:10:46.6972|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\gmich\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2024-03-05 23:10:46.7060|DEBUG|Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository|Reading data from file 'C:\Users\gmich\AppData\Local\ASP.NET\DataProtection-Keys\key-08af904a-aabc-4a11-95a7-810d81feb975.xml'. 
+2024-03-05 23:10:46.7060|DEBUG|Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository|Reading data from file 'C:\Users\gmich\AppData\Local\ASP.NET\DataProtection-Keys\key-bd8744af-7ab7-4319-9b5a-a7665f95f320.xml'. 
+2024-03-05 23:10:46.7060|DEBUG|Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository|Reading data from file 'C:\Users\gmich\AppData\Local\ASP.NET\DataProtection-Keys\key-ec409216-b58a-4f15-a58f-724cbb2afb9e.xml'. 
+2024-03-05 23:10:46.7260|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|Found key {08af904a-aabc-4a11-95a7-810d81feb975}. 
+2024-03-05 23:10:46.7354|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|Found key {bd8744af-7ab7-4319-9b5a-a7665f95f320}. 
+2024-03-05 23:10:46.7354|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|Found key {ec409216-b58a-4f15-a58f-724cbb2afb9e}. 
+2024-03-05 23:10:46.7588|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.DefaultKeyResolver|Considering key {bd8744af-7ab7-4319-9b5a-a7665f95f320} with expiration date 2024-05-16 14:52:52Z as default key. 
+2024-03-05 23:10:46.7616|DEBUG|Microsoft.AspNetCore.DataProtection.TypeForwardingActivator|Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60 
+2024-03-05 23:10:46.7616|DEBUG|Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor|Decrypting secret element using Windows DPAPI. 
+2024-03-05 23:10:46.7616|DEBUG|Microsoft.AspNetCore.DataProtection.TypeForwardingActivator|Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60 
+2024-03-05 23:10:46.7616|DEBUG|Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngCbcAuthenticatedEncryptorFactory|Opening CNG algorithm 'AES' from provider '(null)' with chaining mode CBC. 
+2024-03-05 23:10:46.7616|DEBUG|Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngCbcAuthenticatedEncryptorFactory|Opening CNG algorithm 'SHA256' from provider '(null)' with HMAC. 
+2024-03-05 23:10:46.7616|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingProvider|Using key {bd8744af-7ab7-4319-9b5a-a7665f95f320} as the default key. 
+2024-03-05 23:10:46.7765|DEBUG|Microsoft.AspNetCore.DataProtection.Internal.DataProtectionHostedService|Key ring with default key {bd8744af-7ab7-4319-9b5a-a7665f95f320} was loaded during application startup. 
+2024-03-05 23:10:47.1287|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7057 
+2024-03-05 23:10:47.1287|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5056 
+2024-03-05 23:10:47.1287|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly shop-system 
+2024-03-05 23:10:47.1287|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh 
+2024-03-05 23:10:47.1287|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net 
+2024-03-05 23:10:47.1287|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2024-03-05 23:10:47.1287|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2024-03-05 23:10:47.1287|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\nonSystem\IT\Code\shop-system\shop-system\shop-system 
+2024-03-05 23:10:47.1287|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting started 
+2024-03-05 23:10:47.3751|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN1TC4E2UEFN" accepted. 
+2024-03-05 23:10:47.3751|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN1TC4E2UEFN" started. 
+2024-03-05 23:10:47.4858|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN1TC4E2UEFO" accepted. 
+2024-03-05 23:10:47.4858|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN1TC4E2UEFO" started. 
+2024-03-05 23:10:47.8518|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN1TC4E2UEFP" accepted. 
+2024-03-05 23:10:47.8518|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN1TC4E2UEFP" started. 
+2024-03-05 23:10:47.9033|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Connection 0HN1TC4E2UEFP established using the following protocol: Tls13 
+2024-03-05 23:10:47.9355|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1TC4E2UEFP" sending SETTINGS frame for stream ID 0 with length 24 and flags NONE. 
+2024-03-05 23:10:47.9355|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1TC4E2UEFP" sending WINDOW_UPDATE frame for stream ID 0 with length 4 and flags 0x0. 
+2024-03-05 23:10:47.9355|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1TC4E2UEFP" received SETTINGS frame for stream ID 0 with length 24 and flags NONE. 
+2024-03-05 23:10:47.9355|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1TC4E2UEFP" sending SETTINGS frame for stream ID 0 with length 0 and flags ACK. 
+2024-03-05 23:10:47.9542|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1TC4E2UEFP" received WINDOW_UPDATE frame for stream ID 0 with length 4 and flags 0x0. 
+2024-03-05 23:10:47.9542|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1TC4E2UEFP" received HEADERS frame for stream ID 1 with length 420 and flags END_STREAM, END_HEADERS, PRIORITY. 
+2024-03-05 23:10:48.0021|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1TC4E2UEFP" received SETTINGS frame for stream ID 0 with length 0 and flags ACK. 
+2024-03-05 23:10:48.0543|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7057/swagger/index.html - - - 
+2024-03-05 23:10:48.3775|DEBUG|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|Wildcard detected, all requests with hosts will be allowed. 
+2024-03-05 23:10:48.3775|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2024-03-05 23:10:48.3988|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|No candidates found for the request path '/swagger/index.html' 
+2024-03-05 23:10:48.3988|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request did not match any endpoints 
+2024-03-05 23:10:48.5243|DEBUG|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware|Response markup is scheduled to include browser refresh script injection. 
+2024-03-05 23:10:48.5284|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1TC4E2UEFP" sending HEADERS frame for stream ID 1 with length 66 and flags END_HEADERS. 
+2024-03-05 23:10:48.5284|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1TC4E2UEFP" sending DATA frame for stream ID 1 with length 4096 and flags NONE. 
+2024-03-05 23:10:48.5414|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1TC4E2UEFP" sending DATA frame for stream ID 1 with length 991 and flags NONE. 
+2024-03-05 23:10:48.5414|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1TC4E2UEFP" sending DATA frame for stream ID 1 with length 81 and flags NONE. 
+2024-03-05 23:10:48.5414|DEBUG|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware|Response markup was updated to include browser refresh script injection. 
+2024-03-05 23:10:48.5414|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1TC4E2UEFP" sending DATA frame for stream ID 1 with length 0 and flags END_STREAM. 
+2024-03-05 23:10:48.5414|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7057/swagger/index.html - 200 - text/html;charset=utf-8 505.1705ms 
+2024-03-05 23:10:48.5753|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1TC4E2UEFP" received HEADERS frame for stream ID 3 with length 110 and flags END_STREAM, END_HEADERS, PRIORITY. 
+2024-03-05 23:10:48.5753|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7057/_framework/aspnetcore-browser-refresh.js - - - 
+2024-03-05 23:10:48.5753|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1TC4E2UEFP" sending HEADERS frame for stream ID 3 with length 60 and flags END_HEADERS. 
+2024-03-05 23:10:48.5753|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1TC4E2UEFP" sending DATA frame for stream ID 3 with length 13758 and flags NONE. 
+2024-03-05 23:10:48.5901|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1TC4E2UEFP" sending DATA frame for stream ID 3 with length 0 and flags END_STREAM. 
+2024-03-05 23:10:48.5901|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7057/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript;+charset=utf-8 9.1804ms 
+2024-03-05 23:10:48.6041|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1TC4E2UEFP" received HEADERS frame for stream ID 5 with length 58 and flags END_STREAM, END_HEADERS, PRIORITY. 
+2024-03-05 23:10:48.6041|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7057/_vs/browserLink - - - 
+2024-03-05 23:10:48.6517|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1TC4E2UEFP" sending HEADERS frame for stream ID 5 with length 149 and flags END_HEADERS. 
+2024-03-05 23:10:48.6517|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1TC4E2UEFP" sending DATA frame for stream ID 5 with length 9986 and flags NONE. 
+2024-03-05 23:10:48.6517|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1TC4E2UEFP" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2024-03-05 23:10:48.6517|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1TC4E2UEFP" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2024-03-05 23:10:48.6517|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1TC4E2UEFP" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2024-03-05 23:10:48.6517|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1TC4E2UEFP" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2024-03-05 23:10:48.6517|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1TC4E2UEFP" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2024-03-05 23:10:48.6517|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1TC4E2UEFP" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2024-03-05 23:10:48.6517|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1TC4E2UEFP" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2024-03-05 23:10:48.6517|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1TC4E2UEFP" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2024-03-05 23:10:48.6517|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1TC4E2UEFP" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2024-03-05 23:10:48.6517|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1TC4E2UEFP" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2024-03-05 23:10:48.6517|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1TC4E2UEFP" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2024-03-05 23:10:48.6517|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1TC4E2UEFP" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2024-03-05 23:10:48.6662|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1TC4E2UEFP" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2024-03-05 23:10:48.7062|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1TC4E2UEFP" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2024-03-05 23:10:48.7062|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1TC4E2UEFP" sending DATA frame for stream ID 5 with length 160 and flags NONE. 
+2024-03-05 23:10:48.7062|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1TC4E2UEFP" sending DATA frame for stream ID 5 with length 0 and flags END_STREAM. 
+2024-03-05 23:10:48.7062|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7057/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 103.8052ms 
+2024-03-05 23:10:49.0348|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1TC4E2UEFP" received HEADERS frame for stream ID 7 with length 67 and flags END_STREAM, END_HEADERS, PRIORITY. 
+2024-03-05 23:10:49.0348|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7057/swagger/v1/swagger.json - - - 
+2024-03-05 23:10:49.0348|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2024-03-05 23:10:49.0348|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|No candidates found for the request path '/swagger/v1/swagger.json' 
+2024-03-05 23:10:49.0348|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request did not match any endpoints 
+2024-03-05 23:10:49.1939|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1TC4E2UEFP" sending HEADERS frame for stream ID 7 with length 35 and flags END_HEADERS. 
+2024-03-05 23:10:49.1939|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1TC4E2UEFP" sending DATA frame for stream ID 7 with length 16384 and flags NONE. 
+2024-03-05 23:10:49.1939|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1TC4E2UEFP" sending DATA frame for stream ID 7 with length 5288 and flags NONE. 
+2024-03-05 23:10:49.1939|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1TC4E2UEFP" sending DATA frame for stream ID 7 with length 0 and flags END_STREAM. 
+2024-03-05 23:10:49.1970|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7057/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 161.7717ms 
+2024-03-05 23:10:57.3884|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Authentication of the HTTPS connection timed out. 
+2024-03-05 23:10:57.3884|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN1TC4E2UEFN" stopped. 
+2024-03-05 23:10:57.3884|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HN1TC4E2UEFN" sending FIN because: "The Socket transport's send loop completed gracefully." 
+2024-03-05 23:10:57.4942|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Authentication of the HTTPS connection timed out. 
+2024-03-05 23:10:57.4942|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN1TC4E2UEFO" stopped. 
+2024-03-05 23:10:57.4947|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HN1TC4E2UEFO" sending FIN because: "The Socket transport's send loop completed gracefully." 
+2024-03-05 23:19:31.0246|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN1TC4E2UEFQ" accepted. 
+2024-03-05 23:19:31.0258|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN1TC4E2UEFQ" started. 
+2024-03-05 23:19:31.0258|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Connection 0HN1TC4E2UEFQ established using the following protocol: Tls13 
+2024-03-05 23:19:31.0258|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1TC4E2UEFQ" sending SETTINGS frame for stream ID 0 with length 24 and flags NONE. 
+2024-03-05 23:19:31.0258|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1TC4E2UEFQ" sending WINDOW_UPDATE frame for stream ID 0 with length 4 and flags 0x0. 
+2024-03-05 23:19:31.0258|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1TC4E2UEFQ" received SETTINGS frame for stream ID 0 with length 24 and flags NONE. 
+2024-03-05 23:19:31.0258|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1TC4E2UEFQ" sending SETTINGS frame for stream ID 0 with length 0 and flags ACK. 
+2024-03-05 23:19:31.0258|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1TC4E2UEFQ" received WINDOW_UPDATE frame for stream ID 0 with length 4 and flags 0x0. 
+2024-03-05 23:19:31.0258|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1TC4E2UEFQ" received HEADERS frame for stream ID 1 with length 347 and flags END_STREAM, END_HEADERS, PRIORITY. 
+2024-03-05 23:19:31.0258|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1TC4E2UEFQ" received SETTINGS frame for stream ID 0 with length 0 and flags ACK. 
+2024-03-05 23:19:31.0258|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7057/api/user - - - 
+2024-03-05 23:19:31.0258|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2024-03-05 23:19:31.0441|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/api/user' 
+2024-03-05 23:19:31.0441|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'shop_system.Controllers.UserController.GetAllUsersWithShop (shop-system)' with route pattern 'api/user' is valid for the request path '/api/user' 
+2024-03-05 23:19:31.0441|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'shop_system.Controllers.UserController.GetAllUsersWithShop (shop-system)' 
+2024-03-05 23:19:31.0441|TRACE|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|The endpoint does not specify the IRequestSizeLimitMetadata. 
+2024-03-05 23:19:31.0441|DEBUG|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|The request has an origin header: 'http://localhost:3000'. 
+2024-03-05 23:19:31.0441|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|CORS policy execution successful. 
+2024-03-05 23:19:31.0441|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Static files was skipped as the request already matched an endpoint. 
+2024-03-05 23:19:31.1219|DEBUG|Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler|AuthenticationScheme: Bearer was not authenticated. 
+2024-03-05 23:19:31.1219|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'shop_system.Controllers.UserController.GetAllUsersWithShop (shop-system)' 
+2024-03-05 23:19:31.1461|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetAllUsersWithShop", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[shop_system.Models.UserWShopDto]] GetAllUsersWithShop() on controller shop_system.Controllers.UserController (shop-system). 
+2024-03-05 23:19:31.1461|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None 
+2024-03-05 23:19:31.1461|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None 
+2024-03-05 23:19:31.1461|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000) 
+2024-03-05 23:19:31.1461|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None 
+2024-03-05 23:19:31.1461|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): None 
+2024-03-05 23:19:31.1516|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller shop_system.Controllers.UserController (shop-system) 
+2024-03-05 23:19:31.2368|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller shop_system.Controllers.UserController (shop-system) 
+2024-03-05 23:19:31.2368|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2024-03-05 23:19:31.2368|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2024-03-05 23:19:31.2450|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method shop_system.Controllers.UserController.GetAllUsersWithShop (shop-system) - Validation state: Valid 
+2024-03-05 23:19:31.2450|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 8.0.2 initialized 'ShopDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.2' with options: None 
+2024-03-05 23:19:31.2825|DEBUG|Microsoft.EntityFrameworkCore.Query|Compiling query expression: 
+'DbSet<User>()
+    .Include(u => u.Shop)
+    .Include(u => u.Position)
+    .OrderBy(s => s.Shop.Code)
+    .OrderBy(p => p.PositionId)' 
+2024-03-05 23:19:31.3093|DEBUG|Microsoft.EntityFrameworkCore.Query|Including navigation: 'User.Shop'. 
+2024-03-05 23:19:31.3093|DEBUG|Microsoft.EntityFrameworkCore.Query|Including navigation: 'User.Position'. 
+2024-03-05 23:19:31.4343|DEBUG|Microsoft.EntityFrameworkCore.Query|Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<User>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.QueryExpression(
+        Client Projections:
+            0 -> Dictionary<IProperty, int> { [Property: User.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: User.Email (string) Required, 1], [Property: User.FirstName (string) Required, 2], [Property: User.LastName (string) Required, 3], [Property: User.Login (string) Required, 4], [Property: User.Password (string) Required, 5], [Property: User.PhoneNumber (string) Required, 6], [Property: User.PositionId (int) Required FK Index, 7], [Property: User.SecondName (string), 8], [Property: User.ShopId (int?) FK Index, 9] }
+            1 -> Dictionary<IProperty, int> { [Property: Shop.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 10], [Property: Shop.Building (string) Required, 11], [Property: Shop.City (string) Required, 12], [Property: Shop.Code (string) Required, 13], [Property: Shop.Country (string) Required, 14], [Property: Shop.PhoneNumber (string) Required, 15], [Property: Shop.PostalCode (string) Required, 16], [Property: Shop.Premises (string), 17], [Property: Shop.Region (string) Required, 18], [Property: Shop.Street (string) Required, 19] }
+            2 -> Dictionary<IProperty, int> { [Property: Position.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 20], [Property: Position.Name (string) Required, 21] }
+        SELECT u.Id, u.Email, u.FirstName, u.LastName, u.Login, u.Password, u.PhoneNumber, u.PositionId, u.SecondName, u.ShopId, s.Id, s.Building, s.City, s.Code, s.Country, s.PhoneNumber, s.PostalCode, s.Premises, s.Region, s.Street, p.Id, p.Name
+        FROM Users AS u
+        LEFT JOIN Shops AS s ON u.ShopId == s.Id
+        INNER JOIN Positions AS p ON u.PositionId == p.Id
+        ORDER BY u.PositionId ASC), 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, User>, 
+    shop_system.Entities.ShopDbContext, 
+    False, 
+    False, 
+    True
+)' 
+2024-03-05 23:19:31.4343|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Creating DbConnection. 
+2024-03-05 23:19:31.4343|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Created DbConnection. (0ms). 
+2024-03-05 23:19:31.4343|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'ShopDB' on server '(localdb)\mssqllocaldb'. 
+2024-03-05 23:19:31.5147|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'ShopDB' on server '(localdb)\mssqllocaldb'. 
+2024-03-05 23:19:31.5147|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteReader'. 
+2024-03-05 23:19:31.5147|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteReader' (0ms). 
+2024-03-05 23:19:31.5147|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Initialized DbCommand for 'ExecuteReader' (0ms). 
+2024-03-05 23:19:31.5147|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[Id], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Login], [u].[Password], [u].[PhoneNumber], [u].[PositionId], [u].[SecondName], [u].[ShopId], [s].[Id], [s].[Building], [s].[City], [s].[Code], [s].[Country], [s].[PhoneNumber], [s].[PostalCode], [s].[Premises], [s].[Region], [s].[Street], [p].[Id], [p].[Name]
+FROM [Users] AS [u]
+LEFT JOIN [Shops] AS [s] ON [u].[ShopId] = [s].[Id]
+INNER JOIN [Positions] AS [p] ON [u].[PositionId] = [p].[Id]
+ORDER BY [u].[PositionId] 
+2024-03-05 23:19:31.5470|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (32ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[Id], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Login], [u].[Password], [u].[PhoneNumber], [u].[PositionId], [u].[SecondName], [u].[ShopId], [s].[Id], [s].[Building], [s].[City], [s].[Code], [s].[Country], [s].[PhoneNumber], [s].[PostalCode], [s].[Premises], [s].[Region], [s].[Street], [p].[Id], [p].[Name]
+FROM [Users] AS [u]
+LEFT JOIN [Shops] AS [s] ON [u].[ShopId] = [s].[Id]
+INNER JOIN [Positions] AS [p] ON [u].[PositionId] = [p].[Id]
+ORDER BY [u].[PositionId] 
+2024-03-05 23:19:31.5808|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ShopDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:19:31.6221|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|The navigation 'User.Position' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:19:31.6221|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ShopDbContext' started tracking 'Position' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:19:31.6221|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ShopDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:19:31.6221|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ShopDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:19:31.6221|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ShopDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:19:31.6221|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ShopDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:19:31.6221|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ShopDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:19:31.6221|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ShopDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:19:31.6221|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|The navigation 'User.Shop' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:19:31.6221|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ShopDbContext' started tracking 'Shop' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:19:31.6458|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|The navigation 'User.Shop' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:19:31.6458|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ShopDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:19:31.6458|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ShopDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:19:31.6458|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|The navigation 'User.Position' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:19:31.6458|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ShopDbContext' started tracking 'Position' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:19:31.6458|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ShopDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:19:31.6458|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|The navigation 'User.Shop' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:19:31.6458|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ShopDbContext' started tracking 'Shop' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:19:31.6458|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|The navigation 'User.Position' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:19:31.6458|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ShopDbContext' started tracking 'Position' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:19:31.6458|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|The navigation 'User.Shop' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:19:31.6458|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ShopDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:19:31.6458|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|The navigation 'User.Shop' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:19:31.6458|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ShopDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:19:31.6458|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ShopDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:19:31.6458|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|The navigation 'User.Position' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:19:31.6458|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ShopDbContext' started tracking 'Position' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:19:31.6458|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Closing data reader to 'ShopDB' on server '(localdb)\mssqllocaldb'. 
+2024-03-05 23:19:31.6458|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|A data reader for 'ShopDB' on server '(localdb)\mssqllocaldb' is being disposed after spending 99ms reading results. 
+2024-03-05 23:19:31.6458|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'ShopDB' on server '(localdb)\mssqllocaldb'. 
+2024-03-05 23:19:31.6458|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'ShopDB' on server '(localdb)\mssqllocaldb' (0ms). 
+2024-03-05 23:19:31.6519|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action method shop_system.Controllers.UserController.GetAllUsersWithShop (shop-system), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 403.0362ms. 
+2024-03-05 23:19:31.6519|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2024-03-05 23:19:31.6519|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2024-03-05 23:19:31.6519|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Before executing action result Microsoft.AspNetCore.Mvc.OkObjectResult. 
+2024-03-05 23:19:31.6519|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter 
+2024-03-05 23:19:31.6519|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|No information found on request to perform content negotiation. 
+2024-03-05 23:19:31.6519|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select an output formatter without using a content type as no explicit content types were specified for the response. 
+2024-03-05 23:19:31.6519|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select the first formatter in the output formatters list which can write the result. 
+2024-03-05 23:19:31.6519|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response. 
+2024-03-05 23:19:31.6519|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[shop_system.Models.UserWShopDto, shop-system, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2024-03-05 23:19:31.6765|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1TC4E2UEFQ" sending HEADERS frame for stream ID 1 with length 97 and flags END_HEADERS. 
+2024-03-05 23:19:31.6765|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|After executing action result Microsoft.AspNetCore.Mvc.OkObjectResult. 
+2024-03-05 23:19:31.6765|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1TC4E2UEFQ" sending DATA frame for stream ID 1 with length 3938 and flags NONE. 
+2024-03-05 23:19:31.6765|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action shop_system.Controllers.UserController.GetAllUsersWithShop (shop-system) in 527.2223ms 
+2024-03-05 23:19:31.6765|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'shop_system.Controllers.UserController.GetAllUsersWithShop (shop-system)' 
+2024-03-05 23:19:31.6765|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1TC4E2UEFQ" sending DATA frame for stream ID 1 with length 0 and flags END_STREAM. 
+2024-03-05 23:19:31.6827|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|'ShopDbContext' disposed. 
+2024-03-05 23:19:31.6827|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Disposing connection to database 'ShopDB' on server '(localdb)\mssqllocaldb'. 
+2024-03-05 23:19:31.6827|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Disposed connection to database '' on server '' (1ms). 
+2024-03-05 23:19:31.6827|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7057/api/user - 200 - application/json;+charset=utf-8 649.5933ms 
+2024-03-05 23:25:02.7345|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1TC4E2UEFQ" received HEADERS frame for stream ID 3 with length 30 and flags END_STREAM, END_HEADERS, PRIORITY. 
+2024-03-05 23:25:02.7345|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1TC4E2UEFQ" received PING frame for stream ID 0 with length 8 and flags NONE. 
+2024-03-05 23:25:02.7345|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1TC4E2UEFQ" sending PING frame for stream ID 0 with length 8 and flags ACK. 
+2024-03-05 23:25:02.7345|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7057/api/user - - - 
+2024-03-05 23:25:02.7345|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2024-03-05 23:25:02.7452|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/api/user' 
+2024-03-05 23:25:02.7452|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'shop_system.Controllers.UserController.GetAllUsersWithShop (shop-system)' with route pattern 'api/user' is valid for the request path '/api/user' 
+2024-03-05 23:25:02.7452|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'shop_system.Controllers.UserController.GetAllUsersWithShop (shop-system)' 
+2024-03-05 23:25:02.7729|TRACE|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|The endpoint does not specify the IRequestSizeLimitMetadata. 
+2024-03-05 23:25:02.7729|DEBUG|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|The request has an origin header: 'http://localhost:3000'. 
+2024-03-05 23:25:02.7729|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|CORS policy execution successful. 
+2024-03-05 23:25:02.7729|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Static files was skipped as the request already matched an endpoint. 
+2024-03-05 23:25:02.7769|DEBUG|Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler|AuthenticationScheme: Bearer was not authenticated. 
+2024-03-05 23:25:02.7769|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'shop_system.Controllers.UserController.GetAllUsersWithShop (shop-system)' 
+2024-03-05 23:25:02.7769|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetAllUsersWithShop", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[shop_system.Models.UserWShopDto]] GetAllUsersWithShop() on controller shop_system.Controllers.UserController (shop-system). 
+2024-03-05 23:25:02.7769|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None 
+2024-03-05 23:25:02.7769|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None 
+2024-03-05 23:25:02.7769|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000) 
+2024-03-05 23:25:02.7769|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None 
+2024-03-05 23:25:02.7769|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): None 
+2024-03-05 23:25:02.7769|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller shop_system.Controllers.UserController (shop-system) 
+2024-03-05 23:25:02.7769|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller shop_system.Controllers.UserController (shop-system) 
+2024-03-05 23:25:02.7769|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2024-03-05 23:25:02.7769|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2024-03-05 23:25:02.7769|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method shop_system.Controllers.UserController.GetAllUsersWithShop (shop-system) - Validation state: Valid 
+2024-03-05 23:25:02.8346|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 8.0.2 initialized 'ShopDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.2' with options: None 
+2024-03-05 23:25:02.8399|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Creating DbConnection. 
+2024-03-05 23:25:02.8399|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Created DbConnection. (0ms). 
+2024-03-05 23:25:02.8399|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'ShopDB' on server '(localdb)\mssqllocaldb'. 
+2024-03-05 23:25:02.8399|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'ShopDB' on server '(localdb)\mssqllocaldb'. 
+2024-03-05 23:25:02.8399|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteReader'. 
+2024-03-05 23:25:02.8399|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteReader' (0ms). 
+2024-03-05 23:25:02.8399|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Initialized DbCommand for 'ExecuteReader' (0ms). 
+2024-03-05 23:25:02.8399|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[Id], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Login], [u].[Password], [u].[PhoneNumber], [u].[PositionId], [u].[SecondName], [u].[ShopId], [s].[Id], [s].[Building], [s].[City], [s].[Code], [s].[Country], [s].[PhoneNumber], [s].[PostalCode], [s].[Premises], [s].[Region], [s].[Street], [p].[Id], [p].[Name]
+FROM [Users] AS [u]
+LEFT JOIN [Shops] AS [s] ON [u].[ShopId] = [s].[Id]
+INNER JOIN [Positions] AS [p] ON [u].[PositionId] = [p].[Id]
+ORDER BY [u].[PositionId] 
+2024-03-05 23:25:02.8399|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[Id], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Login], [u].[Password], [u].[PhoneNumber], [u].[PositionId], [u].[SecondName], [u].[ShopId], [s].[Id], [s].[Building], [s].[City], [s].[Code], [s].[Country], [s].[PhoneNumber], [s].[PostalCode], [s].[Premises], [s].[Region], [s].[Street], [p].[Id], [p].[Name]
+FROM [Users] AS [u]
+LEFT JOIN [Shops] AS [s] ON [u].[ShopId] = [s].[Id]
+INNER JOIN [Positions] AS [p] ON [u].[PositionId] = [p].[Id]
+ORDER BY [u].[PositionId] 
+2024-03-05 23:25:02.8399|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ShopDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:25:02.8399|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|The navigation 'User.Position' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:25:02.8399|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ShopDbContext' started tracking 'Position' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:25:02.8399|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ShopDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:25:02.8399|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ShopDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:25:02.8399|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ShopDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:25:02.8399|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ShopDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:25:02.8399|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ShopDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:25:02.8399|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ShopDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:25:02.8399|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|The navigation 'User.Shop' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:25:02.8399|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ShopDbContext' started tracking 'Shop' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:25:02.8399|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|The navigation 'User.Shop' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:25:02.8399|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ShopDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:25:02.8399|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ShopDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:25:02.8399|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|The navigation 'User.Position' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:25:02.8399|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ShopDbContext' started tracking 'Position' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:25:02.8399|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ShopDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:25:02.8399|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|The navigation 'User.Shop' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:25:02.8399|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ShopDbContext' started tracking 'Shop' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:25:02.8399|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|The navigation 'User.Position' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:25:02.8399|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ShopDbContext' started tracking 'Position' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:25:02.8399|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|The navigation 'User.Shop' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:25:02.8399|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ShopDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:25:02.8399|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|The navigation 'User.Shop' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:25:02.8399|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ShopDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:25:02.8399|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ShopDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:25:02.8399|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|The navigation 'User.Position' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:25:02.8399|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ShopDbContext' started tracking 'Position' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:25:02.8399|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Closing data reader to 'ShopDB' on server '(localdb)\mssqllocaldb'. 
+2024-03-05 23:25:02.8399|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|A data reader for 'ShopDB' on server '(localdb)\mssqllocaldb' is being disposed after spending 1ms reading results. 
+2024-03-05 23:25:02.8399|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'ShopDB' on server '(localdb)\mssqllocaldb'. 
+2024-03-05 23:25:02.8399|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'ShopDB' on server '(localdb)\mssqllocaldb' (0ms). 
+2024-03-05 23:25:02.8399|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action method shop_system.Controllers.UserController.GetAllUsersWithShop (shop-system), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 64.2706ms. 
+2024-03-05 23:25:02.8399|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2024-03-05 23:25:02.8399|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2024-03-05 23:25:02.8399|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Before executing action result Microsoft.AspNetCore.Mvc.OkObjectResult. 
+2024-03-05 23:25:02.8399|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter 
+2024-03-05 23:25:02.8399|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|No information found on request to perform content negotiation. 
+2024-03-05 23:25:02.8399|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select an output formatter without using a content type as no explicit content types were specified for the response. 
+2024-03-05 23:25:02.8399|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select the first formatter in the output formatters list which can write the result. 
+2024-03-05 23:25:02.8399|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response. 
+2024-03-05 23:25:02.8399|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[shop_system.Models.UserWShopDto, shop-system, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2024-03-05 23:25:02.8399|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|After executing action result Microsoft.AspNetCore.Mvc.OkObjectResult. 
+2024-03-05 23:25:02.8399|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action shop_system.Controllers.UserController.GetAllUsersWithShop (shop-system) in 66.5005ms 
+2024-03-05 23:25:02.8399|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'shop_system.Controllers.UserController.GetAllUsersWithShop (shop-system)' 
+2024-03-05 23:25:02.8399|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1TC4E2UEFQ" sending HEADERS frame for stream ID 3 with length 35 and flags END_HEADERS. 
+2024-03-05 23:25:02.8399|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1TC4E2UEFQ" sending DATA frame for stream ID 3 with length 3938 and flags NONE. 
+2024-03-05 23:25:02.8399|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|'ShopDbContext' disposed. 
+2024-03-05 23:25:02.8399|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Disposing connection to database 'ShopDB' on server '(localdb)\mssqllocaldb'. 
+2024-03-05 23:25:02.8399|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1TC4E2UEFQ" sending DATA frame for stream ID 3 with length 0 and flags END_STREAM. 
+2024-03-05 23:25:02.8399|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Disposed connection to database '' on server '' (0ms). 
+2024-03-05 23:25:02.8399|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7057/api/user - 200 - application/json;+charset=utf-8 108.7486ms 
+2024-03-05 23:25:02.8399|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1TC4E2UEFQ" received WINDOW_UPDATE frame for stream ID 0 with length 4 and flags 0x0. 
+2024-03-05 23:27:27.9997|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1TC4E2UEFQ" received HEADERS frame for stream ID 5 with length 30 and flags END_STREAM, END_HEADERS, PRIORITY. 
+2024-03-05 23:27:27.9997|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1TC4E2UEFQ" received PING frame for stream ID 0 with length 8 and flags NONE. 
+2024-03-05 23:27:27.9997|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1TC4E2UEFQ" sending PING frame for stream ID 0 with length 8 and flags ACK. 
+2024-03-05 23:27:27.9997|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7057/api/user - - - 
+2024-03-05 23:27:28.0111|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2024-03-05 23:27:28.0111|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/api/user' 
+2024-03-05 23:27:28.0111|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'shop_system.Controllers.UserController.GetAllUsersWithShop (shop-system)' with route pattern 'api/user' is valid for the request path '/api/user' 
+2024-03-05 23:27:28.0111|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'shop_system.Controllers.UserController.GetAllUsersWithShop (shop-system)' 
+2024-03-05 23:27:28.0111|TRACE|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|The endpoint does not specify the IRequestSizeLimitMetadata. 
+2024-03-05 23:27:28.0111|DEBUG|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|The request has an origin header: 'http://localhost:3000'. 
+2024-03-05 23:27:28.0111|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|CORS policy execution successful. 
+2024-03-05 23:27:28.0111|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Static files was skipped as the request already matched an endpoint. 
+2024-03-05 23:27:28.0111|DEBUG|Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler|AuthenticationScheme: Bearer was not authenticated. 
+2024-03-05 23:27:28.0111|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'shop_system.Controllers.UserController.GetAllUsersWithShop (shop-system)' 
+2024-03-05 23:27:28.0111|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetAllUsersWithShop", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[shop_system.Models.UserWShopDto]] GetAllUsersWithShop() on controller shop_system.Controllers.UserController (shop-system). 
+2024-03-05 23:27:28.0111|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None 
+2024-03-05 23:27:28.0111|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None 
+2024-03-05 23:27:28.0111|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000) 
+2024-03-05 23:27:28.0111|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None 
+2024-03-05 23:27:28.0111|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): None 
+2024-03-05 23:27:28.0111|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller shop_system.Controllers.UserController (shop-system) 
+2024-03-05 23:27:28.0111|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller shop_system.Controllers.UserController (shop-system) 
+2024-03-05 23:27:28.0111|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2024-03-05 23:27:28.0111|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2024-03-05 23:27:28.0111|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method shop_system.Controllers.UserController.GetAllUsersWithShop (shop-system) - Validation state: Valid 
+2024-03-05 23:27:28.0252|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 8.0.2 initialized 'ShopDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.2' with options: None 
+2024-03-05 23:27:28.0252|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Creating DbConnection. 
+2024-03-05 23:27:28.0252|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Created DbConnection. (0ms). 
+2024-03-05 23:27:28.0252|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'ShopDB' on server '(localdb)\mssqllocaldb'. 
+2024-03-05 23:27:28.0252|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'ShopDB' on server '(localdb)\mssqllocaldb'. 
+2024-03-05 23:27:28.0252|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteReader'. 
+2024-03-05 23:27:28.0252|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteReader' (0ms). 
+2024-03-05 23:27:28.0252|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Initialized DbCommand for 'ExecuteReader' (0ms). 
+2024-03-05 23:27:28.0252|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[Id], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Login], [u].[Password], [u].[PhoneNumber], [u].[PositionId], [u].[SecondName], [u].[ShopId], [s].[Id], [s].[Building], [s].[City], [s].[Code], [s].[Country], [s].[PhoneNumber], [s].[PostalCode], [s].[Premises], [s].[Region], [s].[Street], [p].[Id], [p].[Name]
+FROM [Users] AS [u]
+LEFT JOIN [Shops] AS [s] ON [u].[ShopId] = [s].[Id]
+INNER JOIN [Positions] AS [p] ON [u].[PositionId] = [p].[Id]
+ORDER BY [u].[PositionId] 
+2024-03-05 23:27:28.0252|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[Id], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Login], [u].[Password], [u].[PhoneNumber], [u].[PositionId], [u].[SecondName], [u].[ShopId], [s].[Id], [s].[Building], [s].[City], [s].[Code], [s].[Country], [s].[PhoneNumber], [s].[PostalCode], [s].[Premises], [s].[Region], [s].[Street], [p].[Id], [p].[Name]
+FROM [Users] AS [u]
+LEFT JOIN [Shops] AS [s] ON [u].[ShopId] = [s].[Id]
+INNER JOIN [Positions] AS [p] ON [u].[PositionId] = [p].[Id]
+ORDER BY [u].[PositionId] 
+2024-03-05 23:27:28.0252|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ShopDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:27:28.0252|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|The navigation 'User.Position' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:27:28.0252|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ShopDbContext' started tracking 'Position' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:27:28.0252|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ShopDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:27:28.0252|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ShopDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:27:28.0252|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ShopDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:27:28.0252|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ShopDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:27:28.0252|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ShopDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:27:28.0252|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ShopDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:27:28.0252|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|The navigation 'User.Shop' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:27:28.0252|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ShopDbContext' started tracking 'Shop' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:27:28.0252|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|The navigation 'User.Shop' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:27:28.0252|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ShopDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:27:28.0252|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ShopDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:27:28.0252|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|The navigation 'User.Position' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:27:28.0252|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ShopDbContext' started tracking 'Position' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:27:28.0252|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ShopDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:27:28.0252|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|The navigation 'User.Shop' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:27:28.0252|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ShopDbContext' started tracking 'Shop' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:27:28.0252|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|The navigation 'User.Position' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:27:28.0252|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ShopDbContext' started tracking 'Position' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:27:28.0252|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|The navigation 'User.Shop' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:27:28.0252|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ShopDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:27:28.0252|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|The navigation 'User.Shop' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:27:28.0252|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ShopDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:27:28.0252|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ShopDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:27:28.0252|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|The navigation 'User.Position' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:27:28.0252|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ShopDbContext' started tracking 'Position' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:27:28.0252|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Closing data reader to 'ShopDB' on server '(localdb)\mssqllocaldb'. 
+2024-03-05 23:27:28.0252|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|A data reader for 'ShopDB' on server '(localdb)\mssqllocaldb' is being disposed after spending 3ms reading results. 
+2024-03-05 23:27:28.0252|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'ShopDB' on server '(localdb)\mssqllocaldb'. 
+2024-03-05 23:27:28.0252|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'ShopDB' on server '(localdb)\mssqllocaldb' (0ms). 
+2024-03-05 23:27:28.0252|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action method shop_system.Controllers.UserController.GetAllUsersWithShop (shop-system), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 12.1192ms. 
+2024-03-05 23:27:28.0252|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2024-03-05 23:27:28.0252|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2024-03-05 23:27:28.0252|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Before executing action result Microsoft.AspNetCore.Mvc.OkObjectResult. 
+2024-03-05 23:27:28.0252|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter 
+2024-03-05 23:27:28.0252|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|No information found on request to perform content negotiation. 
+2024-03-05 23:27:28.0252|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select an output formatter without using a content type as no explicit content types were specified for the response. 
+2024-03-05 23:27:28.0252|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select the first formatter in the output formatters list which can write the result. 
+2024-03-05 23:27:28.0252|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response. 
+2024-03-05 23:27:28.0252|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[shop_system.Models.UserWShopDto, shop-system, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2024-03-05 23:27:28.0252|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|After executing action result Microsoft.AspNetCore.Mvc.OkObjectResult. 
+2024-03-05 23:27:28.0252|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action shop_system.Controllers.UserController.GetAllUsersWithShop (shop-system) in 16.5785ms 
+2024-03-05 23:27:28.0252|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1TC4E2UEFQ" sending HEADERS frame for stream ID 5 with length 35 and flags END_HEADERS. 
+2024-03-05 23:27:28.0252|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'shop_system.Controllers.UserController.GetAllUsersWithShop (shop-system)' 
+2024-03-05 23:27:28.0252|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1TC4E2UEFQ" sending DATA frame for stream ID 5 with length 3938 and flags NONE. 
+2024-03-05 23:27:28.0252|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|'ShopDbContext' disposed. 
+2024-03-05 23:27:28.0252|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1TC4E2UEFQ" sending DATA frame for stream ID 5 with length 0 and flags END_STREAM. 
+2024-03-05 23:27:28.0252|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Disposing connection to database 'ShopDB' on server '(localdb)\mssqllocaldb'. 
+2024-03-05 23:27:28.0252|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Disposed connection to database '' on server '' (0ms). 
+2024-03-05 23:27:28.0252|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7057/api/user - 200 - application/json;+charset=utf-8 35.9733ms 
+2024-03-05 23:27:28.0252|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1TC4E2UEFQ" received WINDOW_UPDATE frame for stream ID 0 with length 4 and flags 0x0. 
+2024-03-05 23:28:03.0125|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1TC4E2UEFQ" received HEADERS frame for stream ID 7 with length 30 and flags END_STREAM, END_HEADERS, PRIORITY. 
+2024-03-05 23:28:03.0125|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1TC4E2UEFQ" received PING frame for stream ID 0 with length 8 and flags NONE. 
+2024-03-05 23:28:03.0125|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1TC4E2UEFQ" sending PING frame for stream ID 0 with length 8 and flags ACK. 
+2024-03-05 23:28:03.0125|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7057/api/user - - - 
+2024-03-05 23:28:03.0125|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2024-03-05 23:28:03.0125|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/api/user' 
+2024-03-05 23:28:03.0125|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'shop_system.Controllers.UserController.GetAllUsersWithShop (shop-system)' with route pattern 'api/user' is valid for the request path '/api/user' 
+2024-03-05 23:28:03.0125|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'shop_system.Controllers.UserController.GetAllUsersWithShop (shop-system)' 
+2024-03-05 23:28:03.0125|TRACE|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|The endpoint does not specify the IRequestSizeLimitMetadata. 
+2024-03-05 23:28:03.0125|DEBUG|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|The request has an origin header: 'http://localhost:3000'. 
+2024-03-05 23:28:03.0125|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|CORS policy execution successful. 
+2024-03-05 23:28:03.0125|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Static files was skipped as the request already matched an endpoint. 
+2024-03-05 23:28:03.0125|DEBUG|Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler|AuthenticationScheme: Bearer was not authenticated. 
+2024-03-05 23:28:03.0125|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'shop_system.Controllers.UserController.GetAllUsersWithShop (shop-system)' 
+2024-03-05 23:28:03.0125|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetAllUsersWithShop", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[shop_system.Models.UserWShopDto]] GetAllUsersWithShop() on controller shop_system.Controllers.UserController (shop-system). 
+2024-03-05 23:28:03.0125|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None 
+2024-03-05 23:28:03.0125|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None 
+2024-03-05 23:28:03.0125|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000) 
+2024-03-05 23:28:03.0125|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None 
+2024-03-05 23:28:03.0125|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): None 
+2024-03-05 23:28:03.0125|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller shop_system.Controllers.UserController (shop-system) 
+2024-03-05 23:28:03.0125|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller shop_system.Controllers.UserController (shop-system) 
+2024-03-05 23:28:03.0125|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2024-03-05 23:28:03.0125|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2024-03-05 23:28:03.0125|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method shop_system.Controllers.UserController.GetAllUsersWithShop (shop-system) - Validation state: Valid 
+2024-03-05 23:28:03.0125|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 8.0.2 initialized 'ShopDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.2' with options: None 
+2024-03-05 23:28:03.0125|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Creating DbConnection. 
+2024-03-05 23:28:03.0125|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Created DbConnection. (0ms). 
+2024-03-05 23:28:03.0125|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'ShopDB' on server '(localdb)\mssqllocaldb'. 
+2024-03-05 23:28:03.0125|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'ShopDB' on server '(localdb)\mssqllocaldb'. 
+2024-03-05 23:28:03.0125|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteReader'. 
+2024-03-05 23:28:03.0125|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteReader' (0ms). 
+2024-03-05 23:28:03.0125|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Initialized DbCommand for 'ExecuteReader' (0ms). 
+2024-03-05 23:28:03.0125|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[Id], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Login], [u].[Password], [u].[PhoneNumber], [u].[PositionId], [u].[SecondName], [u].[ShopId], [s].[Id], [s].[Building], [s].[City], [s].[Code], [s].[Country], [s].[PhoneNumber], [s].[PostalCode], [s].[Premises], [s].[Region], [s].[Street], [p].[Id], [p].[Name]
+FROM [Users] AS [u]
+LEFT JOIN [Shops] AS [s] ON [u].[ShopId] = [s].[Id]
+INNER JOIN [Positions] AS [p] ON [u].[PositionId] = [p].[Id]
+ORDER BY [u].[PositionId] 
+2024-03-05 23:28:03.0125|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[Id], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Login], [u].[Password], [u].[PhoneNumber], [u].[PositionId], [u].[SecondName], [u].[ShopId], [s].[Id], [s].[Building], [s].[City], [s].[Code], [s].[Country], [s].[PhoneNumber], [s].[PostalCode], [s].[Premises], [s].[Region], [s].[Street], [p].[Id], [p].[Name]
+FROM [Users] AS [u]
+LEFT JOIN [Shops] AS [s] ON [u].[ShopId] = [s].[Id]
+INNER JOIN [Positions] AS [p] ON [u].[PositionId] = [p].[Id]
+ORDER BY [u].[PositionId] 
+2024-03-05 23:28:03.0125|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ShopDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:28:03.0125|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|The navigation 'User.Position' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:28:03.0125|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ShopDbContext' started tracking 'Position' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:28:03.0125|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ShopDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:28:03.0125|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ShopDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:28:03.0125|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ShopDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:28:03.0125|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ShopDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:28:03.0125|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ShopDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:28:03.0125|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ShopDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:28:03.0125|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|The navigation 'User.Shop' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:28:03.0125|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ShopDbContext' started tracking 'Shop' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:28:03.0125|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|The navigation 'User.Shop' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:28:03.0125|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ShopDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:28:03.0125|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ShopDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:28:03.0125|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|The navigation 'User.Position' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:28:03.0125|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ShopDbContext' started tracking 'Position' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:28:03.0125|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ShopDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:28:03.0125|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|The navigation 'User.Shop' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:28:03.0125|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ShopDbContext' started tracking 'Shop' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:28:03.0125|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|The navigation 'User.Position' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:28:03.0125|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ShopDbContext' started tracking 'Position' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:28:03.0125|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|The navigation 'User.Shop' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:28:03.0125|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ShopDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:28:03.0125|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|The navigation 'User.Shop' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:28:03.0125|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ShopDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:28:03.0125|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ShopDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:28:03.0125|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|The navigation 'User.Position' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:28:03.0125|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ShopDbContext' started tracking 'Position' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:28:03.0125|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Closing data reader to 'ShopDB' on server '(localdb)\mssqllocaldb'. 
+2024-03-05 23:28:03.0125|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|A data reader for 'ShopDB' on server '(localdb)\mssqllocaldb' is being disposed after spending 0ms reading results. 
+2024-03-05 23:28:03.0125|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'ShopDB' on server '(localdb)\mssqllocaldb'. 
+2024-03-05 23:28:03.0125|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'ShopDB' on server '(localdb)\mssqllocaldb' (0ms). 
+2024-03-05 23:28:03.0125|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action method shop_system.Controllers.UserController.GetAllUsersWithShop (shop-system), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 2.4526ms. 
+2024-03-05 23:28:03.0125|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2024-03-05 23:28:03.0125|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2024-03-05 23:28:03.0125|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Before executing action result Microsoft.AspNetCore.Mvc.OkObjectResult. 
+2024-03-05 23:28:03.0125|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter 
+2024-03-05 23:28:03.0125|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|No information found on request to perform content negotiation. 
+2024-03-05 23:28:03.0125|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select an output formatter without using a content type as no explicit content types were specified for the response. 
+2024-03-05 23:28:03.0125|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select the first formatter in the output formatters list which can write the result. 
+2024-03-05 23:28:03.0125|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response. 
+2024-03-05 23:28:03.0125|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[shop_system.Models.UserWShopDto, shop-system, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2024-03-05 23:28:03.0125|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|After executing action result Microsoft.AspNetCore.Mvc.OkObjectResult. 
+2024-03-05 23:28:03.0125|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action shop_system.Controllers.UserController.GetAllUsersWithShop (shop-system) in 3.0376ms 
+2024-03-05 23:28:03.0125|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'shop_system.Controllers.UserController.GetAllUsersWithShop (shop-system)' 
+2024-03-05 23:28:03.0125|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1TC4E2UEFQ" sending HEADERS frame for stream ID 7 with length 35 and flags END_HEADERS. 
+2024-03-05 23:28:03.0125|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|'ShopDbContext' disposed. 
+2024-03-05 23:28:03.0125|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1TC4E2UEFQ" sending DATA frame for stream ID 7 with length 3938 and flags NONE. 
+2024-03-05 23:28:03.0125|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Disposing connection to database 'ShopDB' on server '(localdb)\mssqllocaldb'. 
+2024-03-05 23:28:03.0125|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Disposed connection to database '' on server '' (0ms). 
+2024-03-05 23:28:03.0125|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1TC4E2UEFQ" sending DATA frame for stream ID 7 with length 0 and flags END_STREAM. 
+2024-03-05 23:28:03.0125|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7057/api/user - 200 - application/json;+charset=utf-8 8.0630ms 
+2024-03-05 23:28:03.0125|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1TC4E2UEFQ" received WINDOW_UPDATE frame for stream ID 0 with length 4 and flags 0x0. 
+2024-03-05 23:31:29.0481|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1TC4E2UEFQ" received HEADERS frame for stream ID 9 with length 30 and flags END_STREAM, END_HEADERS, PRIORITY. 
+2024-03-05 23:31:29.0481|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1TC4E2UEFQ" received PING frame for stream ID 0 with length 8 and flags NONE. 
+2024-03-05 23:31:29.0481|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1TC4E2UEFQ" sending PING frame for stream ID 0 with length 8 and flags ACK. 
+2024-03-05 23:31:29.0481|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7057/api/user - - - 
+2024-03-05 23:31:29.0481|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2024-03-05 23:31:29.0481|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/api/user' 
+2024-03-05 23:31:29.0481|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'shop_system.Controllers.UserController.GetAllUsersWithShop (shop-system)' with route pattern 'api/user' is valid for the request path '/api/user' 
+2024-03-05 23:31:29.0481|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'shop_system.Controllers.UserController.GetAllUsersWithShop (shop-system)' 
+2024-03-05 23:31:29.0592|TRACE|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|The endpoint does not specify the IRequestSizeLimitMetadata. 
+2024-03-05 23:31:29.0592|DEBUG|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|The request has an origin header: 'http://localhost:3000'. 
+2024-03-05 23:31:29.0592|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|CORS policy execution successful. 
+2024-03-05 23:31:29.0592|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Static files was skipped as the request already matched an endpoint. 
+2024-03-05 23:31:29.0592|DEBUG|Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler|AuthenticationScheme: Bearer was not authenticated. 
+2024-03-05 23:31:29.0592|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'shop_system.Controllers.UserController.GetAllUsersWithShop (shop-system)' 
+2024-03-05 23:31:29.0592|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetAllUsersWithShop", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[shop_system.Models.UserWShopDto]] GetAllUsersWithShop() on controller shop_system.Controllers.UserController (shop-system). 
+2024-03-05 23:31:29.0592|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None 
+2024-03-05 23:31:29.0592|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None 
+2024-03-05 23:31:29.0592|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000) 
+2024-03-05 23:31:29.0592|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None 
+2024-03-05 23:31:29.0592|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): None 
+2024-03-05 23:31:29.0592|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller shop_system.Controllers.UserController (shop-system) 
+2024-03-05 23:31:29.0592|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller shop_system.Controllers.UserController (shop-system) 
+2024-03-05 23:31:29.0592|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2024-03-05 23:31:29.0592|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2024-03-05 23:31:29.0592|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method shop_system.Controllers.UserController.GetAllUsersWithShop (shop-system) - Validation state: Valid 
+2024-03-05 23:31:29.0719|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 8.0.2 initialized 'ShopDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.2' with options: None 
+2024-03-05 23:31:29.0719|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Creating DbConnection. 
+2024-03-05 23:31:29.0719|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Created DbConnection. (0ms). 
+2024-03-05 23:31:29.0719|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'ShopDB' on server '(localdb)\mssqllocaldb'. 
+2024-03-05 23:31:29.0719|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'ShopDB' on server '(localdb)\mssqllocaldb'. 
+2024-03-05 23:31:29.0719|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteReader'. 
+2024-03-05 23:31:29.0719|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteReader' (0ms). 
+2024-03-05 23:31:29.0719|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Initialized DbCommand for 'ExecuteReader' (0ms). 
+2024-03-05 23:31:29.0719|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[Id], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Login], [u].[Password], [u].[PhoneNumber], [u].[PositionId], [u].[SecondName], [u].[ShopId], [s].[Id], [s].[Building], [s].[City], [s].[Code], [s].[Country], [s].[PhoneNumber], [s].[PostalCode], [s].[Premises], [s].[Region], [s].[Street], [p].[Id], [p].[Name]
+FROM [Users] AS [u]
+LEFT JOIN [Shops] AS [s] ON [u].[ShopId] = [s].[Id]
+INNER JOIN [Positions] AS [p] ON [u].[PositionId] = [p].[Id]
+ORDER BY [u].[PositionId] 
+2024-03-05 23:31:29.0719|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[Id], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Login], [u].[Password], [u].[PhoneNumber], [u].[PositionId], [u].[SecondName], [u].[ShopId], [s].[Id], [s].[Building], [s].[City], [s].[Code], [s].[Country], [s].[PhoneNumber], [s].[PostalCode], [s].[Premises], [s].[Region], [s].[Street], [p].[Id], [p].[Name]
+FROM [Users] AS [u]
+LEFT JOIN [Shops] AS [s] ON [u].[ShopId] = [s].[Id]
+INNER JOIN [Positions] AS [p] ON [u].[PositionId] = [p].[Id]
+ORDER BY [u].[PositionId] 
+2024-03-05 23:31:29.0719|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ShopDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:31:29.0719|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|The navigation 'User.Position' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:31:29.0719|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ShopDbContext' started tracking 'Position' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:31:29.0719|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ShopDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:31:29.0719|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ShopDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:31:29.0719|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ShopDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:31:29.0719|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ShopDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:31:29.0719|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ShopDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:31:29.0719|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ShopDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:31:29.0719|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|The navigation 'User.Shop' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:31:29.0719|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ShopDbContext' started tracking 'Shop' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:31:29.0719|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|The navigation 'User.Shop' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:31:29.0719|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ShopDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:31:29.0719|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ShopDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:31:29.0719|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|The navigation 'User.Position' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:31:29.0719|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ShopDbContext' started tracking 'Position' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:31:29.0719|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ShopDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:31:29.0719|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|The navigation 'User.Shop' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:31:29.0719|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ShopDbContext' started tracking 'Shop' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:31:29.0719|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|The navigation 'User.Position' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:31:29.0719|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ShopDbContext' started tracking 'Position' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:31:29.0719|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|The navigation 'User.Shop' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:31:29.0719|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ShopDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:31:29.0719|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|The navigation 'User.Shop' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:31:29.0719|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ShopDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:31:29.0719|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ShopDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:31:29.0719|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|The navigation 'User.Position' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:31:29.0719|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ShopDbContext' started tracking 'Position' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:31:29.0719|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Closing data reader to 'ShopDB' on server '(localdb)\mssqllocaldb'. 
+2024-03-05 23:31:29.0719|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|A data reader for 'ShopDB' on server '(localdb)\mssqllocaldb' is being disposed after spending 2ms reading results. 
+2024-03-05 23:31:29.0719|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'ShopDB' on server '(localdb)\mssqllocaldb'. 
+2024-03-05 23:31:29.0719|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'ShopDB' on server '(localdb)\mssqllocaldb' (0ms). 
+2024-03-05 23:31:29.0719|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action method shop_system.Controllers.UserController.GetAllUsersWithShop (shop-system), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 9.9542ms. 
+2024-03-05 23:31:29.0719|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2024-03-05 23:31:29.0719|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2024-03-05 23:31:29.0719|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Before executing action result Microsoft.AspNetCore.Mvc.OkObjectResult. 
+2024-03-05 23:31:29.0719|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter 
+2024-03-05 23:31:29.0719|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|No information found on request to perform content negotiation. 
+2024-03-05 23:31:29.0719|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select an output formatter without using a content type as no explicit content types were specified for the response. 
+2024-03-05 23:31:29.0719|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select the first formatter in the output formatters list which can write the result. 
+2024-03-05 23:31:29.0719|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response. 
+2024-03-05 23:31:29.0719|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[shop_system.Models.UserWShopDto, shop-system, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2024-03-05 23:31:29.0719|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|After executing action result Microsoft.AspNetCore.Mvc.OkObjectResult. 
+2024-03-05 23:31:29.0719|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action shop_system.Controllers.UserController.GetAllUsersWithShop (shop-system) in 12.8313ms 
+2024-03-05 23:31:29.0719|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'shop_system.Controllers.UserController.GetAllUsersWithShop (shop-system)' 
+2024-03-05 23:31:29.0719|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|'ShopDbContext' disposed. 
+2024-03-05 23:31:29.0719|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Disposing connection to database 'ShopDB' on server '(localdb)\mssqllocaldb'. 
+2024-03-05 23:31:29.0719|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Disposed connection to database '' on server '' (0ms). 
+2024-03-05 23:31:29.0719|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7057/api/user - 200 - application/json;+charset=utf-8 32.0030ms 
+2024-03-05 23:31:29.0719|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1TC4E2UEFQ" sending HEADERS frame for stream ID 9 with length 35 and flags END_HEADERS. 
+2024-03-05 23:31:29.0719|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1TC4E2UEFQ" sending DATA frame for stream ID 9 with length 3938 and flags END_STREAM. 
+2024-03-05 23:31:29.0719|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1TC4E2UEFQ" received WINDOW_UPDATE frame for stream ID 0 with length 4 and flags 0x0. 
+2024-03-05 23:31:45.0173|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1TC4E2UEFQ" received HEADERS frame for stream ID 11 with length 30 and flags END_STREAM, END_HEADERS, PRIORITY. 
+2024-03-05 23:31:45.0173|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1TC4E2UEFQ" received PING frame for stream ID 0 with length 8 and flags NONE. 
+2024-03-05 23:31:45.0173|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1TC4E2UEFQ" sending PING frame for stream ID 0 with length 8 and flags ACK. 
+2024-03-05 23:31:45.0173|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7057/api/user - - - 
+2024-03-05 23:31:45.0173|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2024-03-05 23:31:45.0173|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/api/user' 
+2024-03-05 23:31:45.0173|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'shop_system.Controllers.UserController.GetAllUsersWithShop (shop-system)' with route pattern 'api/user' is valid for the request path '/api/user' 
+2024-03-05 23:31:45.0173|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'shop_system.Controllers.UserController.GetAllUsersWithShop (shop-system)' 
+2024-03-05 23:31:45.0173|TRACE|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|The endpoint does not specify the IRequestSizeLimitMetadata. 
+2024-03-05 23:31:45.0173|DEBUG|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|The request has an origin header: 'http://localhost:3000'. 
+2024-03-05 23:31:45.0173|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|CORS policy execution successful. 
+2024-03-05 23:31:45.0173|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Static files was skipped as the request already matched an endpoint. 
+2024-03-05 23:31:45.0173|DEBUG|Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler|AuthenticationScheme: Bearer was not authenticated. 
+2024-03-05 23:31:45.0173|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'shop_system.Controllers.UserController.GetAllUsersWithShop (shop-system)' 
+2024-03-05 23:31:45.0173|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetAllUsersWithShop", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[shop_system.Models.UserWShopDto]] GetAllUsersWithShop() on controller shop_system.Controllers.UserController (shop-system). 
+2024-03-05 23:31:45.0173|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None 
+2024-03-05 23:31:45.0173|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None 
+2024-03-05 23:31:45.0173|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000) 
+2024-03-05 23:31:45.0173|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None 
+2024-03-05 23:31:45.0173|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): None 
+2024-03-05 23:31:45.0173|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller shop_system.Controllers.UserController (shop-system) 
+2024-03-05 23:31:45.0173|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller shop_system.Controllers.UserController (shop-system) 
+2024-03-05 23:31:45.0173|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2024-03-05 23:31:45.0173|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2024-03-05 23:31:45.0173|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method shop_system.Controllers.UserController.GetAllUsersWithShop (shop-system) - Validation state: Valid 
+2024-03-05 23:31:45.0173|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 8.0.2 initialized 'ShopDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.2' with options: None 
+2024-03-05 23:31:45.0173|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Creating DbConnection. 
+2024-03-05 23:31:45.0173|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Created DbConnection. (0ms). 
+2024-03-05 23:31:45.0173|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'ShopDB' on server '(localdb)\mssqllocaldb'. 
+2024-03-05 23:31:45.0173|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'ShopDB' on server '(localdb)\mssqllocaldb'. 
+2024-03-05 23:31:45.0173|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteReader'. 
+2024-03-05 23:31:45.0173|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteReader' (0ms). 
+2024-03-05 23:31:45.0173|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Initialized DbCommand for 'ExecuteReader' (0ms). 
+2024-03-05 23:31:45.0173|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[Id], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Login], [u].[Password], [u].[PhoneNumber], [u].[PositionId], [u].[SecondName], [u].[ShopId], [s].[Id], [s].[Building], [s].[City], [s].[Code], [s].[Country], [s].[PhoneNumber], [s].[PostalCode], [s].[Premises], [s].[Region], [s].[Street], [p].[Id], [p].[Name]
+FROM [Users] AS [u]
+LEFT JOIN [Shops] AS [s] ON [u].[ShopId] = [s].[Id]
+INNER JOIN [Positions] AS [p] ON [u].[PositionId] = [p].[Id]
+ORDER BY [u].[PositionId] 
+2024-03-05 23:31:45.0173|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[Id], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Login], [u].[Password], [u].[PhoneNumber], [u].[PositionId], [u].[SecondName], [u].[ShopId], [s].[Id], [s].[Building], [s].[City], [s].[Code], [s].[Country], [s].[PhoneNumber], [s].[PostalCode], [s].[Premises], [s].[Region], [s].[Street], [p].[Id], [p].[Name]
+FROM [Users] AS [u]
+LEFT JOIN [Shops] AS [s] ON [u].[ShopId] = [s].[Id]
+INNER JOIN [Positions] AS [p] ON [u].[PositionId] = [p].[Id]
+ORDER BY [u].[PositionId] 
+2024-03-05 23:31:45.0173|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ShopDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:31:45.0173|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|The navigation 'User.Position' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:31:45.0173|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ShopDbContext' started tracking 'Position' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:31:45.0173|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ShopDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:31:45.0173|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ShopDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:31:45.0173|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ShopDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:31:45.0173|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ShopDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:31:45.0173|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ShopDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:31:45.0173|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ShopDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:31:45.0173|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|The navigation 'User.Shop' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:31:45.0173|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ShopDbContext' started tracking 'Shop' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:31:45.0173|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|The navigation 'User.Shop' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:31:45.0173|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ShopDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:31:45.0173|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ShopDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:31:45.0173|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|The navigation 'User.Position' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:31:45.0173|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ShopDbContext' started tracking 'Position' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:31:45.0173|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ShopDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:31:45.0173|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|The navigation 'User.Shop' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:31:45.0173|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ShopDbContext' started tracking 'Shop' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:31:45.0173|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|The navigation 'User.Position' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:31:45.0173|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ShopDbContext' started tracking 'Position' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:31:45.0173|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|The navigation 'User.Shop' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:31:45.0173|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ShopDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:31:45.0173|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|The navigation 'User.Shop' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:31:45.0173|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ShopDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:31:45.0173|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ShopDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:31:45.0173|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|The navigation 'User.Position' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:31:45.0173|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ShopDbContext' started tracking 'Position' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-05 23:31:45.0173|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Closing data reader to 'ShopDB' on server '(localdb)\mssqllocaldb'. 
+2024-03-05 23:31:45.0173|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|A data reader for 'ShopDB' on server '(localdb)\mssqllocaldb' is being disposed after spending 0ms reading results. 
+2024-03-05 23:31:45.0173|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'ShopDB' on server '(localdb)\mssqllocaldb'. 
+2024-03-05 23:31:45.0173|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'ShopDB' on server '(localdb)\mssqllocaldb' (0ms). 
+2024-03-05 23:31:45.0173|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action method shop_system.Controllers.UserController.GetAllUsersWithShop (shop-system), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 2.7342ms. 
+2024-03-05 23:31:45.0173|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2024-03-05 23:31:45.0173|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2024-03-05 23:31:45.0173|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Before executing action result Microsoft.AspNetCore.Mvc.OkObjectResult. 
+2024-03-05 23:31:45.0173|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter 
+2024-03-05 23:31:45.0173|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|No information found on request to perform content negotiation. 
+2024-03-05 23:31:45.0173|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select an output formatter without using a content type as no explicit content types were specified for the response. 
+2024-03-05 23:31:45.0173|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select the first formatter in the output formatters list which can write the result. 
+2024-03-05 23:31:45.0173|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response. 
+2024-03-05 23:31:45.0173|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[shop_system.Models.UserWShopDto, shop-system, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2024-03-05 23:31:45.0173|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|After executing action result Microsoft.AspNetCore.Mvc.OkObjectResult. 
+2024-03-05 23:31:45.0173|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action shop_system.Controllers.UserController.GetAllUsersWithShop (shop-system) in 3.4133ms 
+2024-03-05 23:31:45.0173|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'shop_system.Controllers.UserController.GetAllUsersWithShop (shop-system)' 
+2024-03-05 23:31:45.0173|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1TC4E2UEFQ" sending HEADERS frame for stream ID 11 with length 35 and flags END_HEADERS. 
+2024-03-05 23:31:45.0173|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|'ShopDbContext' disposed. 
+2024-03-05 23:31:45.0173|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1TC4E2UEFQ" sending DATA frame for stream ID 11 with length 3938 and flags NONE. 
+2024-03-05 23:31:45.0173|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Disposing connection to database 'ShopDB' on server '(localdb)\mssqllocaldb'. 
+2024-03-05 23:31:45.0173|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Disposed connection to database '' on server '' (0ms). 
+2024-03-05 23:31:45.0173|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1TC4E2UEFQ" sending DATA frame for stream ID 11 with length 0 and flags END_STREAM. 
+2024-03-05 23:31:45.0173|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7057/api/user - 200 - application/json;+charset=utf-8 4.4921ms 
+2024-03-05 23:31:45.0173|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN1TC4E2UEFQ" received WINDOW_UPDATE frame for stream ID 0 with length 4 and flags 0x0. 
