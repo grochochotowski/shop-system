@@ -1,9 +1,9 @@
 import React from "react";
 
-function DashboardOption () {
+function DashboardOption (props) {
     return (
-        <div>
-            <h1>Dashboard</h1>
+        <div className="option">
+            <h1>{props.name}</h1>
         </div>
     );
 }
