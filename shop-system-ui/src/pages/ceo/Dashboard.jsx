@@ -4,12 +4,13 @@ import DashboardOption from "../../components/DashboardOption";
 
 function Dashboard() {
     return (
-        <div>
-            <DashboardOption name="name 1" />
-            <DashboardOption name="name 2" />
-            <DashboardOption name="name 3" />
-            <DashboardOption name="name 4" />
-            <DashboardOption name="name 5" />
+        <div className="dashboard-container">
+            <DashboardOption name="name 1" img="https://picsum.photos/200/300" />
+            <DashboardOption name="name 2" img="https://picsum.photos/200/300" />
+            <DashboardOption name="name 3" img="https://picsum.photos/200/300" />
+            <DashboardOption name="name 4" img="https://picsum.photos/200/300" />
+            <DashboardOption name="name 5" img="https://picsum.photos/200/300" />
+            <DashboardOption name="name 6" img="https://picsum.photos/200/300" />
         </div>
     );
 }
