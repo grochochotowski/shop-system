@@ -15,5 +15,3 @@ What is included in project: <br/>
   &emsp;1.2. Shop <br/>
 2. Shop menager: <br/>
 3. Cash register: <br/>
-
-Project in hold due to another project - KropkaNet - System for stocktaking purposes
