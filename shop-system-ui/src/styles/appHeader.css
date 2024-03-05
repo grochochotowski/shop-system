@@ -1,0 +1,17 @@
+.app-header {
+    padding: 20px 200px;
+    background-color: #766c50;
+    box-shadow: 0 3px 5px 0  rgba(0, 0, 0, 0.5);
+}
+
+.app-logo {
+    height: 50px;
+    aspect-ratio: 1;
+    cursor: pointer;
+}
+
+.app-language {
+    float: right;
+    line-height: 50px;
+    text-align: center;
+}
