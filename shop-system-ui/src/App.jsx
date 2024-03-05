@@ -5,13 +5,15 @@ import Welcome from "./pages/Welcome";
 import Login from "./pages/Login";
 import UserCeo from "./pages/ceo/UserCeo";
 import ShopsCeo from "./pages/ceo/ShopsCeo";
+import Dashboard from "./pages/ceo/Dashboard";
 
 
 function App() {
     return(
         <>
-            <HeaderCeo selected="user"/>
-            <UserCeo />
+            <Dashboard />
+            {/*</><HeaderCeo selected="user"/>
+            <UserCeo />*/}
         </>
     );
 }
