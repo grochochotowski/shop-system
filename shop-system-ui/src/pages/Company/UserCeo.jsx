@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from "react"
-import "../styles/userCeo.css"
+import "../../styles/userCeo.css"
 import UserFormCeo from "../../components/UserFormCeo";
 import UserListCeo from "../../components/UserListCeo";
 
