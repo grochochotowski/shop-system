@@ -3,8 +3,8 @@ import HeaderCeo from "./components/HeaderCeo";
 // PAGES
 import Welcome from "./pages/Welcome";
 import Login from "./pages/Login";
-import UserCeo from "./pages/UserCeo";
-import ShopsCeo from "./pages/ShopsCeo";
+import UserCeo from "./pages/ceo/UserCeo";
+import ShopsCeo from "./pages/ceo/ShopsCeo";
 
 
 function App() {
