@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/headerCeo.css"
+import "../styles/ceo/headerCeo.css"
 
 function HeaderCeo(props) {
 

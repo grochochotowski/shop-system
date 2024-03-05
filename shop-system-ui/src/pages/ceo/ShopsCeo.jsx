@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from "react";
-import "../../styles/shopsCeo.css";
+import "../../styles/ceo/shopsCeo.css";
 
 function ShopsCeo() {
 
