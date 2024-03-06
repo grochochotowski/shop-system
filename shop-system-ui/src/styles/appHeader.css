@@ -2,6 +2,7 @@
     padding: 20px 200px;
     background-color: var(--clr-bg-2);
     box-shadow: 0 3px 5px 0  rgba(0, 0, 0, 0.5);
+    user-select: none;
 }
 
 .app-logo {
