@@ -7,6 +7,7 @@ function Header() {
         <header className="app-header">
             <img className="app-logo" src={Logo} alt="LOGO" />
             <h3 className="app-language">Eng</h3>
+            <button className="app-log-out">Log out</button>
         </header>
     );
 }
