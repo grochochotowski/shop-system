@@ -21,6 +21,7 @@
 }
 
 .app-language {
+    height: 50px;
     text-align: center;
     cursor: pointer;
 }
