@@ -1,17 +1,17 @@
 /* ---- General ---- */
 :root {
-    --clr-bg-1: #323233;
-    --clr-bg-2: #252526;
-    --clr-acc-1: #fff139;
-    --clr-acc-2: #e9413a;
+    --clr-bg-1: #e1e1e1;
+    --clr-bg-2: #7cb8c2;
+    --clr-acc-1: #609bff;
+    --clr-acc-2: #6efff3;
 
-    --clr-txt: azure;
+    --clr-txt: white;
 }
 * {
     margin: 0;
 }
 html, body, #root {
-    background: linear-gradient(90deg, var(--clr-bg-1) 10%, var(--clr-bg-2) 90%);
+    background: var(--clr-bg-1);
     margin: 0;
     color: var(--clr-txt);
     font-family: 'Roboto', sans-serif;
