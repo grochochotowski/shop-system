@@ -3,7 +3,7 @@
     align-items: center;
     justify-content: flex-start;
 
-    padding: 20px 150px;
+    padding: 20px 10%;
 
     background-color: var(--clr-bg-2);
     box-shadow: 0 3px 5px 0  rgba(0, 0, 0, 0.5);
