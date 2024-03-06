@@ -1,12 +1,16 @@
-import React from "react";
+import React, {useState} from "react";
 import "../styles/appHeader.css";
 import Logo from "../images/logo.svg";
+import Eng from "../images/eng.svg";
+import Pol from "../images/pol.svg";
 
 function Header() {
+    const [language, setLanguage] = useState("eng");
+
     return (
         <header className="app-header">
             <img className="app-logo" src={Logo} alt="LOGO" />
-            <h3 className="app-language">Eng</h3>
+            <img className="app-language" src={language === "eng" ? Eng : Pol} alt={language === "eng" ? "eng" : "pol"}/>
             <button className="app-log-out">Log out</button>
         </header>
     );
