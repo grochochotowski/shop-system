@@ -21,9 +21,14 @@
 }
 
 .app-language {
-    height: 40px;
-    text-align: center;
+    height: 35px;
+    width: 60px;
+
+    border-radius: 5px;
+
     cursor: pointer;
+
+    transition: 150ms ease-in-out;
 }
 
 .app-log-out {
