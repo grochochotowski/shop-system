@@ -1,8 +1,6 @@
 import React, {useState} from "react";
 import "../styles/appHeader.css";
 import Logo from "../images/logo.svg";
-import Eng from "../images/eng.svg";
-import Pol from "../images/pol.svg";
 
 function Header() {
     const [language, setLanguage] = useState("eng");
