@@ -45,6 +45,9 @@
 .app-language-over.pol {
     background-image: url("../images/pol.svg");
 }
+.app-language-over:hover {
+    border-bottom-right-radius: 100px;
+}
 
 .app-log-out {
     margin-left: 20px;
