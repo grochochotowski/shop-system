@@ -34,16 +34,16 @@
     transition: 150ms ease-in-out;
 }
 .app-language.eng {
-    background-image: url("../images/pol.svg");
+    background-image: url("../images/pol.png");
 }
 .app-language.pol {
-    background-image: url("../images/eng.svg");
+    background-image: url("../images/eng.png");
 }
 .app-language-over.eng {
-    background-image: url("../images/eng.svg");
+    background-image: url("../images/eng.png");
 }
 .app-language-over.pol {
-    background-image: url("../images/pol.svg");
+    background-image: url("../images/pol.png");
 }
 .app-language-over:hover {
     border-bottom-right-radius: 100px;
