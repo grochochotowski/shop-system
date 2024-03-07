@@ -23,15 +23,16 @@
 .app-language,
 .app-language-over {
     height: 35px;
-    width: 50px;
+    width: 55px;
     border-radius: 5px;
 
     background-position: center;
     background-size: cover;
+    background-repeat: no-repeat;
 
     cursor: pointer;
 
-    transition: 150ms ease-in-out;
+    transition: 250ms ease-in-out;
 }
 .app-language-over.pol,
 .app-language.eng {
@@ -42,7 +43,7 @@
     background-image: url("../images/eng.png");
 }
 .app-language-over:hover {
-    border-bottom-right-radius: 100px;
+    background-position: -30px -2px;
 }
 
 .app-log-out {
