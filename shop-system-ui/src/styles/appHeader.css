@@ -42,8 +42,10 @@
 .app-language-over.eng {
     background-image: url("../images/eng.png");
 }
-.app-language-over:hover {
-    background-position: -30px -2px;
+.app-language:hover .app-language-over{
+    /*background-position: -30px -2px;*/
+    transform: translateX(-50%);
+    box-shadow: 5px 0 5px 0 rgba(0, 0, 0, 0.5);
 }
 
 .app-log-out {
