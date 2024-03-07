@@ -17,5 +17,6 @@ function App() {
         </>
     );
 }
+/*bg - <a href="http://www.freepik.com">Designed by rawpixel.com / Freepik</a>*/
 
 export default App;
