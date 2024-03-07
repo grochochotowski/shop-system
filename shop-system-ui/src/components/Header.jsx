@@ -1,8 +1,6 @@
 import React, {useState} from "react";
 import "../styles/appHeader.css";
 import Logo from "../images/logo.svg";
-import Eng from "../images/eng.svg";
-import Pol from "../images/pol.svg";
 
 function Header() {
     const [language, setLanguage] = useState("eng");
@@ -18,12 +16,9 @@ function Header() {
     return (
         <header className="app-header">
             <img className="app-logo" src={Logo} alt="LOGO" />
-            <div
-                className={`app-language ${language}`}
-                onClick={() => changeLanguage()}
-            />
-                <img className="app-language-image" src={language==="eng" ? Eng : Pol} alt={language==="eng" ? Eng : Pol} />
-            <div/>
+            <div className={`app-language ${language}`} onClick={() => changeLanguage()}>
+                <div className={`app-language-over ${language}`}></div>
+            </div>
             <button className="app-log-out">Log out</button>
         </header>
     );
