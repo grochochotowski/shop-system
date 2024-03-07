@@ -30,6 +30,12 @@
 
     transition: 150ms ease-in-out;
 }
+.app-language.eng {
+    background-image: url("../images/eng.svg");
+}
+.app-language.pol {
+    background-image: url("../images/pol.svg");
+}
 
 .app-log-out {
     margin-left: 20px;
