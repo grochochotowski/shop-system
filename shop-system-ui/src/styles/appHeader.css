@@ -20,7 +20,8 @@
     cursor: pointer;
 }
 
-.app-language {
+.app-language,
+.app-language-over {
     height: 35px;
     width: 50px;
     border-radius: 5px;
@@ -33,9 +34,15 @@
     transition: 150ms ease-in-out;
 }
 .app-language.eng {
-    background-image: url("../images/eng.svg");
+    background-image: url("../images/pol.svg");
 }
 .app-language.pol {
+    background-image: url("../images/eng.svg");
+}
+.app-language-over.eng {
+    background-image: url("../images/eng.svg");
+}
+.app-language-over.pol {
     background-image: url("../images/pol.svg");
 }
 
