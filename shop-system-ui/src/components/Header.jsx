@@ -7,6 +7,15 @@ import Pol from "../images/pol.svg";
 function Header() {
     const [language, setLanguage] = useState("eng");
 
+    const EngLanguageStyle = {
+        "background": "black",
+        "background-position": "top",
+    }
+    const PolLanguageStyle = {
+        "background": "green",
+        "background-position": "top",
+    }
+
     function changeLanguage() {
         if (language === "eng") {
             setLanguage("pol");
@@ -18,12 +27,11 @@ function Header() {
     return (
         <header className="app-header">
             <img className="app-logo" src={Logo} alt="LOGO" />
-            <img
+            <div
             className="app-language"
-            src={language === "eng" ? Eng : Pol}
-            alt={language === "eng" ? "eng" : "pol"}
+            style={language === "eng" ? EngLanguageStyle : PolLanguageStyle}
             onClick={() => changeLanguage()}
-            />
+            /><div/>
             <button className="app-log-out">Log out</button>
         </header>
     );
