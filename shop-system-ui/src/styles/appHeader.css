@@ -22,9 +22,11 @@
 
 .app-language {
     height: 35px;
-    width: 60px;
-
+    width: 50px;
     border-radius: 5px;
+
+    background-position: center;
+    background-size: cover;
 
     cursor: pointer;
 
