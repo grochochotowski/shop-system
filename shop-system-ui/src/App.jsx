@@ -1,6 +1,5 @@
 // COMPONENTS
-import HeaderCeo from "./components/HeaderCeo";
-import Header from "./components/Header";
+import AppHeader from "./components/AppHeader";
 // PAGES
 import Welcome from "./pages/Welcome";
 import Login from "./pages/Login";
@@ -12,7 +11,6 @@ import Dashboard from "./pages/ceo/Dashboard";
 function App() {
     return(
         <>
-            <Header />
             <Dashboard />
             {/*</><HeaderCeo selected="user"/>
             <UserCeo />*/}
