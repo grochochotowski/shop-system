@@ -11,7 +11,7 @@ function Dashboard() {
         <>
             <AppHeader />
             <div className="dashboard-container">
-                <DashboardOption name="name 1" img={clientImg} />
+                <DashboardOption name="Clients" img={clientImg} />
                 <DashboardOption name="name 2" img="https://picsum.photos/1000/300" />
                 <DashboardOption name="name 3" img="https://picsum.photos/1000/300" />
                 <DashboardOption name="name 4" img="https://picsum.photos/1000/300" />
