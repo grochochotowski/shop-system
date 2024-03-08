@@ -15,3 +15,13 @@ What is included in project: <br/>
   &emsp;1.2. Shop <br/>
 2. Shop menager: <br/>
 3. Cash register: <br/>
+
+For now used images will be here due to the fact that there is no place for them to put on page. Later these links will be moved.
+dashboard background - <a href="http://www.freepik.com">Designed by rawpixel.com / Freepik</a>
+clients option -> <a href="https://www.freepik.com/free-photo/two-confident-business-man-shaking-hands-meeting-office-success-dealing-greeting-partner-concept_1203162.htm#fromView=search&page=1&position=1&uuid=715f841c-83dd-4a5d-8196-4dfd7aba56e3">Image by snowing on Freepik</a>
+stors option -> <a href="https://www.pexels.com/pl-pl/zdjecie/zdjecie-odziezy-damskiej-1488463/"> Zdjęcie dodane przez Edgars Kisuro</a>
+clothing option -> <a href="https://www.pexels.com/pl-pl/zdjecie/zblizenie-row-325876/">Zdjęcie dodane przez Pixabay</a>
+company option -> <a href="https://www.pexels.com/pl-pl/zdjecie/bialy-budynek-15120-269077/">Zdjęcie dodane przez Pixabay</a>
+employee option -> <a href="https://www.freepik.com/free-photo/portrait-male-personal-shopper-working_13453242.htm#fromView=search&page=1&position=2&uuid=5abd07d6-a57a-4537-a782-5a403f7a1558">Image by freepik</a>
+sales option -> <a href="https://www.pexels.com/pl-pl/zdjecie/kobieta-w-czarnej-skorzanej-kurtce-trzymajac-czerwone-i-biale-pudelko-5868272/">Zdjęcie dodane przez Max Fischer</a>
+
