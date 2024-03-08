@@ -1,7 +1,7 @@
 import React from "react";
 
 // COMPONENTS
-import AppHeader from "../../components/AppHeader";
+import AppHeader from "./components/AppHeader";
 
 // PAGES
 import Welcome from "./pages/Welcome";
