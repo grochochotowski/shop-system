@@ -18,16 +18,14 @@ function Dashboard(props) {
     const { t } = useTranslation("global")
 
     return (
-        <>
-            <div className="dashboard-container">
-                <DashboardOption path="clients" name={t("dashboard.opt-client")} img={clientImg} />
-                <DashboardOption path="stores" name={t("dashboard.opt-store")} img={storesImg} />
-                <DashboardOption path="clothing" name={t("dashboard.opt-clothing")} img={clothingImg}  />
-                <DashboardOption path="employees" name={t("dashboard.opt-employee")} img={employeeImg} />
-                <DashboardOption path="sales" name={t("dashboard.opt-sale")} img={salesImg} />
-                <DashboardOption path="company" name={t("dashboard.opt-company")} img={companyImg} />
-            </div>
-        </>
+        <div className="dashboard-container">
+            <DashboardOption path="clients" name={t("dashboard.opt-client")} img={clientImg} />
+            <DashboardOption path="stores" name={t("dashboard.opt-store")} img={storesImg} />
+            <DashboardOption path="clothing" name={t("dashboard.opt-clothing")} img={clothingImg}  />
+            <DashboardOption path="employees" name={t("dashboard.opt-employee")} img={employeeImg} />
+            <DashboardOption path="sales" name={t("dashboard.opt-sale")} img={salesImg} />
+            <DashboardOption path="company" name={t("dashboard.opt-company")} img={companyImg} />
+        </div>
     );
 }
 
