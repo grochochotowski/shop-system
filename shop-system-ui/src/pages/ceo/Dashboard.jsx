@@ -20,12 +20,12 @@ function Dashboard(props) {
     return (
         <>
             <div className="dashboard-container">
-                <DashboardOption name="Clients" img={clientImg} />
-                <DashboardOption name="Stores" img={storesImg} />
-                <DashboardOption name="Clothing" img={clothingImg}  />
-                <DashboardOption name="Employees" img={employeeImg} />
-                <DashboardOption name="Sales" img={salesImg} />
-                <DashboardOption name="Company" img={companyImg} />
+                <DashboardOption name={t("dashboard.opt-client")} img={clientImg} />
+                <DashboardOption name={t("dashboard.opt-store")} img={storesImg} />
+                <DashboardOption name={t("dashboard.opt-clothing")} img={clothingImg}  />
+                <DashboardOption name={t("dashboard.opt-employee")} img={employeeImg} />
+                <DashboardOption name={t("dashboard.opt-sale")} img={salesImg} />
+                <DashboardOption name={t("dashboard.opt-company")} img={companyImg} />
             </div>
         </>
     );
