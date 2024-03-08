@@ -15,7 +15,7 @@ import companyImg from "../../images/company.jpg"
 
 function Dashboard(props) {
 
-    const [t, i18n] = useTranslation("global")
+    const { t } = useTranslation("global")
 
     return (
         <>
