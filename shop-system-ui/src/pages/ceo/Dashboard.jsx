@@ -13,7 +13,7 @@ import employeeImg from "../../images/employee.jpg"
 import salesImg from "../../images/sale.jpg"
 import companyImg from "../../images/company.jpg"
 
-function Dashboard(props) {
+function Dashboard() {
 
     const { t } = useTranslation("global")
 
