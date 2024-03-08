@@ -11,7 +11,7 @@ import Stores from "./pages/ceo/Stores";
 import Clothing from "./pages/ceo/Clothing";
 import Employees from "./pages/ceo/Employees";
 import Sales from "./pages/ceo/Sales";
-import Company from "./pages/ceo/COmpany";
+import Company from "./pages/ceo/Company";
 
 
 function App() {
