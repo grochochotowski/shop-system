@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function DashboardOption (props) {
     const styling = {
@@ -8,9 +9,9 @@ function DashboardOption (props) {
     }
 
     return (
-        <div className="option" style={styling}>
+        <Link className="option" style={styling} to={`/${props.path}`}>
             <h1>{props.name}</h1>
-        </div>
+        </Link>
     );
 }
 
