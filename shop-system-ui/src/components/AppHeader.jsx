@@ -8,20 +8,20 @@ function Header() {
 
     const [t, i18n] = useTranslation("global")
 
-    function changeLanguage() {
-        if (language === "eng") {
-            setLanguage("pol");
+    function changelanguage() {
+        if (i18n.language === "eng") {
+            i18n.changeLanguage("pol");
         } else {
-            setLanguage("eng");
+            i18n.changeLanguage("eng");
         }
-        console.log(language);
+        console.log(i18n.language);
     }
 
     return (
         <header className="app-header">
             <img className="app-logo" src={Logo} alt="LOGO" />
-            <div className={`app-language ${language}`} onClick={changelanguage}>
-                <div className={`app-language-over ${language}`}></div>
+            <div className={`app-language ${i18n.language}`} onClick={changelanguage}>
+                <div className={`app-language-over ${i18n.language}`}></div>
             </div>
             <button className="app-sign-out">{t("header.button")}</button>
         </header>
