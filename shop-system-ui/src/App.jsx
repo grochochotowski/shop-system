@@ -4,10 +4,6 @@ import React from "react";
 import AppHeader from "./components/AppHeader";
 
 // PAGES
-import Welcome from "./pages/archive/Welcome";
-import Login from "./pages/archive/Login";
-import UserCeo from "./pages/archive/UserCeo";
-import ShopsCeo from "./pages/archive/ShopsCeo";
 import Dashboard from "./pages/ceo/Dashboard";
 
 
@@ -21,3 +17,12 @@ function App() {
 }
 
 export default App;
+
+
+/*
+ARCHIVE IMPORTS
+import Welcome from "./pages/archive/Welcome";
+import Login from "./pages/archive/Login";
+import UserCeo from "./pages/archive/UserCeo";
+import ShopsCeo from "./pages/archive/ShopsCeo";
+*/
