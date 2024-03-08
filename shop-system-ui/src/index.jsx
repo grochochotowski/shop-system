@@ -7,7 +7,18 @@ import global_eng from "./translations/eng/global.json";
 import global_pol from "./translations/pol/global.json";
 import i18next from "i18next";
 
-
+i18next.init({
+    interpolation: {escapeValue: false},
+    lan: "eng",
+    resources: {
+        eng: {
+            global: global_eng
+        },
+        pol: {
+            global: global_pol 
+        }
+    }
+});
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
