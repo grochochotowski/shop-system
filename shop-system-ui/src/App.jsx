@@ -17,7 +17,7 @@ function App() {
     return(
         <>
             <AppHeader />
-            <Dashboard changeLanguage = {changeLanguage} language={language}/>
+            <Dashboard />
         </>
     );
 }
