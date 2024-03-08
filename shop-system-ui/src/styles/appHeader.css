@@ -65,7 +65,7 @@
     transition: 150ms ease-in-out;
 }
 
-.app-log-out:hover {
+.app-sign-out:hover {
     color: var(--clr-acc-2);
     border: 1px solid white;
 }
