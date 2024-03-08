@@ -5,7 +5,8 @@ import App from "./App"
 
 import global_eng from "./translations/eng/global.json";
 import global_pol from "./translations/pol/global.json";
-import i18next, {I18nextProvider} from "react-i18next";
+import i18next from "i18next";
+import {I18nextProvider} from "react-i18next"
 
 i18next.init({
     interpolation: {escapeValue: false},
