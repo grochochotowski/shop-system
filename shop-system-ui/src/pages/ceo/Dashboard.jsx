@@ -1,9 +1,11 @@
 import React from "react";
+import {useTranslation} from "react-i18next";
 import "../../styles/ceo/dashboard.css";
-/*Components*/
+
+/* COMPONENTS */
 import DashboardOption from "../../components/DashboardOption";
-import AppHeader from "../../components/AppHeader";
-/*Images*/
+
+/* IMAGES */
 import clientImg from "../../images/client.jpg"
 import storesImg from "../../images/store.jpg"
 import clothingImg from "../../images/clothing.jpg"
@@ -11,10 +13,12 @@ import employeeImg from "../../images/employee.jpg"
 import salesImg from "../../images/sale.jpg"
 import companyImg from "../../images/company.jpg"
 
-function Dashboard() {
+function Dashboard(props) {
+
+    const [t, i18n] = useTranslation("global")
+
     return (
         <>
-            <AppHeader />
             <div className="dashboard-container">
                 <DashboardOption name="Clients" img={clientImg} />
                 <DashboardOption name="Stores" img={storesImg} />
