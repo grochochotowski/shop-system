@@ -1,5 +1,8 @@
+import React, {createContext, useState} from "react";
+
 // COMPONENTS
-import AppHeader from "./components/AppHeader";
+import AppHeader from "../../components/AppHeader";
+
 // PAGES
 import Welcome from "./pages/Welcome";
 import Login from "./pages/Login";
@@ -9,11 +12,12 @@ import Dashboard from "./pages/ceo/Dashboard";
 
 
 function App() {
+    const [language, setLanguage] = useState("eng");
+
     return(
         <>
-            <Dashboard />
-            {/*</><HeaderCeo selected="user"/>
-            <UserCeo />*/}
+            <AppHeader />
+            <Dashboard changeLanguage = {changeLanguage} language={language}/>
         </>
     );
 }
