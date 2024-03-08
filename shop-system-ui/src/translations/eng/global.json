@@ -1,5 +1,13 @@
 {
     "header" : {
         "button": "Sign out"
+    },
+    "dashboard" : {
+        "opt-client": "Clients",
+        "opt-store": "Stores",
+        "opt-clothing": "Clothing",
+        "opt-employee": "Employees",
+        "opt-sale": "Sales",
+        "opt-company": "Company"
     }
 }

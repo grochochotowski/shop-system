@@ -1,5 +1,13 @@
 {
     "header" : {
         "button": "Wyloguj"
+    },
+    "dashboard" : {
+        "opt-client": "Klienci",
+        "opt-store": "Sklepy",
+        "opt-clothing": "Ubrania",
+        "opt-employee": "Pracownicy",
+        "opt-sale": "Przeceny",
+        "opt-company": "Firma"
     }
 }
