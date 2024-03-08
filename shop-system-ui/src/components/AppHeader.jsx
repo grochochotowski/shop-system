@@ -19,7 +19,7 @@ function Header() {
             <div className={`app-language ${language}`} onClick={() => changeLanguage()}>
                 <div className={`app-language-over ${language}`}></div>
             </div>
-            <button className="app-sign-out">Log out</button>
+            <button className="app-sign-out">Sign out</button>
         </header>
     );
 }
