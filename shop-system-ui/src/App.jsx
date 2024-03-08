@@ -1,4 +1,4 @@
-import React, {createContext, useState} from "react";
+import React from "react";
 
 // COMPONENTS
 import AppHeader from "../../components/AppHeader";
@@ -12,8 +12,6 @@ import Dashboard from "./pages/ceo/Dashboard";
 
 
 function App() {
-    const [language, setLanguage] = useState("eng");
-
     return(
         <>
             <AppHeader />
