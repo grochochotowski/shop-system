@@ -19,7 +19,13 @@ function App() {
     <>
         <AppHeader />
         <Routes>
-            
+            <Route path="/dashboard" element={<Dashboard />}/>
+            <Route path="/clients" element={<Clients />}/>
+            <Route path="/stores" element={<Stores />}/>
+            <Route path="/clothing" element={<Clothing />}/>
+            <Route path="/employees" element={<Employees />}/>
+            <Route path="/sales" element={<Sales />}/>
+            <Route path="/company" element={<Company />}/>
         </Routes>
     </>
     )
