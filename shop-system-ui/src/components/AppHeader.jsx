@@ -1,5 +1,6 @@
 import React from "react";
 import {useTranslation} from "react-i18next";
+import { Link } from "react-router-dom";
 
 import "../styles/appHeader.css";
 import Logo from "../images/logo.svg";
@@ -19,7 +20,9 @@ function Header() {
 
     return (
         <header className="app-header">
-            <img className="app-logo" src={Logo} alt="LOGO" />
+            <Link className="app-logo" to="/dashboard">
+                <img className="app-logo" src={Logo} alt="LOGO" />
+            </Link>
             <div className={`app-language ${i18n.language}`} onClick={changelanguage}>
                 <div className={`app-language-over ${i18n.language}`}></div>
             </div>
