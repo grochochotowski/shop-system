@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from "react"
 import "../../styles/ceo/userCeo.css"
-import UserFormCeo from "../../components/UserFormCeo";
-import UserListCeo from "../../components/UserListCeo";
+import UserFormCeo from "../../components/archive/UserFormCeo";
+import UserListCeo from "../../components/archive/UserListCeo";
 
 function UserCeo() {
     const [containerHeight, setContainerHeight] = useState("");

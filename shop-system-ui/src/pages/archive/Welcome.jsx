@@ -1,4 +1,4 @@
-import Button from "../components/Button";
+import Button from "../../components/archive/Button";
 import React from "react";
 import "../styles/welcome.css";
 

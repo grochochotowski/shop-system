@@ -4,10 +4,10 @@ import React from "react";
 import AppHeader from "./components/AppHeader";
 
 // PAGES
-import Welcome from "./pages/Welcome";
-import Login from "./pages/Login";
-import UserCeo from "./pages/ceo/UserCeo";
-import ShopsCeo from "./pages/ceo/ShopsCeo";
+import Welcome from "./pages/archive/Welcome";
+import Login from "./pages/archive/Login";
+import UserCeo from "./pages/archive/UserCeo";
+import ShopsCeo from "./pages/archive/ShopsCeo";
 import Dashboard from "./pages/ceo/Dashboard";
 
 
@@ -19,6 +19,5 @@ function App() {
         </>
     );
 }
-/*bg - <a href="http://www.freepik.com">Designed by rawpixel.com / Freepik</a>*/
 
 export default App;
