@@ -1,4 +1,7 @@
 {
+    "main" : {
+        "loading": "Loading ..."
+    },
     "header" : {
         "button": "Sign out"
     },

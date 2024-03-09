@@ -1,4 +1,7 @@
 {
+    "main" : {
+        "loading": "Ładowanie ..."
+    },
     "header" : {
         "button": "Wyloguj"
     },
