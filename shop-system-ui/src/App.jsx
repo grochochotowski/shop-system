@@ -2,10 +2,10 @@ import React, {Suspense, lazy} from "react";
 import { Routes, Route } from "react-router-dom";
 
 // COMPONENTS
+import Fallback from './Fallback';
 import AppHeader from "./components/AppHeader";
 
 // PAGES
-import Fallback from './Fallback';
 /*import Dashboard from "./pages/ceo/Dashboard";
 import Clients from "./pages/ceo/Clients";
 import Stores from "./pages/ceo/Stores";
