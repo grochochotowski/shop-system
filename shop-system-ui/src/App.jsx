@@ -32,12 +32,36 @@ function App() {
                     <Dashboard />
                 </Suspense>
             }/>
-            <Route path="/clients" element={<Clients />}/>
-            <Route path="/stores" element={<Stores />}/>
-            <Route path="/clothing" element={<Clothing />}/>
-            <Route path="/employees" element={<Employees />}/>
-            <Route path="/sales" element={<Sales />}/>
-            <Route path="/company" element={<Company />}/>
+            <Route path="/clients" element={
+                <Suspense fallback={<Fallback />}>
+                    <Clients />
+                </Suspense>
+            }/>
+            <Route path="/stores" element={
+                <Suspense fallback={<Fallback />}>
+                    <Stores />
+                </Suspense>
+            }/>
+            <Route path="/clothing" element={
+                <Suspense fallback={<Fallback />}>
+                    <Clothing />
+                </Suspense>
+            }/>
+            <Route path="/employees" element={
+                <Suspense fallback={<Fallback />}>
+                    <Employees />
+                </Suspense>
+            }/>
+            <Route path="/sales" element={
+                <Suspense fallback={<Fallback />}>
+                    <Sales />
+                </Suspense>
+            }/>
+            <Route path="/company" element={
+                <Suspense fallback={<Fallback />}>
+                    <Company />
+                </Suspense>
+            }/>
         </Routes>
     </>
     )
