@@ -3,7 +3,14 @@ import "../../styles/ceo/clients.css"
 
 function Clients() {
     return (
-        <div>Clients</div>
+        <div className="main-container">
+            <div className="options">
+
+            </div>
+            <div className="client-list">
+                
+            </div>
+        </div>
     )
 }
 
