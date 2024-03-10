@@ -81,6 +81,23 @@ html, body, #root {
 
 .add-button {
     float: right;
+    padding: 10px;
+
+    font-size: 1.2rem;
+    color: black;
+
+    background: rgba(0, 0, 0, 0);
+    
+    outline: none;
+    border: 2px solid black;
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    transition: 150ms ease-in-out;
+}
+.add-button:hover {
+    background: var(--clr-acc-1);
 }
 
 
