@@ -8,6 +8,7 @@ function Clients() {
         <div className="main-container">
             <div className="options">
                 <SearchBox name="client"/>
+                <button className="add-button">Add client</button>
             </div>
             <div className="client-list">
                 <table>
