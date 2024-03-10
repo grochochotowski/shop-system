@@ -10,6 +10,7 @@ function Clients() {
                 <SearchBox name="client"/>
                 <button className="add-button">Add client</button>
                 <div className="filter-box">
+                    <button className="filter-button">Filter</button>
                     <ul>
                         <li>Option1</li>
                         <li>Option2</li>
