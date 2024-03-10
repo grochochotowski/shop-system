@@ -5,7 +5,10 @@ function Clients() {
     return (
         <div className="main-container">
             <div className="options">
-
+                <input className="search-box" type="text" id="client-search" name="client-search" placeholder="Search for client"/>
+                <button className="search-button">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
             </div>
             <div className="client-list">
                 <table>
