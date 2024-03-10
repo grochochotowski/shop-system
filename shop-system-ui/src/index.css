@@ -141,13 +141,13 @@ html, body, #root {
 
 }
 .filter-box ul.closed{
-    display: noe;
+    display: none;
 }
 .filter-box li {
     float: right;
     cursor: pointer;
     transition: 150ms ease-in-out;
-    margin: 0 10px;
+    margin: 0 10px 10px 10px;
 }
 .filter-box li.opened{
     
