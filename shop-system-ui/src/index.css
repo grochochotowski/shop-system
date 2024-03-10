@@ -126,6 +126,9 @@ html, body, #root {
     background: var(--clr-acc-1);
 }
 .filter-box ul {
+    display: flex;
+    flex-wrap: wrap;
+    
     list-style: none;
     color: black;
 
@@ -136,7 +139,6 @@ html, body, #root {
     transition: 550ms ease-in-out;
 }
 .filter-box ul.opened{
-    display: flex;
 }
 .filter-box ul.closed{
     display: none;
