@@ -45,9 +45,6 @@ html, body, #root {
 }
 
 /* ---- Options elements for each option ---- */
-.search-box {
-
-}
 .search-input {
     padding: 10px;
     padding-right: 0;
