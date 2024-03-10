@@ -5,6 +5,12 @@
 .client-manage {
     background-color: green;
 }
+.client-manage .left {
+    background-color: blue;
+}
+.client-manage .right {
+    background-color: purple;
+}
 
 .client-list {
     background-color: red;
