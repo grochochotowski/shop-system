@@ -8,7 +8,7 @@ function Clients() {
         <div className="main-container">
             <div className="options">
                 <input className="search-box" type="text" id="client-search" name="client-search" placeholder="Search for client"/>
-                <SearchBox />
+                <SearchBox name="client"/>
             </div>
             <div className="client-list">
                 <table>
