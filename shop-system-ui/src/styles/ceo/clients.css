@@ -1,15 +1,22 @@
 .client-container {
     background-color: yellow;
+    height: 100%;
 }
 
 .client-manage {
+    display: flex;
+
+
     background-color: green;
 }
 .client-manage .left {
+    width: 50%;
     background-color: blue;
 }
 .client-manage .right {
-    background-color: purple;
+    display: block;
+    width: 50%;
+    margin: auto;
 }
 
 .client-list {
