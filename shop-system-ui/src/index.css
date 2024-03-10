@@ -120,27 +120,26 @@ html, body, #root {
 
     cursor: pointer;
 
-    transition: 150ms ease-in-out;
+    transition: 150ms linear;
 }
 .filter-button:hover {
     background: var(--clr-acc-1);
 }
 .filter-box ul {
-    display: flex;
     list-style: none;
     color: black;
 
-    transition: 150ms ease-in-out;
+    font-size: 1.2rem;
+    gap: 20px;
+    padding: 0 10px;
+
+    transition: 550ms ease-in-out;
 }
 .filter-box ul.opened{
-    padding: 10px;
-    gap: 20px;
-    font-size: 1.2rem;
+    display: flex;
 }
 .filter-box ul.closed{
-    padding: 0;
-    gap: 0;
-    font-size: 0rem;
+    display: none;
 }
 .filter-box li.opened{
     cursor: pointer;
