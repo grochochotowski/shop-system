@@ -10,7 +10,7 @@ export default function SearchBox(props) {
                 name={`${props.name}-search`}
                 placeholder={`Search for ${props.name}`}/>
             <button className="search-button">
-                <i class="fa-solid fa-magnifying-glass"></i>
+                <i className="fa-solid fa-magnifying-glass"></i>
             </button>
         </div>
     )
