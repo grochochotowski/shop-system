@@ -11,12 +11,12 @@ function Clients() {
                     <SearchBox name="client"/>
                     <div className="filter-box">
                         <button className="filter-button">Filter</button>
-                        <ul>
-                            <li>Option1</li>
-                            <li>Option2</li>
-                            <li>Option3</li>
-                            <li>Option4</li>
-                            <li>Option5</li>
+                        <ul className="opened">
+                            <li className="closed">Option1</li>
+                            <li className="closed">Option2</li>
+                            <li className="closed">Option3</li>
+                            <li className="closed">Option4</li>
+                            <li className="closed">Option5</li>
                         </ul>
                     </div>
                 </div>
