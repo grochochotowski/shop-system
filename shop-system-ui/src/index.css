@@ -100,7 +100,6 @@ html, body, #root {
     background: var(--clr-acc-1);
 }
 
-
 .filter-box {
     display: inline-block;
     
@@ -129,6 +128,7 @@ html, body, #root {
 .filter-box ul {
     display: flex;
     list-style: none;
+    color: black;
 
     transition: 150ms ease-in-out;
 }
