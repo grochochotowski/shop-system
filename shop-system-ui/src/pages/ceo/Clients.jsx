@@ -28,7 +28,7 @@ function Clients() {
                     </div>
                 </div>
                 <div className="right">
-                    <button className="button add-button">Add client</button>    
+                    <button className="add-button">Add client</button>    
                 </div>                
             </div>
             <div className="client-list">
