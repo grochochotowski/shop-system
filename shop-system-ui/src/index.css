@@ -117,10 +117,12 @@ html, body, #root {
     transition: 150ms ease-in-out;
 }
 .filter-box ul.opened{
+    padding: 10px;
     gap: 20px;
     font-size: 1.2rem;
 }
 .filter-box ul.closed{
+    padding: 0;
     gap: 0;
     font-size: 0rem;
 }
