@@ -1,18 +1,11 @@
 .client-container {
     height: 100%;
     padding: 50px;
+    background-color: var(--clr-acc-2);
 }
 
 .client-manage {
     display: flex;
-    padding: 20px;
-    
-    background: rgba(11, 38, 80, 0.4);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
 }
 .client-manage .left {
     width: 50%;
@@ -20,7 +13,11 @@
 .client-manage .right {
     display: block;
     width: 50%;
-    margin: auto;
+    margin: 0 auto;
+}
+
+.filter-box {
+    margin-top: 20px;
 }
 
 .client-list {
