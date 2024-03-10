@@ -51,22 +51,4 @@
 .app-sign-out {
     width: 10%;
     margin-left: 20px;
-    padding: 10px;
-
-    text-align: center;
-    font-size: 1.2rem;
-    color: var(--clr-txt);
-
-    background: none;
-    border: 1px solid rgb(255, 255, 255, 0);
-    border-radius: 10px;
-    outline: none;
-
-    cursor: pointer;
-    transition: 150ms ease-in-out;
-}
-
-.app-sign-out:hover {
-    color: var(--clr-acc-2);
-    border: 1px solid white;
 }

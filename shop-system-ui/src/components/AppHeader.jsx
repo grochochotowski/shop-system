@@ -26,7 +26,7 @@ function Header() {
             <div className={`app-language ${i18n.language}`} onClick={changelanguage}>
                 <div className={`app-language-over ${i18n.language}`}></div>
             </div>
-            <button className="app-sign-out">{t("header.button")}</button>
+            <button className="button app-sign-out">{t("header.button")}</button>
         </header>
     );
 }
