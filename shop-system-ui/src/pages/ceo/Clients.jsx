@@ -5,7 +5,7 @@ import SearchBox from '../../components/SearchBox'
 
 function Clients() {
     return (
-        <div className="main-container">
+        <div className="client-container">
             <div className="options">
                 <SearchBox name="client"/>
                 <button className="add-button">Add client</button>
