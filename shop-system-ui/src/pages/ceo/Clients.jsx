@@ -1,16 +1,23 @@
-import React from 'react'
+import React, {useState} from 'react'
 import "../../styles/ceo/clients.css"
 
 import SearchBox from '../../components/SearchBox'
 
 function Clients() {
+
+    const [opened, setOpened] = useState(false);
+
+    function toggleFilter() {
+        setOpened(prev => !prev);
+    }
+
     return (
         <div className="client-container">
             <div className="client-manage">
                 <div className="left">
                     <SearchBox name="client"/>
                     <div className="filter-box">
-                        <button className="filter-button">Filters</button>
+                        <button className="filter-button" onCLick={toggleFilter}>Filters</button>
                         <ul className="closed">
                             <li className="closed">Option1</li>
                             <li className="closed">Option2</li>
