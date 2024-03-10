@@ -9,6 +9,15 @@ function Clients() {
             <div className="options">
                 <SearchBox name="client"/>
                 <button className="add-button">Add client</button>
+                <div className="filter-box">
+                    <ul>
+                        <li>Option1</li>
+                        <li>Option2</li>
+                        <li>Option3</li>
+                        <li>Option4</li>
+                        <li>Option5</li>
+                    </ul>
+                </div>
             </div>
             <div className="client-list">
                 <table>
