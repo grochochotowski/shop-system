@@ -10,8 +10,8 @@ function Clients() {
                 <div className="left">
                     <SearchBox name="client"/>
                     <div className="filter-box">
-                        <button className="filter-button">Filter</button>
-                        <ul className="opened">
+                        <button className="filter-button">Filters</button>
+                        <ul className="closed">
                             <li className="closed">Option1</li>
                             <li className="closed">Option2</li>
                             <li className="closed">Option3</li>
