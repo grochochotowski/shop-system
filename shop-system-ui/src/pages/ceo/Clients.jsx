@@ -7,18 +7,22 @@ function Clients() {
     return (
         <div className="client-container">
             <div className="client-manage">
-                <SearchBox name="client"/>
-                <button className="add-button">Add client</button>
-                <div className="filter-box">
-                    <button className="filter-button">Filter</button>
-                    <ul>
-                        <li>Option1</li>
-                        <li>Option2</li>
-                        <li>Option3</li>
-                        <li>Option4</li>
-                        <li>Option5</li>
-                    </ul>
+                <div className="left">
+                    <SearchBox name="client"/>
+                    <div className="filter-box">
+                        <button className="filter-button">Filter</button>
+                        <ul>
+                            <li>Option1</li>
+                            <li>Option2</li>
+                            <li>Option3</li>
+                            <li>Option4</li>
+                            <li>Option5</li>
+                        </ul>
+                    </div>
                 </div>
+                <div className="right">
+                    <button className="add-button">Add client</button>    
+                </div>                
             </div>
             <div className="client-list">
                 <table>
