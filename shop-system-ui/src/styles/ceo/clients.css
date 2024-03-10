@@ -1,5 +1,4 @@
 .client-container {
-    background-color: yellow;
     height: 100%;
 }
 
@@ -20,6 +19,7 @@
 }
 
 .client-list {
+    display: none;
     background-color: red;
 }
 .client-list table{
