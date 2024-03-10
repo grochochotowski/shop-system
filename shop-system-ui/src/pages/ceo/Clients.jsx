@@ -18,7 +18,7 @@ function Clients() {
                     <SearchBox name="client"/>
                     <div className="filter-box">
                         <button className="filter-button" onCLick={toggleFilter}>Filters</button>
-                        <ul className="closed">
+                        <ul className={opened ? "opened" : "closed"}>
                             <li className="closed">Option1</li>
                             <li className="closed">Option2</li>
                             <li className="closed">Option3</li>
