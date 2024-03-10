@@ -1,13 +1,13 @@
 .client-container {
-
+    background-color: yellow;
 }
 
-.options {
-
+.client-manage {
+    background-color: green;
 }
 
 .client-list {
-
+    background-color: red;
 }
 .client-list table{
 
