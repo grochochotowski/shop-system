@@ -118,6 +118,7 @@ html, body, #root {
     width: 100%;
 }
 .filter-button {
+    width: 20%;
     padding: 10px;
 
     font-size: 1.2rem;
