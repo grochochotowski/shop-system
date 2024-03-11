@@ -108,10 +108,11 @@ html, body, #root {
 }
 
 .filter-box {
-    display: inline-block;
-    
-    border: 2px solid black;
-    border-radius: 10px;
+    display: flex
+}
+.filter-box h2 {
+    width: 100%;
+    background-color: red;
 }
 .filter-box.opened {
     width: 100%;
