@@ -5,10 +5,16 @@ import SearchBox from '../../components/SearchBox'
 
 function Clients() {
 
-    const [opened, setOpened] = useState(false);
+    const [opened, setOpened] = useState({
+        option1: false,
+        option2: false,
+        option3: false,
+        option4: false,
+        option5: false
+    });
 
     function toggleFilter() {
-        setOpened(prev => !prev);
+        setOpened(prev => [...prev, ]);
     }
 
     return (
@@ -17,14 +23,15 @@ function Clients() {
                 <div className="left">
                     <SearchBox name="client"/>
                     <div className="filter-box">
-                        <button className="filter-button" onClick={toggleFilter}>Filters</button>
-                        <ul className={opened ? "opened" : "closed"}>
-                            <li className="closed">Option1</li>
-                            <li className="closed">Option2</li>
-                            <li className="closed">Option3</li>
-                            <li className="closed">Option4</li>
-                            <li className="closed">Option5</li>
+                        <h2>Filters:</h2>
+                        <ul>
+                            <li className={opened.option1 ? "opened" : "closed"} onClick={toggleFilter}>Option1</li>
+                            <li className={opened.option2 ? "opened" : "closed"} onClick={toggleFilter}>Option2</li>
+                            <li className={opened.option3 ? "opened" : "closed"} onClick={toggleFilter}>Option3</li>
+                            <li className={opened.option4 ? "opened" : "closed"} onClick={toggleFilter}>Option4</li>
+                            <li className={opened.option5 ? "opened" : "closed"} onClick={toggleFilter}>Option5</li>
                         </ul>
+                        <button className="filter-button" onClick={console.log("filter")}>Filter</button>
                     </div>
                 </div>
                 <div className="right">
