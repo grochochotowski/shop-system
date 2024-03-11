@@ -26,8 +26,8 @@ function Clients() {
             <div className="client-manage">
                 <div className="left">
                     <SearchBox name="client"/>
+                    <h2 className="filter-heading">Filters:</h2>
                     <div className="filter-box">
-                        <h2>Filters:</h2>
                         <ul>
                             <li className={opened.option1 ? "opened" : "closed"} onClick={() => toggleFilter("option1")}>Option1</li>
                             <li className={opened.option2 ? "opened" : "closed"} onClick={() => toggleFilter("option2")}>Option2</li>
