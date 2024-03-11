@@ -118,8 +118,8 @@ html, body, #root {
     width: 100%;
 }
 .filter-button {
-    width: 20%;
-    padding: 10px;
+    width: 15%;
+    padding: 5px;
 
     font-size: 1.2rem;
     color: black;
@@ -139,7 +139,9 @@ html, body, #root {
 }
 
 .filter-box ul {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
 
     list-style: none;
@@ -148,7 +150,7 @@ html, body, #root {
     padding: 0;
     font-size: 1.2rem;
 
-    transition: 550ms ease-in-out;
+    transition: 150ms ease-in-out;
 }
 .filter-box ul.opened{
 
@@ -160,7 +162,7 @@ html, body, #root {
     float: right;
     cursor: pointer;
     transition: 150ms ease-in-out;
-    margin: 0 10px 10px 10px;
+    margin: 0 10px 0;
 }
 .filter-box li.opened{
     
