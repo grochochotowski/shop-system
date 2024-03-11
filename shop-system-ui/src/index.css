@@ -126,16 +126,17 @@ html, body, #root {
     background: rgba(0, 0, 0, 0);
     
     outline: none;
-    border: none;
-    border-radius: 8px;
+    border: 2px solid black;
+    border-radius: 10px;
 
     cursor: pointer;
 
-    transition: 150ms linear;
+    transition: 150ms ease-in-out;
 }
 .filter-button:hover {
     background: var(--clr-acc-1);
 }
+
 .filter-box ul {
     display: block;
     flex-wrap: wrap;

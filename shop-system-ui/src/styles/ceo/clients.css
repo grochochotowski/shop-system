@@ -20,8 +20,11 @@
     margin: 0 auto;
 }
 
-.filter-box {
+.filter-heading {
+    color: black;
     margin-top: 20px;
+}
+.filter-box {
 }
 
 .client-list {
