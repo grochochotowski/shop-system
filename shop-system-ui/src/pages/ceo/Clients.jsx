@@ -13,11 +13,11 @@ function Clients() {
         opt5: false
     });
 
-    function toggleFilter(string opt) {
-        setOpened(prev => {
+    function toggleFilter(opt) {
+        setOpened(prev => ({
             ...prev,
-            opt: !opt
-        });
+            [opt]: !prev[opt]
+        }));
     }
 
     return (
