@@ -18,6 +18,7 @@ function Clients() {
             ...prev,
             [opt]: !prev[opt]
         }));
+        console.log(opened);
     }
 
     return (
