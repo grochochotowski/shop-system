@@ -6,15 +6,18 @@ import SearchBox from '../../components/SearchBox'
 function Clients() {
 
     const [opened, setOpened] = useState({
-        option1: false,
-        option2: false,
-        option3: false,
-        option4: false,
-        option5: false
+        opt1: false,
+        opt2: false,
+        opt3: false,
+        opt4: false,
+        opt5: false
     });
 
-    function toggleFilter() {
-        setOpened(prev => [...prev, ]);
+    function toggleFilter(string opt) {
+        setOpened(prev => {
+            ...prev,
+            opt: !opt
+        });
     }
 
     return (
@@ -25,11 +28,11 @@ function Clients() {
                     <div className="filter-box">
                         <h2>Filters:</h2>
                         <ul>
-                            <li className={opened.option1 ? "opened" : "closed"} onClick={toggleFilter}>Option1</li>
-                            <li className={opened.option2 ? "opened" : "closed"} onClick={toggleFilter}>Option2</li>
-                            <li className={opened.option3 ? "opened" : "closed"} onClick={toggleFilter}>Option3</li>
-                            <li className={opened.option4 ? "opened" : "closed"} onClick={toggleFilter}>Option4</li>
-                            <li className={opened.option5 ? "opened" : "closed"} onClick={toggleFilter}>Option5</li>
+                            <li className={opened.option1 ? "opened" : "closed"} onClick={() => toggleFilter(opened.option1)}>Option1</li>
+                            <li className={opened.option2 ? "opened" : "closed"} onClick={() => toggleFilter(opened.option2)}>Option2</li>
+                            <li className={opened.option3 ? "opened" : "closed"} onClick={() => toggleFilter(opened.option3)}>Option3</li>
+                            <li className={opened.option4 ? "opened" : "closed"} onClick={() => toggleFilter(opened.option4)}>Option4</li>
+                            <li className={opened.option5 ? "opened" : "closed"} onClick={() => toggleFilter(opened.option5)}>Option5</li>
                         </ul>
                         <button className="filter-button" onClick={console.log("filter")}>Filter</button>
                     </div>
