@@ -28,11 +28,11 @@ function Clients() {
                     <div className="filter-box">
                         <h2>Filters:</h2>
                         <ul>
-                            <li className={opened.option1 ? "opened" : "closed"} onClick={() => toggleFilter(opened.option1)}>Option1</li>
-                            <li className={opened.option2 ? "opened" : "closed"} onClick={() => toggleFilter(opened.option2)}>Option2</li>
-                            <li className={opened.option3 ? "opened" : "closed"} onClick={() => toggleFilter(opened.option3)}>Option3</li>
-                            <li className={opened.option4 ? "opened" : "closed"} onClick={() => toggleFilter(opened.option4)}>Option4</li>
-                            <li className={opened.option5 ? "opened" : "closed"} onClick={() => toggleFilter(opened.option5)}>Option5</li>
+                            <li className={opened.option1 ? "opened" : "closed"} onClick={() => toggleFilter("option1")}>Option1</li>
+                            <li className={opened.option2 ? "opened" : "closed"} onClick={() => toggleFilter("option2")}>Option2</li>
+                            <li className={opened.option3 ? "opened" : "closed"} onClick={() => toggleFilter("option3")}>Option3</li>
+                            <li className={opened.option4 ? "opened" : "closed"} onClick={() => toggleFilter("option4")}>Option4</li>
+                            <li className={opened.option5 ? "opened" : "closed"} onClick={() => toggleFilter("option5")}>Option5</li>
                         </ul>
                         <button className="filter-button" onClick={console.log("filter")}>Filter</button>
                     </div>
