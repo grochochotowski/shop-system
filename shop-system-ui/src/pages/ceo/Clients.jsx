@@ -6,11 +6,11 @@ import SearchBox from '../../components/SearchBox'
 function Clients() {
 
     const [opened, setOpened] = useState({
-        opt1: false,
-        opt2: false,
-        opt3: false,
-        opt4: false,
-        opt5: false
+        option1: false,
+        option2: false,
+        option3: false,
+        option4: false,
+        option5: false
     });
 
     function toggleFilter(opt) {
