@@ -6,6 +6,11 @@
 .client-manage {
     display: flex;
     flex-wrap: wrap;
+
+    padding: 5px;
+    padding-bottom: 10px;
+    
+    border-bottom: 2px solid black;
 }
 .client-manage .left {
     flex-basis: 50%;
