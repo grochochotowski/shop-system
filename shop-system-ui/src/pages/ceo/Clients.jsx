@@ -34,7 +34,7 @@ function Clients() {
                             <li className={opened.option4 ? "opened" : "closed"} onClick={() => toggleFilter("option4")}>Option4</li>
                             <li className={opened.option5 ? "opened" : "closed"} onClick={() => toggleFilter("option5")}>Option5</li>
                         </ul>
-                        <button className="filter-button" onClick={console.log("filter")}>Filter</button>
+                        <button className="filter-button">Filter</button>
                     </div>
                 </div>
                 <div className="right">
