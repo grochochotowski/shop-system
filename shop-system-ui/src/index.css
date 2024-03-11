@@ -107,6 +107,10 @@ html, body, #root {
     background: var(--clr-acc-1);
 }
 
+.filter-heading {
+    color: black;
+    margin-top: 20px;
+}
 .filter-box {
     display: flex
 }

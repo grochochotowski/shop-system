@@ -19,11 +19,6 @@
     margin: 0 auto;
 }
 
-.filter-heading {
-    color: black;
-    margin-top: 20px;
-}
-
 .client-list {
     display: none;
     background-color: red;
