@@ -37,17 +37,21 @@ export default function FilterBox({filters, toggleCheck}) {
 
     function GenerateFiltersInOption({opt}) {
         return filters[opt].map((element) => (
-            <li className="inside" key={element.name}>
+            <li className="inside" key={element.name} onClick={() => handleCheckboxChange(opt, element.name)}>
                 <input
                     type="checkbox"
                     name={element.name}
                     id={element.name}
                     checked={element.checked}
-                    onChange={() => {}}
+                    readOnly
                 />
                 <label htmlFor={element.name}>{element.name}</label>
             </li>
         ));
+    }
+
+    function handleCheckboxChange(opt, elementName) {
+        toggleCheck(opt, elementName);
     }
 
     return (
