@@ -25,6 +25,7 @@ const Company = lazy(() => import("./pages/ceo/Company"))
 function App() {
     return(
     <>
+        <Fallback />
         <AppHeader />
         <Routes>
             <Route path="/dashboard" element={
