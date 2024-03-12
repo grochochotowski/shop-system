@@ -26,7 +26,7 @@ export default function FilterBox({filters, toggleCheck}) {
 
     function GenerateFilterOptions() {
         return Object.keys(opened).map((key) => (
-            <li className={opened[key] ? "opened main" : "closed main"}>
+            <li className={opened[key] ? "opened main" : "closed main"} key={key}>
                 <h4 onClick={() => toggleFilter(key)}>Option1</h4>
                 <ul className="inside">
                     <GenerateFiltersInOption opt={key}/>
@@ -34,9 +34,10 @@ export default function FilterBox({filters, toggleCheck}) {
             </li>
         ));
     }
+
     function GenerateFiltersInOption({opt}) {
         return filters[opt].map((element) => (
-            <li className="inside">
+            <li className="inside" key={element.name}>
                 <input
                     type="checkbox"
                     name={element.name}
