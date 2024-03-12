@@ -49,6 +49,7 @@ function Clients() {
             ...prev,
             [check]: !prev[check]
         }));
+        console.log(filters);
     }
 
     return (
