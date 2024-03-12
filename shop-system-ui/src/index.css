@@ -212,7 +212,11 @@ html, body, #root {
 .filter-box li.main h4 {
     font-weight: normal;
     text-align: center;
+
+    padding: 5px 0;
+
     border-radius: 10px;
+
     transition: 150ms ease-in-out;
 }
 .filter-box li.main h4:hover {
