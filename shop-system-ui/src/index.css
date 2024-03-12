@@ -218,10 +218,13 @@ html, body, #root {
     position: absolute;
 
     max-height: 100px;
-    padding: 0;
+
+    border-bottom-left-radius: 5px;
 
     overflow-y: scroll;    
     list-style: none;
+
+    background-color: var(--clr-acc-1);
 
     transition: 150ms ease-in-out;
 }
@@ -230,12 +233,14 @@ html, body, #root {
 }
 .filter-box ul.inside.opened{
     font-size: 1.2rem;
+    padding: 10px;
 }
 .filter-box ul.inside.opened input[type="checkbox"] {
     height: auto;
 }
 .filter-box ul.inside.closed{
     font-size: 0;
+    padding: 0;
 }
 .filter-box ul.inside.closed input[type="checkbox"] {
     height: 0;
