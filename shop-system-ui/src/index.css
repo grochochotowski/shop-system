@@ -182,7 +182,7 @@ html, body, #root {
     background: var(--clr-acc-1);
 }
 
-.filter-box ul {
+.filter-box ul.main {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -196,25 +196,23 @@ html, body, #root {
 
     transition: 150ms ease-in-out;
 }
-.filter-box ul.opened{
-
+.filter-box li h4 {
+    font-weight: normal;
 }
-.filter-box ul.closed{
-    display: none;
-}
-.filter-box li {
+.filter-box li.main  {
+    position: relative;
     float: right;
     cursor: pointer;
     transition: 150ms ease-in-out;
     margin: 0 10px 0;
 }
-.filter-box li.opened{
+.filter-box li.main.opened{
     
 }
-.filter-box li.closed{
+.filter-box li.main.closed{
 
 }
-.filter-box li:hover {
+.filter-box li.main:hover h4{
     text-decoration: underline;
 }
 
