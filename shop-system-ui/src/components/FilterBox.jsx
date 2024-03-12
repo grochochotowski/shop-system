@@ -3,11 +3,11 @@ import React, {useState} from 'react'
 export default function FilterBox({filters, toggleCheck}) {
 
     const [opened, setOpened] = useState({
-        option1: ["Option1", false],
-        option2: ["Option1", false],
-        option3: ["Option1", false],
-        option4: ["Option1", false],
-        option5: ["Option1", false]
+        option1: false,
+        option2: false,
+        option3: false,
+        option4: false,
+        option5: false
     });
 
     function toggleFilter(opt) {
