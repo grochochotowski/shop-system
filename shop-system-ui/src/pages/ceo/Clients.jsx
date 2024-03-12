@@ -28,8 +28,8 @@ function Clients() {
                     <SearchBox name="client"/>
                     <h2 className="filter-heading">Filters:</h2>
                     <div className="filter-box">
-                        <ul>
-                            <li className={opened.option1 ? "opened" : "closed"} onClick={() => toggleFilter("option1")}>
+                        <ul className="main">
+                            <li className={opened.option1 ? "opened main" : "closed main"} onClick={() => toggleFilter("option1")}>
                                 <h4>Option1</h4>
                                 <ul>
                                     <li><input type="checkbox" name="opt-1-1" id="opt-1-1" />opt-1-1</li>
@@ -39,10 +39,10 @@ function Clients() {
                                     <li><input type="checkbox" name="opt-1-5" id="opt-1-5" />opt-1-5</li>
                                 </ul>
                             </li>
-                            <li className={opened.option2 ? "opened" : "closed"} onClick={() => toggleFilter("option2")}>Option2</li>
-                            <li className={opened.option3 ? "opened" : "closed"} onClick={() => toggleFilter("option3")}>Option3</li>
-                            <li className={opened.option4 ? "opened" : "closed"} onClick={() => toggleFilter("option4")}>Option4</li>
-                            <li className={opened.option5 ? "opened" : "closed"} onClick={() => toggleFilter("option5")}>Option5</li>
+                            <li className={opened.option2 ? "opened main" : "closed main"} onClick={() => toggleFilter("option2")}>Option2</li>
+                            <li className={opened.option3 ? "opened main" : "closed main"} onClick={() => toggleFilter("option3")}>Option3</li>
+                            <li className={opened.option4 ? "opened main" : "closed main"} onClick={() => toggleFilter("option4")}>Option4</li>
+                            <li className={opened.option5 ? "opened main" : "closed main"} onClick={() => toggleFilter("option5")}>Option5</li>
                         </ul>
                         <button className="filter-button">Filter</button>
                     </div>
