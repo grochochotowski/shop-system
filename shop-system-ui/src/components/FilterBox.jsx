@@ -11,10 +11,18 @@ export default function FilterBox({filters}) {
     });
 
     function toggleFilter(opt) {
-        setOpened(prev => ({
-            ...prev,
-            [opt]: !prev[opt]
-        }));
+        setOpened(prev => {
+            const newOpened = { ...prev };
+            Object.keys(newOpened).forEach(key => {
+                if (key !== opt) {
+                    newOpened[key] = false;
+                }
+            });
+
+            newOpened[opt] = !newOpened[opt];
+            return newOpened;
+        });
+        
         console.log(opened);
     }
 
