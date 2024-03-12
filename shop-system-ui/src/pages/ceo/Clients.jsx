@@ -36,16 +36,16 @@ function Clients() {
                                         <label htmlFor="opt-1-1">opt-1-1</label>
                                     </li>
                                     <li className="inside"><input type="checkbox" name="opt-1-2" id="opt-1-2" />
-                                        <label htmlFor="opt-1-2">opt-1-1</label>
+                                        <label htmlFor="opt-1-2">opt-1-2</label>
                                     </li>
                                     <li className="inside"><input type="checkbox" name="opt-1-3" id="opt-1-3" />
-                                        <label htmlFor="opt-1-3">opt-1-1</label>
+                                        <label htmlFor="opt-1-3">opt-1-3</label>
                                     </li>
                                     <li className="inside"><input type="checkbox" name="opt-1-4" id="opt-1-4" />
-                                        <label htmlFor="opt-1-4">opt-1-1</label>
+                                        <label htmlFor="opt-1-4">opt-1-4</label>
                                     </li>
                                     <li className="inside"><input type="checkbox" name="opt-1-5" id="opt-1-5" />
-                                        <label htmlFor="opt-1-5">opt-1-1</label>
+                                        <label htmlFor="opt-1-5">opt-1-5</label>
                                     </li>
                                 </ul>
                             </li>
