@@ -263,10 +263,14 @@ html, body, #root {
 }
 .filter-box .opened ul.inside{
     padding: 10px 0;
+
     font-size: 1.2rem;
+
     border-left-width: 2px; 
     border-right-width: 2px; 
     border-bottom-width: 2px;
+
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.5);
 }
 .filter-box .opened li.inside{
     padding: 0 10px;
