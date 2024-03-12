@@ -43,6 +43,18 @@ html, body, #root {
 
     user-select: none;
 }
+.page-fallback:before {
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 150%;
+    background-color: var(--clr-acc-1);
+    box-shadow: 0 0 20px rgb(8, 8, 8);
+    animation: load 4s linear infinite;
+}
+.page-fallback:after {
+
+}
 
 /* ---- Options elements for each option ---- */
 .search-box {
