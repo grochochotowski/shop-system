@@ -6,13 +6,13 @@ import FilterBox from '../../components/FilterBox'
 
 function Clients() {
 
-    const names = [
-        "Option1",
-        "Option2",
-        "Option3",
-        "Option4",
-        "Option5"
-    ];
+    const names = {
+        option1: "Option1",
+        option2: "Option2",
+        option3: "Option3",
+        option4: "Option4",
+        option5: "Option5"
+    };
 
     const [filters, setFilters] = useState({
         option1: [
