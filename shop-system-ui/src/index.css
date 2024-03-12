@@ -223,6 +223,7 @@ html, body, #root {
 
     max-height: 100px;
     width: 100%;
+    margin-top: 10px;
 
     overflow-y: scroll;    
     list-style: none;
