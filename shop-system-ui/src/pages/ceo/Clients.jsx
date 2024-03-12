@@ -6,14 +6,6 @@ import FilterBox from '../../components/FilterBox'
 
 function Clients() {
 
-    const [opened, setOpened] = useState({
-        option1: false,
-        option2: false,
-        option3: false,
-        option4: false,
-        option5: false
-    });
-
     const [filters, setFilters] = useState({
         option1: {
             opt_1_1: false,
@@ -52,21 +44,13 @@ function Clients() {
         },
     });
 
-    function toggleFilter(opt) {
-        setOpened(prev => ({
-            ...prev,
-            [opt]: !prev[opt]
-        }));
-        console.log(opened);
-    }
-
     return (
         <div className="client-container">
             <div className="client-manage">
                 <div className="left">
                     <SearchBox name="client"/>
                     <h2 className="filter-heading">Filters:</h2>
-                    <FilterBox filters={filters} opened={opened} toggleFilter={toggleFilter}/>
+                    <FilterBox filters={filters}/>
                 </div>
                 <div className="right">
                     <button className="add-button">Add client</button>    
