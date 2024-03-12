@@ -232,7 +232,7 @@ html, body, #root {
 
     background-color: #f4f4f4;
 
-    transition: 150ms ease-in-out;
+    transition: 50ms ease-in-out;
 }
 .filter-box li.inside:hover {
     text-decoration: underline;
