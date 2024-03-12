@@ -38,7 +38,6 @@ html, body, #root {
     height: 20%;
     width: 20%;
     
-    background-color: black;
     border-radius: 20px;
     color: black;
     text-align: center;
@@ -51,7 +50,7 @@ html, body, #root {
     width: 50%;
     height: 100%;
     background-color: var(--clr-acc-1);
-    box-shadow: 0 0 20px rgb(8, 8, 8);
+    box-shadow: 0 0 20px rgb(0, 0, 0, 0.5);
     animation: load 4s linear infinite;
 }
 .page-fallback:after {
@@ -68,6 +67,10 @@ html, body, #root {
     100% {
         transform: rotate(360deg);
     }
+}
+
+.page-fallback h1 {
+    z-index: 10;
 }
 
 /* ---- Options elements for each option ---- */
