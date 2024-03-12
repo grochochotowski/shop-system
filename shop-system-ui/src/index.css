@@ -271,6 +271,7 @@ html, body, #root {
 }
 .filter-box .opened ul.inside input[type="checkbox"] {
     height: auto;
+    margin-right: 5px;
 }
 .filter-box .closed ul.inside{
     font-size: 0;
