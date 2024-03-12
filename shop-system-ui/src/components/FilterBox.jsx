@@ -36,7 +36,7 @@ export default function FilterBox({filters, toggleCheck}) {
     }
     function GenerateFiltersInOption({opt}) {
         return filters[opt].map((element) => (
-            <li className="inside" onClick={() => toggleCheck(opt, element.name)}>
+            <li className="inside">
                 <input
                     type="checkbox"
                     name={element.name}
