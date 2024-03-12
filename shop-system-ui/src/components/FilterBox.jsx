@@ -42,6 +42,7 @@ export default function FilterBox({filters, toggleCheck}) {
                     name={element.name}
                     id={element.name}
                     checked={element.checked}
+                    onChange={() => {}}
                 />
                 <label htmlFor={element.name}>{element.name}</label>
             </li>
