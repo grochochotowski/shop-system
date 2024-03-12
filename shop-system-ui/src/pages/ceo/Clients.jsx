@@ -2,6 +2,7 @@ import React, {useState} from 'react'
 import "../../styles/ceo/clients.css"
 
 import SearchBox from '../../components/SearchBox'
+import FilterBox from '../../components/FilterBox'
 
 function Clients() {
 
@@ -65,7 +66,7 @@ function Clients() {
                 <div className="left">
                     <SearchBox name="client"/>
                     <h2 className="filter-heading">Filters:</h2>
-                    
+                    <FilterBox filters={filters}/>
                 </div>
                 <div className="right">
                     <button className="add-button">Add client</button>    
