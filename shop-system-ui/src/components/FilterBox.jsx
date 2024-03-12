@@ -22,8 +22,6 @@ export default function FilterBox({filters}) {
             newOpened[opt] = !newOpened[opt];
             return newOpened;
         });
-        
-        console.log(opened);
     }
 
     function GenerateFilterOptions() {
