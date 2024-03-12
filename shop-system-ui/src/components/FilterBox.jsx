@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 
-export default function FilterBox({filters, toggleCheck}) {
+export default function FilterBox({filters, toggleCheck, names}) {
 
     const [opened, setOpened] = useState({
         option1: false,
@@ -27,7 +27,7 @@ export default function FilterBox({filters, toggleCheck}) {
     function GenerateFilterOptions() {
         return Object.keys(opened).map((key) => (
             <li className={opened[key] ? "opened main" : "closed main"} key={key}>
-                <h4 onClick={() => toggleFilter(key)}>Option1</h4>
+                <h4 onClick={() => toggleFilter(key)}>{names[key]}</h4>
                 <ul className="inside">
                     <GenerateFiltersInOption opt={key}/>
                 </ul>
