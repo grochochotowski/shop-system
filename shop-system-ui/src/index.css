@@ -252,8 +252,6 @@ html, body, #root {
     background-color: #f4f4f4;
 
     z-index: 10;
-
-    transition: 50ms ease-in-out;
 }
 .filter-box li.inside:hover {
     background-color: #e0e0e0;
