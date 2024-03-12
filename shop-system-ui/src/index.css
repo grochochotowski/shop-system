@@ -210,8 +210,12 @@ html, body, #root {
 
 .filter-box ul.inside {
     position: absolute;
-    list-style: none;
+
+    max-height: 100px;
     padding: 0;
+
+    overflow-y: scroll;    
+    list-style: none;
 
     transition: 150ms ease-in-out;
 }
