@@ -44,14 +44,9 @@ function Clients() {
         ]
     });
 
-    function changeChecked(opt, check) {
+    function changeChecked() {
         setFilters((prev) => {
-            const updatedFilters = { ...prev }
-            const option = updatedFilters[opt].find((element) => element.name === check);
-            if (option) {
-                option.checked = !option.checked;
-            }
-            return updatedFilters;
+            
         });
         console.log(filters);
     }
@@ -62,7 +57,7 @@ function Clients() {
                 <div className="left">
                     <SearchBox name="client"/>
                     <h2 className="filter-heading">Filters:</h2>
-                    <FilterBox filters={filters} toggleCheck={() => changeChecked()}/>
+                    <FilterBox filters={filters} toggleCheck={changeChecked}/>
                 </div>
                 <div className="right">
                     <button className="add-button">Add client</button>    
