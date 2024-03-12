@@ -6,6 +6,14 @@ import FilterBox from '../../components/FilterBox'
 
 function Clients() {
 
+    const names = [
+        "Option1",
+        "Option2",
+        "Option3",
+        "Option4",
+        "Option5"
+    ];
+
     const [filters, setFilters] = useState({
         option1: [
             { name: "Opt-1-1", checked: false },
