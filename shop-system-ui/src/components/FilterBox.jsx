@@ -19,11 +19,11 @@ export default function FilterBox({filters}) {
     }
 
     function GenerateFilterOptions() {
-        return opened.map((element) => (
-            <li className={element ? "opened main" : "closed main"}>
-                <h4 onClick={() => toggleFilter(element)}>Option1</h4>
+        return Object.keys(opened).map((key) => (
+            <li className={opened[key] ? "opened main" : "closed main"}>
+                <h4 onClick={() => toggleFilter(key)}>Option1</h4>
                 <ul className="inside">
-                    <GenerateFiltersInOption opt={element}/>
+                    <GenerateFiltersInOption opt={key}/>
                 </ul>
             </li>
         ));
