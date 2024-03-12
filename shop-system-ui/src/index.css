@@ -229,6 +229,8 @@ html, body, #root {
 .filter-box li.main.opened {
     background: linear-gradient(#e0e0e0 20%, #f4f4f4 100%);
     background-repeat: no-repeat;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
 }
 
 .filter-box ul.inside {
