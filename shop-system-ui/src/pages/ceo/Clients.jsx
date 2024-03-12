@@ -44,11 +44,17 @@ function Clients() {
         ]
     });
 
-    function changeChecked() {
+    function changeChecked(option, elementName) {
         setFilters((prev) => {
-            
+            const newFilters = { ...prev };
+            newFilters[option] = newFilters[option].map(element => {
+                if (element.name === elementName) {
+                    return { ...element, checked: !element.checked };
+                }
+                return element;
+            });
+            return newFilters;
         });
-        console.log(filters);
     }
 
     return (
