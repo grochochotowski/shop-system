@@ -31,12 +31,12 @@ function Clients() {
                         <ul className="main">
                             <li className={opened.option1 ? "opened main" : "closed main"} onClick={() => toggleFilter("option1")}>
                                 <h4>Option1</h4>
-                                <ul>
-                                    <li><input type="checkbox" name="opt-1-1" id="opt-1-1" />opt-1-1</li>
-                                    <li><input type="checkbox" name="opt-1-2" id="opt-1-2" />opt-1-2</li>
-                                    <li><input type="checkbox" name="opt-1-3" id="opt-1-3" />opt-1-3</li>
-                                    <li><input type="checkbox" name="opt-1-4" id="opt-1-4" />opt-1-4</li>
-                                    <li><input type="checkbox" name="opt-1-5" id="opt-1-5" />opt-1-5</li>
+                                <ul className="inside">
+                                    <li className="inside"><input type="checkbox" name="opt-1-1" id="opt-1-1" />opt-1-1</li>
+                                    <li className="inside"><input type="checkbox" name="opt-1-2" id="opt-1-2" />opt-1-2</li>
+                                    <li className="inside"><input type="checkbox" name="opt-1-3" id="opt-1-3" />opt-1-3</li>
+                                    <li className="inside"><input type="checkbox" name="opt-1-4" id="opt-1-4" />opt-1-4</li>
+                                    <li className="inside"><input type="checkbox" name="opt-1-5" id="opt-1-5" />opt-1-5</li>
                                 </ul>
                             </li>
                             <li className={opened.option2 ? "opened main" : "closed main"} onClick={() => toggleFilter("option2")}>Option2</li>
