@@ -204,7 +204,7 @@ html, body, #root {
     transition: 150ms ease-in-out;
     margin: 0 10px 0;
 }
-.filter-box li.main:hover h4{
+.filter-box li.main h4:hover {
     text-decoration: underline;
 }
 
@@ -214,6 +214,9 @@ html, body, #root {
     padding: 0;
 
     transition: 150ms ease-in-out;
+}
+.filter-box li.inside:hover {
+    text-decoration: underline;
 }
 .filter-box ul.inside.opened{
     font-size: 1.2rem;
