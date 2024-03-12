@@ -19,26 +19,22 @@ export default function FilterBox({filters}) {
     }
 
     function GenerateFilterOptions() {
-        opened.forEach(element => {
-            return (
-                <li className={element ? "opened main" : "closed main"}>
-                    <h4 onClick={() => toggleFilter(element)}>Option1</h4>
-                    <ul className="inside">
-                        <GenerateFiltersInOption opt={element}/>
-                    </ul>
-                </li>
-            )
-        });
+        return opened.map((element) => (
+            <li className={element ? "opened main" : "closed main"}>
+                <h4 onClick={() => toggleFilter(element)}>Option1</h4>
+                <ul className="inside">
+                    <GenerateFiltersInOption opt={element}/>
+                </ul>
+            </li>
+        ));
     }
     function GenerateFiltersInOption({opt}) {
-        filters.opt.forEach(element => {
-            return(
-                <li className="inside">
-                    <input type="checkbox" name={element.name} id={element.name} checked={element.checked}/>
-                    <label htmlFor={element.name}>{element.name}</label>
-                </li>
-            )
-        })
+        return filters[opt].map((element) => (
+            <li className="inside">
+                <input type="checkbox" name={element.name} id={element.name} checked={element.checked}/>
+                <label htmlFor={element.name}>{element.name}</label>
+            </li>
+        ));
     }
 
     return (
