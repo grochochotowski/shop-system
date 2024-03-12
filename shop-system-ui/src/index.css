@@ -196,10 +196,6 @@ html, body, #root {
     gap: 20px;
     font-size: 1.2rem;
 }
-.filter-box li.main h4 {
-    font-weight: normal;
-    text-align: center;
-}
 .filter-box li.main  {
     position: relative;
     float: right;
@@ -209,21 +205,34 @@ html, body, #root {
     margin: 0;
 
     cursor: pointer;
-    border: 2px solid transparent;
+    border-radius: 10px;
 
     transition: 150ms ease-in-out;
 }
-.filter-box li.main h4:hover {
+.filter-box li.main h4 {
+    font-weight: normal;
+    text-align: center;
+    border-radius: 10px;
+    transition: 150ms ease-in-out;
 }
-.filter-box li.main.opened h4{
+.filter-box li.main h4:hover {
+    background-color: #e0e0e0;
+}
+.filter-box li.main.opened h4:hover {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.filter-box li.main.opened {
+    background: linear-gradient(#e0e0e0 20%, #f4f4f4 100%);
+    background-repeat: no-repeat;
 }
 
 .filter-box ul.inside {
     position: absolute;
+    left: -2px;
 
     max-height: 100px;
     width: 100%;
-    margin-top: 10px;
 
     overflow-y: scroll;    
     list-style: none;
