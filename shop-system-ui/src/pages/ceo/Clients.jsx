@@ -44,6 +44,13 @@ function Clients() {
         ]
     });
 
+    function changeChecked(check) {
+        setFilters((prev) => ({
+            ...prev,
+            [check]: !prev[check]
+        }));
+    }
+
     return (
         <div className="client-container">
             <div className="client-manage">
