@@ -216,8 +216,11 @@ html, body, #root {
 
 .filter-box ul.inside {
     position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 
     max-height: 100px;
+    width: 100%;
 
 
     overflow-y: scroll;    
@@ -228,6 +231,8 @@ html, body, #root {
     border-left: solid black;
     border-right: solid black;
     border-bottom: solid black;
+
+    background-color: #f4f4f4;
 
     transition: 150ms ease-in-out;
 }
