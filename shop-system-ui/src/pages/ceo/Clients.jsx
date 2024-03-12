@@ -13,6 +13,44 @@ function Clients() {
         option5: false
     });
 
+    const [filters, setFilters] = useState({
+        option1: {
+            opt_1_1: false,
+            opt_1_2: false,
+            opt_1_3: false,
+            opt_1_4: false,
+            opt_1_5: false,
+        },
+        option2: {
+            opt_2_1: false,
+            opt_2_2: false,
+            opt_2_3: false,
+            opt_2_4: false,
+            opt_2_5: false,
+        },
+        option3: {
+            opt_3_1: false,
+            opt_3_2: false,
+            opt_3_3: false,
+            opt_3_4: false,
+            opt_3_5: false,
+        },
+        option4: {
+            opt_4_1: false,
+            opt_4_2: false,
+            opt_4_3: false,
+            opt_4_4: false,
+            opt_4_5: false,
+        },
+        option5: {
+            opt_5_1: false,
+            opt_5_2: false,
+            opt_5_3: false,
+            opt_5_4: false,
+            opt_5_5: false,
+        },
+    });
+
     function toggleFilter(opt) {
         setOpened(prev => ({
             ...prev,
