@@ -29,9 +29,9 @@ function Clients() {
                     <h2 className="filter-heading">Filters:</h2>
                     <div className="filter-box">
                         <ul className="main">
-                            <li className="main">
+                            <li className={opened.option1 ? "opened main" : "closed main"}>
                                 <h4 onClick={() => toggleFilter("option1")}>Option1</h4>
-                                <ul className={opened.option1 ? "opened inside" : "closed inside"}>
+                                <ul className="inside">
                                     <li className="inside"><input type="checkbox" name="opt-1-1" id="opt-1-1" />
                                         <label htmlFor="opt-1-1">opt-1-1</label>
                                     </li>
