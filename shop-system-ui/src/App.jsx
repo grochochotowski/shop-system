@@ -6,13 +6,6 @@ import Fallback from './Fallback';
 import AppHeader from "./components/AppHeader";
 
 // PAGES
-/*import Dashboard from "./pages/ceo/Dashboard";
-import Clients from "./pages/ceo/Clients";
-import Stores from "./pages/ceo/Stores";
-import Clothing from "./pages/ceo/Clothing";
-import Employees from "./pages/ceo/Employees";
-import Sales from "./pages/ceo/Sales";
-import Company from "./pages/ceo/Company";*/
 const Dashboard = lazy(() => import("./pages/ceo/Dashboard"))
 const Clients = lazy(() => import("./pages/ceo/Clients"))
 const Stores = lazy(() => import("./pages/ceo/Stores"))
