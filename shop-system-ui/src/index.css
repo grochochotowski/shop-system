@@ -216,8 +216,6 @@ html, body, #root {
 
 .filter-box ul.inside {
     position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
 
     max-height: 100px;
     width: 100%;
