@@ -66,7 +66,7 @@ function Clients() {
                 <div className="left">
                     <SearchBox name="client"/>
                     <h2 className="filter-heading">Filters:</h2>
-                    <FilterBox filters={filters}/>
+                    <FilterBox filters={filters} opened={opened}/>
                 </div>
                 <div className="right">
                     <button className="add-button">Add client</button>    

@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function FilterBox() {
+export default function FilterBox({filters, opened}) {
   return (
     <div className="filter-box">
         <ul className="main">
