@@ -219,12 +219,15 @@ html, body, #root {
 
     max-height: 100px;
 
-    border-bottom-left-radius: 5px;
 
     overflow-y: scroll;    
     list-style: none;
 
-    background-color: var(--clr-acc-1);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-left: solid black;
+    border-right: solid black;
+    border-bottom: solid black;
 
     transition: 150ms ease-in-out;
 }
@@ -234,6 +237,9 @@ html, body, #root {
 .filter-box ul.inside.opened{
     font-size: 1.2rem;
     padding: 10px;
+    border-left-width: 2px; 
+    border-right-width: 2px; 
+    border-bottom-width: 2px;
 }
 .filter-box ul.inside.opened input[type="checkbox"] {
     height: auto;
@@ -241,6 +247,9 @@ html, body, #root {
 .filter-box ul.inside.closed{
     font-size: 0;
     padding: 0;
+    border-left-width: 0px; 
+    border-right-width: 0px; 
+    border-bottom-width: 0px;
 }
 .filter-box ul.inside.closed input[type="checkbox"] {
     height: 0;
