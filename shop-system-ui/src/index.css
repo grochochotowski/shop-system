@@ -289,7 +289,12 @@ html, body, #root {
 }
 
 @media (orientation: portrait) {
-    
+    .filter-box ul.main {
+        
+    }
+    .filter-button {
+        
+    }
 }
 
 /* ---- Common page elements ---- */
