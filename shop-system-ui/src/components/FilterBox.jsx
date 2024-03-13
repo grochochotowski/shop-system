@@ -25,7 +25,6 @@ export default function FilterBox({filters, toggleCheck, names}) {
             newOpened[opt] = !newOpened[opt];
             return newOpened;
         });
-        
     }
 
     function GenerateFilterOptions() {
