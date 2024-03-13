@@ -27,6 +27,17 @@ export default function FilterBox({filters, toggleCheck, names}) {
         });
     }
 
+    function filterResults() {
+        setOpened({
+            option1: false,
+            option2: false,
+            option3: false,
+            option4: false,
+            option5: false
+        });
+        console.log("filter")
+    }
+
     function GenerateFilterOptions() {
         return Object.keys(opened).map((key) => (
             <li
@@ -72,7 +83,7 @@ export default function FilterBox({filters, toggleCheck, names}) {
             <ul className="main">
                 <GenerateFilterOptions />
             </ul>
-            <button className="filter-button">Filter</button>
+            <button className="filter-button" onClick={filterResults}>Filter</button>
         </div>
     )
 }
