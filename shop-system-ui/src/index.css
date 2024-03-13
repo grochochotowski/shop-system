@@ -238,7 +238,6 @@ html, body, #root {
 
 .filter-box ul.inside {
     position: absolute;
-    left: -2px;
 
     max-height: 100px;
     width: 100%;
@@ -248,9 +247,6 @@ html, body, #root {
 
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
-    border-left: solid black;
-    border-right: solid black;
-    border-bottom: solid black;
 
     background-color: #f4f4f4;
 
@@ -266,10 +262,6 @@ html, body, #root {
     padding: 10px 0;
 
     font-size: 1.2rem;
-
-    border-left-width: 2px; 
-    border-right-width: 2px; 
-    border-bottom-width: 2px;
 
     box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.5);
 }
