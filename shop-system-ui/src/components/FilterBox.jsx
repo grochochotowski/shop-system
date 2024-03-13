@@ -2,7 +2,7 @@ import React, {useState, useEffect, useRef} from 'react'
 
 export default function FilterBox({filters, toggleCheck, names}) {
 
-    var scrollRef = useRef(0);
+    const [scrollPosition, setScrollPosition] = useState(0);
     var scrolledName = useRef("option1");
     const [opened, setOpened] = useState({
         option1: false,
@@ -28,7 +28,7 @@ export default function FilterBox({filters, toggleCheck, names}) {
     }
 
     useEffect(() => {
-        document.getElementById(scrolledName.current).scrollTo(0, scrollRef.current);
+        document.getElementById(scrolledName.current).scrollTo(0, scrollPosition);
       }, [filters]);
 
     function GenerateFilterOptions() {
@@ -59,7 +59,7 @@ export default function FilterBox({filters, toggleCheck, names}) {
     }
 
     function handleCheckboxChange(opt, elementName) {
-        scrollRef.current = document.getElementById(opt).scrollTop
+        setScrollPosition(document.getElementById(opt).scrollTop)
         scrolledName.current = opt;
         toggleCheck(opt, elementName);
     }
