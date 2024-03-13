@@ -300,6 +300,7 @@ html, body, #root {
     }
     .filter-button {
         width: 30%;
+        margin-top: 1rem;
     }
 }
 
