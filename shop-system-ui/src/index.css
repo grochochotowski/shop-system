@@ -288,6 +288,10 @@ html, body, #root {
     height: 0;
 }
 
+@media (orientation: portrait) {
+    
+}
+
 /* ---- Common page elements ---- */
 .button {
     padding: 10px;

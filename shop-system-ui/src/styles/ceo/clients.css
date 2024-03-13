@@ -13,6 +13,7 @@
     border-bottom: 2px solid black;
 }
 .client-manage .left {
+    display: block;
     flex-basis: 70%;
     flex-grow: 1;
 }
