@@ -157,11 +157,10 @@ html, body, #root {
     width: 100%;
     background-color: red;
 }
-.filter-box.opened {
-    width: 100%;
-}
 .filter-button {
-    width: 15%;
+    flex-basis: 10%;
+    flex-grow: 1;
+
     padding: 5px;
     margin-left: 20px;
 
@@ -191,7 +190,9 @@ html, body, #root {
     list-style: none;
     color: black;
 
-    width: 100%;
+    flex-basis: 85%;
+    flex-grow: 1;
+
     padding: 0;
     gap: 20px;
     font-size: 1.2rem;
@@ -289,11 +290,15 @@ html, body, #root {
 }
 
 @media (orientation: portrait) {
+    .filter-box {
+        flex-direction: column;
+        align-items: center;
+    }
     .filter-box ul.main {
-        
+        width: 100%;
     }
     .filter-button {
-        
+        width: 30%;
     }
 }
 
