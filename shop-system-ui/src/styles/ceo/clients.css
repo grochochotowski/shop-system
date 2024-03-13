@@ -29,6 +29,7 @@
 
 @media (orientation: portrait) {
     .client-manage .right{
+        margin-top: 20px;
         justify-content: center;
         align-items: center;
     }
