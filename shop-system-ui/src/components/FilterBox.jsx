@@ -1,9 +1,10 @@
-import React, {useState, useEffect, useRef} from 'react'
+import React, {useState, useEffect} from 'react'
 
 export default function FilterBox({filters, toggleCheck, names}) {
 
     const [scrollPosition, setScrollPosition] = useState(0);
-    var scrolledName = useRef("option1");
+    const [scrolledName, setScrolledName] = useState("");
+
     const [opened, setOpened] = useState({
         option1: false,
         option2: false,
@@ -28,7 +29,10 @@ export default function FilterBox({filters, toggleCheck, names}) {
     }
 
     useEffect(() => {
-        document.getElementById(scrolledName.current).scrollTo(0, scrollPosition);
+        const element = document.getElementById(scrolledName);
+        if (element) {
+            element.scrollTo(0, scrollPosition);
+        }
       }, [filters]);
 
     function GenerateFilterOptions() {
@@ -60,7 +64,7 @@ export default function FilterBox({filters, toggleCheck, names}) {
 
     function handleCheckboxChange(opt, elementName) {
         setScrollPosition(document.getElementById(opt).scrollTop)
-        scrolledName.current = opt;
+        setScrolledName(opt);
         toggleCheck(opt, elementName);
     }
 
