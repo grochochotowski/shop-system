@@ -298,6 +298,8 @@ html, body, #root {
     }
     .filter-box ul.main {
         width: 100%;
+        column-gap: 10px;
+        row-gap: 0;
     }
     .filter-button {
         width: 30%;
