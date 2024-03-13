@@ -1,7 +1,9 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect, useRef} from 'react'
 
 export default function FilterBox({filters, toggleCheck, names}) {
 
+    var scrollRef = useRef(0);
+    var scrolledName = useRef("option1");
     const [opened, setOpened] = useState({
         option1: false,
         option2: false,
@@ -22,13 +24,19 @@ export default function FilterBox({filters, toggleCheck, names}) {
             newOpened[opt] = !newOpened[opt];
             return newOpened;
         });
+        
     }
+
+    useEffect(() => {
+        document.getElementById(scrolledName.current).scrollTo(0, scrollRef.current);
+      }, [filters]);
 
     function GenerateFilterOptions() {
         return Object.keys(opened).map((key) => (
-            <li className={opened[key] ? "opened main" : "closed main"} key={key}>
+            <li
+                className={opened[key] ? "opened main" : "closed main"} key={key}>
                 <h4 onClick={() => toggleFilter(key)}>{names[key]}</h4>
-                <ul className="inside">
+                <ul className="inside" id={key}>
                     <GenerateFiltersInOption opt={key}/>
                 </ul>
             </li>
@@ -51,6 +59,8 @@ export default function FilterBox({filters, toggleCheck, names}) {
     }
 
     function handleCheckboxChange(opt, elementName) {
+        scrollRef.current = document.getElementById(opt).scrollTop
+        scrolledName.current = opt;
         toggleCheck(opt, elementName);
     }
 
