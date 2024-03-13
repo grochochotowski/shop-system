@@ -18,6 +18,7 @@ export default function FilterBox({filters, toggleCheck, names}) {
                     newOpened[key] = false;
                 }
             });
+
             newOpened[opt] = !newOpened[opt];
             return newOpened;
         });
@@ -27,7 +28,7 @@ export default function FilterBox({filters, toggleCheck, names}) {
         return Object.keys(opened).map((key) => (
             <li className={opened[key] ? "opened main" : "closed main"} key={key}>
                 <h4 onClick={() => toggleFilter(key)}>{names[key]}</h4>
-                <ul className="inside" id="main-inside-list">
+                <ul className="inside">
                     <GenerateFiltersInOption opt={key}/>
                 </ul>
             </li>
