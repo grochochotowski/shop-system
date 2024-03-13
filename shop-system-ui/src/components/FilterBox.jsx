@@ -28,13 +28,6 @@ export default function FilterBox({filters, toggleCheck, names}) {
         
     }
 
-    useEffect(() => {
-        const element = document.getElementById(scrolledName);
-        if (element) {
-            element.scrollTo(0, scrollPosition);
-        }
-    }, [filters, scrollPosition, scrolledName]);
-
     function GenerateFilterOptions() {
         return Object.keys(opened).map((key) => (
             <li
@@ -67,6 +60,13 @@ export default function FilterBox({filters, toggleCheck, names}) {
         setScrolledName(opt);
         toggleCheck(opt, elementName);
     }
+    
+    useEffect(() => {
+        const element = document.getElementById(scrolledName);
+        if (element) {
+            element.scrollTo(0, scrollPosition);
+        }
+    }, [filters, scrollPosition, scrolledName]);
 
     return (
         <div className="filter-box">
