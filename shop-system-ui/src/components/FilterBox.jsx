@@ -33,7 +33,7 @@ export default function FilterBox({filters, toggleCheck, names}) {
         if (element) {
             element.scrollTo(0, scrollPosition);
         }
-      }, [filters]);
+    }, [filters]);
 
     function GenerateFilterOptions() {
         return Object.keys(opened).map((key) => (
