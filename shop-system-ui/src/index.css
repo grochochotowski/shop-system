@@ -124,6 +124,7 @@ html, body, #root {
 .add-button {
     float: right;
     padding: 10px;
+    max-height: 3rem;
 
     font-size: 1.2rem;
     color: black;
