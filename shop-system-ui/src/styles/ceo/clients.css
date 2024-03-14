@@ -35,15 +35,16 @@
     }
 }
 
-.client-list {
-    display: none;
-    background-color: red;
+.client-list { 
+    color: black;
 }
 .client-list table{
 
+    border-collapse: collapse;
 }
 .client-list tr{
 
+    border: 1px solid;
 }
 .client-list th{
 
