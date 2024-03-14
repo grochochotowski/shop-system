@@ -35,6 +35,8 @@ export default function FilterBox({filters, toggleCheck, names}) {
             })
             return closeAll;
         });
+
+        
         console.log("filter")
     }
 
