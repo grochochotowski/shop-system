@@ -28,12 +28,12 @@ export default function FilterBox({filters, toggleCheck, names}) {
     }
 
     function filterResults() {
-        setOpened({
-            option1: false,
-            option2: false,
-            option3: false,
-            option4: false,
-            option5: false
+        setOpened(prev => {
+            const closeAll = { ...prev };
+            Object.keys(closeAll).forEach(key => {
+                closeAll[key] = false;
+            })
+            return closeAll;
         });
         console.log("filter")
     }
