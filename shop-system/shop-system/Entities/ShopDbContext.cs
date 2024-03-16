@@ -11,6 +11,8 @@ namespace shop_system.Entities
         public DbSet<Clothing> Clothes { get; set; }
         public DbSet<User> Users { get; set; }
         public DbSet<Position> Positions { get; set; }
+        public DbSet<Client> Clients { get; set; }
+        public DbSet<Address> Addresses { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
