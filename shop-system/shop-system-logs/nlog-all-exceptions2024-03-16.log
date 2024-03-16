@@ -1,3 +1,356 @@
 2024-03-16 22:28:55.7313|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|An 'IServiceProvider' was created for internal use by Entity Framework. 
 2024-03-16 22:28:56.1243|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 8.0.2 initialized 'ShopDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.2' with options: None 
 2024-03-16 22:28:56.6226|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|'ShopDbContext' disposed. 
+2024-03-16 22:31:59.2104|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|An 'IServiceProvider' was created for internal use by Entity Framework. 
+2024-03-16 22:31:59.5604|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 8.0.2 initialized 'ShopDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.2' with options: None 
+2024-03-16 22:31:59.8654|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|'ShopDbContext' disposed. 
+2024-03-16 22:37:03.7353|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|An 'IServiceProvider' was created for internal use by Entity Framework. 
+2024-03-16 22:37:04.1064|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 8.0.2 initialized 'ShopDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.2' with options: None 
+2024-03-16 22:37:04.1064|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Creating DbConnection. 
+2024-03-16 22:37:04.1601|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Created DbConnection. (36ms). 
+2024-03-16 22:37:04.1601|DEBUG|Microsoft.EntityFrameworkCore.Migrations|Migrating using database 'ShopDB' on server '(localdb)\mssqllocaldb'. 
+2024-03-16 22:37:04.1683|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'ShopDB' on server '(localdb)\mssqllocaldb'. 
+2024-03-16 22:37:04.3844|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|An error occurred using the connection to database 'ShopDB' on server '(localdb)\mssqllocaldb'. 
+2024-03-16 22:37:04.3844|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'ShopDB' on server '(localdb)\mssqllocaldb'. 
+2024-03-16 22:37:04.3844|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|An error occurred using the connection to database 'ShopDB' on server '(localdb)\mssqllocaldb'. 
+2024-03-16 22:37:04.4290|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Creating DbConnection. 
+2024-03-16 22:37:04.4290|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Created DbConnection. (0ms). 
+2024-03-16 22:37:04.4290|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'master' on server '(localdb)\mssqllocaldb'. 
+2024-03-16 22:37:04.4418|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'master' on server '(localdb)\mssqllocaldb'. 
+2024-03-16 22:37:04.4418|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteNonQuery'. 
+2024-03-16 22:37:04.4500|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteNonQuery' (3ms). 
+2024-03-16 22:37:04.4500|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Initialized DbCommand for 'ExecuteNonQuery' (7ms). 
+2024-03-16 22:37:04.4500|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='60']
+CREATE DATABASE [ShopDB]; 
+2024-03-16 22:37:04.6502|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (193ms) [Parameters=[], CommandType='Text', CommandTimeout='60']
+CREATE DATABASE [ShopDB]; 
+2024-03-16 22:37:04.6502|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteNonQuery'. 
+2024-03-16 22:37:04.6502|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteNonQuery' (0ms). 
+2024-03-16 22:37:04.6502|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Initialized DbCommand for 'ExecuteNonQuery' (0ms). 
+2024-03-16 22:37:04.6502|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='60']
+IF SERVERPROPERTY('EngineEdition') <> 5
+BEGIN
+    ALTER DATABASE [ShopDB] SET READ_COMMITTED_SNAPSHOT ON;
+END; 
+2024-03-16 22:37:04.7071|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (55ms) [Parameters=[], CommandType='Text', CommandTimeout='60']
+IF SERVERPROPERTY('EngineEdition') <> 5
+BEGIN
+    ALTER DATABASE [ShopDB] SET READ_COMMITTED_SNAPSHOT ON;
+END; 
+2024-03-16 22:37:04.7071|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'master' on server '(localdb)\mssqllocaldb'. 
+2024-03-16 22:37:04.7071|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'master' on server '(localdb)\mssqllocaldb' (2ms). 
+2024-03-16 22:37:04.7139|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Disposing connection to database 'master' on server '(localdb)\mssqllocaldb'. 
+2024-03-16 22:37:04.7139|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Disposed connection to database '' on server '' (0ms). 
+2024-03-16 22:37:04.7139|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'ShopDB' on server '(localdb)\mssqllocaldb'. 
+2024-03-16 22:37:04.7139|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'ShopDB' on server '(localdb)\mssqllocaldb'. 
+2024-03-16 22:37:04.7139|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteNonQuery'. 
+2024-03-16 22:37:04.7139|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteNonQuery' (0ms). 
+2024-03-16 22:37:04.7139|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Initialized DbCommand for 'ExecuteNonQuery' (0ms). 
+2024-03-16 22:37:04.7139|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1 
+2024-03-16 22:37:04.7139|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1 
+2024-03-16 22:37:04.7139|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'ShopDB' on server '(localdb)\mssqllocaldb'. 
+2024-03-16 22:37:04.7139|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'ShopDB' on server '(localdb)\mssqllocaldb' (0ms). 
+2024-03-16 22:37:04.7640|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteNonQuery'. 
+2024-03-16 22:37:04.7640|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteNonQuery' (0ms). 
+2024-03-16 22:37:04.7640|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Initialized DbCommand for 'ExecuteNonQuery' (0ms). 
+2024-03-16 22:37:04.7640|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'ShopDB' on server '(localdb)\mssqllocaldb'. 
+2024-03-16 22:37:04.7640|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'ShopDB' on server '(localdb)\mssqllocaldb'. 
+2024-03-16 22:37:04.7640|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [__EFMigrationsHistory] (
+    [MigrationId] nvarchar(150) NOT NULL,
+    [ProductVersion] nvarchar(32) NOT NULL,
+    CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+); 
+2024-03-16 22:37:04.7640|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (7ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [__EFMigrationsHistory] (
+    [MigrationId] nvarchar(150) NOT NULL,
+    [ProductVersion] nvarchar(32) NOT NULL,
+    CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+); 
+2024-03-16 22:37:04.7640|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'ShopDB' on server '(localdb)\mssqllocaldb'. 
+2024-03-16 22:37:04.7640|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'ShopDB' on server '(localdb)\mssqllocaldb' (0ms). 
+2024-03-16 22:37:04.7640|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'ShopDB' on server '(localdb)\mssqllocaldb'. 
+2024-03-16 22:37:04.7640|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'ShopDB' on server '(localdb)\mssqllocaldb'. 
+2024-03-16 22:37:04.7640|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteNonQuery'. 
+2024-03-16 22:37:04.7640|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteNonQuery' (0ms). 
+2024-03-16 22:37:04.7640|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Initialized DbCommand for 'ExecuteNonQuery' (0ms). 
+2024-03-16 22:37:04.7640|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1 
+2024-03-16 22:37:04.7640|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1 
+2024-03-16 22:37:04.7640|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'ShopDB' on server '(localdb)\mssqllocaldb'. 
+2024-03-16 22:37:04.7640|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'ShopDB' on server '(localdb)\mssqllocaldb' (0ms). 
+2024-03-16 22:37:04.7756|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteScalar'. 
+2024-03-16 22:37:04.7756|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteScalar' (0ms). 
+2024-03-16 22:37:04.7756|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Initialized DbCommand for 'ExecuteScalar' (0ms). 
+2024-03-16 22:37:04.7756|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'ShopDB' on server '(localdb)\mssqllocaldb'. 
+2024-03-16 22:37:04.7756|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'ShopDB' on server '(localdb)\mssqllocaldb'. 
+2024-03-16 22:37:04.7756|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]'); 
+2024-03-16 22:37:04.7756|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (9ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]'); 
+2024-03-16 22:37:04.7756|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'ShopDB' on server '(localdb)\mssqllocaldb'. 
+2024-03-16 22:37:04.7756|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'ShopDB' on server '(localdb)\mssqllocaldb' (0ms). 
+2024-03-16 22:37:04.7756|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'ShopDB' on server '(localdb)\mssqllocaldb'. 
+2024-03-16 22:37:04.7756|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'ShopDB' on server '(localdb)\mssqllocaldb'. 
+2024-03-16 22:37:04.7756|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteReader'. 
+2024-03-16 22:37:04.7756|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteReader' (0ms). 
+2024-03-16 22:37:04.7756|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Initialized DbCommand for 'ExecuteReader' (0ms). 
+2024-03-16 22:37:04.7756|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId]; 
+2024-03-16 22:37:04.7756|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId]; 
+2024-03-16 22:37:04.7756|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Closing data reader to 'ShopDB' on server '(localdb)\mssqllocaldb'. 
+2024-03-16 22:37:04.7907|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|A data reader for 'ShopDB' on server '(localdb)\mssqllocaldb' is being disposed after spending 1ms reading results. 
+2024-03-16 22:37:04.7907|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'ShopDB' on server '(localdb)\mssqllocaldb'. 
+2024-03-16 22:37:04.7907|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'ShopDB' on server '(localdb)\mssqllocaldb' (0ms). 
+2024-03-16 22:37:04.7907|INFO|Microsoft.EntityFrameworkCore.Migrations|Applying migration '20240316213159_InitialMigrationAfterClassReset'. 
+2024-03-16 22:37:04.8257|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'ShopDB' on server '(localdb)\mssqllocaldb'. 
+2024-03-16 22:37:04.8257|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'ShopDB' on server '(localdb)\mssqllocaldb'. 
+2024-03-16 22:37:04.8257|DEBUG|Microsoft.EntityFrameworkCore.Database.Transaction|Beginning transaction with isolation level 'Unspecified'. 
+2024-03-16 22:37:04.8257|DEBUG|Microsoft.EntityFrameworkCore.Database.Transaction|Began transaction with isolation level 'ReadCommitted'. 
+2024-03-16 22:37:04.8257|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteNonQuery'. 
+2024-03-16 22:37:04.8257|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteNonQuery' (0ms). 
+2024-03-16 22:37:04.8257|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Initialized DbCommand for 'ExecuteNonQuery' (0ms). 
+2024-03-16 22:37:04.8257|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [Addresses] (
+    [Id] int NOT NULL IDENTITY,
+    [Country] nvarchar(max) NOT NULL,
+    [City] nvarchar(max) NOT NULL,
+    [Street] nvarchar(max) NOT NULL,
+    [Buidling] nvarchar(max) NOT NULL,
+    [Premises] nvarchar(max) NOT NULL,
+    [PostalCode] nvarchar(max) NOT NULL,
+    CONSTRAINT [PK_Addresses] PRIMARY KEY ([Id])
+); 
+2024-03-16 22:37:04.8257|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [Addresses] (
+    [Id] int NOT NULL IDENTITY,
+    [Country] nvarchar(max) NOT NULL,
+    [City] nvarchar(max) NOT NULL,
+    [Street] nvarchar(max) NOT NULL,
+    [Buidling] nvarchar(max) NOT NULL,
+    [Premises] nvarchar(max) NOT NULL,
+    [PostalCode] nvarchar(max) NOT NULL,
+    CONSTRAINT [PK_Addresses] PRIMARY KEY ([Id])
+); 
+2024-03-16 22:37:04.8257|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteNonQuery'. 
+2024-03-16 22:37:04.8257|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteNonQuery' (0ms). 
+2024-03-16 22:37:04.8257|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Initialized DbCommand for 'ExecuteNonQuery' (0ms). 
+2024-03-16 22:37:04.8257|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [Clothes] (
+    [Id] int NOT NULL IDENTITY,
+    [Season] nvarchar(max) NOT NULL,
+    [Code] nvarchar(max) NOT NULL,
+    [Category] nvarchar(max) NOT NULL,
+    [Colour] nvarchar(max) NOT NULL,
+    [Size] int NOT NULL,
+    [Price] float NOT NULL,
+    [Notes] nvarchar(max) NULL,
+    CONSTRAINT [PK_Clothes] PRIMARY KEY ([Id])
+); 
+2024-03-16 22:37:04.8257|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [Clothes] (
+    [Id] int NOT NULL IDENTITY,
+    [Season] nvarchar(max) NOT NULL,
+    [Code] nvarchar(max) NOT NULL,
+    [Category] nvarchar(max) NOT NULL,
+    [Colour] nvarchar(max) NOT NULL,
+    [Size] int NOT NULL,
+    [Price] float NOT NULL,
+    [Notes] nvarchar(max) NULL,
+    CONSTRAINT [PK_Clothes] PRIMARY KEY ([Id])
+); 
+2024-03-16 22:37:04.8374|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteNonQuery'. 
+2024-03-16 22:37:04.8374|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteNonQuery' (0ms). 
+2024-03-16 22:37:04.8374|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Initialized DbCommand for 'ExecuteNonQuery' (0ms). 
+2024-03-16 22:37:04.8374|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [Positions] (
+    [Id] int NOT NULL IDENTITY,
+    [Name] nvarchar(max) NOT NULL,
+    CONSTRAINT [PK_Positions] PRIMARY KEY ([Id])
+); 
+2024-03-16 22:37:04.8374|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [Positions] (
+    [Id] int NOT NULL IDENTITY,
+    [Name] nvarchar(max) NOT NULL,
+    CONSTRAINT [PK_Positions] PRIMARY KEY ([Id])
+); 
+2024-03-16 22:37:04.8374|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteNonQuery'. 
+2024-03-16 22:37:04.8374|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteNonQuery' (0ms). 
+2024-03-16 22:37:04.8374|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Initialized DbCommand for 'ExecuteNonQuery' (0ms). 
+2024-03-16 22:37:04.8374|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [Clients] (
+    [Id] int NOT NULL IDENTITY,
+    [Name] nvarchar(max) NOT NULL,
+    [Notes] nvarchar(max) NULL,
+    [AddressId] int NOT NULL,
+    CONSTRAINT [PK_Clients] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_Clients_Addresses_AddressId] FOREIGN KEY ([AddressId]) REFERENCES [Addresses] ([Id]) ON DELETE CASCADE
+); 
+2024-03-16 22:37:04.8374|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [Clients] (
+    [Id] int NOT NULL IDENTITY,
+    [Name] nvarchar(max) NOT NULL,
+    [Notes] nvarchar(max) NULL,
+    [AddressId] int NOT NULL,
+    CONSTRAINT [PK_Clients] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_Clients_Addresses_AddressId] FOREIGN KEY ([AddressId]) REFERENCES [Addresses] ([Id]) ON DELETE CASCADE
+); 
+2024-03-16 22:37:04.8374|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteNonQuery'. 
+2024-03-16 22:37:04.8374|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteNonQuery' (0ms). 
+2024-03-16 22:37:04.8374|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Initialized DbCommand for 'ExecuteNonQuery' (0ms). 
+2024-03-16 22:37:04.8374|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [Shops] (
+    [Id] int NOT NULL IDENTITY,
+    [Code] nvarchar(max) NOT NULL,
+    [PhoneNumber] nvarchar(max) NOT NULL,
+    [Notes] nvarchar(max) NULL,
+    [AddressId] int NOT NULL,
+    CONSTRAINT [PK_Shops] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_Shops_Addresses_AddressId] FOREIGN KEY ([AddressId]) REFERENCES [Addresses] ([Id]) ON DELETE CASCADE
+); 
+2024-03-16 22:37:04.8374|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [Shops] (
+    [Id] int NOT NULL IDENTITY,
+    [Code] nvarchar(max) NOT NULL,
+    [PhoneNumber] nvarchar(max) NOT NULL,
+    [Notes] nvarchar(max) NULL,
+    [AddressId] int NOT NULL,
+    CONSTRAINT [PK_Shops] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_Shops_Addresses_AddressId] FOREIGN KEY ([AddressId]) REFERENCES [Addresses] ([Id]) ON DELETE CASCADE
+); 
+2024-03-16 22:37:04.8374|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteNonQuery'. 
+2024-03-16 22:37:04.8374|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteNonQuery' (0ms). 
+2024-03-16 22:37:04.8374|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Initialized DbCommand for 'ExecuteNonQuery' (0ms). 
+2024-03-16 22:37:04.8374|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [ClothingAvailability] (
+    [Id] int NOT NULL IDENTITY,
+    [Quantity] int NOT NULL,
+    [ShopId] int NOT NULL,
+    [ClothingId] int NOT NULL,
+    CONSTRAINT [PK_ClothingAvailability] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_ClothingAvailability_Clothes_ClothingId] FOREIGN KEY ([ClothingId]) REFERENCES [Clothes] ([Id]) ON DELETE CASCADE,
+    CONSTRAINT [FK_ClothingAvailability_Shops_ShopId] FOREIGN KEY ([ShopId]) REFERENCES [Shops] ([Id]) ON DELETE CASCADE
+); 
+2024-03-16 22:37:04.8374|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [ClothingAvailability] (
+    [Id] int NOT NULL IDENTITY,
+    [Quantity] int NOT NULL,
+    [ShopId] int NOT NULL,
+    [ClothingId] int NOT NULL,
+    CONSTRAINT [PK_ClothingAvailability] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_ClothingAvailability_Clothes_ClothingId] FOREIGN KEY ([ClothingId]) REFERENCES [Clothes] ([Id]) ON DELETE CASCADE,
+    CONSTRAINT [FK_ClothingAvailability_Shops_ShopId] FOREIGN KEY ([ShopId]) REFERENCES [Shops] ([Id]) ON DELETE CASCADE
+); 
+2024-03-16 22:37:04.8374|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteNonQuery'. 
+2024-03-16 22:37:04.8374|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteNonQuery' (0ms). 
+2024-03-16 22:37:04.8374|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Initialized DbCommand for 'ExecuteNonQuery' (0ms). 
+2024-03-16 22:37:04.8374|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [Employees] (
+    [Id] int NOT NULL IDENTITY,
+    [FirstName] nvarchar(max) NOT NULL,
+    [SecondName] nvarchar(max) NULL,
+    [LastName] nvarchar(max) NOT NULL,
+    [Login] nvarchar(max) NOT NULL,
+    [Email] nvarchar(max) NOT NULL,
+    [Password] nvarchar(max) NOT NULL,
+    [PhoneNumber] nvarchar(max) NOT NULL,
+    [PositionId] int NOT NULL,
+    [ShopId] int NULL,
+    [AddressId] int NOT NULL,
+    CONSTRAINT [PK_Employees] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_Employees_Addresses_AddressId] FOREIGN KEY ([AddressId]) REFERENCES [Addresses] ([Id]) ON DELETE CASCADE,
+    CONSTRAINT [FK_Employees_Positions_PositionId] FOREIGN KEY ([PositionId]) REFERENCES [Positions] ([Id]) ON DELETE CASCADE,
+    CONSTRAINT [FK_Employees_Shops_ShopId] FOREIGN KEY ([ShopId]) REFERENCES [Shops] ([Id])
+); 
+2024-03-16 22:37:04.8374|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [Employees] (
+    [Id] int NOT NULL IDENTITY,
+    [FirstName] nvarchar(max) NOT NULL,
+    [SecondName] nvarchar(max) NULL,
+    [LastName] nvarchar(max) NOT NULL,
+    [Login] nvarchar(max) NOT NULL,
+    [Email] nvarchar(max) NOT NULL,
+    [Password] nvarchar(max) NOT NULL,
+    [PhoneNumber] nvarchar(max) NOT NULL,
+    [PositionId] int NOT NULL,
+    [ShopId] int NULL,
+    [AddressId] int NOT NULL,
+    CONSTRAINT [PK_Employees] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_Employees_Addresses_AddressId] FOREIGN KEY ([AddressId]) REFERENCES [Addresses] ([Id]) ON DELETE CASCADE,
+    CONSTRAINT [FK_Employees_Positions_PositionId] FOREIGN KEY ([PositionId]) REFERENCES [Positions] ([Id]) ON DELETE CASCADE,
+    CONSTRAINT [FK_Employees_Shops_ShopId] FOREIGN KEY ([ShopId]) REFERENCES [Shops] ([Id])
+); 
+2024-03-16 22:37:04.8374|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteNonQuery'. 
+2024-03-16 22:37:04.8374|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteNonQuery' (0ms). 
+2024-03-16 22:37:04.8374|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Initialized DbCommand for 'ExecuteNonQuery' (0ms). 
+2024-03-16 22:37:04.8374|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE INDEX [IX_Clients_AddressId] ON [Clients] ([AddressId]); 
+2024-03-16 22:37:04.8374|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE INDEX [IX_Clients_AddressId] ON [Clients] ([AddressId]); 
+2024-03-16 22:37:04.8374|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteNonQuery'. 
+2024-03-16 22:37:04.8374|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteNonQuery' (0ms). 
+2024-03-16 22:37:04.8374|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Initialized DbCommand for 'ExecuteNonQuery' (0ms). 
+2024-03-16 22:37:04.8374|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE INDEX [IX_ClothingAvailability_ClothingId] ON [ClothingAvailability] ([ClothingId]); 
+2024-03-16 22:37:04.8374|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE INDEX [IX_ClothingAvailability_ClothingId] ON [ClothingAvailability] ([ClothingId]); 
+2024-03-16 22:37:04.8374|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteNonQuery'. 
+2024-03-16 22:37:04.8374|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteNonQuery' (0ms). 
+2024-03-16 22:37:04.8374|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Initialized DbCommand for 'ExecuteNonQuery' (0ms). 
+2024-03-16 22:37:04.8374|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE INDEX [IX_ClothingAvailability_ShopId] ON [ClothingAvailability] ([ShopId]); 
+2024-03-16 22:37:04.8374|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE INDEX [IX_ClothingAvailability_ShopId] ON [ClothingAvailability] ([ShopId]); 
+2024-03-16 22:37:04.8374|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteNonQuery'. 
+2024-03-16 22:37:04.8374|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteNonQuery' (0ms). 
+2024-03-16 22:37:04.8374|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Initialized DbCommand for 'ExecuteNonQuery' (0ms). 
+2024-03-16 22:37:04.8374|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE INDEX [IX_Employees_AddressId] ON [Employees] ([AddressId]); 
+2024-03-16 22:37:04.8374|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE INDEX [IX_Employees_AddressId] ON [Employees] ([AddressId]); 
+2024-03-16 22:37:04.8374|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteNonQuery'. 
+2024-03-16 22:37:04.8374|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteNonQuery' (0ms). 
+2024-03-16 22:37:04.8374|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Initialized DbCommand for 'ExecuteNonQuery' (0ms). 
+2024-03-16 22:37:04.8374|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE INDEX [IX_Employees_PositionId] ON [Employees] ([PositionId]); 
+2024-03-16 22:37:04.8374|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE INDEX [IX_Employees_PositionId] ON [Employees] ([PositionId]); 
+2024-03-16 22:37:04.8374|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteNonQuery'. 
+2024-03-16 22:37:04.8374|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteNonQuery' (0ms). 
+2024-03-16 22:37:04.8374|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Initialized DbCommand for 'ExecuteNonQuery' (0ms). 
+2024-03-16 22:37:04.8374|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE INDEX [IX_Employees_ShopId] ON [Employees] ([ShopId]); 
+2024-03-16 22:37:04.8374|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE INDEX [IX_Employees_ShopId] ON [Employees] ([ShopId]); 
+2024-03-16 22:37:04.8374|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteNonQuery'. 
+2024-03-16 22:37:04.8374|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteNonQuery' (0ms). 
+2024-03-16 22:37:04.8374|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Initialized DbCommand for 'ExecuteNonQuery' (0ms). 
+2024-03-16 22:37:04.8374|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE INDEX [IX_Shops_AddressId] ON [Shops] ([AddressId]); 
+2024-03-16 22:37:04.8374|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE INDEX [IX_Shops_AddressId] ON [Shops] ([AddressId]); 
+2024-03-16 22:37:04.8374|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteNonQuery'. 
+2024-03-16 22:37:04.8374|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteNonQuery' (0ms). 
+2024-03-16 22:37:04.8374|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Initialized DbCommand for 'ExecuteNonQuery' (0ms). 
+2024-03-16 22:37:04.8374|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20240316213159_InitialMigrationAfterClassReset', N'8.0.2'); 
+2024-03-16 22:37:04.8550|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20240316213159_InitialMigrationAfterClassReset', N'8.0.2'); 
+2024-03-16 22:37:04.8550|DEBUG|Microsoft.EntityFrameworkCore.Database.Transaction|Committing transaction. 
+2024-03-16 22:37:04.8550|DEBUG|Microsoft.EntityFrameworkCore.Database.Transaction|Committed transaction. 
+2024-03-16 22:37:04.8550|DEBUG|Microsoft.EntityFrameworkCore.Database.Transaction|Disposing transaction. 
+2024-03-16 22:37:04.8550|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'ShopDB' on server '(localdb)\mssqllocaldb'. 
+2024-03-16 22:37:04.8550|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'ShopDB' on server '(localdb)\mssqllocaldb' (0ms). 
+2024-03-16 22:37:04.8550|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|'ShopDbContext' disposed. 
+2024-03-16 22:37:04.8550|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Disposing connection to database 'ShopDB' on server '(localdb)\mssqllocaldb'. 
+2024-03-16 22:37:04.8550|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Disposed connection to database '' on server '' (0ms). 
