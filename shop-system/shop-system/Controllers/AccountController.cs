@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Win32;
-using shop_system.Models;
+using shop_system.Models.Employee;
 using shop_system.Services;
 
 namespace shop_system.Controllers

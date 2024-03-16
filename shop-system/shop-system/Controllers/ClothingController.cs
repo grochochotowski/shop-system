@@ -1,7 +1,9 @@
 ﻿using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
 using shop_system.Entities;
-using shop_system.Models;
+using shop_system.Models.Clothing;
+using shop_system.Models.Employee;
+using shop_system.Models.Shop;
 using shop_system.Services;
 
 namespace shop_system.Controllers

@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Conventions;
 using shop_system.Entities;
 using shop_system.Exceptions;
-using shop_system.Models;
+using shop_system.Models.Shop;
 
 namespace shop_system.Serivces
 {

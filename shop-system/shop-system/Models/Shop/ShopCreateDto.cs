@@ -1,11 +1,7 @@
-﻿using shop_system.Entities;
-
-namespace shop_system.Models
+﻿namespace shop_system.Models.Shop
 {
-    public class ShopDto
+    public class ShopCreateDto
     {
-        public int Id { get; set; }
-        public string Code { get; set; }
         public string Country { get; set; }
         public string Region { get; set; }
         public string City { get; set; }
@@ -14,7 +10,5 @@ namespace shop_system.Models
         public string? Premises { get; set; }
         public string PostalCode { get; set; }
         public string PhoneNumber { get; set; }
-
-        public List<ClothingAvailabilityDto> Clothes { get; set; }
     }
 }

@@ -10,7 +10,7 @@ using NLog.Web;
 using shop_system.Controllers;
 using shop_system.Entities;
 using shop_system.Middleware;
-using shop_system.Models;
+using shop_system.Models.Employee;
 using shop_system.Models.Validators;
 using shop_system.Serivces;
 using shop_system.Services;

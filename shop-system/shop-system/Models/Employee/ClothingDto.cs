@@ -1,6 +1,6 @@
-﻿namespace shop_system.Models
+﻿namespace shop_system.Models.Employee
 {
-    public class ClothingCreateDto
+    public class ClothingDto
     {
         public string Season { get; set; }
         public string Code { get; set; }

@@ -1,5 +1,6 @@
 ﻿using FluentValidation;
 using shop_system.Entities;
+using shop_system.Models.Employee;
 namespace shop_system.Models.Validators
 {
     public class EmployeeRegisterUserDtoValidator : AbstractValidator<EmployeeRegisterUserDto>

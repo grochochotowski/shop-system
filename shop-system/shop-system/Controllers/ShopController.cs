@@ -1,7 +1,7 @@
 ﻿using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 using shop_system.Entities;
-using shop_system.Models;
+using shop_system.Models.Shop;
 using shop_system.Serivces;
 using System.Net.WebSockets;
 

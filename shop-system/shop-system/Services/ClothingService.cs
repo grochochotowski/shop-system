@@ -1,7 +1,8 @@
 ﻿using AutoMapper;
 using shop_system.Entities;
 using shop_system.Exceptions;
-using shop_system.Models;
+using shop_system.Models.Clothing;
+using shop_system.Models.Employee;
 
 namespace shop_system.Services
 {

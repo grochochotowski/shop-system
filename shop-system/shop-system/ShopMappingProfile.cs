@@ -1,6 +1,9 @@
 ﻿using AutoMapper;
 using shop_system.Entities;
-using shop_system.Models;
+using shop_system.Models.Clothing;
+using shop_system.Models.ClothingAvailability;
+using shop_system.Models.Employee;
+using shop_system.Models.Shop;
 using System.Runtime.InteropServices;
 
 namespace shop_system
@@ -13,13 +16,9 @@ namespace shop_system
             CreateMap<ShopCreateDto, Shop>();
 
             CreateMap<ClothingAvailability, ClothingAvailabilityDto>();
-            CreateMap<CreateClothingAvailabilityDto, ClothingAvailability>();
-            CreateMap<ClothingAvailability, GetClothesFromShopDto>();
 
             CreateMap<Clothing, ClothingDto>();
             CreateMap<ClothingCreateDto, Clothing>();
-
-            CreateMap<Employee, UserWShopDto>();
         }
     }
 }
