@@ -1,11 +1,9 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace shop_system.Entities
+namespace shop_system.Models.Shop
 {
-    public class Shop
+    public class CreateShopDto
     {
-        [Key]
-        public int Id { get; set; }
         [Required]
         public string Code { get; set; }
         [Required]
@@ -13,8 +11,5 @@ namespace shop_system.Entities
         [Required]
         public int AddressID;
         public string? Notes { get; set; }
-
-        public virtual Address Address { get; set; }
-        public virtual ICollection<ClothingAvailability>? Clothes { get; set; }
     }
 }

@@ -37,7 +37,7 @@ namespace shop_system.Controllers
         } // Get shop by ID
 
         [HttpPost]
-        public ActionResult AddShop([FromBody] ShopCreateDto dto)
+        public ActionResult AddShop([FromBody] CreateShopDto dto)
         {
             var newShopId = _shopService.Add(dto);
 

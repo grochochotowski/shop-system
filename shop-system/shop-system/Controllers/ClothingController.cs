@@ -2,7 +2,6 @@
 using Microsoft.AspNetCore.Mvc;
 using shop_system.Entities;
 using shop_system.Models.Clothing;
-using shop_system.Models.Employee;
 using shop_system.Models.Shop;
 using shop_system.Services;
 
@@ -38,7 +37,7 @@ namespace shop_system.Controllers
         } // Get clothing by ID
 
         [HttpPost]
-        public ActionResult AddClothing([FromBody] ClothingCreateDto dto)
+        public ActionResult AddClothing([FromBody] CreateClothingDto dto)
         {
             var newClothingId = _clothingService.Add(dto);
 

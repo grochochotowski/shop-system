@@ -2,13 +2,12 @@
 using shop_system.Entities;
 using shop_system.Exceptions;
 using shop_system.Models.Clothing;
-using shop_system.Models.Employee;
 
 namespace shop_system.Services
 {
     public interface IClothingService
     {
-        int Add(ClothingCreateDto dto);
+        int Add(CreateClothingDto dto);
         void Delete(int id);
         ClothingDto Get(int id);
         IEnumerable<ClothingDto> GetAll();
@@ -49,7 +48,7 @@ namespace shop_system.Services
             return result;
         } // Get clothing by ID
 
-        public int Add(ClothingCreateDto dto)
+        public int Add(CreateClothingDto dto)
         {
             var clothing = _mapper.Map<Clothing>(dto);
             _context.Clothes.Add(clothing);

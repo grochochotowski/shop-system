@@ -2,7 +2,6 @@
 using shop_system.Entities;
 using shop_system.Models.Clothing;
 using shop_system.Models.ClothingAvailability;
-using shop_system.Models.Employee;
 using shop_system.Models.Shop;
 using System.Runtime.InteropServices;
 
@@ -13,12 +12,12 @@ namespace shop_system
         public ShopMappingProfile()
         {
             CreateMap<Shop, ShopDto>();
-            CreateMap<ShopCreateDto, Shop>();
+            CreateMap<CreateShopDto, Shop>();
 
             CreateMap<ClothingAvailability, ClothingAvailabilityDto>();
 
             CreateMap<Clothing, ClothingDto>();
-            CreateMap<ClothingCreateDto, Clothing>();
+            CreateMap<CreateClothingDto, Clothing>();
         }
     }
 }

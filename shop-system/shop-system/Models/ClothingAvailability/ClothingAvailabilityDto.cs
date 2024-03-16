@@ -6,5 +6,8 @@ namespace shop_system.Models.ClothingAvailability
     {
         public int Quantity { get; set; }
         public int ClothingId { get; set; }
+        public int ShopId { get; set; }
+
+        public virtual Clothing Clothings { get; set; }
     }
 }
