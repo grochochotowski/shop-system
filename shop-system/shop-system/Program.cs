@@ -78,7 +78,7 @@ namespace shop_system
             builder.Services.AddScoped<IUserService, UserService>();
 
             builder.Services.AddScoped<IPasswordHasher<Employee>, PasswordHasher<Employee>>();
-            builder.Services.AddScoped<IValidator<EmployeeRegisterUserDto>, EmployeeRegisterUserDtoValidator>();
+            builder.Services.AddScoped<IValidator<RegisterEmployeeDto>, EmployeeRegisterUserDtoValidator>();
 
 
             var app = builder.Build();

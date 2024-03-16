@@ -13,8 +13,8 @@ namespace shop_system.Services
 {
     public interface IAccountService
     {
-        string LoginUser(EmployeeLoginDto dto);
-        void RegisterUser(EmployeeRegisterUserDto dto);
+        string LoginUser(LoginEmployeeDto dto);
+        void RegisterUser(RegisterEmployeeDto dto);
     }
 
     public class AccountService : IAccountService
@@ -32,7 +32,7 @@ namespace shop_system.Services
 
 
 
-        public string LoginUser(EmployeeLoginDto dto)
+        public string LoginUser(LoginEmployeeDto dto)
         {
             var user = _context.Users
                 .Include(u => u.Position)
@@ -67,7 +67,7 @@ namespace shop_system.Services
             var tokenHandler = new JwtSecurityTokenHandler();
             return tokenHandler.WriteToken(token);
         } // login user
-        public void RegisterUser(EmployeeRegisterUserDto dto)
+        public void RegisterUser(RegisterEmployeeDto dto)
         {            
             var newUser = new Employee
             {

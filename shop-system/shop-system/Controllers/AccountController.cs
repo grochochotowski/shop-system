@@ -19,14 +19,14 @@ namespace shop_system.Controllers
 
 
         [HttpPost("register")]
-        public ActionResult RegisterUser([FromBody] EmployeeRegisterUserDto dto)
+        public ActionResult RegisterUser([FromBody] RegisterEmployeeDto dto)
         {
             _accountService.RegisterUser(dto);
             return Ok();
         } // register user
 
         [HttpPost("login")]
-        public ActionResult LoginUser([FromBody] EmployeeLoginDto dto)
+        public ActionResult LoginUser([FromBody] LoginEmployeeDto dto)
         {
             var token = _accountService.LoginUser(dto);
             return Ok(token);
