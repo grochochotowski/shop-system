@@ -4,7 +4,12 @@ using shop_system.Models.Client;
 
 namespace shop_system.Services
 {
-    public class ClientService
+    public interface IClientService
+    {
+        int Add(CreateClientDto dto);
+    }
+
+    public class ClientService : IClientService
     {
         private readonly ShopDbContext _context;
         private readonly IMapper _mapper;
