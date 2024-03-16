@@ -1,6 +1,6 @@
 ﻿using shop_system.Entities;
 
-namespace shop_system.Models.Shop
+namespace shop_system
 {
     public class ShopDto
     {
