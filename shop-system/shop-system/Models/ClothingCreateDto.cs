@@ -1,8 +1,7 @@
 ﻿namespace shop_system.Models
 {
-    public class AddClothingDto
+    public class ClothingCreateDto
     {
-        public int Id { get; set; }
         public string Season { get; set; }
         public string Code { get; set; }
         public string Category { get; set; }

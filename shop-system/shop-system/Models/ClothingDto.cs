@@ -2,7 +2,6 @@
 {
     public class ClothingDto
     {
-        public int Id { get; set; }
         public string Season { get; set; }
         public string Code { get; set; }
         public string Category { get; set; }

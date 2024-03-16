@@ -2,9 +2,9 @@
 using shop_system.Entities;
 namespace shop_system.Models.Validators
 {
-    public class RegisterUserDtoValidator : AbstractValidator<RegisterUserDto>
+    public class EmployeeRegisterUserDtoValidator : AbstractValidator<EmployeeRegisterUserDto>
     {
-        public RegisterUserDtoValidator(ShopDbContext dbContext)
+        public EmployeeRegisterUserDtoValidator(ShopDbContext dbContext)
         {
             // Email
             RuleFor(x => x.Email)

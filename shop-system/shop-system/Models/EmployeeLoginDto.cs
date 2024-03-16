@@ -2,7 +2,7 @@
 
 namespace shop_system.Models
 {
-    public class LoginDto
+    public class EmployeeLoginDto
     {
         [Required]
         public string Login { get; set; }

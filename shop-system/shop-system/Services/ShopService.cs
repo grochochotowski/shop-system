@@ -9,7 +9,7 @@ namespace shop_system.Serivces
 {
     public interface IShopService
     {
-        int Add(AddShopDto dto);
+        int Add(ShopCreateDto dto);
         void Delete(int id);
         ShopDto Get(int id);
         IEnumerable<ShopDto> GetAll();
@@ -56,7 +56,7 @@ namespace shop_system.Serivces
             return result;
         } // Get shop by ID
 
-        public int Add(AddShopDto dto)
+        public int Add(ShopCreateDto dto)
         {
             var shop = _mapper.Map<Shop>(dto);
             _context.Shops.Add(shop);

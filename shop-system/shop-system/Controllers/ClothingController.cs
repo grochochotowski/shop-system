@@ -36,7 +36,7 @@ namespace shop_system.Controllers
         } // Get clothing by ID
 
         [HttpPost]
-        public ActionResult AddClothing([FromBody] AddClothingDto dto)
+        public ActionResult AddClothing([FromBody] ClothingCreateDto dto)
         {
             var newClothingId = _clothingService.Add(dto);
 
