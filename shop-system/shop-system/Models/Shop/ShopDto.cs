@@ -1,4 +1,5 @@
-﻿using shop_system.Entities;
+﻿using shop_system.Models.ClothingAvailability;
+using shop_system.Models.Address;
 
 namespace shop_system.Models.Shop
 {
@@ -11,10 +12,10 @@ namespace shop_system.Models.Shop
 
 
         public int AddressId { get; set; }
-        public virtual Address Address { get; set; }
+        public virtual AddressDto Address { get; set; }
 
 
 
-        public virtual ICollection<ClothingAvailability> Clothes { get; set; }
+        public virtual ICollection<ClothingAvailabilityDto> Clothes { get; set; }
     }
 }
