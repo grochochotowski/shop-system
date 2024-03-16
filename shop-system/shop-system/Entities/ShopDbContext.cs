@@ -17,48 +17,6 @@ namespace shop_system.Entities
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
-
-            // shop table
-            modelBuilder.Entity<Shop>().Property(s => s.Id).IsRequired();
-            modelBuilder.Entity<Shop>().Property(s => s.Code).IsRequired();
-            modelBuilder.Entity<Shop>().Property(s => s.Country).IsRequired();
-            modelBuilder.Entity<Shop>().Property(s => s.Region).IsRequired();
-            modelBuilder.Entity<Shop>().Property(s => s.City).IsRequired();
-            modelBuilder.Entity<Shop>().Property(s => s.Street).IsRequired();
-            modelBuilder.Entity<Shop>().Property(s => s.Building).IsRequired();
-            modelBuilder.Entity<Shop>().Property(s => s.Premises).IsRequired(false);
-            modelBuilder.Entity<Shop>().Property(s => s.PostalCode).IsRequired();
-            modelBuilder.Entity<Shop>().Property(s => s.PhoneNumber).IsRequired();
-
-            // clothing-shop table
-            modelBuilder.Entity<ClothingAvailability>().Property(c => c.Id).IsRequired();
-            modelBuilder.Entity<ClothingAvailability>().Property(c => c.Quantity).IsRequired();
-            modelBuilder.Entity<ClothingAvailability>().Property(c => c.ClothingId).IsRequired();
-
-            // clothing table
-            modelBuilder.Entity<Clothing>().Property(c => c.Id).IsRequired();
-            modelBuilder.Entity<Clothing>().Property(c => c.Season).IsRequired();
-            modelBuilder.Entity<Clothing>().Property(c => c.Code).IsRequired();
-            modelBuilder.Entity<Clothing>().Property(c => c.Category).IsRequired();
-            modelBuilder.Entity<Clothing>().Property(c => c.Colour).IsRequired();
-            modelBuilder.Entity<Clothing>().Property(c => c.Size).IsRequired();
-            modelBuilder.Entity<Clothing>().Property(c => c.Price).IsRequired();
-
-            // user table
-            modelBuilder.Entity<Employee>().Property(u => u.Id).IsRequired();
-            modelBuilder.Entity<Employee>().Property(u => u.FirstName).IsRequired();
-            modelBuilder.Entity<Employee>().Property(u => u.SecondName).IsRequired(false);
-            modelBuilder.Entity<Employee>().Property(u => u.LastName).IsRequired();
-            modelBuilder.Entity<Employee>().Property(u => u.Login).IsRequired();
-            modelBuilder.Entity<Employee>().Property(u => u.Email).IsRequired();
-            modelBuilder.Entity<Employee>().Property(u => u.Password).IsRequired();
-            modelBuilder.Entity<Employee>().Property(u => u.PhoneNumber).IsRequired();
-            modelBuilder.Entity<Employee>().Property(u => u.ShopId).IsRequired(false);
-            modelBuilder.Entity<Employee>().Property(u => u.PositionId).IsRequired();
-
-            // position table
-            modelBuilder.Entity<Position>().Property(p => p.Id).IsRequired();
-            modelBuilder.Entity<Position>().Property(p => p.Name).IsRequired();
         }
     }
 }
