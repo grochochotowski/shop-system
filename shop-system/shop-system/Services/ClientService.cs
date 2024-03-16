@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using shop_system.Entities;
+using shop_system.Models.Client;
 
 namespace shop_system.Services
 {
@@ -12,6 +13,17 @@ namespace shop_system.Services
         {
             _context = context;
             _mapper = mapper;
+        }
+
+
+        // Create new client
+        public int Add(CreateClientDto dto)
+        {
+            var client = _mapper.Map<Client>(dto);
+            _context.Clients.Add(client);
+            _context.SaveChanges();
+
+            return client.Id;
         }
     }
 }
