@@ -20,10 +20,10 @@ namespace shop_system.Services
     public class AccountService : IAccountService
     {
         private readonly ShopDbContext _context;
-        private readonly IPasswordHasher<User> _passwordHasher;
+        private readonly IPasswordHasher<Employee> _passwordHasher;
         private readonly AuthenticationSettings _authenticationSettings;
 
-        public AccountService(ShopDbContext context, IPasswordHasher<User> passwordHasher, AuthenticationSettings authenticationSettings)
+        public AccountService(ShopDbContext context, IPasswordHasher<Employee> passwordHasher, AuthenticationSettings authenticationSettings)
         {
             _context = context;
             _passwordHasher = passwordHasher;
@@ -69,7 +69,7 @@ namespace shop_system.Services
         } // login user
         public void RegisterUser(RegisterUserDto dto)
         {            
-            var newUser = new User
+            var newUser = new Employee
             {
                 FirstName = dto.FirstName,
                 SecondName = dto.SecondName,
