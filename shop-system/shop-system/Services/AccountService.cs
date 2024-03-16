@@ -34,12 +34,12 @@ namespace shop_system.Services
 
         public string LoginUser(LoginEmployeeDto dto)
         {
-            var user = _context.Users
+            var user = _context.Employees
                 .Include(u => u.Position)
                 .FirstOrDefault(u => u.Login == dto.Login);
 
 
-            if (user == null) user = _context.Users.Include(u => u.Position).FirstOrDefault(u => u.Email == dto.Login);
+            if (user == null) user = _context.Employees.Include(u => u.Position).FirstOrDefault(u => u.Email == dto.Login);
             if (user == null) throw new BadRequestException("Invalid login or password");
 
             var result = _passwordHasher.VerifyHashedPassword(user, user.Password, dto.Password);
@@ -83,7 +83,7 @@ namespace shop_system.Services
             var hashedPassword = _passwordHasher.HashPassword(newUser, dto.Password);
             newUser.Password = hashedPassword;
 
-            _context.Users.Add(newUser);
+            _context.Employees.Add(newUser);
             _context.SaveChanges();
         } // register user
     }
