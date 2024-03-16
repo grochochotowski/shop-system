@@ -66,9 +66,10 @@ namespace shop_system
             builder.Services.AddScoped<ErrorHandlingMiddleware>();
             builder.Services.AddScoped<RequestTimeMiddleware>();
 
-            builder.Services.AddScoped<IShopService, ShopService>();
-            builder.Services.AddScoped<IClothingService, ClothingService>();
+            builder.Services.AddScoped<IClientService, ClientService>();
             builder.Services.AddScoped<IAccountService, AccountService>();
+            builder.Services.AddScoped<IClothingService, ClothingService>();
+            builder.Services.AddScoped<IShopService, ShopService>();
 
             builder.Services.AddScoped<IPasswordHasher<Employee>, PasswordHasher<Employee>>();
             builder.Services.AddScoped<IValidator<RegisterEmployeeDto>, RegisterEmployeeDtoValidator>();
