@@ -1,13 +1,9 @@
-
 using FluentValidation;
 using FluentValidation.AspNetCore;
 using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Mvc.ModelBinding.Metadata;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
 using NLog.Web;
-using shop_system.Controllers;
 using shop_system.Entities;
 using shop_system.Middleware;
 using shop_system.Models.Employee;
