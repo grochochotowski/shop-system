@@ -8,11 +8,13 @@ namespace shop_system.Entities
         public int Id { get; set; }
         [Required]
         public string Name { get; set; }
-        [Required]
-        public int AddressID { get; set; }
 
         public string? Notes { get; set; }
 
+
+
+        [Required]
+        public int AddressID { get; set; }
         public virtual Address Address { get; set; }
     }
 }

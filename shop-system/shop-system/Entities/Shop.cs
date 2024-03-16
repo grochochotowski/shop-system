@@ -10,11 +10,17 @@ namespace shop_system.Entities
         public string Code { get; set; }
         [Required]
         public string PhoneNumber { get; set; }
-        [Required]
-        public int AddressID;
+
         public string? Notes { get; set; }
 
+
+
+        [Required]
+        public int AddressID;
         public virtual Address Address { get; set; }
+
+
+
         public virtual ICollection<ClothingAvailability>? Clothes { get; set; }
     }
 }

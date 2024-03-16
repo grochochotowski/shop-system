@@ -18,5 +18,7 @@ namespace shop_system.Entities
         public int Size { get; set; }
         [Required]
         public double Price { get; set; }
+
+        public string? Notes { get; set; }
     }
 }
