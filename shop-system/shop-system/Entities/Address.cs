@@ -14,8 +14,8 @@ namespace shop_system.Entities
         public string Street { get; set; }
         [Required]
         public string Buidling { get; set; }
-        [Required]
-        public string Premises { get; set; }
+
+        public string? Premises { get; set; }
         [Required]
         public string PostalCode { get; set; }
     }
