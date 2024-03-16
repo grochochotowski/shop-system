@@ -16,7 +16,6 @@ using shop_system.Serivces;
 using shop_system.Services;
 using System.Reflection;
 using System.Text;
-using static shop_system.Services.UserService;
 
 namespace shop_system
 {
