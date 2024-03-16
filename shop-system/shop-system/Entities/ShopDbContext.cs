@@ -9,7 +9,7 @@ namespace shop_system.Entities
         public DbSet<Shop> Shops { get; set; }
         public DbSet<ClothingAvailability> ClothingAvailability { get; set; }
         public DbSet<Clothing> Clothes { get; set; }
-        public DbSet<User> Users { get; set; }
+        public DbSet<Employee> Users { get; set; }
         public DbSet<Position> Positions { get; set; }
         public DbSet<Client> Clients { get; set; }
         public DbSet<Address> Addresses { get; set; }
@@ -45,16 +45,16 @@ namespace shop_system.Entities
             modelBuilder.Entity<Clothing>().Property(c => c.Price).IsRequired();
 
             // user table
-            modelBuilder.Entity<User>().Property(u => u.Id).IsRequired();
-            modelBuilder.Entity<User>().Property(u => u.FirstName).IsRequired();
-            modelBuilder.Entity<User>().Property(u => u.SecondName).IsRequired(false);
-            modelBuilder.Entity<User>().Property(u => u.LastName).IsRequired();
-            modelBuilder.Entity<User>().Property(u => u.Login).IsRequired();
-            modelBuilder.Entity<User>().Property(u => u.Email).IsRequired();
-            modelBuilder.Entity<User>().Property(u => u.Password).IsRequired();
-            modelBuilder.Entity<User>().Property(u => u.PhoneNumber).IsRequired();
-            modelBuilder.Entity<User>().Property(u => u.ShopId).IsRequired(false);
-            modelBuilder.Entity<User>().Property(u => u.PositionId).IsRequired();
+            modelBuilder.Entity<Employee>().Property(u => u.Id).IsRequired();
+            modelBuilder.Entity<Employee>().Property(u => u.FirstName).IsRequired();
+            modelBuilder.Entity<Employee>().Property(u => u.SecondName).IsRequired(false);
+            modelBuilder.Entity<Employee>().Property(u => u.LastName).IsRequired();
+            modelBuilder.Entity<Employee>().Property(u => u.Login).IsRequired();
+            modelBuilder.Entity<Employee>().Property(u => u.Email).IsRequired();
+            modelBuilder.Entity<Employee>().Property(u => u.Password).IsRequired();
+            modelBuilder.Entity<Employee>().Property(u => u.PhoneNumber).IsRequired();
+            modelBuilder.Entity<Employee>().Property(u => u.ShopId).IsRequired(false);
+            modelBuilder.Entity<Employee>().Property(u => u.PositionId).IsRequired();
 
             // position table
             modelBuilder.Entity<Position>().Property(p => p.Id).IsRequired();

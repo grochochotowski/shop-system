@@ -1,18 +1,20 @@
-﻿namespace shop_system.Entities
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace shop_system.Entities
 {
     public class Shop
     {
+        [Key]
         public int Id { get; set; }
+        [Required]
         public string Code { get; set; }
-        public string Country { get; set; }
-        public string Region { get; set; }
-        public string City { get; set; }
-        public string Street { get; set; }
-        public string Building { get; set; }
-        public string? Premises { get; set; }
-        public string PostalCode { get; set; }
+        [Required]
         public string PhoneNumber { get; set; }
+        [Required]
+        public int AddressID;
+        public string? Notes { get; set; }
 
-        public virtual List<ClothingAvailability> Clothes { get; set; }
+        public virtual Address Address { get; set; }
+        public virtual List<ClothingAvailability>? Clothes { get; set; }
     }
 }
