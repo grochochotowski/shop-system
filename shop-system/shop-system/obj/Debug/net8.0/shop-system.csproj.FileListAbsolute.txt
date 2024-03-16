@@ -25,7 +25,6 @@ C:\nonSystem\IT\Code\shop-system\shop-system\shop-system\obj\Debug\net8.0\static
 C:\nonSystem\IT\Code\shop-system\shop-system\shop-system\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.shop-system.props
 C:\nonSystem\IT\Code\shop-system\shop-system\shop-system\obj\Debug\net8.0\staticwebassets.pack.json
 C:\nonSystem\IT\Code\shop-system\shop-system\shop-system\obj\Debug\net8.0\scopedcss\bundle\shop-system.styles.css
-C:\nonSystem\IT\Code\shop-system\shop-system\shop-system\obj\Debug\net8.0\shop-system.csproj.CopyComplete
 C:\nonSystem\IT\Code\shop-system\shop-system\shop-system\obj\Debug\net8.0\shop-system.dll
 C:\nonSystem\IT\Code\shop-system\shop-system\shop-system\obj\Debug\net8.0\refint\shop-system.dll
 C:\nonSystem\IT\Code\shop-system\shop-system\shop-system\obj\Debug\net8.0\shop-system.pdb
@@ -145,3 +144,4 @@ C:\nonSystem\IT\Code\shop-system\shop-system\shop-system\bin\Debug\net8.0\nlog.c
 C:\nonSystem\IT\Code\shop-system\shop-system\shop-system\bin\Debug\net8.0\NLog.dll
 C:\nonSystem\IT\Code\shop-system\shop-system\shop-system\bin\Debug\net8.0\NLog.Extensions.Logging.dll
 C:\nonSystem\IT\Code\shop-system\shop-system\shop-system\bin\Debug\net8.0\NLog.Web.AspNetCore.dll
+C:\nonSystem\IT\Code\shop-system\shop-system\shop-system\obj\Debug\net8.0\shop-sys.059C1159.Up2Date

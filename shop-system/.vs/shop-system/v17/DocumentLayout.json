@@ -3,28 +3,60 @@
   "WorkspaceRootPath": "C:\\nonSystem\\IT\\Code\\shop-system\\shop-system\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{98367C44-DCDB-420B-BF40-4EEBCB0DF1CE}|shop-system\\shop-system.csproj|c:\\nonsystem\\it\\code\\shop-system\\shop-system\\shop-system\\models\\clothingavailability\\clothingavailabilitydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{98367C44-DCDB-420B-BF40-4EEBCB0DF1CE}|shop-system\\shop-system.csproj|solutionrelative:shop-system\\models\\clothingavailability\\clothingavailabilitydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{98367C44-DCDB-420B-BF40-4EEBCB0DF1CE}|shop-system\\shop-system.csproj|c:\\nonsystem\\it\\code\\shop-system\\shop-system\\shop-system\\models\\validators\\employeeregisteruserdtovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{98367C44-DCDB-420B-BF40-4EEBCB0DF1CE}|shop-system\\shop-system.csproj|solutionrelative:shop-system\\models\\validators\\employeeregisteruserdtovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{98367C44-DCDB-420B-BF40-4EEBCB0DF1CE}|shop-system\\shop-system.csproj|c:\\nonsystem\\it\\code\\shop-system\\shop-system\\shop-system\\models\\clothing\\createclothingdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{98367C44-DCDB-420B-BF40-4EEBCB0DF1CE}|shop-system\\shop-system.csproj|solutionrelative:shop-system\\models\\clothing\\createclothingdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{98367C44-DCDB-420B-BF40-4EEBCB0DF1CE}|shop-system\\shop-system.csproj|c:\\nonsystem\\it\\code\\shop-system\\shop-system\\shop-system\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{98367C44-DCDB-420B-BF40-4EEBCB0DF1CE}|shop-system\\shop-system.csproj|solutionrelative:shop-system\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{98367C44-DCDB-420B-BF40-4EEBCB0DF1CE}|shop-system\\shop-system.csproj|c:\\nonsystem\\it\\code\\shop-system\\shop-system\\shop-system\\models\\clothing\\clothingdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{98367C44-DCDB-420B-BF40-4EEBCB0DF1CE}|shop-system\\shop-system.csproj|solutionrelative:shop-system\\models\\clothing\\clothingdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{98367C44-DCDB-420B-BF40-4EEBCB0DF1CE}|shop-system\\shop-system.csproj|c:\\nonsystem\\it\\code\\shop-system\\shop-system\\shop-system\\models\\client\\clientdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{98367C44-DCDB-420B-BF40-4EEBCB0DF1CE}|shop-system\\shop-system.csproj|solutionrelative:shop-system\\models\\client\\clientdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{98367C44-DCDB-420B-BF40-4EEBCB0DF1CE}|shop-system\\shop-system.csproj|c:\\nonsystem\\it\\code\\shop-system\\shop-system\\shop-system\\entities\\shop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{98367C44-DCDB-420B-BF40-4EEBCB0DF1CE}|shop-system\\shop-system.csproj|solutionrelative:shop-system\\entities\\shop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{98367C44-DCDB-420B-BF40-4EEBCB0DF1CE}|shop-system\\shop-system.csproj|c:\\nonsystem\\it\\code\\shop-system\\shop-system\\shop-system\\entities\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{98367C44-DCDB-420B-BF40-4EEBCB0DF1CE}|shop-system\\shop-system.csproj|solutionrelative:shop-system\\entities\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{98367C44-DCDB-420B-BF40-4EEBCB0DF1CE}|shop-system\\shop-system.csproj|c:\\nonsystem\\it\\code\\shop-system\\shop-system\\shop-system\\models\\address\\addressdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{98367C44-DCDB-420B-BF40-4EEBCB0DF1CE}|shop-system\\shop-system.csproj|solutionrelative:shop-system\\models\\address\\addressdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{98367C44-DCDB-420B-BF40-4EEBCB0DF1CE}|shop-system\\shop-system.csproj|c:\\nonsystem\\it\\code\\shop-system\\shop-system\\shop-system\\entities\\address.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{98367C44-DCDB-420B-BF40-4EEBCB0DF1CE}|shop-system\\shop-system.csproj|solutionrelative:shop-system\\entities\\address.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{98367C44-DCDB-420B-BF40-4EEBCB0DF1CE}|shop-system\\shop-system.csproj|c:\\nonsystem\\it\\code\\shop-system\\shop-system\\shop-system\\entities\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{98367C44-DCDB-420B-BF40-4EEBCB0DF1CE}|shop-system\\shop-system.csproj|solutionrelative:shop-system\\entities\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{98367C44-DCDB-420B-BF40-4EEBCB0DF1CE}|shop-system\\shop-system.csproj|c:\\nonsystem\\it\\code\\shop-system\\shop-system\\shop-system\\models\\clothing\\clothingdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{98367C44-DCDB-420B-BF40-4EEBCB0DF1CE}|shop-system\\shop-system.csproj|solutionrelative:shop-system\\models\\clothing\\clothingdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{98367C44-DCDB-420B-BF40-4EEBCB0DF1CE}|shop-system\\shop-system.csproj|c:\\nonsystem\\it\\code\\shop-system\\shop-system\\shop-system\\models\\clothing\\createclothingdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{98367C44-DCDB-420B-BF40-4EEBCB0DF1CE}|shop-system\\shop-system.csproj|solutionrelative:shop-system\\models\\clothing\\createclothingdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{98367C44-DCDB-420B-BF40-4EEBCB0DF1CE}|shop-system\\shop-system.csproj|c:\\nonsystem\\it\\code\\shop-system\\shop-system\\shop-system\\models\\clothingavailability\\clothingavailabilitydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{98367C44-DCDB-420B-BF40-4EEBCB0DF1CE}|shop-system\\shop-system.csproj|solutionrelative:shop-system\\models\\clothingavailability\\clothingavailabilitydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{98367C44-DCDB-420B-BF40-4EEBCB0DF1CE}|shop-system\\shop-system.csproj|c:\\nonsystem\\it\\code\\shop-system\\shop-system\\shop-system\\models\\employee\\loginemployeedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{98367C44-DCDB-420B-BF40-4EEBCB0DF1CE}|shop-system\\shop-system.csproj|solutionrelative:shop-system\\models\\employee\\loginemployeedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{98367C44-DCDB-420B-BF40-4EEBCB0DF1CE}|shop-system\\shop-system.csproj|c:\\nonsystem\\it\\code\\shop-system\\shop-system\\shop-system\\models\\employee\\registeremployeedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{98367C44-DCDB-420B-BF40-4EEBCB0DF1CE}|shop-system\\shop-system.csproj|solutionrelative:shop-system\\models\\employee\\registeremployeedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{98367C44-DCDB-420B-BF40-4EEBCB0DF1CE}|shop-system\\shop-system.csproj|c:\\nonsystem\\it\\code\\shop-system\\shop-system\\shop-system\\models\\shop\\createshopdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{98367C44-DCDB-420B-BF40-4EEBCB0DF1CE}|shop-system\\shop-system.csproj|solutionrelative:shop-system\\models\\shop\\createshopdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{98367C44-DCDB-420B-BF40-4EEBCB0DF1CE}|shop-system\\shop-system.csproj|c:\\nonsystem\\it\\code\\shop-system\\shop-system\\shop-system\\models\\shop\\shopdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{98367C44-DCDB-420B-BF40-4EEBCB0DF1CE}|shop-system\\shop-system.csproj|solutionrelative:shop-system\\models\\shop\\shopdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{98367C44-DCDB-420B-BF40-4EEBCB0DF1CE}|shop-system\\shop-system.csproj|c:\\nonsystem\\it\\code\\shop-system\\shop-system\\shop-system\\entities\\shop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{98367C44-DCDB-420B-BF40-4EEBCB0DF1CE}|shop-system\\shop-system.csproj|solutionrelative:shop-system\\entities\\shop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{98367C44-DCDB-420B-BF40-4EEBCB0DF1CE}|shop-system\\shop-system.csproj|c:\\nonsystem\\it\\code\\shop-system\\shop-system\\shop-system\\entities\\clothing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -43,26 +75,6 @@
       "RelativeMoniker": "D:0:0:{98367C44-DCDB-420B-BF40-4EEBCB0DF1CE}|shop-system\\shop-system.csproj|solutionrelative:shop-system\\entities\\shopdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{98367C44-DCDB-420B-BF40-4EEBCB0DF1CE}|shop-system\\shop-system.csproj|c:\\nonsystem\\it\\code\\shop-system\\shop-system\\shop-system\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{98367C44-DCDB-420B-BF40-4EEBCB0DF1CE}|shop-system\\shop-system.csproj|solutionrelative:shop-system\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{98367C44-DCDB-420B-BF40-4EEBCB0DF1CE}|shop-system\\shop-system.csproj|c:\\nonsystem\\it\\code\\shop-system\\shop-system\\shop-system\\models\\shop\\createshopdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{98367C44-DCDB-420B-BF40-4EEBCB0DF1CE}|shop-system\\shop-system.csproj|solutionrelative:shop-system\\models\\shop\\createshopdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{98367C44-DCDB-420B-BF40-4EEBCB0DF1CE}|shop-system\\shop-system.csproj|c:\\nonsystem\\it\\code\\shop-system\\shop-system\\shop-system\\models\\shop\\shopdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{98367C44-DCDB-420B-BF40-4EEBCB0DF1CE}|shop-system\\shop-system.csproj|solutionrelative:shop-system\\models\\shop\\shopdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{98367C44-DCDB-420B-BF40-4EEBCB0DF1CE}|shop-system\\shop-system.csproj|c:\\nonsystem\\it\\code\\shop-system\\shop-system\\shop-system\\models\\employee\\loginemployeedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{98367C44-DCDB-420B-BF40-4EEBCB0DF1CE}|shop-system\\shop-system.csproj|solutionrelative:shop-system\\models\\employee\\loginemployeedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{98367C44-DCDB-420B-BF40-4EEBCB0DF1CE}|shop-system\\shop-system.csproj|c:\\nonsystem\\it\\code\\shop-system\\shop-system\\shop-system\\models\\employee\\registeremployeedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{98367C44-DCDB-420B-BF40-4EEBCB0DF1CE}|shop-system\\shop-system.csproj|solutionrelative:shop-system\\models\\employee\\registeremployeedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{98367C44-DCDB-420B-BF40-4EEBCB0DF1CE}|shop-system\\shop-system.csproj|c:\\nonsystem\\it\\code\\shop-system\\shop-system\\shop-system\\controllers\\clientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{98367C44-DCDB-420B-BF40-4EEBCB0DF1CE}|shop-system\\shop-system.csproj|solutionrelative:shop-system\\controllers\\clientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -78,24 +90,50 @@
       "DocumentGroups": [
         {
           "DockedWidth": 229,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\nonSystem\\IT\\Code\\shop-system\\shop-system\\shop-system\\Program.cs",
-              "RelativeDocumentMoniker": "shop-system\\Program.cs",
-              "ToolTip": "C:\\nonSystem\\IT\\Code\\shop-system\\shop-system\\shop-system\\Program.cs",
-              "RelativeToolTip": "shop-system\\Program.cs",
-              "ViewState": "AQIAADgAAAAAAAAAAAAAAEwAAAAAAAAA",
+              "DocumentIndex": 0,
+              "Title": "EmployeeRegisterUserDtoValidator.cs",
+              "DocumentMoniker": "C:\\nonSystem\\IT\\Code\\shop-system\\shop-system\\shop-system\\Models\\Validators\\EmployeeRegisterUserDtoValidator.cs",
+              "RelativeDocumentMoniker": "shop-system\\Models\\Validators\\EmployeeRegisterUserDtoValidator.cs",
+              "ToolTip": "C:\\nonSystem\\IT\\Code\\shop-system\\shop-system\\shop-system\\Models\\Validators\\EmployeeRegisterUserDtoValidator.cs",
+              "RelativeToolTip": "shop-system\\Models\\Validators\\EmployeeRegisterUserDtoValidator.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABcAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-16T11:24:53.14Z",
+              "WhenOpened": "2024-03-16T21:28:27.711Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "ClientDto.cs",
+              "DocumentMoniker": "C:\\nonSystem\\IT\\Code\\shop-system\\shop-system\\shop-system\\Models\\Client\\ClientDto.cs",
+              "RelativeDocumentMoniker": "shop-system\\Models\\Client\\ClientDto.cs",
+              "ToolTip": "C:\\nonSystem\\IT\\Code\\shop-system\\shop-system\\shop-system\\Models\\Client\\ClientDto.cs",
+              "RelativeToolTip": "shop-system\\Models\\Client\\ClientDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-16T21:26:04.307Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AddressDto.cs",
+              "DocumentMoniker": "C:\\nonSystem\\IT\\Code\\shop-system\\shop-system\\shop-system\\Models\\Address\\AddressDto.cs",
+              "RelativeDocumentMoniker": "shop-system\\Models\\Address\\AddressDto.cs",
+              "ToolTip": "C:\\nonSystem\\IT\\Code\\shop-system\\shop-system\\shop-system\\Models\\Address\\AddressDto.cs",
+              "RelativeToolTip": "shop-system\\Models\\Address\\AddressDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-16T21:24:59.967Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "ClothingDto.cs",
               "DocumentMoniker": "C:\\nonSystem\\IT\\Code\\shop-system\\shop-system\\shop-system\\Models\\Clothing\\ClothingDto.cs",
               "RelativeDocumentMoniker": "shop-system\\Models\\Clothing\\ClothingDto.cs",
@@ -108,98 +146,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Address.cs",
               "DocumentMoniker": "C:\\nonSystem\\IT\\Code\\shop-system\\shop-system\\shop-system\\Entities\\Address.cs",
               "RelativeDocumentMoniker": "shop-system\\Entities\\Address.cs",
               "ToolTip": "C:\\nonSystem\\IT\\Code\\shop-system\\shop-system\\shop-system\\Entities\\Address.cs",
               "RelativeToolTip": "shop-system\\Entities\\Address.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAsAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAuAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-16T10:49:43.646Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "Client.cs",
               "DocumentMoniker": "C:\\nonSystem\\IT\\Code\\shop-system\\shop-system\\shop-system\\Entities\\Client.cs",
               "RelativeDocumentMoniker": "shop-system\\Entities\\Client.cs",
               "ToolTip": "C:\\nonSystem\\IT\\Code\\shop-system\\shop-system\\shop-system\\Entities\\Client.cs",
               "RelativeToolTip": "shop-system\\Entities\\Client.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-16T10:50:12.668Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Clothing.cs",
-              "DocumentMoniker": "C:\\nonSystem\\IT\\Code\\shop-system\\shop-system\\shop-system\\Entities\\Clothing.cs",
-              "RelativeDocumentMoniker": "shop-system\\Entities\\Clothing.cs",
-              "ToolTip": "C:\\nonSystem\\IT\\Code\\shop-system\\shop-system\\shop-system\\Entities\\Clothing.cs",
-              "RelativeToolTip": "shop-system\\Entities\\Clothing.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-16T10:50:16.753Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "ClothingAvailability.cs",
-              "DocumentMoniker": "C:\\nonSystem\\IT\\Code\\shop-system\\shop-system\\shop-system\\Entities\\ClothingAvailability.cs",
-              "RelativeDocumentMoniker": "shop-system\\Entities\\ClothingAvailability.cs",
-              "ToolTip": "C:\\nonSystem\\IT\\Code\\shop-system\\shop-system\\shop-system\\Entities\\ClothingAvailability.cs",
-              "RelativeToolTip": "shop-system\\Entities\\ClothingAvailability.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAA2AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-16T10:54:28.987Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Employee.cs",
-              "DocumentMoniker": "C:\\nonSystem\\IT\\Code\\shop-system\\shop-system\\shop-system\\Entities\\Employee.cs",
-              "RelativeDocumentMoniker": "shop-system\\Entities\\Employee.cs",
-              "ToolTip": "C:\\nonSystem\\IT\\Code\\shop-system\\shop-system\\shop-system\\Entities\\Employee.cs",
-              "RelativeToolTip": "shop-system\\Entities\\Employee.cs",
-              "ViewState": "AQIAABIAAAAAAAAAAAAmwCYAAAAmAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-16T11:06:55.204Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Shop.cs",
-              "DocumentMoniker": "C:\\nonSystem\\IT\\Code\\shop-system\\shop-system\\shop-system\\Entities\\Shop.cs",
-              "RelativeDocumentMoniker": "shop-system\\Entities\\Shop.cs",
-              "ToolTip": "C:\\nonSystem\\IT\\Code\\shop-system\\shop-system\\shop-system\\Entities\\Shop.cs",
-              "RelativeToolTip": "shop-system\\Entities\\Shop.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAqAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-16T10:52:14.634Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "ShopDbContext.cs",
-              "DocumentMoniker": "C:\\nonSystem\\IT\\Code\\shop-system\\shop-system\\shop-system\\Entities\\ShopDbContext.cs",
-              "RelativeDocumentMoniker": "shop-system\\Entities\\ShopDbContext.cs",
-              "ToolTip": "C:\\nonSystem\\IT\\Code\\shop-system\\shop-system\\shop-system\\Entities\\ShopDbContext.cs",
-              "RelativeToolTip": "shop-system\\Entities\\ShopDbContext.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAwAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-16T11:16:38.422Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "CreateClothingDto.cs",
               "DocumentMoniker": "C:\\nonSystem\\IT\\Code\\shop-system\\shop-system\\shop-system\\Models\\Clothing\\CreateClothingDto.cs",
               "RelativeDocumentMoniker": "shop-system\\Models\\Clothing\\CreateClothingDto.cs",
@@ -212,15 +185,54 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 8,
               "Title": "ClothingAvailabilityDto.cs",
               "DocumentMoniker": "C:\\nonSystem\\IT\\Code\\shop-system\\shop-system\\shop-system\\Models\\ClothingAvailability\\ClothingAvailabilityDto.cs",
               "RelativeDocumentMoniker": "shop-system\\Models\\ClothingAvailability\\ClothingAvailabilityDto.cs",
               "ToolTip": "C:\\nonSystem\\IT\\Code\\shop-system\\shop-system\\shop-system\\Models\\ClothingAvailability\\ClothingAvailabilityDto.cs",
               "RelativeToolTip": "shop-system\\Models\\ClothingAvailability\\ClothingAvailabilityDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAeAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-16T10:54:15.266Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "LoginEmployeeDto.cs",
+              "DocumentMoniker": "C:\\nonSystem\\IT\\Code\\shop-system\\shop-system\\shop-system\\Models\\Employee\\LoginEmployeeDto.cs",
+              "RelativeDocumentMoniker": "shop-system\\Models\\Employee\\LoginEmployeeDto.cs",
+              "ToolTip": "C:\\nonSystem\\IT\\Code\\shop-system\\shop-system\\shop-system\\Models\\Employee\\LoginEmployeeDto.cs",
+              "RelativeToolTip": "shop-system\\Models\\Employee\\LoginEmployeeDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-16T11:08:40.831Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "RegisterEmployeeDto.cs",
+              "DocumentMoniker": "C:\\nonSystem\\IT\\Code\\shop-system\\shop-system\\shop-system\\Models\\Employee\\RegisterEmployeeDto.cs",
+              "RelativeDocumentMoniker": "shop-system\\Models\\Employee\\RegisterEmployeeDto.cs",
+              "ToolTip": "C:\\nonSystem\\IT\\Code\\shop-system\\shop-system\\shop-system\\Models\\Employee\\RegisterEmployeeDto.cs",
+              "RelativeToolTip": "shop-system\\Models\\Employee\\RegisterEmployeeDto.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAuwAIAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-16T10:54:02.586Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\nonSystem\\IT\\Code\\shop-system\\shop-system\\shop-system\\Program.cs",
+              "RelativeDocumentMoniker": "shop-system\\Program.cs",
+              "ToolTip": "C:\\nonSystem\\IT\\Code\\shop-system\\shop-system\\shop-system\\Program.cs",
+              "RelativeToolTip": "shop-system\\Program.cs",
+              "ViewState": "AQIAACcAAAAAAAAAAAAlwBEAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-16T11:24:53.14Z",
               "EditorCaption": ""
             },
             {
@@ -231,10 +243,22 @@
               "RelativeDocumentMoniker": "shop-system\\Models\\Shop\\CreateShopDto.cs",
               "ToolTip": "C:\\nonSystem\\IT\\Code\\shop-system\\shop-system\\shop-system\\Models\\Shop\\CreateShopDto.cs",
               "RelativeToolTip": "shop-system\\Models\\Shop\\CreateShopDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-16T10:51:35.189Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Shop.cs",
+              "DocumentMoniker": "C:\\nonSystem\\IT\\Code\\shop-system\\shop-system\\shop-system\\Entities\\Shop.cs",
+              "RelativeDocumentMoniker": "shop-system\\Entities\\Shop.cs",
+              "ToolTip": "C:\\nonSystem\\IT\\Code\\shop-system\\shop-system\\shop-system\\Entities\\Shop.cs",
+              "RelativeToolTip": "shop-system\\Entities\\Shop.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-16T10:52:14.634Z"
             },
             {
               "$type": "Document",
@@ -244,40 +268,62 @@
               "RelativeDocumentMoniker": "shop-system\\Models\\Shop\\ShopDto.cs",
               "ToolTip": "C:\\nonSystem\\IT\\Code\\shop-system\\shop-system\\shop-system\\Models\\Shop\\ShopDto.cs",
               "RelativeToolTip": "shop-system\\Models\\Shop\\ShopDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAYAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-16T10:52:52.576Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "LoginEmployeeDto.cs",
-              "DocumentMoniker": "C:\\nonSystem\\IT\\Code\\shop-system\\shop-system\\shop-system\\Models\\Employee\\LoginEmployeeDto.cs",
-              "RelativeDocumentMoniker": "shop-system\\Models\\Employee\\LoginEmployeeDto.cs",
-              "ToolTip": "C:\\nonSystem\\IT\\Code\\shop-system\\shop-system\\shop-system\\Models\\Employee\\LoginEmployeeDto.cs",
-              "RelativeToolTip": "shop-system\\Models\\Employee\\LoginEmployeeDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAVAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-16T11:08:40.831Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 14,
-              "Title": "RegisterEmployeeDto.cs",
-              "DocumentMoniker": "C:\\nonSystem\\IT\\Code\\shop-system\\shop-system\\shop-system\\Models\\Employee\\RegisterEmployeeDto.cs",
-              "RelativeDocumentMoniker": "shop-system\\Models\\Employee\\RegisterEmployeeDto.cs",
-              "ToolTip": "C:\\nonSystem\\IT\\Code\\shop-system\\shop-system\\shop-system\\Models\\Employee\\RegisterEmployeeDto.cs",
-              "RelativeToolTip": "shop-system\\Models\\Employee\\RegisterEmployeeDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAVAAAA",
+              "Title": "Clothing.cs",
+              "DocumentMoniker": "C:\\nonSystem\\IT\\Code\\shop-system\\shop-system\\shop-system\\Entities\\Clothing.cs",
+              "RelativeDocumentMoniker": "shop-system\\Entities\\Clothing.cs",
+              "ToolTip": "C:\\nonSystem\\IT\\Code\\shop-system\\shop-system\\shop-system\\Entities\\Clothing.cs",
+              "RelativeToolTip": "shop-system\\Entities\\Clothing.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-16T10:54:02.586Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-16T10:50:16.753Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 15,
+              "Title": "ClothingAvailability.cs",
+              "DocumentMoniker": "C:\\nonSystem\\IT\\Code\\shop-system\\shop-system\\shop-system\\Entities\\ClothingAvailability.cs",
+              "RelativeDocumentMoniker": "shop-system\\Entities\\ClothingAvailability.cs",
+              "ToolTip": "C:\\nonSystem\\IT\\Code\\shop-system\\shop-system\\shop-system\\Entities\\ClothingAvailability.cs",
+              "RelativeToolTip": "shop-system\\Entities\\ClothingAvailability.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-16T10:54:28.987Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Employee.cs",
+              "DocumentMoniker": "C:\\nonSystem\\IT\\Code\\shop-system\\shop-system\\shop-system\\Entities\\Employee.cs",
+              "RelativeDocumentMoniker": "shop-system\\Entities\\Employee.cs",
+              "ToolTip": "C:\\nonSystem\\IT\\Code\\shop-system\\shop-system\\shop-system\\Entities\\Employee.cs",
+              "RelativeToolTip": "shop-system\\Entities\\Employee.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAmwCYAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-16T11:06:55.204Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ShopDbContext.cs",
+              "DocumentMoniker": "C:\\nonSystem\\IT\\Code\\shop-system\\shop-system\\shop-system\\Entities\\ShopDbContext.cs",
+              "RelativeDocumentMoniker": "shop-system\\Entities\\ShopDbContext.cs",
+              "ToolTip": "C:\\nonSystem\\IT\\Code\\shop-system\\shop-system\\shop-system\\Entities\\ShopDbContext.cs",
+              "RelativeToolTip": "shop-system\\Entities\\ShopDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-16T11:16:38.422Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
               "Title": "ClientController.cs",
               "DocumentMoniker": "C:\\nonSystem\\IT\\Code\\shop-system\\shop-system\\shop-system\\Controllers\\ClientController.cs",
               "RelativeDocumentMoniker": "shop-system\\Controllers\\ClientController.cs",
@@ -285,12 +331,11 @@
               "RelativeToolTip": "shop-system\\Controllers\\ClientController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-16T11:15:24.195Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-16T11:15:24.195Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 19,
               "Title": "AccountService.cs",
               "DocumentMoniker": "C:\\nonSystem\\IT\\Code\\shop-system\\shop-system\\shop-system\\Services\\AccountService.cs",
               "RelativeDocumentMoniker": "shop-system\\Services\\AccountService.cs",
@@ -298,8 +343,7 @@
               "RelativeToolTip": "shop-system\\Services\\AccountService.cs",
               "ViewState": "AQIAADwAAAAAAAAAAAAqwFQAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-16T11:14:04.579Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-16T11:14:04.579Z"
             }
           ]
         }

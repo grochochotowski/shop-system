@@ -14,7 +14,7 @@ namespace shop_system.Models.Validators
             RuleFor(x => x.Email)
                 .Custom((value, context) =>
                 {
-                    var emailInUse = dbContext.Users.Any(u => u.Email == value);
+                    var emailInUse = dbContext.Employees.Any(u => u.Email == value);
                     if (emailInUse) context.AddFailure("Email", "Email is taken");
                 });
 
@@ -27,7 +27,7 @@ namespace shop_system.Models.Validators
             RuleFor(x => x.Login)
                 .Custom((value, context) =>
                 {
-                    var loginInUse = dbContext.Users.Any(u => u.Login == value);
+                    var loginInUse = dbContext.Employees.Any(u => u.Login == value);
                     if (loginInUse) context.AddFailure("Login", "Login is taken");
                 });
         }
