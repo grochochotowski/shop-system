@@ -70,7 +70,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 229,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
@@ -102,6 +102,58 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ShopController.cs",
+              "DocumentMoniker": "C:\\nonSystem\\IT\\Code\\shop-system\\shop-system\\shop-system\\Controllers\\ShopController.cs",
+              "RelativeDocumentMoniker": "shop-system\\Controllers\\ShopController.cs",
+              "ToolTip": "C:\\nonSystem\\IT\\Code\\shop-system\\shop-system\\shop-system\\Controllers\\ShopController.cs",
+              "RelativeToolTip": "shop-system\\Controllers\\ShopController.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAywCAAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-26T15:21:53.032Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AddShopDto.cs",
+              "DocumentMoniker": "C:\\nonSystem\\IT\\Code\\shop-system\\shop-system\\shop-system\\Models\\AddShopDto.cs",
+              "RelativeDocumentMoniker": "shop-system\\Models\\AddShopDto.cs",
+              "ToolTip": "C:\\nonSystem\\IT\\Code\\shop-system\\shop-system\\shop-system\\Models\\AddShopDto.cs",
+              "RelativeToolTip": "shop-system\\Models\\AddShopDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-10T16:59:55.651Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ClothingAvailabilityDto.cs",
+              "DocumentMoniker": "C:\\nonSystem\\IT\\Code\\shop-system\\shop-system\\shop-system\\Models\\ClothingAvailabilityDto.cs",
+              "RelativeDocumentMoniker": "shop-system\\Models\\ClothingAvailabilityDto.cs",
+              "ToolTip": "C:\\nonSystem\\IT\\Code\\shop-system\\shop-system\\shop-system\\Models\\ClothingAvailabilityDto.cs",
+              "RelativeToolTip": "shop-system\\Models\\ClothingAvailabilityDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-10T16:59:53.943Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "GetClothesFromShopDto.cs",
+              "DocumentMoniker": "C:\\nonSystem\\IT\\Code\\shop-system\\shop-system\\shop-system\\Models\\GetClothesFromShopDto.cs",
+              "RelativeDocumentMoniker": "shop-system\\Models\\GetClothesFromShopDto.cs",
+              "ToolTip": "C:\\nonSystem\\IT\\Code\\shop-system\\shop-system\\shop-system\\Models\\GetClothesFromShopDto.cs",
+              "RelativeToolTip": "shop-system\\Models\\GetClothesFromShopDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-10T16:59:49.287Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
               "Title": "ShopDbContext.cs",
               "DocumentMoniker": "C:\\nonSystem\\IT\\Code\\shop-system\\shop-system\\shop-system\\Entities\\ShopDbContext.cs",
@@ -114,46 +166,6 @@
               "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "AddShopDto.cs",
-              "DocumentMoniker": "C:\\nonSystem\\IT\\Code\\shop-system\\shop-system\\shop-system\\Models\\AddShopDto.cs",
-              "RelativeDocumentMoniker": "shop-system\\Models\\AddShopDto.cs",
-              "ToolTip": "C:\\nonSystem\\IT\\Code\\shop-system\\shop-system\\shop-system\\Models\\AddShopDto.cs",
-              "RelativeToolTip": "shop-system\\Models\\AddShopDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAsAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-10T16:59:55.651Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "ClothingAvailabilityDto.cs",
-              "DocumentMoniker": "C:\\nonSystem\\IT\\Code\\shop-system\\shop-system\\shop-system\\Models\\ClothingAvailabilityDto.cs",
-              "RelativeDocumentMoniker": "shop-system\\Models\\ClothingAvailabilityDto.cs",
-              "ToolTip": "C:\\nonSystem\\IT\\Code\\shop-system\\shop-system\\shop-system\\Models\\ClothingAvailabilityDto.cs",
-              "RelativeToolTip": "shop-system\\Models\\ClothingAvailabilityDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-10T16:59:53.943Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "GetClothesFromShopDto.cs",
-              "DocumentMoniker": "C:\\nonSystem\\IT\\Code\\shop-system\\shop-system\\shop-system\\Models\\GetClothesFromShopDto.cs",
-              "RelativeDocumentMoniker": "shop-system\\Models\\GetClothesFromShopDto.cs",
-              "ToolTip": "C:\\nonSystem\\IT\\Code\\shop-system\\shop-system\\shop-system\\Models\\GetClothesFromShopDto.cs",
-              "RelativeToolTip": "shop-system\\Models\\GetClothesFromShopDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-10T16:59:49.287Z"
-            },
-            {
               "$type": "Document",
               "DocumentIndex": 5,
               "Title": "Shop.cs",
@@ -163,19 +175,7 @@
               "RelativeToolTip": "shop-system\\Entities\\Shop.cs",
               "ViewState": "AQIAAAIAAAAAAAAAAAA0wAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-10T16:59:38.153Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ShopController.cs",
-              "DocumentMoniker": "C:\\nonSystem\\IT\\Code\\shop-system\\shop-system\\shop-system\\Controllers\\ShopController.cs",
-              "RelativeDocumentMoniker": "shop-system\\Controllers\\ShopController.cs",
-              "ToolTip": "C:\\nonSystem\\IT\\Code\\shop-system\\shop-system\\shop-system\\Controllers\\ShopController.cs",
-              "RelativeToolTip": "shop-system\\Controllers\\ShopController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACAAAAApAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-26T15:21:53.032Z",
+              "WhenOpened": "2024-03-10T16:59:38.153Z",
               "EditorCaption": ""
             },
             {
@@ -201,7 +201,8 @@
               "RelativeToolTip": "shop-system\\Models\\ClothingDto.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-10T16:59:51.522Z"
+              "WhenOpened": "2024-03-10T16:59:51.522Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -213,7 +214,8 @@
               "RelativeToolTip": "shop-system\\Models\\CreateClothingAvailabilityDto.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-10T16:59:50.569Z"
+              "WhenOpened": "2024-03-10T16:59:50.569Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -225,7 +227,8 @@
               "RelativeToolTip": "shop-system\\Models\\LoginDto.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-10T16:59:47.625Z"
+              "WhenOpened": "2024-03-10T16:59:47.625Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -235,9 +238,10 @@
               "RelativeDocumentMoniker": "shop-system\\Models\\ShopDto.cs",
               "ToolTip": "C:\\nonSystem\\IT\\Code\\shop-system\\shop-system\\shop-system\\Models\\ShopDto.cs",
               "RelativeToolTip": "shop-system\\Models\\ShopDto.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAABOwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-10T16:59:44.111Z"
+              "WhenOpened": "2024-03-10T16:59:44.111Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -249,7 +253,8 @@
               "RelativeToolTip": "shop-system\\Models\\UserWShopDto.cs",
               "ViewState": "AQIAAAMAAAAAAAAAAAAqwAwAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-22T12:09:59.319Z"
+              "WhenOpened": "2024-02-22T12:09:59.319Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -261,7 +266,8 @@
               "RelativeToolTip": "shop-system\\Entities\\User.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAvAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-22T12:09:54.352Z"
+              "WhenOpened": "2024-02-22T12:09:54.352Z",
+              "EditorCaption": ""
             }
           ]
         }
