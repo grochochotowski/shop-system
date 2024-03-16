@@ -6,7 +6,7 @@ namespace shop_system.Services
 {
     public interface IClientService
     {
-        int Add(CreateClientDto dto);
+        int CreateClient(CreateClientDto dto);
     }
 
     public class ClientService : IClientService
@@ -22,7 +22,7 @@ namespace shop_system.Services
 
 
         // Create new client
-        public int Add(CreateClientDto dto)
+        public int CreateClient(CreateClientDto dto)
         {
             var client = _mapper.Map<Client>(dto);
             _context.Clients.Add(client);
