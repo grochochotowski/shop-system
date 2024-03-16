@@ -4,7 +4,10 @@ using shop_system.Models.Client;
 using shop_system.Models.Clothing;
 using shop_system.Models.ClothingAvailability;
 using shop_system.Models.Shop;
+using System.Diagnostics.Metrics;
+using System.IO;
 using System.Runtime.InteropServices;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace shop_system
 {
@@ -13,7 +16,16 @@ namespace shop_system
         public ShopMappingProfile()
         {
             CreateMap<Client, ClientDto>();
-            CreateMap<ClientDto, Client>();
+            CreateMap<CreateClientDto, Client>()
+                .ForMember(c => c.Address, c => c.MapFrom(dto => new Address()
+                {
+                    Country = dto.Country,
+                    City = dto.City,
+                    Street = dto.Street,
+                    Buidling = dto.Buidling,
+                    Premises = dto.Premises,
+                    PostalCode = dto.PostalCode,
+                }));
 
 
             CreateMap<Shop, ShopDto>();
