@@ -21,7 +21,7 @@ namespace shop_system.Controllers
         {
             var newClientId = _clientService.CreateClient(dto);
 
-            return Created($"{newClientId}", null);
+            return Created($"api/clients/{newClientId}", null);
         }
     }
 }
