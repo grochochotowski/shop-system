@@ -16,7 +16,7 @@ namespace shop_system.Entities
 
 
         [Required]
-        public int AddressID;
+        public int AddressId;
         public virtual Address Address { get; set; }
 
 

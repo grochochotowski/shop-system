@@ -31,5 +31,11 @@ namespace shop_system.Entities
 
         public int? ShopId { get; set; }
         public virtual Shop? Shop { get; set; }
+
+
+
+        [Required]
+        public int AddressId { get; set; }
+        public virtual Address Address { get; set; }
     }
 }
