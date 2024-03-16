@@ -25,7 +25,6 @@
   <ItemGroup>
     <Folder Include="Models\Client\" />
     <Folder Include="Models\Address\" />
-    <Folder Include="Models\NewFolder\" />
   </ItemGroup>
 
 </Project>

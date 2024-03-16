@@ -1,4 +1,4 @@
-﻿namespace shop_system
+﻿namespace shop_system.Models.Clothing
 {
     public class ClothingDto
     {

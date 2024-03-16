@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace shop_system
+namespace shop_system.Models.Shop
 {
     public class CreateShopDto
     {
