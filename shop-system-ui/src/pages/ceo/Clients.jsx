@@ -81,9 +81,10 @@ function Clients() {
                             <td>{`
                                 ${c.address.country},
                                 ${c.address.city},
-                                ${c.address.postalcode},
-                                ${c.address.street} ${c.address.building}/${c.address.premises}`
-                            }</td>
+                                ${c.address.postalCode},
+                                ${c.address.street} ${c.address.building}
+                                    ${c.address.premises ? "/" + c.address.premises : ""}
+                            `}</td>
                             <td>{c.notes}</td>
                         </tr>
                     ))
