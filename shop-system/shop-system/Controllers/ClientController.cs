@@ -31,7 +31,7 @@ namespace shop_system.Controllers
             }
             else
             {
-                return Conflict($"Resource already exists under ID: api/clients/{client.Id}");
+                return Conflict($"Client already exists in data base: api/clients/{client.Id}");
             }
 
             
