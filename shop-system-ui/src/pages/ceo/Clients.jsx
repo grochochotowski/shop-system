@@ -43,20 +43,14 @@ function Clients() {
             { name: "Opt-4-3", checked: false },
             { name: "Opt-4-4", checked: false },
             { name: "Opt-4-5", checked: false }
-        ],
-        [
-            { name: "Opt-5-1", checked: false },
-            { name: "Opt-5-2", checked: false },
-            { name: "Opt-5-3", checked: false },
-            { name: "Opt-5-4", checked: false },
-            { name: "Opt-5-5", checked: false }
         ]
     ]);
 
-    function changeChecked(option, elementName) {
+    function changeChecked(opt, elementName) {
         setFilters((prev) => {
-            const newFilters = { ...prev };
-            newFilters[option] = newFilters[option].map(element => {
+            const newFilters = [ ...prev ];
+            newFilters[opt] = newFilters[opt].map(element => {
+                console.log(element.name + " - " + elementName);
                 if (element.name === elementName) {
                     return { ...element, checked: !element.checked };
                 }
