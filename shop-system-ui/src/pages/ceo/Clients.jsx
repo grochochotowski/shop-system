@@ -9,7 +9,7 @@ function Clients() {
     const [clients, setClients] = useState([]);
 
     const names = {
-        option1: "Option1",
+        option1: "test",
         option2: "Option2",
         option3: "Option3",
         option4: "Option4",
