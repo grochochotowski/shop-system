@@ -7,6 +7,7 @@ import FilterBox from '../../components/FilterBox'
 function Clients() {
 
     const [clients, setClients] = useState([]);
+    const [filters, setFilters] = useState([]);
 
     const names = [
         "Invoice Type",
@@ -15,8 +16,7 @@ function Clients() {
         "Address"
         ];
 
-    const [filters, setFilters] = useState([
-        [
+        /*[
             { name: "Opt-1-1", checked: false },
             { name: "Opt-1-2", checked: false },
             { name: "Opt-1-3", checked: false },
@@ -44,7 +44,11 @@ function Clients() {
             { name: "Opt-4-4", checked: false },
             { name: "Opt-4-5", checked: false }
         ]
-    ]);
+    ]);*/
+
+    function setClientsForFilters() {
+        
+    }
 
     function changeChecked(opt, elementName) {
         setFilters((prev) => {
@@ -101,6 +105,7 @@ function Clients() {
             setClients(data);
         }
         getUserData();
+        setClientsForFilters();
     }, []);
 
     return (
