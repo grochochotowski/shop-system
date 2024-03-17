@@ -32,16 +32,17 @@ namespace shop_system.Services
                 a.Premises == dto.Premises &&
                 a.PostalCode == dto.PostalCode);
 
+            Client client;
             if (existingAddress != null)
             {
                 CreateClientNoAddressDto newDto = new CreateClientNoAddressDto
                     (dto.InvoiceType, dto.Name, dto.NIP, dto.Notes, existingAddress.Id );
 
-                var client = _mapper.Map<Client>(newDto);
+                client = _mapper.Map<Client>(newDto);
             }
             else
             {
-                var client = _mapper.Map<Client>(dto);
+                client = _mapper.Map<Client>(dto);
             }
 
             _context.Clients.Add(client);
