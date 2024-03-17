@@ -38,6 +38,7 @@ function Clients() {
                 { name: "Poland, Białystok, 15-354, Pogodna 20 /16", checked: false }
             ]
         ]
+        
         setFilters(newFilters);
     };
 
