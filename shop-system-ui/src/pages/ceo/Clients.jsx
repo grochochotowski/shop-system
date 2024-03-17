@@ -78,7 +78,12 @@ function Clients() {
                             <td>{c.invoiceType}</td>
                             <td>{c.name}</td>
                             <td>{c.nip}</td>
-                            <td>Poland, Białystok, 15-345, Zachodnia 15A/45</td>
+                            <td>{`
+                                ${c.address.country},
+                                ${c.address.city},
+                                ${c.address.postalcode},
+                                ${c.address.street} ${c.address.building}/${c.address.premises}`
+                            }</td>
                             <td>{c.notes}</td>
                         </tr>
                     ))
