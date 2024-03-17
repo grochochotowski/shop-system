@@ -2,7 +2,7 @@
 
 namespace shop_system.Models.Client
 {
-    public class CreateClientNoAddressDto
+    public class CreateClientAddressIdDto
     {
         public string InvoiceType { get; set; }
         public string Name { get; set; }
@@ -10,7 +10,7 @@ namespace shop_system.Models.Client
         public string? Notes { get; set; }
         public int AddressId { get; set; }
 
-        public CreateClientNoAddressDto(string InvoiceType, string Name, string? NIP, string? Notes, int AddressId)
+        public CreateClientAddressIdDto(string InvoiceType, string Name, string? NIP, string? Notes, int AddressId)
         {
             this.InvoiceType = InvoiceType;
             this.Name = Name;

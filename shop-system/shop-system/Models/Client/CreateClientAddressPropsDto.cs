@@ -2,7 +2,7 @@
 
 namespace shop_system.Models.Client
 {
-    public class CreateClientDto
+    public class CreateClientAddressPropsDto
     {
         [Required]
         public string InvoiceType { get; set; }

@@ -6,7 +6,7 @@ namespace shop_system.Services
 {
     public interface IClientService
     {
-        int CreateClient(CreateClientDto dto);
+        int CreateClient(CreateClientAddressPropsDto dto);
     }
 
     public class ClientService : IClientService
@@ -22,7 +22,7 @@ namespace shop_system.Services
 
 
         // Create new client
-        public int CreateClient(CreateClientDto dto)
+        public int CreateClient(CreateClientAddressPropsDto dto)
         {
             Address? existingAddress = _context.Addresses.FirstOrDefault(a =>
                 a.Country == dto.Country &&
@@ -35,7 +35,7 @@ namespace shop_system.Services
             Client client;
             if (existingAddress != null)
             {
-                CreateClientNoAddressDto newDto = new CreateClientNoAddressDto
+                CreateClientAddressIdDto newDto = new CreateClientAddressIdDto
                     (dto.InvoiceType, dto.Name, dto.NIP, dto.Notes, existingAddress.Id );
 
                 client = _mapper.Map<Client>(newDto);

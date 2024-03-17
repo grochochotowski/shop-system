@@ -16,8 +16,8 @@ namespace shop_system
         public ShopMappingProfile()
         {
             CreateMap<Client, ClientDto>();
-            CreateMap<CreateClientNoAddressDto, Client>();
-            CreateMap<CreateClientDto, Client>()
+            CreateMap<CreateClientAddressIdDto, Client>();
+            CreateMap<CreateClientAddressPropsDto, Client>()
                 .ForMember(c => c.Address, c => c.MapFrom(dto => new Address()
                 {
                     Country = dto.Country,
