@@ -18,6 +18,7 @@ namespace shop_system
         {
             CreateMap<Address, AddressDto>();
 
+
             CreateMap<Client, ClientDto>();
             CreateMap<CreateClientAddressIdDto, Client>();
             CreateMap<CreateClientAddressPropsDto, Client>()
