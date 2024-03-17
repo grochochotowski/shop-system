@@ -67,10 +67,21 @@ function Clients() {
         });
     }
 
-    function GenerateClientTableBody() {
+    function GenerateClientTable() {
         console.log(clients)
         return (
-            <tbody>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Inovice type</th>
+                        <th>Name</th>
+                        <th>NIP</th>
+                        <th>Address</th>
+                        <th>Notes</th>
+                    </tr>
+                </thead>
+                <tbody>
                 {
                     clients.map(c => (
                         <tr key={c.id}>
@@ -90,6 +101,7 @@ function Clients() {
                     ))
                 }
             </tbody>
+            </table>
         )
     }
 
@@ -115,19 +127,7 @@ function Clients() {
                 </div>                
             </div>
             <div className="client-list">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>ID</th>
-                            <th>Inovice type</th>
-                            <th>Name</th>
-                            <th>NIP</th>
-                            <th>Address</th>
-                            <th>Notes</th>
-                        </tr>
-                    </thead>
-                    <GenerateClientTableBody />
-                </table>
+                <GenerateClientTable />
             </div>
         </div>
     )
