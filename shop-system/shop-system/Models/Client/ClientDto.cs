@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using shop_system.Models.Address;
+using System.ComponentModel.DataAnnotations;
 
 namespace shop_system.Models.Client
 {
@@ -9,6 +10,10 @@ namespace shop_system.Models.Client
         public string Name { get; set; }
         public string? NIP { get; set; }
         public string? Notes { get; set; }
+
+
+
         public int AddressId { get; set; }
+        public virtual AddressDto Address { get; set; }
     }
 }
