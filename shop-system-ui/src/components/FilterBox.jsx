@@ -5,13 +5,13 @@ export default function FilterBox({filters, toggleCheck, names}) {
     const [scrollPosition, setScrollPosition] = useState(0);
     const [scrolledName, setScrolledName] = useState("");
 
-    const [opened, setOpened] = useState({
-        option1: false,
-        option2: false,
-        option3: false,
-        option4: false,
-        option5: false
-    });
+    const [opened, setOpened] = useState([
+        false,
+        false,
+        false,
+        false,
+        false
+    ]);
 
     function toggleFilter(opt) {
         setOpened(prev => {
@@ -41,15 +41,18 @@ export default function FilterBox({filters, toggleCheck, names}) {
     }
 
     function GenerateFilterOptions() {
-        return Object.keys(opened).map((key) => (
-            <li
-                className={opened[key] ? "opened main" : "closed main"} key={key}>
-                <h4 onClick={() => toggleFilter(key)}>{names[key]}</h4>
-                <ul className="inside" id={key}>
-                    <GenerateFiltersInOption opt={key}/>
-                </ul>
-            </li>
-        ));
+        return (
+            <>
+                {opened.map((isOpen, i) => (
+                    <li className={isOpen ? "opened main" : "closed main"} key={names[i]}>
+                        <h4 onClick={() => toggleFilter(names[i])}>{names[i]}</h4>
+                        <ul className="inside" id={names[i]}>
+                            <GenerateFiltersInOption opt={names[i]} />
+                        </ul>
+                    </li>
+                ))}
+            </>
+        )
     }
 
     function GenerateFiltersInOption({opt}) {
