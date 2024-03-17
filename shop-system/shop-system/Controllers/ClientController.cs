@@ -34,5 +34,13 @@ namespace shop_system.Controllers
                 return Conflict($"Client already exists in data base: api/clients/{client.Id}");
             }
         }
+
+
+        [HttpGet("all")]
+        public ICollection<Client> GetAllClients()
+        {
+            var clients = _clientService.GetAllClients();
+            return Ok(clients);
+        }
     }
 }
