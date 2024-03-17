@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react'
+import Fallback from "../Fallback"
 
 export default function FilterBox({filters, toggleCheck, names, clients}) {
 
@@ -49,18 +50,23 @@ export default function FilterBox({filters, toggleCheck, names, clients}) {
     }
 
     function GenerateFiltersInOption({opt}) {
-        return filters[opt].map((element) => (
-            <li className="inside" key={element.name} onClick={() => handleCheckboxChange(opt, element.name)}>
-                <input
-                    type="checkbox"
-                    name={element.name}
-                    id={element.name}
-                    checked={element.checked}
-                    readOnly
-                />
-                <label htmlFor={element.name}>{element.name}</label>
-            </li>
-        ));
+        if (filters.length === 0) {
+            return <h4>Loading filters...</h4>
+        }
+        else{
+            return filters[opt].map((element) => (
+                <li className="inside" key={element.name} onClick={() => handleCheckboxChange(opt, element.name)}>
+                    <input
+                        type="checkbox"
+                        name={element.name}
+                        id={element.name}
+                        checked={element.checked}
+                        readOnly
+                    />
+                    <label htmlFor={element.name}>{element.name}</label>
+                </li>
+            ));
+        }
     }
 
     function handleCheckboxChange(opt, elementName) {
