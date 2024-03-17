@@ -8,12 +8,12 @@ function Clients() {
 
     const [clients, setClients] = useState([]);
 
-    const names = {
-        option1: "Invoice Type",
-        option2: "Name",
-        option3: "NIP",
-        option4: "Address"
-    };
+    const names = [
+        "Invoice Type",
+        "Name",
+        "NIP",
+        "Address"
+        ];
 
     const [filters, setFilters] = useState({
         option1: [
