@@ -7,6 +7,7 @@ using shop_system.Services;
 namespace shop_system.Controllers
 {
     [Route("api/clients")]
+    [ApiController]
     public class ClientController : ControllerBase
     {
         private readonly IClientService _clientService;
