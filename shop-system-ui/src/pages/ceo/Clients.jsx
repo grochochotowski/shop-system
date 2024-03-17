@@ -116,7 +116,7 @@ function Clients() {
                 <div className="left">
                     <SearchBox name="client"/>
                     <h2 className="filter-heading">Filters:</h2>
-                    <FilterBox filters={filters} toggleCheck={changeChecked} names={names}/>
+                    <FilterBox filters={filters} toggleCheck={changeChecked} names={names} clients={clients}/>
                 </div>
                 <div className="right">
                     <button className="add-button">Add client</button>    
