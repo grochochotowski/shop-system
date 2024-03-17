@@ -81,8 +81,7 @@ function Clients() {
                         <th>Notes</th>
                     </tr>
                 </thead>
-                <tbody>
-                {
+                <tbody>{
                     clients.map(c => (
                         <tr key={c.id}>
                             <td>{c.id}</td>
@@ -99,8 +98,7 @@ function Clients() {
                             <td>{c.notes}</td>
                         </tr>
                     ))
-                }
-            </tbody>
+                }</tbody>
             </table>
         )
     }
