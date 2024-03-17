@@ -71,6 +71,18 @@ function Clients() {
         console.log(clients)
         return (
             <tbody>
+                {
+                    clients.forEach(c => {
+                        <tr>
+                            <td>{c.id}</td>
+                            <td>{c.invoiceType}</td>
+                            <td>{c.name}</td>
+                            <td>{c.nip}</td>
+                            <td>Poland, Białystok, 15-345, Zachodnia 15A/45</td>
+                            <td>{c.notes}</td>
+                        </tr>
+                    });
+                }
                 <tr>
                     <td>1</td>
                     <td>Name invoice</td>
