@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react'
 
-export default function FilterBox({filters, toggleCheck, names}) {
+export default function FilterBox({filters, toggleCheck, names, clients}) {
 
     const [scrollPosition, setScrollPosition] = useState(0);
     const [scrolledName, setScrolledName] = useState("");
@@ -45,7 +45,7 @@ export default function FilterBox({filters, toggleCheck, names}) {
         }
         return opened.map((isOpen, i) => (
             <li className={isOpen ? "opened main" : "closed main"} key={names[i]}>
-                <h4 onClick={() => toggleFilter(names[i])}>{names[i]}</h4>
+                <h4 onClick={() => toggleFilter(i)}>{names[i]}</h4>
                 <ul className="inside" id={names[i]}>
                     <GenerateFiltersInOption opt={i} />
                 </ul>
