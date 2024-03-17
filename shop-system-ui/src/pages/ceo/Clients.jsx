@@ -47,7 +47,9 @@ function Clients() {
     ]);*/
 
     function setClientsForFilters() {
-        
+        setFilters({
+
+        });
     }
 
     function changeChecked(opt, elementName) {
