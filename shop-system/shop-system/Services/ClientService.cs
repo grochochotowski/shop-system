@@ -34,13 +34,8 @@ namespace shop_system.Services
 
             if (existingAddress != null)
             {
-                CreateClientNoAddressDto newDto = new CreateClientNoAddressDto(
-                    this.InvoiceType = dto.InvoiceType,
-                    this.InvoiceType = dto.Name,
-                    this.InvoiceType = dto.NIP,
-                    this.InvoiceType = dto.Notes,
-                    this.InvoiceType = existingAddress.Id
-                    );
+                CreateClientNoAddressDto newDto = new CreateClientNoAddressDto
+                    (dto.InvoiceType, dto.Name, dto.NIP, dto.Notes, existingAddress.Id );
             }
 
             var client = _mapper.Map<Client>(dto);
