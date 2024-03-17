@@ -81,28 +81,30 @@ function Clients() {
                 <table>
                     <thead>
                         <tr>
-                            <th rowSpan="2">Inovice type</th>
-                            <th colSpan="3">Name</th>
-                            <th rowSpan="2">NIP</th>
-                        </tr>
-                        <tr>
-                            <th>First name</th>
-                            <th>Second name</th>
-                            <th>Last name</th>
+                            <th>ID</th>
+                            <th>Inovice type</th>
+                            <th>Name</th>
+                            <th>NIP</th>
+                            <th>Address</th>
+                            <th>Notes</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
+                            <td>1</td>
                             <td>Name invoice</td>
-                            <td>John</td>
+                            <td>Sebastian Marczyński</td>
                             <td></td>
-                            <td>Smith</td>
+                            <td>Poland, Białystok, 15-345, Zachodnia 15A/45</td>
                             <td></td>
                         </tr>
                         <tr>
-                            <td>NIP invoice</td>
-                            <td colSpan="3">Work CO.</td>
-                            <td>12345678</td>
+                            <td>2</td>
+                            <td>NIP Invoice</td>
+                            <td>Company CO</td>
+                            <td>123456789</td>
+                            <td>Poland, Białystok, 15-XXX, Wiejska 47</td>
+                            <td>Very real company</td>
                         </tr>
                     </tbody>
                 </table>
