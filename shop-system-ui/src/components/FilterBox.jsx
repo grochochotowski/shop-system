@@ -14,10 +14,10 @@ export default function FilterBox({filters, toggleCheck, names, clients}) {
 
     function toggleFilter(opt) {
         setOpened(prev => {
-            const newOpened = { ...prev };
-            Object.keys(newOpened).forEach(key => {
-                if (key !== opt) {
-                    newOpened[key] = false;
+            const newOpened = [ ...prev ];
+            newOpened.forEach((key, i) => {
+                if (i !== opt) {
+                    newOpened[i] = false;
                 }
             });
 
