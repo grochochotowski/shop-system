@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Microsoft.EntityFrameworkCore;
 using shop_system.Entities;
 using shop_system.Models.Client;
 
@@ -7,6 +8,7 @@ namespace shop_system.Services
     public interface IClientService
     {
         int CreateClient(CreateClientAddressPropsDto dto);
+        IEnumerable<ClientDto> GetAllClients();
     }
 
     public class ClientService : IClientService
@@ -49,6 +51,15 @@ namespace shop_system.Services
             _context.SaveChanges();
 
             return client.Id;
+        }
+    
+    
+        // Get all clients
+        public IEnumerable<ClientDto> GetAllClients()
+        {
+            var clients = _context.Clients.Include(a => a.Address).ToList();
+            var clientDtos = _mapper.Map<List<ClientDto>>(clients);
+            return clientDtos;
         }
     }
 }
