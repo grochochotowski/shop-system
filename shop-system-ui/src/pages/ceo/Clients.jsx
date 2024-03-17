@@ -9,11 +9,10 @@ function Clients() {
     const [clients, setClients] = useState([]);
 
     const names = {
-        option1: "test",
-        option2: "Option2",
-        option3: "Option3",
-        option4: "Option4",
-        option5: "Option5"
+        option1: "Invoice Type",
+        option2: "Name",
+        option3: "NIP",
+        option4: "Address"
     };
 
     const [filters, setFilters] = useState({
