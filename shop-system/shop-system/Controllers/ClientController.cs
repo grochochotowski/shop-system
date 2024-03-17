@@ -37,10 +37,10 @@ namespace shop_system.Controllers
 
 
         [HttpGet("all")]
-        public ICollection<Client> GetAllClients()
+        public ActionResult<IEnumerable<ClientDto>> GetAllClients()
         {
-            var clients = _clientService.GetAllClients();
-            return Ok(clients);
+            var clientDtos = _clientService.GetAllClients();
+            return Ok(clientDtos);
         }
     }
 }
