@@ -39,7 +39,7 @@ namespace shop_system.Services
                     this.InvoiceType = dto.Name,
                     this.InvoiceType = dto.NIP,
                     this.InvoiceType = dto.Notes,
-                    this.InvoiceType = existingAddress.addressId
+                    this.InvoiceType = existingAddress.Id
                     );
             }
 
