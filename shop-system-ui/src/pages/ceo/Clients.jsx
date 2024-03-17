@@ -17,7 +17,28 @@ function Clients() {
         ];
 
     function createFilters() {
-        
+        var newFilters = [
+            [
+                { name: "Company", checked: false },
+                { name: "Name", checked: false }
+            ],
+            [
+                { name: "Politechnika Białostocka", checked: false },
+                { name: "4F", checked: false },
+                { name: "Sebastian Malczyńsk", checked: false }
+            ],
+            [
+                { name: "none", checked: false },
+                { name: "123456789", checked: false },
+                { name: "987654321", checked: false }
+            ],
+            [
+                { name: "Poland, Białystok, 15-351, Wiejska 45A", checked: false },
+                { name: "Poland, Białystok, 15-690, Narodowych sił zbrojnych 15A /4F", checked: false },
+                { name: "Poland, Białystok, 15-354, Pogodna 20 /16", checked: false }
+            ]
+        ]
+        setFilters(newFilters);
     };
 
     function changeChecked(opt, elementName) {
