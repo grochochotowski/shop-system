@@ -16,7 +16,7 @@ function Clients() {
         "Address"
         ];
 
-    function createFilters() {
+    useEffect(() => {
         var filterValues = {
             InvoiceType: new Set(),
             Name: new Set(),
@@ -38,7 +38,7 @@ function Clients() {
         });
 
         setFilters(newFilters);
-    };
+    }, [clients]);
 
     function changeChecked(opt, elementName) {
         setFilters((prev) => {
@@ -95,7 +95,6 @@ function Clients() {
             setClients(data);
         }
         getUserData();
-        createFilters();
     }, []);
 
     return (
