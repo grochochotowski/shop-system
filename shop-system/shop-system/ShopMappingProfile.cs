@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using shop_system.Entities;
+using shop_system.Models.Address;
 using shop_system.Models.Client;
 using shop_system.Models.Clothing;
 using shop_system.Models.ClothingAvailability;
@@ -15,6 +16,8 @@ namespace shop_system
     {
         public ShopMappingProfile()
         {
+            CreateMap<Address, AddressDto>();
+
             CreateMap<Client, ClientDto>();
             CreateMap<CreateClientAddressIdDto, Client>();
             CreateMap<CreateClientAddressPropsDto, Client>()
