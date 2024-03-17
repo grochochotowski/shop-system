@@ -5,12 +5,7 @@ export default function FilterBox({filters, toggleCheck, names, clients}) {
     const [scrollPosition, setScrollPosition] = useState(0);
     const [scrolledName, setScrolledName] = useState("");
 
-    const [opened, setOpened] = useState([
-        false,
-        false,
-        false,
-        false
-    ]);
+    const [opened, setOpened] = useState(Array(names.length).fill(false));
 
     function toggleFilter(opt) {
         setOpened(prev => {
