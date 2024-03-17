@@ -40,8 +40,6 @@ export default function FilterBox({filters, toggleCheck, names}) {
     }
 
     function GenerateFilterOptions() {
-        console.log(opened)
-        console.log(names)
         if (opened.length === 0 || names.length === 0) {
             return <div>No filters available</div>;
         }
