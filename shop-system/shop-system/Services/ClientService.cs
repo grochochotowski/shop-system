@@ -57,7 +57,7 @@ namespace shop_system.Services
         // Get all clients
         public IEnumerable<ClientDto> GetAllClients()
         {
-            var clients = _context.Clients.Include(a => a.Address).ToList();
+            var clients = _context.Clients.Include(c => c.Address).ToList();
             var clientDtos = _mapper.Map<List<ClientDto>>(clients);
             return clientDtos;
         }
