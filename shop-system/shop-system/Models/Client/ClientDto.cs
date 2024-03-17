@@ -14,6 +14,6 @@ namespace shop_system.Models.Client
 
 
         public int AddressId { get; set; }
-        public virtual AddressDto Address { get; set; }
+        public AddressDto Address { get; set; }
     }
 }
