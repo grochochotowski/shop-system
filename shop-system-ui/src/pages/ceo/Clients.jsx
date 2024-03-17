@@ -1,10 +1,12 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import "../../styles/ceo/clients.css"
 
 import SearchBox from '../../components/SearchBox'
 import FilterBox from '../../components/FilterBox'
 
 function Clients() {
+
+    const [clients, setClients] = useState([]);
 
     const names = {
         option1: "Option1",
@@ -66,6 +68,7 @@ function Clients() {
     }
 
     function GenerateClientTableBody() {
+        console.log(clients)
         return (
             <tbody>
                 <tr>
@@ -87,6 +90,15 @@ function Clients() {
             </tbody>
         )
     }
+
+    useEffect(() => {
+        async function getUserData() {
+            const response = await fetch("https://localhost:7057/api/clients/all");
+            const data = await response.json();
+            setClients(data);
+        }
+        getUserData();
+    }, []);
 
     return (
         <div className="client-container">
