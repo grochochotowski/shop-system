@@ -22,13 +22,7 @@ export default function FilterBox({filters, toggleCheck, names, clients}) {
     }
 
     function filterResults() {
-        setOpened(prev => {
-            const closeAll = [ ...prev ];
-            closeAll.forEach(key => {
-                closeAll[key] = false;
-            })
-            return closeAll;
-        });
+        setOpened(Array(names.length).fill(false));
 
         
         console.log("filter")
