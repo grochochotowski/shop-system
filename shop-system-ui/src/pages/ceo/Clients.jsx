@@ -72,7 +72,7 @@ function Clients() {
         return (
             <tbody>
                 {
-                    clients.map(c => {
+                    clients.map(c => (
                         <tr key={c.id}>
                             <td>{c.id}</td>
                             <td>{c.invoiceType}</td>
@@ -81,7 +81,7 @@ function Clients() {
                             <td>Poland, Białystok, 15-345, Zachodnia 15A/45</td>
                             <td>{c.notes}</td>
                         </tr>
-                    })
+                    ))
                 }
             </tbody>
         )
