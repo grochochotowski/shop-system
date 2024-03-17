@@ -3,24 +3,28 @@
   "WorkspaceRootPath": "C:\\nonSystem\\IT\\Code\\shop-system\\shop-system\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{98367C44-DCDB-420B-BF40-4EEBCB0DF1CE}|shop-system\\shop-system.csproj|c:\\nonsystem\\it\\code\\shop-system\\shop-system\\shop-system\\services\\clientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{98367C44-DCDB-420B-BF40-4EEBCB0DF1CE}|shop-system\\shop-system.csproj|solutionrelative:shop-system\\services\\clientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{98367C44-DCDB-420B-BF40-4EEBCB0DF1CE}|shop-system\\shop-system.csproj|c:\\nonsystem\\it\\code\\shop-system\\shop-system\\shop-system\\shopmappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{98367C44-DCDB-420B-BF40-4EEBCB0DF1CE}|shop-system\\shop-system.csproj|solutionrelative:shop-system\\shopmappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{98367C44-DCDB-420B-BF40-4EEBCB0DF1CE}|shop-system\\shop-system.csproj|c:\\nonsystem\\it\\code\\shop-system\\shop-system\\shop-system\\services\\shopservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{98367C44-DCDB-420B-BF40-4EEBCB0DF1CE}|shop-system\\shop-system.csproj|solutionrelative:shop-system\\services\\shopservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{98367C44-DCDB-420B-BF40-4EEBCB0DF1CE}|shop-system\\shop-system.csproj|c:\\nonsystem\\it\\code\\shop-system\\shop-system\\shop-system\\services\\clientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{98367C44-DCDB-420B-BF40-4EEBCB0DF1CE}|shop-system\\shop-system.csproj|solutionrelative:shop-system\\services\\clientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{98367C44-DCDB-420B-BF40-4EEBCB0DF1CE}|shop-system\\shop-system.csproj|c:\\nonsystem\\it\\code\\shop-system\\shop-system\\shop-system\\controllers\\clientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{98367C44-DCDB-420B-BF40-4EEBCB0DF1CE}|shop-system\\shop-system.csproj|solutionrelative:shop-system\\controllers\\clientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{98367C44-DCDB-420B-BF40-4EEBCB0DF1CE}|shop-system\\shop-system.csproj|c:\\nonsystem\\it\\code\\shop-system\\shop-system\\shop-system\\controllers\\shopcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{98367C44-DCDB-420B-BF40-4EEBCB0DF1CE}|shop-system\\shop-system.csproj|solutionrelative:shop-system\\controllers\\shopcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{98367C44-DCDB-420B-BF40-4EEBCB0DF1CE}|shop-system\\shop-system.csproj|c:\\nonsystem\\it\\code\\shop-system\\shop-system\\shop-system\\models\\client\\clientdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{98367C44-DCDB-420B-BF40-4EEBCB0DF1CE}|shop-system\\shop-system.csproj|solutionrelative:shop-system\\models\\client\\clientdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{98367C44-DCDB-420B-BF40-4EEBCB0DF1CE}|shop-system\\shop-system.csproj|c:\\nonsystem\\it\\code\\shop-system\\shop-system\\shop-system\\shopmappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{98367C44-DCDB-420B-BF40-4EEBCB0DF1CE}|shop-system\\shop-system.csproj|solutionrelative:shop-system\\shopmappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{98367C44-DCDB-420B-BF40-4EEBCB0DF1CE}|shop-system\\shop-system.csproj|c:\\nonsystem\\it\\code\\shop-system\\shop-system\\shop-system\\entities\\address.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{98367C44-DCDB-420B-BF40-4EEBCB0DF1CE}|shop-system\\shop-system.csproj|solutionrelative:shop-system\\entities\\address.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{98367C44-DCDB-420B-BF40-4EEBCB0DF1CE}|shop-system\\shop-system.csproj|c:\\nonsystem\\it\\code\\shop-system\\shop-system\\shop-system\\models\\address\\addressdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{98367C44-DCDB-420B-BF40-4EEBCB0DF1CE}|shop-system\\shop-system.csproj|solutionrelative:shop-system\\models\\address\\addressdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{98367C44-DCDB-420B-BF40-4EEBCB0DF1CE}|shop-system\\shop-system.csproj|c:\\nonsystem\\it\\code\\shop-system\\shop-system\\shop-system\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -34,8 +38,73 @@
       "DocumentGroups": [
         {
           "DockedWidth": 229,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ShopMappingProfile.cs",
+              "DocumentMoniker": "C:\\nonSystem\\IT\\Code\\shop-system\\shop-system\\shop-system\\ShopMappingProfile.cs",
+              "RelativeDocumentMoniker": "shop-system\\ShopMappingProfile.cs",
+              "ToolTip": "C:\\nonSystem\\IT\\Code\\shop-system\\shop-system\\shop-system\\ShopMappingProfile.cs",
+              "RelativeToolTip": "shop-system\\ShopMappingProfile.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-17T20:08:56.344Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ClientDto.cs",
+              "DocumentMoniker": "C:\\nonSystem\\IT\\Code\\shop-system\\shop-system\\shop-system\\Models\\Client\\ClientDto.cs",
+              "RelativeDocumentMoniker": "shop-system\\Models\\Client\\ClientDto.cs",
+              "ToolTip": "C:\\nonSystem\\IT\\Code\\shop-system\\shop-system\\shop-system\\Models\\Client\\ClientDto.cs",
+              "RelativeToolTip": "shop-system\\Models\\Client\\ClientDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-17T20:05:56.226Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Address.cs",
+              "DocumentMoniker": "C:\\nonSystem\\IT\\Code\\shop-system\\shop-system\\shop-system\\Entities\\Address.cs",
+              "RelativeDocumentMoniker": "shop-system\\Entities\\Address.cs",
+              "ToolTip": "C:\\nonSystem\\IT\\Code\\shop-system\\shop-system\\shop-system\\Entities\\Address.cs",
+              "RelativeToolTip": "shop-system\\Entities\\Address.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-17T20:05:49.101Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AddressDto.cs",
+              "DocumentMoniker": "C:\\nonSystem\\IT\\Code\\shop-system\\shop-system\\shop-system\\Models\\Address\\AddressDto.cs",
+              "RelativeDocumentMoniker": "shop-system\\Models\\Address\\AddressDto.cs",
+              "ToolTip": "C:\\nonSystem\\IT\\Code\\shop-system\\shop-system\\shop-system\\Models\\Address\\AddressDto.cs",
+              "RelativeToolTip": "shop-system\\Models\\Address\\AddressDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-17T20:05:47.156Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\nonSystem\\IT\\Code\\shop-system\\shop-system\\shop-system\\Program.cs",
+              "RelativeDocumentMoniker": "shop-system\\Program.cs",
+              "ToolTip": "C:\\nonSystem\\IT\\Code\\shop-system\\shop-system\\shop-system\\Program.cs",
+              "RelativeToolTip": "shop-system\\Program.cs",
+              "ViewState": "AQIAAB8AAAAAAAAAAAAswEkAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-16T21:42:12.259Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 2,
@@ -44,80 +113,22 @@
               "RelativeDocumentMoniker": "shop-system\\Controllers\\ClientController.cs",
               "ToolTip": "C:\\nonSystem\\IT\\Code\\shop-system\\shop-system\\shop-system\\Controllers\\ClientController.cs",
               "RelativeToolTip": "shop-system\\Controllers\\ClientController.cs",
-              "ViewState": "AQIAABAAAAAAAAAAAAAzwCoAAAAYAAAA",
+              "ViewState": "AQIAABAAAAAAAAAAAAAswC8AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-16T21:42:10.494Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "ClientService.cs",
               "DocumentMoniker": "C:\\nonSystem\\IT\\Code\\shop-system\\shop-system\\shop-system\\Services\\ClientService.cs",
               "RelativeDocumentMoniker": "shop-system\\Services\\ClientService.cs",
               "ToolTip": "C:\\nonSystem\\IT\\Code\\shop-system\\shop-system\\shop-system\\Services\\ClientService.cs",
               "RelativeToolTip": "shop-system\\Services\\ClientService.cs",
-              "ViewState": "AQIAABQAAAAAAAAAAADwvz0AAAAQAAAA",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAcwDwAAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-16T21:41:02.981Z",
-              "EditorCaption": ""
-            }
-          ]
-        },
-        {
-          "DockedWidth": 229,
-          "SelectedChildIndex": 2,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\nonSystem\\IT\\Code\\shop-system\\shop-system\\shop-system\\Program.cs",
-              "RelativeDocumentMoniker": "shop-system\\Program.cs",
-              "ToolTip": "C:\\nonSystem\\IT\\Code\\shop-system\\shop-system\\shop-system\\Program.cs",
-              "RelativeToolTip": "shop-system\\Program.cs",
-              "ViewState": "AQIAADQAAAAAAAAAAAAswE8AAAA3AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-16T21:42:12.259Z",
-              "IsPinned": true
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ShopController.cs",
-              "DocumentMoniker": "C:\\nonSystem\\IT\\Code\\shop-system\\shop-system\\shop-system\\Controllers\\ShopController.cs",
-              "RelativeDocumentMoniker": "shop-system\\Controllers\\ShopController.cs",
-              "ToolTip": "C:\\nonSystem\\IT\\Code\\shop-system\\shop-system\\shop-system\\Controllers\\ShopController.cs",
-              "RelativeToolTip": "shop-system\\Controllers\\ShopController.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAcwBYAAAAbAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-17T18:32:05.889Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ShopService.cs",
-              "DocumentMoniker": "C:\\nonSystem\\IT\\Code\\shop-system\\shop-system\\shop-system\\Services\\ShopService.cs",
-              "RelativeDocumentMoniker": "shop-system\\Services\\ShopService.cs",
-              "ToolTip": "C:\\nonSystem\\IT\\Code\\shop-system\\shop-system\\shop-system\\Services\\ShopService.cs",
-              "RelativeToolTip": "shop-system\\Services\\ShopService.cs",
-              "ViewState": "AQIAABEAAAAAAAAAAAAuwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-17T18:31:51.36Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ShopMappingProfile.cs",
-              "DocumentMoniker": "C:\\nonSystem\\IT\\Code\\shop-system\\shop-system\\shop-system\\ShopMappingProfile.cs",
-              "RelativeDocumentMoniker": "shop-system\\ShopMappingProfile.cs",
-              "ToolTip": "C:\\nonSystem\\IT\\Code\\shop-system\\shop-system\\shop-system\\ShopMappingProfile.cs",
-              "RelativeToolTip": "shop-system\\ShopMappingProfile.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAABAwBAAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-16T21:49:52.545Z",
               "EditorCaption": ""
             }
           ]
