@@ -67,7 +67,6 @@ function Clients() {
     }
 
     function GenerateClientTable() {
-        console.log(clients)
         return (
             <table>
                 <thead>
