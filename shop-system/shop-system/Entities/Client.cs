@@ -7,7 +7,11 @@ namespace shop_system.Entities
         [Key]
         public int Id { get; set; }
         [Required]
+        public string InvoiceType { get; set; }
+        [Required]
         public string Name { get; set; }
+
+        public string? NIP { get; set; }
 
         public string? Notes { get; set; }
 
