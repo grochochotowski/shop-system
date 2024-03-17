@@ -22,7 +22,7 @@ namespace shop_system
                     Country = dto.Country,
                     City = dto.City,
                     Street = dto.Street,
-                    Buidling = dto.Buidling,
+                    Building = dto.Building,
                     Premises = dto.Premises,
                     PostalCode = dto.PostalCode,
                 }));
