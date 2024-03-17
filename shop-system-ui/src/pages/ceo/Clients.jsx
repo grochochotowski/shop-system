@@ -72,8 +72,8 @@ function Clients() {
         return (
             <tbody>
                 {
-                    clients.forEach(c => {
-                        <tr>
+                    clients.map(c => {
+                        <tr key={c.id}>
                             <td>{c.id}</td>
                             <td>{c.invoiceType}</td>
                             <td>{c.name}</td>
@@ -81,24 +81,8 @@ function Clients() {
                             <td>Poland, Białystok, 15-345, Zachodnia 15A/45</td>
                             <td>{c.notes}</td>
                         </tr>
-                    });
+                    })
                 }
-                <tr>
-                    <td>1</td>
-                    <td>Name invoice</td>
-                    <td>Sebastian Marczyński</td>
-                    <td></td>
-                    <td>Poland, Białystok, 15-345, Zachodnia 15A/45</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>NIP Invoice</td>
-                    <td>Company CO</td>
-                    <td>123456789</td>
-                    <td>Poland, Białystok, 15-XXX, Wiejska 47</td>
-                    <td>Very real company</td>
-                </tr>
             </tbody>
         )
     }
