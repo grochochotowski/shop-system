@@ -5,7 +5,10 @@ namespace shop_system.Models.Client
     public class CreateClientDto
     {
         [Required]
+        public string InvoiceType { get; set; }
+        [Required]
         public string Name { get; set; }
+        public string? NIP { get; set; }
         public string? Notes { get; set; }
 
 
