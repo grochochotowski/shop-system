@@ -9,7 +9,6 @@ export default function FilterBox({filters, toggleCheck, names}) {
         false,
         false,
         false,
-        false,
         false
     ]);
 
@@ -41,6 +40,11 @@ export default function FilterBox({filters, toggleCheck, names}) {
     }
 
     function GenerateFilterOptions() {
+        console.log(opened)
+        console.log(names)
+        if (opened.length === 0 || names.length === 0) {
+            return <div>No filters available</div>;
+        }
         return (
             <>
                 {opened.map((isOpen, i) => (
