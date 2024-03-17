@@ -240,7 +240,7 @@ html, body, #root {
     position: absolute;
 
     max-height: 100px;
-    width: 100%;
+    width: 200%;
 
     overflow-y: scroll;    
     list-style: none;
