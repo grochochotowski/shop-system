@@ -17,28 +17,26 @@ function Clients() {
         ];
 
     function createFilters() {
-        var newFilters = [
-            [
-                { name: "Company", checked: false },
-                { name: "Name", checked: false }
-            ],
-            [
-                { name: "Politechnika Białostocka", checked: false },
-                { name: "4F", checked: false },
-                { name: "Sebastian Malczyńsk", checked: false }
-            ],
-            [
-                { name: "none", checked: false },
-                { name: "123456789", checked: false },
-                { name: "987654321", checked: false }
-            ],
-            [
-                { name: "Poland, Białystok, 15-351, Wiejska 45A", checked: false },
-                { name: "Poland, Białystok, 15-690, Narodowych sił zbrojnych 15A /4F", checked: false },
-                { name: "Poland, Białystok, 15-354, Pogodna 20 /16", checked: false }
-            ]
-        ]
-        
+        var filterValues = {
+            InvoiceType: new Set(),
+            Name: new Set(),
+            Nip: new Set(),
+            Address: new Set()
+        };
+    
+        clients.forEach(client => {
+            filterValues.InvoiceType.add(client.invoiceType);
+            filterValues.Name.add(client.name);
+            filterValues.Nip.add(client.nip);
+            filterValues.Address.add(`${client.address.country}, ${client.address.city}, ${client.address.postalCode}, ${client.address.street} ${client.address.building}`);
+        });
+    
+        var newFilters = Object.keys(filterValues).map(key => {
+            return [...filterValues[key]].filter(Boolean).sort().map(value => {
+                return { name: value, checked: false };
+            });
+        });
+
         setFilters(newFilters);
     };
 
