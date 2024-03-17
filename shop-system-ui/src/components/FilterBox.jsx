@@ -69,8 +69,8 @@ export default function FilterBox({filters, toggleCheck, names, clients}) {
     }
 
     function handleCheckboxChange(opt, elementName) {
-        setScrollPosition(document.getElementById(opt).scrollTop)
-        setScrolledName(opt);
+        setScrollPosition(document.getElementById(names[opt]).scrollTop)
+        setScrolledName(names[opt]);
         toggleCheck(opt, elementName);
     }
     
