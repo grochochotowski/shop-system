@@ -15,43 +15,43 @@ function Clients() {
         "Address"
         ];
 
-    const [filters, setFilters] = useState({
-        option1: [
+    const [filters, setFilters] = useState([
+        [
             { name: "Opt-1-1", checked: false },
             { name: "Opt-1-2", checked: false },
             { name: "Opt-1-3", checked: false },
             { name: "Opt-1-4", checked: false },
             { name: "Opt-1-5", checked: false }
         ],
-        option2: [
+        [
             { name: "Opt-2-1", checked: false },
             { name: "Opt-2-2", checked: false },
             { name: "Opt-2-3", checked: false },
             { name: "Opt-2-4", checked: false },
             { name: "Opt-2-5", checked: false }
         ],
-        option3: [
+        [
             { name: "Opt-3-1", checked: false },
             { name: "Opt-3-2", checked: false },
             { name: "Opt-3-3", checked: false },
             { name: "Opt-3-4", checked: false },
             { name: "Opt-3-5", checked: false }
         ],
-        option4: [
+        [
             { name: "Opt-4-1", checked: false },
             { name: "Opt-4-2", checked: false },
             { name: "Opt-4-3", checked: false },
             { name: "Opt-4-4", checked: false },
             { name: "Opt-4-5", checked: false }
         ],
-        option5: [
+        [
             { name: "Opt-5-1", checked: false },
             { name: "Opt-5-2", checked: false },
             { name: "Opt-5-3", checked: false },
             { name: "Opt-5-4", checked: false },
             { name: "Opt-5-5", checked: false }
         ]
-    });
+    ]);
 
     function changeChecked(option, elementName) {
         setFilters((prev) => {
