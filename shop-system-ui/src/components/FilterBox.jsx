@@ -1,5 +1,4 @@
 import React, {useState, useEffect} from 'react'
-import Fallback from "../Fallback"
 
 export default function FilterBox({filters, toggleCheck, names, clients}) {
 
