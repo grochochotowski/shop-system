@@ -43,18 +43,14 @@ export default function FilterBox({filters, toggleCheck, names}) {
         if (opened.length === 0 || names.length === 0) {
             return <h4>No filters available</h4>;
         }
-        return (
-            <>
-                {opened.map((isOpen, i) => (
-                    <li className={isOpen ? "opened main" : "closed main"} key={names[i]}>
-                        <h4 onClick={() => toggleFilter(names[i])}>{names[i]}</h4>
-                        <ul className="inside" id={names[i]}>
-                            <GenerateFiltersInOption opt={i} />
-                        </ul>
-                    </li>
-                ))}
-            </>
-        )
+        return opened.map((isOpen, i) => (
+            <li className={isOpen ? "opened main" : "closed main"} key={names[i]}>
+                <h4 onClick={() => toggleFilter(names[i])}>{names[i]}</h4>
+                <ul className="inside" id={names[i]}>
+                    <GenerateFiltersInOption opt={i} />
+                </ul>
+            </li>
+        ))
     }
 
     function GenerateFiltersInOption({opt}) {
