@@ -65,6 +65,29 @@ function Clients() {
         });
     }
 
+    function GenerateClientTableBody() {
+        return (
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Name invoice</td>
+                    <td>Sebastian Marczyński</td>
+                    <td></td>
+                    <td>Poland, Białystok, 15-345, Zachodnia 15A/45</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>NIP Invoice</td>
+                    <td>Company CO</td>
+                    <td>123456789</td>
+                    <td>Poland, Białystok, 15-XXX, Wiejska 47</td>
+                    <td>Very real company</td>
+                </tr>
+            </tbody>
+        )
+    }
+
     return (
         <div className="client-container">
             <div className="client-manage">
@@ -89,24 +112,7 @@ function Clients() {
                             <th>Notes</th>
                         </tr>
                     </thead>
-                    <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td>Name invoice</td>
-                            <td>Sebastian Marczyński</td>
-                            <td></td>
-                            <td>Poland, Białystok, 15-345, Zachodnia 15A/45</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>NIP Invoice</td>
-                            <td>Company CO</td>
-                            <td>123456789</td>
-                            <td>Poland, Białystok, 15-XXX, Wiejska 47</td>
-                            <td>Very real company</td>
-                        </tr>
-                    </tbody>
+                    <GenerateClientTableBody />
                 </table>
             </div>
         </div>
