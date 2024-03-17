@@ -24,7 +24,7 @@ namespace shop_system.Services
         // Create new client
         public int CreateClient(CreateClientDto dto)
         {
-            var existingAddress = _context.Addresses.FirstOrDefault(a =>
+            Address? existingAddress = _context.Addresses.FirstOrDefault(a =>
                 a.Country == dto.Country &&
                 a.City == dto.City &&
                 a.Street == dto.Street &&
