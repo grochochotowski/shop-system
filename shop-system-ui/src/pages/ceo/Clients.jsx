@@ -50,7 +50,6 @@ function Clients() {
         setFilters((prev) => {
             const newFilters = [ ...prev ];
             newFilters[opt] = newFilters[opt].map(element => {
-                console.log(element.name + " - " + elementName);
                 if (element.name === elementName) {
                     return { ...element, checked: !element.checked };
                 }
