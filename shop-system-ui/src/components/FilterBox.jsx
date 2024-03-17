@@ -28,8 +28,8 @@ export default function FilterBox({filters, toggleCheck, names, clients}) {
 
     function filterResults() {
         setOpened(prev => {
-            const closeAll = { ...prev };
-            Object.keys(closeAll).forEach(key => {
+            const closeAll = [ ...prev ];
+            closeAll.forEach(key => {
                 closeAll[key] = false;
             })
             return closeAll;
