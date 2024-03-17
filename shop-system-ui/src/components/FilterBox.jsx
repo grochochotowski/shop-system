@@ -47,7 +47,7 @@ export default function FilterBox({filters, toggleCheck, names}) {
         }
         return (
             <>
-                {opened.map((isOpen, i) => (
+                {opened.forEach((isOpen, i) => (
                     <li className={isOpen ? "opened main" : "closed main"} key={names[i]}>
                         <h4 onClick={() => toggleFilter(names[i])}>{names[i]}</h4>
                         <ul className="inside" id={names[i]}>
