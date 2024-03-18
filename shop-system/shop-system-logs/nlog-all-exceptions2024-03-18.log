@@ -780,3 +780,8 @@ INNER JOIN [Addresses] AS [a] ON [c].[AddressId] = [a].[Id]
 2024-03-18 14:07:17.6350|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Disposing connection to database 'ShopDB' on server '(localdb)\mssqllocaldb'. 
 2024-03-18 14:07:17.6350|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Disposed connection to database '' on server '' (0ms). 
 2024-03-18 14:07:17.6350|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7057/api/clients/all - 200 - application/json;+charset=utf-8 7.1731ms 
+2024-03-18 14:07:42.5549|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HN279EVPNS1M" received FIN. 
+2024-03-18 14:07:42.5549|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN279EVPNS1M" is closed. The last processed stream ID was 3. 
+2024-03-18 14:07:42.5549|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HN279EVPNS1M" sending FIN because: "The Socket transport's send loop completed gracefully." 
+2024-03-18 14:07:42.5549|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Http2|The connection queue processing loop for 0HN279EVPNS1M completed. 
+2024-03-18 14:07:42.5549|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN279EVPNS1M" stopped. 
