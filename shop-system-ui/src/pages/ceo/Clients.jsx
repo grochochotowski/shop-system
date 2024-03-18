@@ -18,6 +18,8 @@ function Clients() {
             Address: new Set()
         };
     
+        filterValues.Nip.add('none');
+
         clients.forEach(client => {
             filterValues.InvoiceType.add(client.invoiceType);
             filterValues.Name.add(client.name);
