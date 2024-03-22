@@ -86,9 +86,16 @@ function Clients() {
 
     useEffect(() => {
         async function getUserData() {
-            const response = await fetch("https://localhost:7057/api/clients/all");
-            const data = await response.json();
-            setClients(data);
+            try {
+                const response = await fetch("https://localhost:7057/api/clients/all");
+                if (!response.ok) {
+                    throw new Error('Failed to fetch data');
+                }
+                const data = await response.json();
+                setClients(data);
+            } catch (error) {
+                console.error('Error fetching data:', error);
+            }
         }
         getUserData();
     }, []);
