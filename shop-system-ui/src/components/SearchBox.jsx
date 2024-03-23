@@ -1,6 +1,10 @@
 import React from 'react'
+import {useTranslation} from "react-i18next";
 
 export default function SearchBox(props) {
+
+    const { t } = useTranslation("global")
+    
     return (
         <div className="search-box">
             <input

@@ -1,6 +1,9 @@
 import React, {useState, useEffect} from 'react'
+import {useTranslation} from "react-i18next";
 
 export default function FilterBox({filters, toggleCheck, names, clients}) {
+
+    const { t } = useTranslation("global")
 
     const [scrollPosition, setScrollPosition] = useState(0);
     const [scrolledName, setScrolledName] = useState("");
