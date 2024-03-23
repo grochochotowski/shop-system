@@ -112,7 +112,7 @@ function Clients() {
                     <FilterBox filters={filters} toggleCheck={changeChecked} names={names} clients={clients}/>
                 </div>
                 <div className="right">
-                    <button className="add-button">Add client</button>    
+                    <button className="add-button">{t("clients.add-btn")}</button>    
                 </div>                
             </div>
             <div className="client-list">
