@@ -15,6 +15,7 @@
         "opt-company": "Firma"
     },
     "clients" : {
+        "txt-search-for": "klienta",
         "txt-filters": "Filtry",
         "txt-search": "Wyszukaj klienta",
         "f-opt-invoice": "Typ faktury",
