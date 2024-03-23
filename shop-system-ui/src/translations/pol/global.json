@@ -20,6 +20,7 @@
         "f-opt-name": "Nazwa",
         "f-opt-nip": "NIP",
         "f-opt-address": "Adres",
-        "f-opt-notes": "Notatki"
+        "f-opt-notes": "Notatki",
+        "f-opt-btn": "Filtruj"
     }
 }
