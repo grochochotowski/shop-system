@@ -48,10 +48,10 @@
     transition: 150ms ease-in-out;
 }
 .client-list tr:nth-child(odd) td{
-    background-color: green;
+    background-color: #f1f1f1;
 }
 .client-list tr:nth-child(even) td{
-    background-color: blue;
+    background-color: #e1e1e1;
 }
 .client-list tr:hover td{
     background-color: red;
@@ -64,7 +64,7 @@
 }
 .client-list td{
     padding: 10px;
-    border-right: solid 1px #f00; 
-    border-left: solid 1px #f00;
+    border-right: solid 2px #d1d1d1; 
+    border-left: solid 2px #d1d1d1; 
 
 }
