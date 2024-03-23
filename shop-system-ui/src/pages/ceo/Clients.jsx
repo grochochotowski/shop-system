@@ -58,6 +58,14 @@ function Clients() {
         });
     }
 
+    function changeSortDirection(column) {
+        if (sort[0] === column) {
+            if (sort[1] === "asc") setSort([column, "dsc"])
+            if (sort[1] === "dsc") setSort([column, "asc"])
+        }
+        setSort([column, "asc"])
+    }
+
     function GenerateClientTable() {
         return (
             <table>
