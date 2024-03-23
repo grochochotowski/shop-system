@@ -63,7 +63,7 @@ function Clients() {
             <table>
                 <thead>
                     <tr>
-                        <th>
+                        <th onClick={() => changeSortDirection("invoice-type")}>
                             {t("clients.f-opt-invoice")}
                             {
                                 sort[0] === "invoice-type" && <div className="sortInfo">
@@ -75,7 +75,7 @@ function Clients() {
                                 </div>
                             }
                         </th>
-                        <th>
+                        <th onClick={() => changeSortDirection("name")}>
                             {t("clients.f-opt-name")}
                             {
                                 sort[0] === "name" && <div className="sortInfo">
@@ -87,7 +87,7 @@ function Clients() {
                                 </div>
                             }
                         </th>
-                        <th>
+                        <th onClick={() => changeSortDirection("nip")}>
                             {t("clients.f-opt-nip")}
                             {
                                 sort[0] === "nip" && <div className="sortInfo">
@@ -99,7 +99,7 @@ function Clients() {
                                 </div>
                             }
                         </th>
-                        <th>
+                        <th onClick={() => changeSortDirection("address")}>
                             {t("clients.f-opt-address")}
                             {
                                 sort[0] === "address" && <div className="sortInfo">
@@ -111,7 +111,7 @@ function Clients() {
                                 </div>
                             }
                         </th>
-                        <th>
+                        <th onClick={() => changeSortDirection("notes")}>
                             {t("clients.f-opt-notes")}
                             {
                                 sort[0] === "notes" && <div className="sortInfo">
