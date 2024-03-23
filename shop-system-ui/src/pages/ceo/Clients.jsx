@@ -108,7 +108,7 @@ function Clients() {
             <div className="client-manage">
                 <div className="left">
                     <SearchBox name={t("clients.txt-search-for")}/>
-                    <h2 className="filter-heading">Filters:</h2>
+                    <h2 className="filter-heading">{t("clients.txt-filters")}:</h2>
                     <FilterBox filters={filters} toggleCheck={changeChecked} names={names} clients={clients}/>
                 </div>
                 <div className="right">
