@@ -1,10 +1,13 @@
 import React, {useState, useEffect} from 'react'
+import {useTranslation} from "react-i18next";
 import "../../styles/ceo/clients.css"
 
 import SearchBox from '../../components/SearchBox'
 import FilterBox from '../../components/FilterBox'
 
 function Clients() {
+
+    const { t } = useTranslation("global")
 
     const [clients, setClients] = useState([]);
     const [filters, setFilters] = useState([])
