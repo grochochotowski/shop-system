@@ -67,6 +67,7 @@
 
     transition: 150ms ease-in-out;
 }
+.client-list th i {background-color: red;}
 .client-list th .sortInfo {
     float: right;
 }
