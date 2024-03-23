@@ -60,10 +60,12 @@ function Clients() {
 
     function changeSortDirection(column) {
         if (sort[0] === column) {
+            console.log("opt1")
             if (sort[1] === "asc") setSort([column, "dsc"])
             if (sort[1] === "dsc") setSort([column, "asc"])
         }
         setSort([column, "asc"])
+        console.log(sort);
     }
 
     function GenerateClientTable() {
@@ -77,8 +79,8 @@ function Clients() {
                                 sort[0] === "invoice-type" && <div className="sortInfo">
                                 {
                                     sort[1] === "asc"
-                                        ? <i class="fa-solid fa-arrow-down-a-z"></i>
-                                        : <i class="fa-solid fa-arrow-up-a-z"></i>
+                                        ? <i className="fa-solid fa-arrow-down-a-z"></i>
+                                        : <i className="fa-solid fa-arrow-up-a-z"></i>
                                 }
                                 </div>
                             }
@@ -89,8 +91,8 @@ function Clients() {
                                 sort[0] === "name" && <div className="sortInfo">
                                 {
                                     sort[1] === "asc"
-                                        ? <i class="fa-solid fa-arrow-down-a-z"></i>
-                                        : <i class="fa-solid fa-arrow-up-a-z"></i>
+                                        ? <i className="fa-solid fa-arrow-down-a-z"></i>
+                                        : <i className="fa-solid fa-arrow-up-a-z"></i>
                                 }
                                 </div>
                             }
@@ -101,8 +103,8 @@ function Clients() {
                                 sort[0] === "nip" && <div className="sortInfo">
                                 {
                                     sort[1] === "asc"
-                                        ? <i class="fa-solid fa-arrow-down-a-z"></i>
-                                        : <i class="fa-solid fa-arrow-up-a-z"></i>
+                                        ? <i className="fa-solid fa-arrow-down-a-z"></i>
+                                        : <i className="fa-solid fa-arrow-up-a-z"></i>
                                 }
                                 </div>
                             }
@@ -113,8 +115,8 @@ function Clients() {
                                 sort[0] === "address" && <div className="sortInfo">
                                 {
                                     sort[1] === "asc"
-                                        ? <i class="fa-solid fa-arrow-down-a-z"></i>
-                                        : <i class="fa-solid fa-arrow-up-a-z"></i>
+                                        ? <i className="fa-solid fa-arrow-down-a-z"></i>
+                                        : <i className="fa-solid fa-arrow-up-a-z"></i>
                                 }
                                 </div>
                             }
@@ -125,8 +127,8 @@ function Clients() {
                                 sort[0] === "notes" && <div className="sortInfo">
                                 {
                                     sort[1] === "asc"
-                                        ? <i class="fa-solid fa-arrow-down-a-z"></i>
-                                        : <i class="fa-solid fa-arrow-up-a-z"></i>
+                                        ? <i className="fa-solid fa-arrow-down-a-z"></i>
+                                        : <i className="fa-solid fa-arrow-up-a-z"></i>
                                 }
                                 </div>
                             }
