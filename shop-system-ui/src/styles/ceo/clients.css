@@ -58,7 +58,9 @@
     cursor: pointer;
 }
 .client-list th{
+    padding: 10px;
     border-bottom: 2px solid;
+    background-color: var(--clr-acc-2);
 }
 .client-list td{
     padding: 10px;

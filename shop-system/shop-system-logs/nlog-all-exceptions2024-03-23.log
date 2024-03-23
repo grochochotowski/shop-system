@@ -790,3 +790,43 @@ END
 2024-03-23 20:20:17.0110|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2BDP2PIBVC" sending DATA frame for stream ID 1 with length 991 and flags NONE. 
 2024-03-23 20:20:17.0110|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2BDP2PIBVC" sending DATA frame for stream ID 1 with length 81 and flags NONE. 
 2024-03-23 20:20:17.0110|DEBUG|Microsoft.WebTools.BrowserLink.Net.BrowserLinkMiddleware|Response markup was updated to include Browser Link script injection. 
+2024-03-23 20:20:17.0110|DEBUG|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware|Response markup was updated to include browser refresh script injection. 
+2024-03-23 20:20:17.0110|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2BDP2PIBVC" sending DATA frame for stream ID 1 with length 0 and flags END_STREAM. 
+2024-03-23 20:20:17.0110|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7057/swagger/index.html - 200 - text/html;charset=utf-8 236.7307ms 
+2024-03-23 20:20:17.0406|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2BDP2PIBVC" received HEADERS frame for stream ID 3 with length 110 and flags END_STREAM, END_HEADERS, PRIORITY. 
+2024-03-23 20:20:17.0406|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7057/_framework/aspnetcore-browser-refresh.js - - - 
+2024-03-23 20:20:17.0406|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2BDP2PIBVC" sending HEADERS frame for stream ID 3 with length 60 and flags END_HEADERS. 
+2024-03-23 20:20:17.0406|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2BDP2PIBVC" sending DATA frame for stream ID 3 with length 13758 and flags NONE. 
+2024-03-23 20:20:17.0406|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2BDP2PIBVC" sending DATA frame for stream ID 3 with length 0 and flags END_STREAM. 
+2024-03-23 20:20:17.0406|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7057/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript;+charset=utf-8 4.9977ms 
+2024-03-23 20:20:17.0574|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2BDP2PIBVC" received HEADERS frame for stream ID 5 with length 58 and flags END_STREAM, END_HEADERS, PRIORITY. 
+2024-03-23 20:20:17.0574|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7057/_vs/browserLink - - - 
+2024-03-23 20:20:17.0934|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2BDP2PIBVC" sending HEADERS frame for stream ID 5 with length 119 and flags END_HEADERS. 
+2024-03-23 20:20:17.0934|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2BDP2PIBVC" sending DATA frame for stream ID 5 with length 9986 and flags NONE. 
+2024-03-23 20:20:17.0934|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2BDP2PIBVC" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2024-03-23 20:20:17.0934|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2BDP2PIBVC" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2024-03-23 20:20:17.0934|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2BDP2PIBVC" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2024-03-23 20:20:17.0934|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2BDP2PIBVC" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2024-03-23 20:20:17.0934|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2BDP2PIBVC" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2024-03-23 20:20:17.0934|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2BDP2PIBVC" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2024-03-23 20:20:17.0934|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2BDP2PIBVC" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2024-03-23 20:20:17.0934|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2BDP2PIBVC" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2024-03-23 20:20:17.1031|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2BDP2PIBVC" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2024-03-23 20:20:17.1031|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2BDP2PIBVC" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2024-03-23 20:20:17.1031|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2BDP2PIBVC" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2024-03-23 20:20:17.1031|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2BDP2PIBVC" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2024-03-23 20:20:17.1031|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2BDP2PIBVC" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2024-03-23 20:20:17.1031|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2BDP2PIBVC" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2024-03-23 20:20:17.1031|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2BDP2PIBVC" sending DATA frame for stream ID 5 with length 160 and flags NONE. 
+2024-03-23 20:20:17.1031|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2BDP2PIBVC" sending DATA frame for stream ID 5 with length 0 and flags END_STREAM. 
+2024-03-23 20:20:17.1031|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7057/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 48.5524ms 
+2024-03-23 20:20:17.4163|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2BDP2PIBVC" received HEADERS frame for stream ID 7 with length 67 and flags END_STREAM, END_HEADERS, PRIORITY. 
+2024-03-23 20:20:17.4163|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7057/swagger/v1/swagger.json - - - 
+2024-03-23 20:20:17.4163|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2024-03-23 20:20:17.4163|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|No candidates found for the request path '/swagger/v1/swagger.json' 
+2024-03-23 20:20:17.4163|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request did not match any endpoints 
+2024-03-23 20:20:17.5332|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2BDP2PIBVC" sending HEADERS frame for stream ID 7 with length 65 and flags END_HEADERS. 
+2024-03-23 20:20:17.5332|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2BDP2PIBVC" sending DATA frame for stream ID 7 with length 16384 and flags NONE. 
+2024-03-23 20:20:17.5332|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2BDP2PIBVC" sending DATA frame for stream ID 7 with length 1062 and flags NONE. 
+2024-03-23 20:20:17.5332|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2BDP2PIBVC" sending DATA frame for stream ID 7 with length 0 and flags END_STREAM. 
+2024-03-23 20:20:17.5332|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7057/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 120.6454ms 
