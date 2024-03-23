@@ -24,6 +24,8 @@
         "f-opt-nip": "NIP",
         "f-opt-address": "Address",
         "f-opt-notes": "Notes",
-        "f-opt-btn": "Filter"
+        "f-opt-btn": "Filter",
+        "t-compamny-invoice" : "Firmowa",
+        "t-name-invoice" : "Imienna"
     }
 }
