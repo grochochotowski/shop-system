@@ -82,7 +82,7 @@ export default function FilterBox({filters, toggleCheck, names, clients}) {
             <ul className="main">
                 <GenerateFilterOptions />
             </ul>
-            <button className="filter-button" onClick={filterResults}>{t("clients.btn-filters")}</button>
+            <button className="filter-button" onClick={filterResults}>{t("clients.f-opt-btn")}</button>
         </div>
     )
 }
