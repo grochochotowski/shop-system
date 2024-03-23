@@ -664,3 +664,129 @@ INNER JOIN [Addresses] AS [a] ON [c].[AddressId] = [a].[Id]
 2024-03-23 20:13:03.7364|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Authentication of the HTTPS connection timed out. 
 2024-03-23 20:13:03.7364|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN2BDKUOL6HI" stopped. 
 2024-03-23 20:13:03.7364|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HN2BDKUOL6HI" sending FIN because: "The Socket transport's send loop completed gracefully." 
+2024-03-23 20:20:14.8971|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|An 'IServiceProvider' was created for internal use by Entity Framework. 
+2024-03-23 20:20:15.5624|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 8.0.2 initialized 'ShopDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.2' with options: None 
+2024-03-23 20:20:15.5751|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Creating DbConnection. 
+2024-03-23 20:20:15.6022|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Created DbConnection. (24ms). 
+2024-03-23 20:20:15.6055|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'ShopDB' on server '(localdb)\mssqllocaldb'. 
+2024-03-23 20:20:15.8268|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'ShopDB' on server '(localdb)\mssqllocaldb'. 
+2024-03-23 20:20:15.8268|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteNonQuery'. 
+2024-03-23 20:20:15.8268|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteNonQuery' (3ms). 
+2024-03-23 20:20:15.8268|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Initialized DbCommand for 'ExecuteNonQuery' (6ms). 
+2024-03-23 20:20:15.8396|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1 
+2024-03-23 20:20:15.8557|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (15ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1 
+2024-03-23 20:20:15.8557|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'ShopDB' on server '(localdb)\mssqllocaldb'. 
+2024-03-23 20:20:15.8557|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'ShopDB' on server '(localdb)\mssqllocaldb' (2ms). 
+2024-03-23 20:20:15.8915|DEBUG|Microsoft.EntityFrameworkCore.Query|Compiling query expression: 
+'DbSet<Position>()
+    .Any()' 
+2024-03-23 20:20:15.9999|DEBUG|Microsoft.EntityFrameworkCore.Query|Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<bool>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.QueryExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> 0
+        SELECT EXISTS (
+            SELECT 1
+            FROM Positions AS p)), 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, bool>, 
+    shop_system.Entities.ShopDbContext, 
+    False, 
+    False, 
+    True
+)
+    .Single()' 
+2024-03-23 20:20:16.0181|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'ShopDB' on server '(localdb)\mssqllocaldb'. 
+2024-03-23 20:20:16.0181|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'ShopDB' on server '(localdb)\mssqllocaldb'. 
+2024-03-23 20:20:16.0181|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteReader'. 
+2024-03-23 20:20:16.0181|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteReader' (0ms). 
+2024-03-23 20:20:16.0181|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Initialized DbCommand for 'ExecuteReader' (0ms). 
+2024-03-23 20:20:16.0181|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Positions] AS [p]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END 
+2024-03-23 20:20:16.0263|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Positions] AS [p]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END 
+2024-03-23 20:20:16.0263|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Closing data reader to 'ShopDB' on server '(localdb)\mssqllocaldb'. 
+2024-03-23 20:20:16.0263|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|A data reader for 'ShopDB' on server '(localdb)\mssqllocaldb' is being disposed after spending 6ms reading results. 
+2024-03-23 20:20:16.0263|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'ShopDB' on server '(localdb)\mssqllocaldb'. 
+2024-03-23 20:20:16.0263|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'ShopDB' on server '(localdb)\mssqllocaldb' (0ms). 
+2024-03-23 20:20:16.0845|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ModelBinderFactory|Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider 
+2024-03-23 20:20:16.1309|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting starting 
+2024-03-23 20:20:16.1594|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\gmich\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2024-03-23 20:20:16.1697|DEBUG|Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository|Reading data from file 'C:\Users\gmich\AppData\Local\ASP.NET\DataProtection-Keys\key-08af904a-aabc-4a11-95a7-810d81feb975.xml'. 
+2024-03-23 20:20:16.1697|DEBUG|Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository|Reading data from file 'C:\Users\gmich\AppData\Local\ASP.NET\DataProtection-Keys\key-bd8744af-7ab7-4319-9b5a-a7665f95f320.xml'. 
+2024-03-23 20:20:16.1697|DEBUG|Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository|Reading data from file 'C:\Users\gmich\AppData\Local\ASP.NET\DataProtection-Keys\key-ec409216-b58a-4f15-a58f-724cbb2afb9e.xml'. 
+2024-03-23 20:20:16.1810|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|Found key {08af904a-aabc-4a11-95a7-810d81feb975}. 
+2024-03-23 20:20:16.1810|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|Found key {bd8744af-7ab7-4319-9b5a-a7665f95f320}. 
+2024-03-23 20:20:16.1810|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|Found key {ec409216-b58a-4f15-a58f-724cbb2afb9e}. 
+2024-03-23 20:20:16.1810|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.DefaultKeyResolver|Considering key {bd8744af-7ab7-4319-9b5a-a7665f95f320} with expiration date 2024-05-16 14:52:52Z as default key. 
+2024-03-23 20:20:16.1973|DEBUG|Microsoft.AspNetCore.DataProtection.TypeForwardingActivator|Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60 
+2024-03-23 20:20:16.1973|DEBUG|Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor|Decrypting secret element using Windows DPAPI. 
+2024-03-23 20:20:16.1973|DEBUG|Microsoft.AspNetCore.DataProtection.TypeForwardingActivator|Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60 
+2024-03-23 20:20:16.1973|DEBUG|Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngCbcAuthenticatedEncryptorFactory|Opening CNG algorithm 'AES' from provider '(null)' with chaining mode CBC. 
+2024-03-23 20:20:16.1973|DEBUG|Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngCbcAuthenticatedEncryptorFactory|Opening CNG algorithm 'SHA256' from provider '(null)' with HMAC. 
+2024-03-23 20:20:16.1973|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingProvider|Using key {bd8744af-7ab7-4319-9b5a-a7665f95f320} as the default key. 
+2024-03-23 20:20:16.1973|DEBUG|Microsoft.AspNetCore.DataProtection.Internal.DataProtectionHostedService|Key ring with default key {bd8744af-7ab7-4319-9b5a-a7665f95f320} was loaded during application startup. 
+2024-03-23 20:20:16.4207|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7057 
+2024-03-23 20:20:16.4207|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5056 
+2024-03-23 20:20:16.4207|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly shop-system 
+2024-03-23 20:20:16.4207|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh 
+2024-03-23 20:20:16.4207|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net 
+2024-03-23 20:20:16.4207|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2024-03-23 20:20:16.4207|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2024-03-23 20:20:16.4207|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\nonSystem\IT\Code\shop-system\shop-system\shop-system 
+2024-03-23 20:20:16.4207|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting started 
+2024-03-23 20:20:16.5925|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN2BDP2PIBVA" accepted. 
+2024-03-23 20:20:16.5925|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN2BDP2PIBVA" started. 
+2024-03-23 20:20:16.6076|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HN2BDP2PIBVB" received FIN. 
+2024-03-23 20:20:16.6076|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HN2BDP2PIBVA" received FIN. 
+2024-03-23 20:20:16.6076|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN2BDP2PIBVB" accepted. 
+2024-03-23 20:20:16.6076|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN2BDP2PIBVB" started. 
+2024-03-23 20:20:16.6194|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Failed to authenticate HTTPS connection. System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-03-23 20:20:16.6194|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Failed to authenticate HTTPS connection. System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-03-23 20:20:16.6549|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN2BDP2PIBVB" stopped. 
+2024-03-23 20:20:16.6549|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN2BDP2PIBVA" stopped. 
+2024-03-23 20:20:16.6549|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HN2BDP2PIBVB" sending FIN because: "The Socket transport's send loop completed gracefully." 
+2024-03-23 20:20:16.6549|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HN2BDP2PIBVA" sending FIN because: "The Socket transport's send loop completed gracefully." 
+2024-03-23 20:20:16.7075|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN2BDP2PIBVC" accepted. 
+2024-03-23 20:20:16.7075|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN2BDP2PIBVC" started. 
+2024-03-23 20:20:16.7331|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Connection 0HN2BDP2PIBVC established using the following protocol: Tls13 
+2024-03-23 20:20:16.7510|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2BDP2PIBVC" sending SETTINGS frame for stream ID 0 with length 24 and flags NONE. 
+2024-03-23 20:20:16.7510|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2BDP2PIBVC" sending WINDOW_UPDATE frame for stream ID 0 with length 4 and flags 0x0. 
+2024-03-23 20:20:16.7510|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2BDP2PIBVC" received SETTINGS frame for stream ID 0 with length 24 and flags NONE. 
+2024-03-23 20:20:16.7510|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2BDP2PIBVC" sending SETTINGS frame for stream ID 0 with length 0 and flags ACK. 
+2024-03-23 20:20:16.7510|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2BDP2PIBVC" received WINDOW_UPDATE frame for stream ID 0 with length 4 and flags 0x0. 
+2024-03-23 20:20:16.7510|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2BDP2PIBVC" received HEADERS frame for stream ID 1 with length 424 and flags END_STREAM, END_HEADERS, PRIORITY. 
+2024-03-23 20:20:16.7698|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2BDP2PIBVC" received SETTINGS frame for stream ID 0 with length 0 and flags ACK. 
+2024-03-23 20:20:16.7840|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7057/swagger/index.html - - - 
+2024-03-23 20:20:16.8670|DEBUG|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|Wildcard detected, all requests with hosts will be allowed. 
+2024-03-23 20:20:16.8670|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2024-03-23 20:20:16.8820|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|No candidates found for the request path '/swagger/index.html' 
+2024-03-23 20:20:16.8838|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request did not match any endpoints 
+2024-03-23 20:20:16.9954|DEBUG|Microsoft.WebTools.BrowserLink.Net.BrowserLinkMiddleware|Response markup is scheduled to include Browser Link script injection. 
+2024-03-23 20:20:16.9954|DEBUG|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware|Response markup is scheduled to include browser refresh script injection. 
+2024-03-23 20:20:16.9954|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2BDP2PIBVC" sending HEADERS frame for stream ID 1 with length 66 and flags END_HEADERS. 
+2024-03-23 20:20:16.9954|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2BDP2PIBVC" sending DATA frame for stream ID 1 with length 4096 and flags NONE. 
+2024-03-23 20:20:17.0110|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2BDP2PIBVC" sending DATA frame for stream ID 1 with length 991 and flags NONE. 
+2024-03-23 20:20:17.0110|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2BDP2PIBVC" sending DATA frame for stream ID 1 with length 81 and flags NONE. 
+2024-03-23 20:20:17.0110|DEBUG|Microsoft.WebTools.BrowserLink.Net.BrowserLinkMiddleware|Response markup was updated to include Browser Link script injection. 

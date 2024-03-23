@@ -36,19 +36,33 @@
 }
 
 .client-list { 
+    margin: 20px 0;
     color: black;
+    font-size: 1.1rem
 }
 .client-list table{
-
+    width: 100%;
     border-collapse: collapse;
 }
 .client-list tr{
-
-    border: 1px solid;
+    transition: 150ms ease-in-out;
+}
+.client-list tr:nth-child(odd) td{
+    background-color: green;
+}
+.client-list tr:nth-child(even) td{
+    background-color: blue;
+}
+.client-list tr:hover td{
+    background-color: red;
+    cursor: pointer;
 }
 .client-list th{
-
+    border-bottom: 2px solid;
 }
 .client-list td{
+    padding: 10px;
+    border-right: solid 1px #f00; 
+    border-left: solid 1px #f00;
 
 }
