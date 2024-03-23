@@ -38,7 +38,7 @@
 .client-list { 
     margin: 20px 0;
     color: black;
-    font-size: 1.1rem
+    font-size: 1.1rem;
 }
 .client-list table{
     width: 100%;
@@ -54,13 +54,14 @@
     background-color: #e1e1e1;
 }
 .client-list tr:hover td{
-    background-color: red;
+    background-color: #d1d1d1;
+    border-color: #c1c1c1;
     cursor: pointer;
 }
 .client-list th{
     padding: 10px;
     border-bottom: 2px solid;
-    background-color: var(--clr-acc-2);
+    background-color: #b1b3d1;
 }
 .client-list td{
     padding: 10px;
