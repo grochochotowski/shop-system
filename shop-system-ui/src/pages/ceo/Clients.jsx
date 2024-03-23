@@ -11,7 +11,12 @@ function Clients() {
 
     const [clients, setClients] = useState([]);
     const [filters, setFilters] = useState([])
-    const names = [ "Invoice Type", "Name", "NIP", "Address" ];
+    const names = [
+        t("clients.f-opt-invoice"),
+        t("clients.f-opt-name"),
+        t("clients.f-opt-nip"),
+        t("clients.f-opt-address")
+    ];
 
     useEffect(() => {
         var filterValues = {
