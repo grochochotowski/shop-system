@@ -253,7 +253,7 @@ html, body, #root {
     z-index: 10;
 }
 .filter-box li.inside:hover {
-    background-color: #e0e0e0;
+    background-color: #d1d1d1;
 }
 .filter-box li.inside * {
     cursor: pointer;
