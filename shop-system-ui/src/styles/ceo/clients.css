@@ -62,6 +62,9 @@
     padding: 10px;
     border-bottom: 2px solid;
     background-color: #b1b3d1;
+
+    user-select: none;
+
     transition: 150ms ease-in-out;
 }
 .client-list th .sortInfo {
