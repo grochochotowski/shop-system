@@ -62,7 +62,6 @@ function Clients() {
             <table>
                 <thead>
                     <tr>
-                        <th>ID</th>
                         <th>{t("clients.f-opt-invoice")}</th>
                         <th>{t("clients.f-opt-name")}</th>
                         <th>{t("clients.f-opt-nip")}</th>
@@ -73,7 +72,6 @@ function Clients() {
                 <tbody>{
                     clients.map(c => (
                         <tr key={c.id}>
-                            <td>{c.id}</td>
                             <td>{c.invoiceType}</td>
                             <td>{c.name}</td>
                             <td>{c.nip}</td>
