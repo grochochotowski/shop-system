@@ -74,8 +74,9 @@ function Clients() {
                 <thead>
                     <tr>
                         <th onClick={() => changeSortDirection("invoice-type")}>
-                            {t("clients.f-opt-invoice")}
-                            {
+                            <div className="header-content">
+                                <p>{t("clients.f-opt-invoice")}</p>
+                                {
                                 sort[0] === "invoice-type" && <div className="sortInfo">
                                 {
                                     sort[1] === "asc"
@@ -84,6 +85,8 @@ function Clients() {
                                 }
                                 </div>
                             }
+                            </div>
+                            
                         </th>
                         <th onClick={() => changeSortDirection("name")}>
                             {t("clients.f-opt-name")}
