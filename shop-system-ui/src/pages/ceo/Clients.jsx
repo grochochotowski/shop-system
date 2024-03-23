@@ -86,11 +86,11 @@ function Clients() {
                                 </div>
                             }
                             </div>
-                            
                         </th>
                         <th onClick={() => changeSortDirection("name")}>
-                            {t("clients.f-opt-name")}
-                            {
+                            <div className="header-content">
+                                <p>{t("clients.f-opt-name")}</p>
+                                {
                                 sort[0] === "name" && <div className="sortInfo">
                                 {
                                     sort[1] === "asc"
@@ -99,10 +99,12 @@ function Clients() {
                                 }
                                 </div>
                             }
+                            </div>
                         </th>
                         <th onClick={() => changeSortDirection("nip")}>
-                            {t("clients.f-opt-nip")}
-                            {
+                            <div className="header-content">
+                                <p>{t("clients.f-opt-nip")}</p>
+                                {
                                 sort[0] === "nip" && <div className="sortInfo">
                                 {
                                     sort[1] === "asc"
@@ -111,10 +113,12 @@ function Clients() {
                                 }
                                 </div>
                             }
+                            </div>
                         </th>
                         <th onClick={() => changeSortDirection("address")}>
-                            {t("clients.f-opt-address")}
-                            {
+                            <div className="header-content">
+                                <p>{t("clients.f-opt-address")}</p>
+                                {
                                 sort[0] === "address" && <div className="sortInfo">
                                 {
                                     sort[1] === "asc"
@@ -123,10 +127,12 @@ function Clients() {
                                 }
                                 </div>
                             }
+                            </div>
                         </th>
                         <th onClick={() => changeSortDirection("notes")}>
-                            {t("clients.f-opt-notes")}
-                            {
+                            <div className="header-content">
+                                <p>{t("clients.f-opt-notes")}</p>
+                                {
                                 sort[0] === "notes" && <div className="sortInfo">
                                 {
                                     sort[1] === "asc"
@@ -135,6 +141,7 @@ function Clients() {
                                 }
                                 </div>
                             }
+                            </div>
                         </th>
                     </tr>
                 </thead>
