@@ -55,7 +55,6 @@
 }
 .client-list tr:hover td{
     background-color: #d1d1d1;
-    border-color: #c1c1c1;
     cursor: pointer;
 }
 .client-list th {
