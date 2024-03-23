@@ -12,5 +12,14 @@
         "opt-employee": "Employees",
         "opt-sale": "Sales",
         "opt-company": "Company"
+    },
+    "clients" : {
+        "txt-filters": "Filters",
+        "txt-search": "Search for client",
+        "f-opt-invoice": "Invoice type",
+        "f-opt-name": "Name",
+        "f-opt-nip": "NIP",
+        "f-opt-address": "Address",
+        "f-opt-notes": "Notes"
     }
 }
