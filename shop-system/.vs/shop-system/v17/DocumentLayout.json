@@ -42,8 +42,12 @@
       "DocumentGroups": [
         {
           "DockedWidth": 229,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
@@ -54,8 +58,7 @@
               "RelativeToolTip": "shop-system\\Models\\Client\\CreateClientAddressPropsDto.cs",
               "ViewState": "AQIAAAwAAAAAAAAAAAAAABkAAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-18T15:21:14.583Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-18T15:21:14.583Z"
             },
             {
               "$type": "Document",
