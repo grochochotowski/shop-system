@@ -58,11 +58,11 @@ function Clients() {
                 <thead>
                     <tr>
                         <th>ID</th>
-                        <th>Inovice type</th>
-                        <th>Name</th>
-                        <th>NIP</th>
-                        <th>Address</th>
-                        <th>Notes</th>
+                        <th>{t("clients.f-opt-invoice")}</th>
+                        <th>{t("clients.f-opt-name")}</th>
+                        <th>{t("clients.f-opt-nip")}</th>
+                        <th>{t("clients.f-opt-address")}</th>
+                        <th>{t("clients.f-opt-notes")}</th>
                     </tr>
                 </thead>
                 <tbody>{
