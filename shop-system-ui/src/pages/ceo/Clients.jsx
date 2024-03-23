@@ -17,6 +17,7 @@ function Clients() {
         t("clients.f-opt-nip"),
         t("clients.f-opt-address")
     ];
+    const [sort, setSort] = useState("invoice-type-asc");
 
     useEffect(() => {
         var filterValues = {
