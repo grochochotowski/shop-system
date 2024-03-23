@@ -59,13 +59,13 @@ function Clients() {
     }
 
     function changeSortDirection(column) {
-        if (sort[0] === column) {
-            console.log("opt1")
-            if (sort[1] === "asc") setSort([column, "dsc"])
-            if (sort[1] === "dsc") setSort([column, "asc"])
-        }
-        setSort([column, "asc"])
-        console.log(sort);
+        setSort(prev => {
+            if (prev[0] === column) {
+                if (prev[1] === "asc") return [column, "dsc"]
+                if (prev[1] === "dsc") return [column, "asc"]
+            }
+            return [column, "asc"]
+        })
     }
 
     function GenerateClientTable() {
