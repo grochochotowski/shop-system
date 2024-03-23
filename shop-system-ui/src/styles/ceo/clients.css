@@ -67,9 +67,11 @@
 
     transition: 150ms ease-in-out;
 }
-.client-list th i {background-color: red;}
-.client-list th .sortInfo {
-    float: right;
+.client-list th .header-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
 }
 .client-list th:hover{
     background-color: #a0a2c0;
