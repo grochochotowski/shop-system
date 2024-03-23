@@ -25,7 +25,7 @@
         "f-opt-address": "Address",
         "f-opt-notes": "Notes",
         "f-opt-btn": "Filter",
-        "t-compamny-invoice" : "Firmowa",
-        "t-name-invoice" : "Imienna"
+        "t-compamny-invoice" : "Company",
+        "t-name-invoice" : "Name"
     }
 }
