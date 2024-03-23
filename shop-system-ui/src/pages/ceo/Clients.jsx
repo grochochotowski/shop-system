@@ -148,7 +148,7 @@ function Clients() {
                 <tbody>{
                     clients.map(c => (
                         <tr key={c.id}>
-                            <td>{c.invoiceType === "company" ? t("clients.t-compamny-invoice") : t("clients.t-name-invoice")}</td>
+                            <td>{c.invoiceType === "Company" ? t("clients.t-compamny-invoice") : t("clients.t-name-invoice")}</td>
                             <td>{c.name}</td>
                             <td>{c.nip}</td>
                             <td>{`
