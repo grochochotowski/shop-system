@@ -58,11 +58,14 @@
     border-color: #c1c1c1;
     cursor: pointer;
 }
-.client-list th{
+.client-list th {
     padding: 10px;
     border-bottom: 2px solid;
     background-color: #b1b3d1;
     transition: 150ms ease-in-out;
+}
+.client-list th .sortInfo {
+    float: right;
 }
 .client-list th:hover{
     background-color: #a0a2c0;
