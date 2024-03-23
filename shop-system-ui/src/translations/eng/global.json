@@ -18,6 +18,7 @@
         "txt-search-for": "client",
         "txt-filters": "Filters",
         "txt-search": "Search for client",
+        "add-btn": "Add client",
         "f-opt-invoice": "Invoice type",
         "f-opt-name": "Name",
         "f-opt-nip": "NIP",
