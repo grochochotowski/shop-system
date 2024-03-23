@@ -1,6 +1,7 @@
 {
-    "main" : {
-        "loading": "Ładowanie ..."
+    "general" : {
+        "txt-loading": "Ładowanie ...",
+        "txt-search": "Szukaj "
     },
     "header" : {
         "button": "Wyloguj"
