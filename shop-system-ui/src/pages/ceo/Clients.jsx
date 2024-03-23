@@ -65,15 +65,13 @@ function Clients() {
                     <tr>
                         <th>
                             {t("clients.f-opt-invoice")}
-                            {
-                                sort[0] === "invoice-type" && <div className="sortInfo">
+                            { sort[0] === "invoice-type" && <div className="sortInfo">
                                 {
                                     sort[1] === "asc"
                                         ? <i class="fa-solid fa-arrow-down-a-z"></i>
                                         : <i class="fa-solid fa-arrow-up-a-z"></i>
                                 }
-                                </div>
-                            }
+                                </div> }
                         </th>
                         <th>
                             {t("clients.f-opt-name")}
