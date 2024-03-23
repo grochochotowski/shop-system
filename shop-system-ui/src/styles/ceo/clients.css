@@ -79,8 +79,6 @@
 }
 .client-list td{
     padding: 10px;
-    border-right: solid 2px #d1d1d1; 
-    border-left: solid 2px #d1d1d1;
 }
 .client-list tr th:nth-child(1) { width: 15%; }
 .client-list tr th:nth-child(2) { width: 25%; }
