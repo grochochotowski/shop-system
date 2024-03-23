@@ -12,5 +12,14 @@
         "opt-employee": "Pracownicy",
         "opt-sale": "Przeceny",
         "opt-company": "Firma"
+    },
+    "clients" : {
+        "txt-filters": "Filtry",
+        "txt-search": "Wyszukaj klienta",
+        "f-opt-invoice": "Typ faktury",
+        "f-opt-name": "Nazwa",
+        "f-opt-nip": "NIP",
+        "f-opt-address": "Adres",
+        "f-opt-notes": "Notatki"
     }
 }
