@@ -35,7 +35,7 @@
     }
 }
 
-.store-manage .list tr th:nth-child(1) { width: 20%; }
-.store-manage .list tr th:nth-child(2) { width: 20%; }
-.store-manage .list tr th:nth-child(3) { width: 30%; }
-.store-manage .list tr th:nth-child(4) { width: 30%; }
+.store-container .list tr th:nth-child(1) { width: 20%; }
+.store-container .list tr th:nth-child(2) { width: 20%; }
+.store-container .list tr th:nth-child(3) { width: 30%; }
+.store-container .list tr th:nth-child(4) { width: 30%; }
