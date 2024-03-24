@@ -6,6 +6,20 @@ import SearchBox from '../../components/SearchBox'
 import FilterBox from '../../components/FilterBox'
 
 function Stores() {
+
+    const { t } = useTranslation("global")
+
+    const [stores, setStores] = useState([]);
+    const [filters, setFilters] = useState([])
+    const names = [
+        t("stores.f-opt-invoice"),
+        t("stores.f-opt-name"),
+        t("stores.f-opt-nip"),
+        t("stores.f-opt-address")
+    ];
+    const [sort, setSort] = useState(["Code", "asc"]);
+
+
     return (
         <div className="store-container">
             <div className="store-manage">
