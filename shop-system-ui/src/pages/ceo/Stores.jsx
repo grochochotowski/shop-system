@@ -12,9 +12,8 @@ function Stores() {
     const [stores, setStores] = useState([]);
     const [filters, setFilters] = useState([])
     const names = [
-        t("stores.f-opt-invoice"),
-        t("stores.f-opt-name"),
-        t("stores.f-opt-nip"),
+        t("stores.f-opt-code"),
+        t("stores.f-opt-phone-number"),
         t("stores.f-opt-address")
     ];
     const [sort, setSort] = useState(["Code", "asc"]);
