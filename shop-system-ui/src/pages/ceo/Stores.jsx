@@ -19,6 +19,104 @@ function Stores() {
     ];
     const [sort, setSort] = useState(["Code", "asc"]);
 
+    function GenerateClientTable() {
+        return (
+            <table>
+                <thead>
+                    <tr>
+                        <th onClick={() => changeSortDirection("invoice-type")}>
+                            <div className="header-content">
+                                <p>{t("stores.f-opt-invoice")}</p>
+                                {
+                                sort[0] === "invoice-type" && <div className="sortInfo">
+                                {
+                                    sort[1] === "asc"
+                                        ? <i className="fa-solid fa-arrow-down-a-z"></i>
+                                        : <i className="fa-solid fa-arrow-up-a-z"></i>
+                                }
+                                </div>
+                            }
+                            </div>
+                        </th>
+                        <th onClick={() => changeSortDirection("name")}>
+                            <div className="header-content">
+                                <p>{t("stores.f-opt-name")}</p>
+                                {
+                                sort[0] === "name" && <div className="sortInfo">
+                                {
+                                    sort[1] === "asc"
+                                        ? <i className="fa-solid fa-arrow-down-a-z"></i>
+                                        : <i className="fa-solid fa-arrow-up-a-z"></i>
+                                }
+                                </div>
+                            }
+                            </div>
+                        </th>
+                        <th onClick={() => changeSortDirection("nip")}>
+                            <div className="header-content">
+                                <p>{t("stores.f-opt-nip")}</p>
+                                {
+                                sort[0] === "nip" && <div className="sortInfo">
+                                {
+                                    sort[1] === "asc"
+                                        ? <i className="fa-solid fa-arrow-down-a-z"></i>
+                                        : <i className="fa-solid fa-arrow-up-a-z"></i>
+                                }
+                                </div>
+                            }
+                            </div>
+                        </th>
+                        <th onClick={() => changeSortDirection("address")}>
+                            <div className="header-content">
+                                <p>{t("stores.f-opt-address")}</p>
+                                {
+                                sort[0] === "address" && <div className="sortInfo">
+                                {
+                                    sort[1] === "asc"
+                                        ? <i className="fa-solid fa-arrow-down-a-z"></i>
+                                        : <i className="fa-solid fa-arrow-up-a-z"></i>
+                                }
+                                </div>
+                            }
+                            </div>
+                        </th>
+                        <th onClick={() => changeSortDirection("notes")}>
+                            <div className="header-content">
+                                <p>{t("stores.f-opt-notes")}</p>
+                                {
+                                sort[0] === "notes" && <div className="sortInfo">
+                                {
+                                    sort[1] === "asc"
+                                        ? <i className="fa-solid fa-arrow-down-a-z"></i>
+                                        : <i className="fa-solid fa-arrow-up-a-z"></i>
+                                }
+                                </div>
+                            }
+                            </div>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>{
+                    stores.map(s => (
+                        <tr key={s.id}>
+                            <td>{s.invoiceType === "Company" ? t("stores.t-compamny-invoice") : t("stores.t-name-invoice")}</td>
+                            <td>{s.name}</td>
+                            <td>{s.nip}</td>
+                            <td>{`
+                                ${s.address.country},
+                                ${s.address.city},
+                                ${s.address.postalCode},
+                                ${s.address.street} ${c.address.building}
+                                    ${s.address.premises ? "/" + s.address.premises : ""}
+                            `}</td>
+                            <td>{s.notes}</td>
+                        </tr>
+                    ))
+                }</tbody>
+            </table>
+        )
+    }
+
     useEffect(() => {
         async function getUserData() {
             try {
