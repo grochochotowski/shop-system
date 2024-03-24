@@ -155,7 +155,7 @@ function Stores() {
                                 ${s.address.country},
                                 ${s.address.city},
                                 ${s.address.postalCode},
-                                ${s.address.street} ${c.address.building}
+                                ${s.address.street} ${s.address.building}
                                     ${s.address.premises ? "/" + s.address.premises : ""}
                             `}</td>
                             <td>{s.notes}</td>
