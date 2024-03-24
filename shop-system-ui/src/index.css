@@ -302,6 +302,57 @@ html, body, #root {
     }
 }
 
+/* ---- Lists ---- */
+.list { 
+    margin: 20px 0;
+    color: black;
+    font-size: 1.1rem;
+}
+.list table{
+    width: 100%;
+    border-collapse: collapse;
+}
+.list tr{
+    transition: 150ms ease-in-out;
+}
+.list tr:nth-child(odd) td{
+    background-color: #f1f1f1;
+}
+.list tr:nth-child(even) td{
+    background-color: #e1e1e1;
+}
+.list tr:hover td{
+    background-color: #d1d1d1;
+    cursor: pointer;
+}
+.list th {
+    padding: 10px;
+    border-bottom: 2px solid;
+    background-color: #b1b3d1;
+
+    user-select: none;
+
+    transition: 150ms ease-in-out;
+}
+.list th .header-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+}
+.list th:hover{
+    background-color: #a0a2c0;
+    cursor: pointer;
+}
+.list td{
+    padding: 10px;
+}
+.list tr th:nth-child(1) { width: 15%; }
+.list tr th:nth-child(2) { width: 25%; }
+.list tr th:nth-child(3) { width: 10%; }
+.list tr th:nth-child(4) { width: 30%; }
+.list tr th:nth-child(5) { width: 20%; }
+
 /* ---- Common page elements ---- */
 .button {
     padding: 10px;
