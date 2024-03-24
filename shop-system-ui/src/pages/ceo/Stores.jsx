@@ -19,6 +19,32 @@ function Stores() {
     ];
     const [sort, setSort] = useState(["Code", "asc"]);
 
+    useEffect(() => {
+        var filterValues = {
+            InvoiceType: new Set(),
+            Name: new Set(),
+            Nip: new Set(),
+            Address: new Set()
+        };
+    
+        filterValues.Nip.add('none');
+
+        stores.forEach(store => {
+            filterValues.InvoiceType.add(store.invoiceType);
+            filterValues.Name.add(store.name);
+            filterValues.Nip.add(store.nip);
+            filterValues.Address.add(`${store.address.country}, ${store.address.city}, ${store.address.postalCode}, ${store.address.street} ${store.address.building}`);
+        });
+    
+        var newFilters = Object.keys(filterValues).map(key => {
+            return [...filterValues[key]].filter(Boolean).sort().map(value => {
+                return { name: value, checked: false };
+            });
+        });
+
+        setFilters(newFilters);
+    }, [stores]);
+
     function changeChecked(opt, elementName) {
         setFilters((prev) => {
             const newFilters = [ ...prev ];
