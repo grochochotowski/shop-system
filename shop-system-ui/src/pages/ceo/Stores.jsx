@@ -20,18 +20,14 @@ function Stores() {
 
     useEffect(() => {
         var filterValues = {
-            InvoiceType: new Set(),
-            Name: new Set(),
-            Nip: new Set(),
+            Code: new Set(),
+            PhoneNumber: new Set(),
             Address: new Set()
         };
-    
-        filterValues.Nip.add('none');
 
         stores.forEach(store => {
-            filterValues.InvoiceType.add(store.invoiceType);
-            filterValues.Name.add(store.name);
-            filterValues.Nip.add(store.nip);
+            filterValues.Code.add(store.invoiceType);
+            filterValues.PhoneNumber.add(store.name);
             filterValues.Address.add(`${store.address.country}, ${store.address.city}, ${store.address.postalCode}, ${store.address.street} ${store.address.building}`);
         });
     
