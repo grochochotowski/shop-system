@@ -27,5 +27,16 @@
         "f-opt-btn": "Filter",
         "t-compamny-invoice" : "Company",
         "t-name-invoice" : "Name"
+    },
+    "stores" : {
+        "txt-search-for": "store",
+        "txt-filters": "Filters",
+        "txt-search": "Search for store",
+        "add-btn": "Add store",
+        "f-opt-code": "Store code",
+        "f-opt-phone-number": "Phone number",
+        "f-opt-address": "Address",
+        "f-opt-notes": "Notes",
+        "f-opt-btn": "Filter"
     }
 }
