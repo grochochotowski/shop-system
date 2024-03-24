@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\nonSystem\\IT\\Code\\shop-system\\shop-system\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{98367C44-DCDB-420B-BF40-4EEBCB0DF1CE}|shop-system\\shop-system.csproj|c:\\nonsystem\\it\\code\\shop-system\\shop-system\\shop-system\\entities\\shop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{98367C44-DCDB-420B-BF40-4EEBCB0DF1CE}|shop-system\\shop-system.csproj|solutionrelative:shop-system\\entities\\shop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{98367C44-DCDB-420B-BF40-4EEBCB0DF1CE}|shop-system\\shop-system.csproj|c:\\nonsystem\\it\\code\\shop-system\\shop-system\\shop-system\\shopmappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{98367C44-DCDB-420B-BF40-4EEBCB0DF1CE}|shop-system\\shop-system.csproj|solutionrelative:shop-system\\shopmappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -18,11 +22,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 229,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
+              "Title": "Shop.cs",
+              "DocumentMoniker": "C:\\nonSystem\\IT\\Code\\shop-system\\shop-system\\shop-system\\Entities\\Shop.cs",
+              "RelativeDocumentMoniker": "shop-system\\Entities\\Shop.cs",
+              "ToolTip": "C:\\nonSystem\\IT\\Code\\shop-system\\shop-system\\shop-system\\Entities\\Shop.cs",
+              "RelativeToolTip": "shop-system\\Entities\\Shop.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-24T21:28:49.09Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\nonSystem\\IT\\Code\\shop-system\\shop-system\\shop-system\\Program.cs",
               "RelativeDocumentMoniker": "shop-system\\Program.cs",
@@ -30,12 +47,11 @@
               "RelativeToolTip": "shop-system\\Program.cs",
               "ViewState": "AQIAAB0AAAAAAAAAAIAwwC8AAABMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-24T19:41:20.368Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-24T19:41:20.368Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "ShopMappingProfile.cs",
               "DocumentMoniker": "C:\\nonSystem\\IT\\Code\\shop-system\\shop-system\\shop-system\\ShopMappingProfile.cs",
               "RelativeDocumentMoniker": "shop-system\\ShopMappingProfile.cs",
