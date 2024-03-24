@@ -1,4 +1,9 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
+import {useTranslation} from "react-i18next";
+import "../../styles/ceo/clients.css"
+
+import SearchBox from '../../components/SearchBox'
+import FilterBox from '../../components/FilterBox'
 
 function Stores() {
     return (
