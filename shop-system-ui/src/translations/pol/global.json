@@ -27,5 +27,16 @@
         "f-opt-btn": "Filtruj",
         "t-compamny-invoice" : "Firmowa",
         "t-name-invoice" : "Imienna"
+    },
+    "stores" : {
+        "txt-search-for": "sklepu",
+        "txt-filters": "Filtry",
+        "txt-search": "Wyszukaj sklep",
+        "add-btn": "Dodaj sklep",
+        "f-opt-code": "Kod sklepu",
+        "f-opt-phone-number": "Numer telefonu",
+        "f-opt-address": "Adres",
+        "f-opt-notes": "Notatki",
+        "f-opt-btn": "Filtruj"
     }
 }
