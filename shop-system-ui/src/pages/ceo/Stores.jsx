@@ -72,11 +72,11 @@ function Stores() {
             <table>
                 <thead>
                     <tr>
-                        <th onClick={() => changeSortDirection("invoice-type")}>
+                        <th onClick={() => changeSortDirection("code")}>
                             <div className="header-content">
-                                <p>{t("stores.f-opt-invoice")}</p>
+                                <p>{t("stores.f-opt-code")}</p>
                                 {
-                                sort[0] === "invoice-type" && <div className="sortInfo">
+                                sort[0] === "code" && <div className="sortInfo">
                                 {
                                     sort[1] === "asc"
                                         ? <i className="fa-solid fa-arrow-down-a-z"></i>
@@ -86,25 +86,11 @@ function Stores() {
                             }
                             </div>
                         </th>
-                        <th onClick={() => changeSortDirection("name")}>
+                        <th onClick={() => changeSortDirection("phone-number")}>
                             <div className="header-content">
-                                <p>{t("stores.f-opt-name")}</p>
+                                <p>{t("stores.f-opt-phone-number")}</p>
                                 {
-                                sort[0] === "name" && <div className="sortInfo">
-                                {
-                                    sort[1] === "asc"
-                                        ? <i className="fa-solid fa-arrow-down-a-z"></i>
-                                        : <i className="fa-solid fa-arrow-up-a-z"></i>
-                                }
-                                </div>
-                            }
-                            </div>
-                        </th>
-                        <th onClick={() => changeSortDirection("nip")}>
-                            <div className="header-content">
-                                <p>{t("stores.f-opt-nip")}</p>
-                                {
-                                sort[0] === "nip" && <div className="sortInfo">
+                                sort[0] === "phone-number" && <div className="sortInfo">
                                 {
                                     sort[1] === "asc"
                                         ? <i className="fa-solid fa-arrow-down-a-z"></i>
