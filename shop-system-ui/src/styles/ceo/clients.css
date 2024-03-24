@@ -35,8 +35,8 @@
     }
 }
 
-.client-manage .list tr th:nth-child(1) { width: 15%; }
-.client-manage .list tr th:nth-child(2) { width: 25%; }
-.client-manage .list tr th:nth-child(3) { width: 10%; }
-.client-manage .list tr th:nth-child(4) { width: 30%; }
-.client-manage .list tr th:nth-child(5) { width: 20%; }
+.client-container .list tr th:nth-child(1) { width: 15%; }
+.client-container .list tr th:nth-child(2) { width: 25%; }
+.client-container .list tr th:nth-child(3) { width: 10%; }
+.client-container .list tr th:nth-child(4) { width: 30%; }
+.client-container .list tr th:nth-child(5) { width: 20%; }
