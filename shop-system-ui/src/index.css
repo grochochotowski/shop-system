@@ -347,11 +347,6 @@ html, body, #root {
 .list td{
     padding: 10px;
 }
-.list tr th:nth-child(1) { width: 15%; }
-.list tr th:nth-child(2) { width: 25%; }
-.list tr th:nth-child(3) { width: 10%; }
-.list tr th:nth-child(4) { width: 30%; }
-.list tr th:nth-child(5) { width: 20%; }
 
 /* ---- Common page elements ---- */
 .button {
