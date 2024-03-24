@@ -194,7 +194,7 @@ function Clients() {
                     <button className="add-button">{t("clients.add-btn")}</button>    
                 </div>                
             </div>
-            <div className="client-list">
+            <div className="list">
                 <GenerateClientTable />
             </div>
         </div>
