@@ -19,6 +19,16 @@ function Stores() {
     ];
     const [sort, setSort] = useState(["Code", "asc"]);
 
+    function changeSortDirection(column) {
+        setSort(prev => {
+            if (prev[0] === column) {
+                if (prev[1] === "asc") return [column, "dsc"]
+                if (prev[1] === "dsc") return [column, "asc"]
+            }
+            return [column, "asc"]
+        })
+    }
+
     function GenerateClientTable() {
         return (
             <table>
