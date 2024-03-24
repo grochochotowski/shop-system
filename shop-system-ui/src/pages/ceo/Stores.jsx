@@ -194,7 +194,7 @@ function Stores() {
                     <button className="add-button">{t("stores.add-btn")}</button>    
                 </div>                
             </div>
-            <div className="store-list">
+            <div className="list">
                 <GenerateStoreTable />
             </div>
         </div>
