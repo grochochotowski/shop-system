@@ -17,7 +17,6 @@
     "clients" : {
         "txt-search-for": "client",
         "txt-filters": "Filters",
-        "txt-search": "Search for client",
         "add-btn": "Add client",
         "f-opt-invoice": "Invoice type",
         "f-opt-name": "Name",
@@ -31,7 +30,6 @@
     "stores" : {
         "txt-search-for": "store",
         "txt-filters": "Filters",
-        "txt-search": "Search for store",
         "add-btn": "Add store",
         "f-opt-code": "Store code",
         "f-opt-phone-number": "Phone number",
