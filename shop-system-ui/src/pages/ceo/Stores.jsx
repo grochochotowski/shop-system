@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import {useTranslation} from "react-i18next";
-import "../../styles/ceo/clients.css"
+import "../../styles/ceo/stores.css"
 
 import SearchBox from '../../components/SearchBox'
 import FilterBox from '../../components/FilterBox'
@@ -19,6 +19,19 @@ function Stores() {
     ];
     const [sort, setSort] = useState(["Code", "asc"]);
 
+    function changeChecked(opt, elementName) {
+        setFilters((prev) => {
+            const newFilters = [ ...prev ];
+            newFilters[opt] = newFilters[opt].map(element => {
+                if (element.name === elementName) {
+                    return { ...element, checked: !element.checked };
+                }
+                return element;
+            });
+            return newFilters;
+        });
+    }
+
     function changeSortDirection(column) {
         setSort(prev => {
             if (prev[0] === column) {
@@ -29,7 +42,7 @@ function Stores() {
         })
     }
 
-    function GenerateClientTable() {
+    function GenerateStoreTable() {
         return (
             <table>
                 <thead>
