@@ -19,6 +19,21 @@ function Stores() {
     ];
     const [sort, setSort] = useState(["Code", "asc"]);
 
+    useEffect(() => {
+        async function getUserData() {
+            try {
+                const response = await fetch("https://localhost:7057/api/stores/all");
+                if (!response.ok) {
+                    throw new Error('Failed to fetch data');
+                }
+                const data = await response.json();
+                setStores(data);
+            } catch (error) {
+                console.error('Error fetching data:', error);
+            }
+        }
+        getUserData();
+    }, []);
 
     return (
         <div className="store-container">
