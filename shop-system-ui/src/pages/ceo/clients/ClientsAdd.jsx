@@ -70,7 +70,7 @@ export default function ClientsAdd() {
                 throw new Error("Failed to create user");
             }
 
-            if (window.confirm("Navigate to clients page?")) {
+            if (window.confirm("Client added: navigate to clients page?")) {
                 navigate("/clients");
             }
 
