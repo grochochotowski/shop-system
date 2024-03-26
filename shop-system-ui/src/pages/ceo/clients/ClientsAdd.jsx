@@ -1,10 +1,12 @@
 import React, { useState } from 'react'
 import {useTranslation} from "react-i18next";
+import { useNavigate } from "react-router-dom";
 
 import "../../../styles/ceo/clients.css"
 
 export default function ClientsAdd() {
 
+    const navigate = useNavigate();
     const { t } = useTranslation("global")
 
     const [addUserForm, setAddUserForm] = useState ({
@@ -66,8 +68,8 @@ export default function ClientsAdd() {
             if (!response.ok) {
                 throw new Error("Failed to create user");
             }
-    
-            console.log("User created successfully");
+            
+            navigate("/clients");
 
         } catch (error) {
             console.error("Error creating user:", error.message);
