@@ -7,7 +7,12 @@ import AppHeader from "./components/AppHeader";
 
 // PAGES
 const Dashboard = lazy(() => import("./pages/ceo/Dashboard"))
+
 const Clients = lazy(() => import("./pages/ceo/clients/Clients"))
+const ClientsAdd = lazy(() => import("./pages/ceo/clients/ClientsAdd"))
+const ClientsDetails = lazy(() => import("./pages/ceo/clients/ClientsDetails"))
+
+
 const Stores = lazy(() => import("./pages/ceo/Stores"))
 const Clothing = lazy(() => import("./pages/ceo/Clothing"))
 const Employees = lazy(() => import("./pages/ceo/Employees"))
