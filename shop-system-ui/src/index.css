@@ -125,7 +125,7 @@ html, body, #root {
 .add-button {
     float: right;
     padding: 10px;
-    max-height: 3rem;
+    height: fit-content;
 
     font-size: 1.2rem;
     color: black;
@@ -138,6 +138,7 @@ html, body, #root {
 
     cursor: pointer;
     user-select: none;
+    text-decoration: none;
 
     transition: 150ms ease-in-out;
 }
