@@ -2,7 +2,7 @@ import React, {Suspense, lazy} from "react";
 import { Routes, Route } from "react-router-dom";
 
 // COMPONENTS
-import Fallback from './Fallback';
+import Fallback from './components/Fallback';
 import AppHeader from "./components/AppHeader";
 
 // PAGES
