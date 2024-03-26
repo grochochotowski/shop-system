@@ -14,6 +14,57 @@
     user-select: none;
 
     z-index: 20;
+
+    transition: all 150ms ease-in-out;
+}
+.app-header.hidden,
+.app-header.hidden * {
+    height: 0;
+
+    padding-top: 0;
+    padding-bottom: 0;
+
+    font-size: 0;
+
+    margin-top: 0;
+    margin-bottom: 0;
+
+    border-top-width: 0;
+    border-bottom-width: 0;
+}
+.app-header.hidden .toggle,
+.app-header .toggle {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 100%);
+
+    width: 100px;
+
+    height: fit-content;
+
+    background-color: var(--clr-bg-2);
+
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border: 2px solid white;
+    border-top: none;
+    
+    box-shadow: 0 3px 5px 0  rgba(0, 0, 0, 0.5);
+
+    font-size: 0.75rem;
+    text-align: center;
+
+    cursor: pointer;
+
+    transition: 150ms ease-in-out;
+}
+.app-header .toggle i,
+.app-header.hidden .toggle i {
+    font-size: 0.75rem;
+}
+.app-header .toggle:hover {
+    background-color: #4a509d;
 }
 
 .app-logo {
