@@ -1,16 +1,12 @@
 .client-container {
-    height: 100%;
-    padding: 50px;
+    height: 100vh
 }
 
 .client-manage {
     display: flex;
     flex-wrap: wrap;
 
-    padding: 5px;
-    padding-bottom: 10px;
-    
-    border-bottom: 2px solid black;
+    padding: 75px 50px 10px 50px;
 }
 .client-manage .left {
     display: block;
@@ -28,6 +24,10 @@
 }
 
 @media (orientation: portrait) {
+    .client-container {
+        height: 100%;
+        padding: 50px;
+    }
     .client-manage .right{
         margin-top: 30px;
         justify-content: center;

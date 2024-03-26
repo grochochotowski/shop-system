@@ -310,9 +310,12 @@ html, body, #root {
 
 /* ---- Lists ---- */
 .list { 
-    margin: 20px 0;
+    padding: 20px 0;
+    margin: 0 50px;
     color: black;
     font-size: 1.1rem;
+    
+    border-top: 2px solid black;
 }
 .list table{
     width: 100%;
