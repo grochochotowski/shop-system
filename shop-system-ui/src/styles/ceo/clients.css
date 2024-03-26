@@ -59,7 +59,20 @@
 
 .add-client-container input[type="text"] {
     padding: 10px;
-    padding-right: 0;
+
+    font-size: 1.2rem;
+    color: black;
+
+    background: none;
+    border: 2px solid black;
+    border-radius: 10px;
+    outline: none;
+
+    transition: 150ms ease-in-out;
+}
+
+.add-client-container select {
+    padding: 10px;
 
     font-size: 1.2rem;
     color: black;
@@ -83,6 +96,19 @@
     gap: 20px;
 
     padding: 10px;
+}
+
+.add-client-container .user-part .invoice-container {
+    display: flex;
+    gap: 10px;
+}
+.add-client-container .user-part .invoice-container select.company {
+    flex-basis: 30%;
+    flex-grow: 1;
+}
+.add-client-container .user-part .invoice-container input.company {
+    flex-basis: 60%;
+    flex-grow: 1;
 }
 
 .add-client-container .address-part {
