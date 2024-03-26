@@ -9,7 +9,7 @@ namespace shop_system.Entities
         [Required]
         public string InvoiceType { get; set; }
         [Required]
-        public string Name { get; set; }
+        public string ClientName { get; set; }
 
         public string? NIP { get; set; }
 

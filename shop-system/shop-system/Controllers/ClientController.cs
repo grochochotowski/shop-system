@@ -23,7 +23,7 @@ namespace shop_system.Controllers
         [HttpPost("new")]
         public ActionResult CreateClient([FromBody] CreateClientAddressPropsDto dto)
         {
-            Client? client = _context.Clients.FirstOrDefault(c => c.Name == dto.Name);
+            Client? client = _context.Clients.FirstOrDefault(c => c.ClientName == dto.ClientName);
 
             if (client == null)
             {

@@ -7,7 +7,7 @@ namespace shop_system.Models.Client
     {
         public int Id { get; set; }
         public string InvoiceType { get; set; }
-        public string Name { get; set; }
+        public string ClientName { get; set; }
         public string? NIP { get; set; }
         public string? Notes { get; set; }
 
