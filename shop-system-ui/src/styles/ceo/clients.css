@@ -40,3 +40,24 @@
 .client-container .list tr th:nth-child(3) { width: 10%; }
 .client-container .list tr th:nth-child(4) { width: 30%; }
 .client-container .list tr th:nth-child(5) { width: 20%; }
+
+
+.add-client-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2%;
+    flex-shrink: 1;
+    flex-grow: 1;
+}
+
+.add-client-container .user-part {
+    flex-basis: 49%;
+}
+
+.add-client-container .address-part {
+    flex-basis: 49%;
+}
+
+.add-client-container .submit-add-client-button {
+    flex-basis: 100%;
+}
