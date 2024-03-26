@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react'
+import { Link } from 'react-router-dom'
 import {useTranslation} from "react-i18next";
 import "../../../styles/ceo/clients.css"
 
@@ -191,7 +192,7 @@ function Clients() {
                     <FilterBox filters={filters} toggleCheck={changeChecked} names={names} clients={clients}/>
                 </div>
                 <div className="right">
-                    <button className="add-button">{t("clients.add-btn")}</button>    
+                    <Link to="add" className="add-button">{t("clients.add-btn")}</Link>    
                 </div>                
             </div>
             <div className="list">
