@@ -69,7 +69,9 @@ export default function ClientsAdd() {
                 throw new Error("Failed to create user");
             }
             
-            navigate("/clients");
+            if (window.confirm("Navigate to clients page?")) {
+                navigate("/clients");
+            }
 
         } catch (error) {
             console.error("Error creating user:", error.message);
