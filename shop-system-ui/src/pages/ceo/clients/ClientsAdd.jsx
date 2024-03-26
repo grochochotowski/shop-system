@@ -66,15 +66,17 @@ export default function ClientsAdd() {
             });
     
             if (!response.ok) {
+                alert("Failed to create user");
                 throw new Error("Failed to create user");
             }
-            
+
             if (window.confirm("Navigate to clients page?")) {
                 navigate("/clients");
             }
 
         } catch (error) {
             console.error("Error creating user:", error.message);
+            alert("Something went wrong: 500")
         }
     }
 
