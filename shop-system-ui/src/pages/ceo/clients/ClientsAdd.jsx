@@ -38,8 +38,19 @@ export default function ClientsAdd() {
     }
 
     function validateForm() {
+        let isValid = true;
 
-        console.log(addUserForm)
+        if(addUserForm.clientName === "") isValid = false;
+        if(addUserForm.country === "") isValid = false;
+        if(addUserForm.city === "") isValid = false;
+        if(addUserForm.postalCode === "") isValid = false;
+        if(addUserForm.street === "") isValid = false;
+        if(addUserForm.building === "") isValid = false;
+        if(addUserForm.invoiceType === "Company" && addUserForm.nip === "") isValid = false;
+
+        if(isValid) {
+            
+        }
     }
 
     return (
