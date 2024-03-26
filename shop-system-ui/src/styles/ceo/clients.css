@@ -48,7 +48,7 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
 
-    padding: 5% 3% 0 3%;
+    padding: 0 3%;
     gap: 20px;
     height: 95vh;
 }
@@ -73,7 +73,7 @@
 }
 
 .add-client-container select {
-    width: 50%;
+    width: 35%;
     padding: 10px;
 
     font-size: 1.2rem;
@@ -115,6 +115,7 @@
     gap: 20px;
 
     padding: 10px;
+    margin-top: 10%;
 }
 
 .add-client-container .user-part .invoice-container {
@@ -140,6 +141,7 @@
     gap: 20px;
 
     padding: 10px;
+    margin-top: 10%;
 }
 .add-client-container .address-part .building-premises-container {
     display: flex;
