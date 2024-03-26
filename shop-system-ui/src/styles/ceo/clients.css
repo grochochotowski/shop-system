@@ -83,12 +83,12 @@
     border: 2px solid black;
     border-radius: 10px;
     outline: none;
-    cursor: pointer;
 
     transition: 150ms ease-in-out;
 }
 .add-client-container select:hover {
-    background-color: var(--clr-bg-1);
+    background-color: #e6e6e6;
+    cursor: pointer;
 }
 
 .add-client-container textarea {
