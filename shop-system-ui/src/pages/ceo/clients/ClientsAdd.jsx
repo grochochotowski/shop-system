@@ -48,7 +48,9 @@ export default function ClientsAdd() {
                     <input name="premises" type="text" placeholder="Premises"/>
                 </div>
             </div>
-            <button className="add-button middle" onClick={() => validateForm()}>Add client</button>
+            <div className="submit-add-client-button">
+                <button className="add-button middle" onClick={() => validateForm()}>Add client</button>
+            </div>
         </div>
     )
 }
