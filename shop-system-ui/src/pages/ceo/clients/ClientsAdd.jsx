@@ -27,7 +27,7 @@ export default function ClientsAdd() {
     }
 
     return (
-        <div className="container">
+        <div className="add-client-container">
             <div className="user-part">
                 <input name="client-name" type="text" placeholder="Client name"/>
                 <select name="invoice-type" id="invoice-type-input" onChange={() => changeSelect()}>
