@@ -15,6 +15,13 @@ export default function ClientsAdd() {
         "postalCode": ""
     })
 
+    function changeSelect() {
+        setAddUserForm(prev => ({
+            ...prev,
+            "invoiceType": prev.invoiceType === "Name" ? "Company" : "Name"
+        }))
+    }
+
     function validateForm() {
 
     }
@@ -23,7 +30,7 @@ export default function ClientsAdd() {
         <div className="container">
             <div className="user-part">
                 <input name="client-name" type="text" placeholder="Client name"/>
-                <select name="invoice-type" id="invoice-type-input">
+                <select name="invoice-type" id="invoice-type-input" onChange={() => changeSelect()}>
                     <option value="Name">Name</option>
                     <option value="Company">Company</option>
                 </select>
