@@ -42,14 +42,15 @@
 .client-container .list tr th:nth-child(5) { width: 20%; }
 
 
+/* ========== Add client ========== */
 .add-client-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
 
-    height: 100%;
     padding: 3%;
     gap: 20px;
+    height: 100vh;
 }
 
 .add-client-container h2 {
@@ -160,4 +161,6 @@
     grid-column-end: 3;
     grid-row-start: 2;
     grid-row-end: 3;
+
+    padding: 20px;
 }
