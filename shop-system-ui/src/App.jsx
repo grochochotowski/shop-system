@@ -30,11 +30,23 @@ function App() {
                     <Dashboard />
                 </Suspense>
             }/>
+
             <Route path="/clients" element={
                 <Suspense fallback={<Fallback />}>
                     <Clients />
                 </Suspense>
             }/>
+            <Route path="/clients/add" element={
+                <Suspense fallback={<Fallback />}>
+                    <Clients />
+                </Suspense>
+            }/>
+            <Route path="/clients/details/:id" element={
+                <Suspense fallback={<Fallback />}>
+                    <Clients />
+                </Suspense>
+            }/>
+
             <Route path="/stores" element={
                 <Suspense fallback={<Fallback />}>
                     <Stores />
