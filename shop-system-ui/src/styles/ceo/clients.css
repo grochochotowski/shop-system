@@ -136,8 +136,22 @@
     
     display: flex;
     flex-direction: column;
+    gap: 20px;
 
     padding: 10px;
+}
+.add-client-container .address-part .building-premises-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    color: black;
+}
+.add-client-container .address-part .building-premises-container input {
+    flex-basis: 50%;
+}
+.add-client-container .address-part .building-premises-container p {
+    font-size: 2rem;
 }
 
 .add-client-container .submit-add-client-button {
