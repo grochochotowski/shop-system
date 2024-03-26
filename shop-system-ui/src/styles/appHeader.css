@@ -3,16 +3,21 @@
     align-items: center;
     justify-content: flex-start;
 
-    padding: 20px 10%;
+    position: fixed;
+    padding: 20px 0;
+    width: 100vw;
 
     background-color: var(--clr-bg-2);
     box-shadow: 0 3px 5px 0  rgba(0, 0, 0, 0.5);
     border-bottom: 1px solid black;
 
     user-select: none;
+
+    z-index: 20;
 }
 
 .app-logo {
+    margin-left: 10%;
     margin-right: auto;
     height: 50px;
     aspect-ratio: 1;
@@ -51,4 +56,5 @@
 .app-sign-out {
     width: 10%;
     margin-left: 20px;
+    margin-right: 10%;
 }
