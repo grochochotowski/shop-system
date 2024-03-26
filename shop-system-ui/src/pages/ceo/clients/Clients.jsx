@@ -13,10 +13,10 @@ function Clients() {
     const [clients, setClients] = useState([]);
     const [filters, setFilters] = useState([])
     const names = [
-        t("clients.f-opt-invoice"),
-        t("clients.f-opt-name"),
-        t("clients.f-opt-nip"),
-        t("clients.f-opt-address")
+        t("clients.main.f-opt-invoice"),
+        t("clients.main.f-opt-name"),
+        t("clients.main.f-opt-nip"),
+        t("clients.main.f-opt-address")
     ];
     const [sort, setSort] = useState(["invoice-type", "asc"]);
 
@@ -76,7 +76,7 @@ function Clients() {
                     <tr>
                         <th onClick={() => changeSortDirection("invoice-type")}>
                             <div className="header-content">
-                                <p>{t("clients.f-opt-invoice")}</p>
+                                <p>{t("clients.main.f-opt-invoice")}</p>
                                 {
                                 sort[0] === "invoice-type" && <div className="sortInfo">
                                 {
@@ -90,7 +90,7 @@ function Clients() {
                         </th>
                         <th onClick={() => changeSortDirection("name")}>
                             <div className="header-content">
-                                <p>{t("clients.f-opt-name")}</p>
+                                <p>{t("clients.main.f-opt-name")}</p>
                                 {
                                 sort[0] === "name" && <div className="sortInfo">
                                 {
@@ -104,7 +104,7 @@ function Clients() {
                         </th>
                         <th onClick={() => changeSortDirection("nip")}>
                             <div className="header-content">
-                                <p>{t("clients.f-opt-nip")}</p>
+                                <p>{t("clients.main.f-opt-nip")}</p>
                                 {
                                 sort[0] === "nip" && <div className="sortInfo">
                                 {
@@ -118,7 +118,7 @@ function Clients() {
                         </th>
                         <th onClick={() => changeSortDirection("address")}>
                             <div className="header-content">
-                                <p>{t("clients.f-opt-address")}</p>
+                                <p>{t("clients.main.f-opt-address")}</p>
                                 {
                                 sort[0] === "address" && <div className="sortInfo">
                                 {
@@ -132,7 +132,7 @@ function Clients() {
                         </th>
                         <th onClick={() => changeSortDirection("notes")}>
                             <div className="header-content">
-                                <p>{t("clients.f-opt-notes")}</p>
+                                <p>{t("clients.main.f-opt-notes")}</p>
                                 {
                                 sort[0] === "notes" && <div className="sortInfo">
                                 {
@@ -149,7 +149,7 @@ function Clients() {
                 <tbody>{
                     clients.map(c => (
                         <tr key={c.id}>
-                            <td>{c.invoiceType === "Company" ? t("clients.t-compamny-invoice") : t("clients.t-name-invoice")}</td>
+                            <td>{c.invoiceType === "Company" ? t("clients.main.t-compamny-invoice") : t("clients.main.t-name-invoice")}</td>
                             <td>{c.name}</td>
                             <td>{c.nip}</td>
                             <td>{`
@@ -187,12 +187,12 @@ function Clients() {
         <div className="client-container">
             <div className="client-manage">
                 <div className="left">
-                    <SearchBox name={t("clients.txt-search-for")}/>
-                    <h2 className="filter-heading">{t("clients.txt-filters")}:</h2>
+                    <SearchBox name={t("clients.main.txt-search-for")}/>
+                    <h2 className="filter-heading">{t("clients.main.txt-filters")}:</h2>
                     <FilterBox filters={filters} toggleCheck={changeChecked} names={names} clients={clients}/>
                 </div>
                 <div className="right">
-                    <Link to="add" className="add-button">{t("clients.add-btn")}</Link>    
+                    <Link to="add" className="add-button">{t("clients.main.add-btn")}</Link>    
                 </div>                
             </div>
             <div className="list">
