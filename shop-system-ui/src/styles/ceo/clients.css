@@ -52,6 +52,11 @@
     gap: 10px;
 }
 
+.add-client-container h2 {
+    color: black;
+    font-weight: 500;
+}
+
 .add-client-container input[type="text"] {
     padding: 10px;
     padding-right: 0;
