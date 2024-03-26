@@ -30,7 +30,7 @@
         },
         "add" : {
             "user-part" : {
-                "header" : "Dane osobiste",
+                "header" : "Dane klienta",
                 "name" : "Nazwa klienta",
                 "notes" : "Notatki",
                 "select" : {

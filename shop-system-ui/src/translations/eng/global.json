@@ -30,8 +30,8 @@
         },
         "add" : {
             "user-part" : {
-                "header" : "Personal details",
-                "name" : "CLient nme",
+                "header" : "Client details",
+                "name" : "Client name",
                 "notes" : "Notes",
                 "select" : {
                     "name-invoice" : "Name",
