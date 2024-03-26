@@ -18,6 +18,7 @@
     "clients" : {
         "main" : {
             "txt-search-for": "klienta",
+            "txt-filters": "Filtry",
             "add-btn": "Dodaj klienta",
             "f-opt-invoice": "Rodzaj faktury",
             "f-opt-name": "Nazwa",
