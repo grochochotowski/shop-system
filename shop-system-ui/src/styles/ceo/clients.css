@@ -119,7 +119,7 @@
     gap: 20px;
 
     padding: 10px;
-    margin-top: 10%;
+    margin-top: 15%;
 }
 
 .add-client-container .user-part .invoice-container {
@@ -145,7 +145,7 @@
     gap: 20px;
 
     padding: 10px;
-    margin-top: 10%;
+    margin-top: 15%;
 }
 .add-client-container .address-part .building-premises-container {
     display: flex;
