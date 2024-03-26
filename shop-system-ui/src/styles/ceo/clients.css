@@ -49,7 +49,7 @@
 
     height: 100%;
     padding: 3%;
-    gap: 10px;
+    gap: 20px;
 }
 
 .add-client-container h2 {
@@ -87,6 +87,7 @@
 }
 
 .add-client-container textarea {
+    height: 100%;
     padding: 10px;
 
     font-size: 1.2rem;
