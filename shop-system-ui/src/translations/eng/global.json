@@ -15,26 +15,52 @@
         "opt-company": "Company"
     },
     "clients" : {
-        "txt-search-for": "client",
-        "txt-filters": "Filters",
-        "add-btn": "Add client",
-        "f-opt-invoice": "Invoice type",
-        "f-opt-name": "Name",
-        "f-opt-nip": "NIP",
-        "f-opt-address": "Address",
-        "f-opt-notes": "Notes",
-        "f-opt-btn": "Filter",
-        "t-compamny-invoice" : "Company",
-        "t-name-invoice" : "Name"
+        "main" : {
+            "txt-search-for": "client",
+            "txt-filters": "Filters",
+            "add-btn": "Add client",
+            "f-opt-invoice": "Invoice type",
+            "f-opt-name": "Name",
+            "f-opt-nip": "NIP",
+            "f-opt-address": "Address",
+            "f-opt-notes": "Notes",
+            "f-opt-btn": "Filter",
+            "t-compamny-invoice" : "Company",
+            "t-name-invoice" : "Name"
+        },
+        "add" : {
+            "user-part" : {
+                "header" : "Personal details",
+                "name" : "CLient nme",
+                "notes" : "Notes",
+                "select" : {
+                    "name-invoice" : "Name",
+                    "company-invoice" : "Company"
+                }
+            },
+            "address-part" : {
+                "header" : "Address",
+                "country" : "Country",
+                "city" : "City",
+                "postal-code" : "Postal code",
+                "street" : "Street",
+                "building" : "Building",
+                "premises" : "Premises"
+
+            },
+            "add-btn": "Add client"
+        }
     },
     "stores" : {
-        "txt-search-for": "store",
-        "txt-filters": "Filters",
-        "add-btn": "Add store",
-        "f-opt-code": "Store code",
-        "f-opt-phone-number": "Phone number",
-        "f-opt-address": "Address",
-        "f-opt-notes": "Notes",
-        "f-opt-btn": "Filter"
+        "main" : {
+            "txt-search-for": "store",
+            "txt-filters": "Filters",
+            "add-btn": "Add store",
+            "f-opt-code": "Store code",
+            "f-opt-phone-number": "Phone number",
+            "f-opt-address": "Address",
+            "f-opt-notes": "Notes",
+            "f-opt-btn": "Filter"
+        }
     }
 }
