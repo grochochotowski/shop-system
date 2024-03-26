@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 
 import "../styles/appHeader.css";
 import Logo from "../images/logo.svg";
-import { use } from "i18next";
 
 function Header() {  
 
