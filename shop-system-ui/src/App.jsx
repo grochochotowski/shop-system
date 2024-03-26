@@ -38,12 +38,12 @@ function App() {
             }/>
             <Route path="/clients/add" element={
                 <Suspense fallback={<Fallback />}>
-                    <Clients />
+                    <ClientsAdd />
                 </Suspense>
             }/>
             <Route path="/clients/details/:id" element={
                 <Suspense fallback={<Fallback />}>
-                    <Clients />
+                    <ClientsDetails />
                 </Suspense>
             }/>
 
