@@ -8,6 +8,21 @@ export default function FilterBox({filters, toggleCheck, names, clients}) {
     const [scrollPosition, setScrollPosition] = useState(0);
     const [scrolledName, setScrolledName] = useState("");
     const [opened, setOpened] = useState(Array(names.length).fill(false));
+    
+    useEffect(() => {
+        function handleClickOutside(event) {
+            const filterBox = document.querySelector(".filter-box");
+            if (filterBox && !filterBox.contains(event.target)) {
+                setOpened(Array(names.length).fill(false));
+            }
+        }
+
+        document.addEventListener("mousedown", handleClickOutside);
+
+        return () => {
+            document.removeEventListener("mousedown", handleClickOutside);
+        };
+    }, [names]);
 
     function toggleFilter(opt) {
         setOpened(prev => {
