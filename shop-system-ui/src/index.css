@@ -123,7 +123,6 @@ html, body, #root {
 
 /* ---- Add new ---- */
 .add-button {
-    float: right;
     padding: 10px;
     height: fit-content;
 
@@ -139,12 +138,18 @@ html, body, #root {
     cursor: pointer;
     user-select: none;
     text-decoration: none;
+    text-align: center;
 
     transition: 150ms ease-in-out;
 }
 .add-button:hover {
     background: var(--clr-acc-1);
     color: white;
+}
+
+.add-button.middle {
+    margin: auto;
+    display: block;
 }
 
 /* ---- Filtering ---- */
