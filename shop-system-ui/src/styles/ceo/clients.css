@@ -43,21 +43,30 @@
 
 
 .add-client-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2%;
-    flex-shrink: 1;
-    flex-grow: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+    height: 100%;
 }
 
 .add-client-container .user-part {
-    flex-basis: 49%;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
 }
 
 .add-client-container .address-part {
-    flex-basis: 49%;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
 }
 
 .add-client-container .submit-add-client-button {
-    flex-basis: 100%;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
 }
