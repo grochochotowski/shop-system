@@ -20,7 +20,7 @@ export default function ClientsAdd() {
             ...prev,
             "invoiceType": prev.invoiceType === "Name" ? "Company" : "Name"
         }))
-        
+
         if (addUserForm.invoiceType === "Name") document.getElementById("invoice-type-choice").classList.add("company-invoice-select");
         else document.getElementById("invoice-type-choice").classList.remove("company-invoice-select");
     }
@@ -41,7 +41,7 @@ export default function ClientsAdd() {
                     </select>
                     {addUserForm.invoiceType === "Company" ? <input name="nip" className="company-invoice-input" type="text" placeholder="NIP"/> : ""}
                 </div>
-                <textarea name="notes" id="notes" cols="30" rows="10" placeholder="Notes" />
+                <textarea name="notes" id="notes" cols="30" rows="10" placeholder="Notes" maxLength="500"/>
             </div>
             <div className="address-part glassy">
                 <h2>Address details</h2>

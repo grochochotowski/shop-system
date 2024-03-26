@@ -86,6 +86,22 @@
     transition: 150ms ease-in-out;
 }
 
+.add-client-container textarea {
+    padding: 10px;
+
+    font-size: 1.2rem;
+    color: black;
+
+    background: none;
+    border: 2px solid black;
+    border-radius: 10px;
+    outline: none;
+
+    resize: none;
+
+    transition: 150ms ease-in-out;
+}
+
 .add-client-container .user-part {
     grid-column-start: 1;
     grid-column-end: 2;
