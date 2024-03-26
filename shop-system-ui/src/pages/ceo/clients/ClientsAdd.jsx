@@ -26,6 +26,17 @@ export default function ClientsAdd() {
             {addUserForm.invoiceType === "Company" ? <input name="nip" type="text" placeholder="NIP"/> : ""}
             <textarea name="notes" id="notes" cols="30" rows="10" placeholder="Notes" />
         </div>
+        <div className="address-part">
+            <input name="country" type="text" placeholder="Country"/>
+            <input name="city" type="text" placeholder="City"/>
+            <input name="postal-code" type="text" placeholder="Postal code"/>
+            <input name="street" type="text" placeholder="Street"/>
+            <div className="building-premises-container">
+                <input name="buidling" type="text" placeholder="Building"/>
+                <p> / </p>
+                <input name="premises" type="text" placeholder="Premises"/>
+            </div>
+        </div>
     </div>
   )
 }
