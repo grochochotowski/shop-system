@@ -182,7 +182,7 @@
         grid-row-end: 2;
 
         padding: 10px;
-        width: 90vw;
+        width: 85vw;
         margin-left: auto;
         margin-right: auto;
     }
@@ -194,7 +194,7 @@
         
         padding: 10px;
         margin: 0 auto;
-        width: 90vw;
+        width: 85vw;
     }
     .add-client-container .submit-add-client-button {
         grid-column-start: 1;
@@ -203,7 +203,7 @@
         grid-row-end: 4;
 
         padding-bottom: 5%;
-        width: 90vw;
+        width: 85vw;
     }
     .add-client-container .address-part .building-premises-container p {
         font-size: 1.2rem;
