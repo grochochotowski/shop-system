@@ -72,6 +72,7 @@
 }
 
 .add-client-container select {
+    width: 35%;
     padding: 10px;
 
     font-size: 1.2rem;
@@ -102,11 +103,11 @@
     display: flex;
     gap: 10px;
 }
-.add-client-container .user-part .invoice-container select.company {
+.add-client-container .user-part .invoice-container .company-invoice-select {
     flex-basis: 30%;
     flex-grow: 1;
 }
-.add-client-container .user-part .invoice-container input.company {
+.add-client-container .user-part .invoice-container .company-invoice-input {
     flex-basis: 60%;
     flex-grow: 1;
 }

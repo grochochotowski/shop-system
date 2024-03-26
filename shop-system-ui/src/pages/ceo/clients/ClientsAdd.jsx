@@ -20,6 +20,9 @@ export default function ClientsAdd() {
             ...prev,
             "invoiceType": prev.invoiceType === "Name" ? "Company" : "Name"
         }))
+        
+        if (addUserForm.invoiceType === "Name") document.getElementById("invoice-type-choice").classList.add("company-invoice-select");
+        else document.getElementById("invoice-type-choice").classList.remove("company-invoice-select");
     }
 
     function validateForm() {
@@ -32,11 +35,11 @@ export default function ClientsAdd() {
                 <h2>Client details</h2>
                 <input name="client-name" type="text" placeholder="Client name"/>
                 <div className="invoice-container">
-                    <select name="invoice-type" id="invoice-type-input" onChange={() => changeSelect()}>
+                    <select name="invoice-type" id="invoice-type-choice" onChange={() => changeSelect()}>
                         <option value="Name">Name</option>
                         <option value="Company">Company</option>
                     </select>
-                    {addUserForm.invoiceType === "Company" ? <input name="nip" type="text" placeholder="NIP"/> : ""}
+                    {addUserForm.invoiceType === "Company" ? <input name="nip" className="company-invoice-input" type="text" placeholder="NIP"/> : ""}
                 </div>
                 <textarea name="notes" id="notes" cols="30" rows="10" placeholder="Notes" />
             </div>
