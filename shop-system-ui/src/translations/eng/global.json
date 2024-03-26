@@ -1,7 +1,8 @@
 {
     "general" : {
         "txt-loading": "Loading ...",
-        "txt-search": "Search for "
+        "txt-search": "Search for ",
+        "filter-btn" : "Filter"
     },
     "header" : {
         "button": "Sign out"
@@ -24,7 +25,6 @@
             "f-opt-nip": "NIP",
             "f-opt-address": "Address",
             "f-opt-notes": "Notes",
-            "f-opt-btn": "Filter",
             "t-compamny-invoice" : "Company",
             "t-name-invoice" : "Name"
         },

@@ -1,7 +1,8 @@
 {
     "general" : {
         "txt-loading": "Ładowanie ...",
-        "txt-search": "Szukaj "
+        "txt-search": "Szukaj ",
+        "filter-btn" : "Filtruj"
     },
     "header" : {
         "button": "Wyloguj"
@@ -17,7 +18,6 @@
     "clients" : {
         "main" : {
             "txt-search-for": "klienta",
-            "txt-filters": "Filtry",
             "add-btn": "Dodaj klienta",
             "f-opt-invoice": "Rodzaj faktury",
             "f-opt-name": "Nazwa",
