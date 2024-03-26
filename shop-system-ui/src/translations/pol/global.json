@@ -15,26 +15,52 @@
         "opt-company": "Firma"
     },
     "clients" : {
-        "txt-search-for": "klienta",
-        "txt-filters": "Filtry",
-        "add-btn": "Dodaj klienta",
-        "f-opt-invoice": "Rodzaj faktury",
-        "f-opt-name": "Nazwa",
-        "f-opt-nip": "NIP",
-        "f-opt-address": "Adres",
-        "f-opt-notes": "Notatki",
-        "f-opt-btn": "Filtruj",
-        "t-compamny-invoice" : "Firmowa",
-        "t-name-invoice" : "Imienna"
+        "main" : {
+            "txt-search-for": "klienta",
+            "txt-filters": "Filtry",
+            "add-btn": "Dodaj klienta",
+            "f-opt-invoice": "Rodzaj faktury",
+            "f-opt-name": "Nazwa",
+            "f-opt-nip": "NIP",
+            "f-opt-address": "Adres",
+            "f-opt-notes": "Notatki",
+            "f-opt-btn": "Filtruj",
+            "t-compamny-invoice" : "Firmowa",
+            "t-name-invoice" : "Imienna"
+        },
+        "add" : {
+            "user-part" : {
+                "header" : "Dane osobiste",
+                "name" : "Nazwa klienta",
+                "notes" : "Notatki",
+                "select" : {
+                    "name-invoice" : "Osoba",
+                    "company-invoice" : "Firma"
+                }
+            },
+            "address-part" : {
+                "header" : "Adres",
+                "country" : "Kraj",
+                "city" : "Miasto",
+                "postal-code" : "Kod pocztowy",
+                "street" : "Ulica",
+                "building" : "Budynek",
+                "premises" : "Lokal"
+
+            },
+            "add-btn": "Dodaj klienta"
+        }
     },
     "stores" : {
-        "txt-search-for": "sklepu",
-        "txt-filters": "Filtry",
-        "add-btn": "Dodaj sklep",
-        "f-opt-code": "Kod sklepu",
-        "f-opt-phone-number": "Numer telefonu",
-        "f-opt-address": "Adres",
-        "f-opt-notes": "Notatki",
-        "f-opt-btn": "Filtruj"
+        "main" : {
+            "txt-search-for": "sklepu",
+            "txt-filters": "Filtry",
+            "add-btn": "Dodaj sklep",
+            "f-opt-code": "Kod sklepu",
+            "f-opt-phone-number": "Numer telefonu",
+            "f-opt-address": "Adres",
+            "f-opt-notes": "Notatki",
+            "f-opt-btn": "Filtruj"
+        }
     }
 }
