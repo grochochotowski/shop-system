@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 
@@ -9,6 +9,21 @@ function Header() {
 
     const [headerPos, setHeaderPos] = useState(0); // 1-open, 0-close
     const [t, i18n] = useTranslation("global")
+
+    useEffect(() => {
+        function handleClickOutside(event) {
+            const header = document.querySelector(".app-header");
+            if (header && !header.contains(event.target)) {
+                setHeaderPos(0);
+            }
+        }
+        
+        document.addEventListener("mousedown", handleClickOutside);
+
+        return () => {
+            document.removeEventListener("mousedown", handleClickOutside);
+        };
+    }, []);
 
     function changelanguage() {
         if (i18n.language === "eng") {
