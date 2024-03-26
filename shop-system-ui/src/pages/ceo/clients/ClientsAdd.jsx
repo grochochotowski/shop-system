@@ -49,7 +49,28 @@ export default function ClientsAdd() {
         if(addUserForm.invoiceType === "Company" && addUserForm.nip === "") isValid = false;
 
         if(isValid) {
-            
+            createUser()
+        }
+    }
+
+    async function createUser() {
+        try {
+            const response = await fetch("https://localhost:7057/api/clients/new", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify(addUserForm)
+            });
+    
+            if (!response.ok) {
+                throw new Error("Failed to create user");
+            }
+    
+            console.log("User created successfully");
+
+        } catch (error) {
+            console.error("Error creating user:", error.message);
         }
     }
 
