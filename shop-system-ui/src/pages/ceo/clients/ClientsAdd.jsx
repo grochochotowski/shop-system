@@ -28,7 +28,7 @@ export default function ClientsAdd() {
 
     return (
         <div className="add-client-container">
-            <div className="user-part">
+            <div className="user-part glassy">
                 <input name="client-name" type="text" placeholder="Client name"/>
                 <div className="invoice-container">
                     <select name="invoice-type" id="invoice-type-input" onChange={() => changeSelect()}>
@@ -39,7 +39,7 @@ export default function ClientsAdd() {
                 </div>
                 <textarea name="notes" id="notes" cols="30" rows="10" placeholder="Notes" />
             </div>
-            <div className="address-part">
+            <div className="address-part glassy">
                 <input name="country" type="text" placeholder="Country"/>
                 <input name="city" type="text" placeholder="City"/>
                 <input name="postal-code" type="text" placeholder="Postal code"/>
