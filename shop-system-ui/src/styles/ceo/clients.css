@@ -50,7 +50,7 @@
 
     padding: 0 3%;
     gap: 20px;
-    height: 95vh;
+    height: 100vh;
 }
 
 .add-client-container h2 {
@@ -146,12 +146,14 @@
 .add-client-container .address-part .building-premises-container {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 10px;
 
     color: black;
 }
 .add-client-container .address-part .building-premises-container input {
-    flex-basis: 50%;
+    width: 40%;
+    flex-shrink: 1;
+    flex-grow: 1;
 }
 .add-client-container .address-part .building-premises-container p {
     font-size: 2rem;
@@ -164,4 +166,46 @@
     grid-row-end: 3;
 
     padding: 20px 20px 0 20px;
+}
+
+
+@media (width <= 1100px) {
+    .add-client-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        padding: 0;
+    }
+    .add-client-container .user-part {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+
+        padding: 10px;
+        width: 90vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .add-client-container .address-part {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        
+        padding: 10px;
+        margin: 0 auto;
+        width: 90vw;
+    }
+    .add-client-container .submit-add-client-button {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 4;
+
+        padding-bottom: 5%;
+        width: 90vw;
+    }
+    .add-client-container .address-part .building-premises-container p {
+        font-size: 1.2rem;
+    }
 }
