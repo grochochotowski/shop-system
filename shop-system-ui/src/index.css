@@ -370,8 +370,7 @@ html, body, #root {
     transition: 150ms ease-in-out;
 }
 .list td a:hover {
-    background-color: rgb(106, 106, 144);
-    color: white;
+    color: #7f819d;
 }
 
 /* ---- Common page elements ---- */
