@@ -355,6 +355,8 @@ html, body, #root {
 }
 .list td{
     padding: 10px;
+
+    user-select: none;
 }
 
 /* ---- Common page elements ---- */
