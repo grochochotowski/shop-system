@@ -356,11 +356,22 @@ html, body, #root {
     padding: 10px;
 }
 
+.list th.link-th:hover {
+    background-color: #b1b3d1;
+    cursor: auto;
+}
 .list td a {
+    font-size: 2rem;
     color: black;
     text-decoration: none;
     height: 100%;
     width: 100%;
+
+    transition: 150ms ease-in-out;
+}
+.list td a:hover {
+    background-color: rgb(106, 106, 144);
+    color: white;
 }
 
 /* ---- Common page elements ---- */
