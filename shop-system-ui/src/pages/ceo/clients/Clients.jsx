@@ -149,17 +149,19 @@ function Clients() {
                 <tbody>{
                     clients.map(c => (
                         <tr key={c.id}>
-                            <td>{c.invoiceType === "Company" ? t("clients.main.t-compamny-invoice") : t("clients.main.t-name-invoice")}</td>
-                            <td>{c.clientName}</td>
-                            <td>{c.nip}</td>
-                            <td>{`
-                                ${c.address.country},
-                                ${c.address.city},
-                                ${c.address.postalCode},
-                                ${c.address.street} ${c.address.building}
-                                    ${c.address.premises ? "/" + c.address.premises : ""}
-                            `}</td>
-                            <td>{c.notes}</td>
+                            <Link to={`details/${c.id}`}>
+                                <td>{c.invoiceType === "Company" ? t("clients.main.t-compamny-invoice") : t("clients.main.t-name-invoice")}</td>
+                                <td>{c.clientName}</td>
+                                <td>{c.nip}</td>
+                                <td>{`
+                                    ${c.address.country},
+                                    ${c.address.city},
+                                    ${c.address.postalCode},
+                                    ${c.address.street} ${c.address.building}
+                                        ${c.address.premises ? "/" + c.address.premises : ""}
+                                `}</td>
+                                <td>{c.notes}</td>
+                            </Link>
                         </tr>
                     ))
                 }</tbody>
