@@ -33,6 +33,7 @@ function App() {
                 </Suspense>
             }/>
 
+
             <Route path="/clients" element={
                 <Suspense fallback={<Fallback />}>
                     <Clients />
@@ -49,11 +50,26 @@ function App() {
                 </Suspense>
             }/>
 
+
+
             <Route path="/stores" element={
                 <Suspense fallback={<Fallback />}>
                     <Stores />
                 </Suspense>
             }/>
+            <Route path="/stores/add" element={
+                <Suspense fallback={<Fallback />}>
+                    <StoresAdd />
+                </Suspense>
+            }/>
+            <Route path="/stores/details/:id" element={
+                <Suspense fallback={<Fallback />}>
+                    <StoresDetails />
+                </Suspense>
+            }/>
+
+
+
             <Route path="/clothing" element={
                 <Suspense fallback={<Fallback />}>
                     <Clothing />
