@@ -144,6 +144,7 @@ function Clients() {
                             }
                             </div>
                         </th>
+                        <th></th>
                     </tr>
                 </thead>
                 <tbody>{
@@ -160,11 +161,11 @@ function Clients() {
                                         ${c.address.premises ? "/" + c.address.premises : ""}
                                 `}</td>
                                 <td>{c.notes}</td>
-                                <Link to={`details/${c.id}`}>
-                                    <td>
-                                        <i class="fa-regular fa-id-card"></i>
-                                    </td>
-                                </Link>
+                                <td>
+                                    <Link to={`details/${c.id}`}>
+                                            <i class="fa-regular fa-id-card"></i>
+                                    </Link>
+                                </td>
                             </tr>
                     ))
                 }</tbody>
