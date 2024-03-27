@@ -144,7 +144,7 @@ function Clients() {
                             }
                             </div>
                         </th>
-                        <th></th>
+                        <th className="link-th"></th>
                     </tr>
                 </thead>
                 <tbody>{
