@@ -149,24 +149,24 @@ function Clients() {
                 </thead>
                 <tbody>{
                     clients.map(c => (
-                            <tr key={c.id}>
-                                <td>{c.invoiceType === "Company" ? t("clients.main.t-compamny-invoice") : t("clients.main.t-name-invoice")}</td>
-                                <td>{c.clientName}</td>
-                                <td>{c.nip}</td>
-                                <td>{`
-                                    ${c.address.country},
-                                    ${c.address.city},
-                                    ${c.address.postalCode},
-                                    ${c.address.street} ${c.address.building}
-                                        ${c.address.premises ? "/" + c.address.premises : ""}
-                                `}</td>
-                                <td>{c.notes}</td>
-                                <td>
-                                    <Link to={`details/${c.id}`}>
-                                            <i class="fa-regular fa-id-card"></i>
-                                    </Link>
-                                </td>
-                            </tr>
+                        <tr key={c.id}>
+                            <td>{c.invoiceType === "Company" ? t("clients.main.t-compamny-invoice") : t("clients.main.t-name-invoice")}</td>
+                            <td>{c.clientName}</td>
+                            <td>{c.nip}</td>
+                            <td>{`
+                                ${c.address.country},
+                                ${c.address.city},
+                                ${c.address.postalCode},
+                                ${c.address.street} ${c.address.building}
+                                    ${c.address.premises ? "/" + c.address.premises : ""}
+                            `}</td>
+                            <td>{c.notes}</td>
+                            <td>
+                                <Link to={`details/${c.id}`}>
+                                        <i class="fa-regular fa-id-card"></i>
+                                </Link>
+                            </td>
+                        </tr>
                     ))
                 }</tbody>
             </table>
