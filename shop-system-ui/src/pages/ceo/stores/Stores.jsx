@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react'
+import { Link } from 'react-router-dom'
 import {useTranslation} from "react-i18next";
 import "../../../styles/ceo/stores.css"
 
@@ -172,8 +173,8 @@ function Stores() {
                     <FilterBox filters={filters} toggleCheck={changeChecked} names={names} stores={stores}/>
                 </div>
                 <div className="right">
-                    <button className="add-button">{t("stores.main.add-btn")}</button>    
-                </div>                
+                    <Link to="add" className="add-button">{t("stores.main.add-btn")}</Link>    
+                </div>
             </div>
             <div className="list">
                 <GenerateStoreTable />
