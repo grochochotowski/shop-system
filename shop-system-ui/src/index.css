@@ -332,7 +332,6 @@ html, body, #root {
 }
 .list tr:hover td{
     background-color: #d1d1d1;
-    cursor: pointer;
 }
 .list th {
     padding: 10px;
@@ -355,8 +354,6 @@ html, body, #root {
 }
 .list td{
     padding: 10px;
-
-    user-select: none;
 }
 
 /* ---- Common page elements ---- */
