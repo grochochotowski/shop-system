@@ -12,9 +12,9 @@ function Stores() {
     const [stores, setStores] = useState([]);
     const [filters, setFilters] = useState([])
     const names = [
-        t("stores.f-opt-code"),
-        t("stores.f-opt-phone-number"),
-        t("stores.f-opt-address")
+        t("stores.main.f-opt-code"),
+        t("stores.main.f-opt-phone-number"),
+        t("stores.main.f-opt-address")
     ];
     const [sort, setSort] = useState(["Code", "asc"]);
 
@@ -70,7 +70,7 @@ function Stores() {
                     <tr>
                         <th onClick={() => changeSortDirection("code")}>
                             <div className="header-content">
-                                <p>{t("stores.f-opt-code")}</p>
+                                <p>{t("stores.main.f-opt-code")}</p>
                                 {
                                 sort[0] === "code" && <div className="sortInfo">
                                 {
@@ -84,7 +84,7 @@ function Stores() {
                         </th>
                         <th onClick={() => changeSortDirection("phone-number")}>
                             <div className="header-content">
-                                <p>{t("stores.f-opt-phone-number")}</p>
+                                <p>{t("stores.main.f-opt-phone-number")}</p>
                                 {
                                 sort[0] === "phone-number" && <div className="sortInfo">
                                 {
@@ -98,7 +98,7 @@ function Stores() {
                         </th>
                         <th onClick={() => changeSortDirection("address")}>
                             <div className="header-content">
-                                <p>{t("stores.f-opt-address")}</p>
+                                <p>{t("stores.main.f-opt-address")}</p>
                                 {
                                 sort[0] === "address" && <div className="sortInfo">
                                 {
@@ -112,7 +112,7 @@ function Stores() {
                         </th>
                         <th onClick={() => changeSortDirection("notes")}>
                             <div className="header-content">
-                                <p>{t("stores.f-opt-notes")}</p>
+                                <p>{t("stores.main.f-opt-notes")}</p>
                                 {
                                 sort[0] === "notes" && <div className="sortInfo">
                                 {
@@ -129,7 +129,7 @@ function Stores() {
                 <tbody>{
                     stores.map(s => (
                         <tr key={s.id}>
-                            <td>{s.invoiceType === "Company" ? t("stores.t-compamny-invoice") : t("stores.t-name-invoice")}</td>
+                            <td>{s.invoiceType === "Company" ? t("stores.main.t-compamny-invoice") : t("stores.main.t-name-invoice")}</td>
                             <td>{s.name}</td>
                             <td>{s.nip}</td>
                             <td>{`
@@ -167,12 +167,12 @@ function Stores() {
         <div className="store-container">
             <div className="store-manage">
                 <div className="left">
-                    <SearchBox name={t("stores.txt-search-for")}/>
-                    <h2 className="filter-heading">{t("stores.txt-filters")}:</h2>
+                    <SearchBox name={t("stores.main.txt-search-for")}/>
+                    <h2 className="filter-heading">{t("stores.main.txt-filters")}:</h2>
                     <FilterBox filters={filters} toggleCheck={changeChecked} names={names} stores={stores}/>
                 </div>
                 <div className="right">
-                    <button className="add-button">{t("stores.add-btn")}</button>    
+                    <button className="add-button">{t("stores.main.add-btn")}</button>    
                 </div>                
             </div>
             <div className="list">
