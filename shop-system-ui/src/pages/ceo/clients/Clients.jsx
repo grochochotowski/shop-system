@@ -161,7 +161,7 @@ function Clients() {
                                     ${c.address.premises ? "/" + c.address.premises : ""}
                             `}</td>
                             <td>{c.notes}</td>
-                            <td>
+                            <td className="link-td">
                                 <Link to={`details/${c.id}`}>
                                         <i class="fa-regular fa-id-card"></i>
                                 </Link>
