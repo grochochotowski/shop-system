@@ -9,6 +9,7 @@ namespace shop_system.Services
     {
         int CreateClient(CreateClientAddressPropsDto dto);
         IEnumerable<ClientDto> GetAllClients();
+        ClientDto GetClientById(int id);
     }
 
     public class ClientService : IClientService
