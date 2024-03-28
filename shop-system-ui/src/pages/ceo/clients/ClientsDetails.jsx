@@ -36,8 +36,9 @@ export default function ClientsDetails() {
                     <h1>Client name</h1>
                     <h2>Client ID</h2>
                     <div className="invoice-info">
-                        <p>invoiceType</p>
-                        <p>nip</p>
+                        <h3>Invoice:</h3>
+                        <h4>Invoice type: </h4>
+                        <h4>NIP: </h4>
                     </div>
                 </div>
                 <div className="address-box glassy">
