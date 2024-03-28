@@ -53,15 +53,15 @@
             "add-btn": "Dodaj klienta"
         },
         "details" : {
-            "edit-client-btn" : "Edytuj",
+            "edit-client-btn" : "Edytuj klienta",
             "remove-client-btn" : "Usuń klienta",
             "invoice-txt" : "Faktura",
             "invoice-type-txt" : "Typ faktury",
             "address-txt" : "Adres",
             "country-txt" : "Kraj",
-            "city-txt" : "Miastp",
+            "city-txt" : "Miasto",
             "postal-code-txt" : "Kod pocztowy",
-            "street-txt" : "ulica",
+            "street-txt" : "Ulica",
             "place-txt" : "Miejsce"
         }
     },

@@ -2,7 +2,8 @@
     "general" : {
         "txt-loading": "Loading ...",
         "txt-search": "Search for ",
-        "filter-btn" : "Filter"
+        "filter-btn" : "Filter",
+        "go-back-btn" : "Go back"
     },
     "header" : {
         "button": "Sign out"
@@ -49,6 +50,18 @@
 
             },
             "add-btn": "Add client"
+        },
+        "details" : {
+            "edit-client-btn" : "Edit client",
+            "remove-client-btn" : "Remove client",
+            "invoice-txt" : "Invoice",
+            "invoice-type-txt" : "Invoice type",
+            "address-txt" : "Address",
+            "country-txt" : "Country",
+            "city-txt" : "City",
+            "postal-code-txt" : "Postal code",
+            "street-txt" : "Street",
+            "place-txt" : "Place"
         }
     },
     "stores" : {
