@@ -417,7 +417,7 @@ html, body, #root {
     transition: 150ms ease-in-out;
 }
 .edit-button:hover {
-    background: var(--clr-acc-1);
+    background: #dc9925;
     color: white;
 }
 
