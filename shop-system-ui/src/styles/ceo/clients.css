@@ -230,8 +230,8 @@
     padding: 10px;
     margin: 100px 50px 20px 50px;
 }
-.client-details-container .manage-client a {
-
+.client-details-container .manage-client * {
+    margin-right: 5%;
 }
 
 .client-details-container .display-client {
