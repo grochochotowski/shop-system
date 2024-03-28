@@ -2,7 +2,8 @@
     "general" : {
         "txt-loading": "Ładowanie ...",
         "txt-search": "Szukaj ",
-        "filter-btn" : "Filtruj"
+        "filter-btn" : "Filtruj",
+        "go-back-btn" : "Wróć"
     },
     "header" : {
         "button": "Wyloguj"
@@ -50,6 +51,18 @@
 
             },
             "add-btn": "Dodaj klienta"
+        },
+        "details" : {
+            "edit-client-btn" : "Edytuj",
+            "remove-client-btn" : "Usuń klienta",
+            "invoice-txt" : "Faktura",
+            "invoice-type-txt" : "Typ faktury",
+            "address-txt" : "Adres",
+            "country-txt" : "Kraj",
+            "city-txt" : "Miastp",
+            "postal-code-txt" : "Kod pocztowy",
+            "street-txt" : "ulica",
+            "place-txt" : "Miejsce"
         }
     },
     "stores" : {
