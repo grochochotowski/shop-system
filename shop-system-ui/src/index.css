@@ -157,6 +157,7 @@ html, body, #root {
     color: black;
     margin-top: 20px;
     user-select: none;
+    text-align: left;
 }
 .filter-box {
     display: flex;
