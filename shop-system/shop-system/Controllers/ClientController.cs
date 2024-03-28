@@ -43,5 +43,13 @@ namespace shop_system.Controllers
             var clientDtos = _clientService.GetAllClients();
             return Ok(clientDtos);
         }
+
+
+        [HttpGet("details/client-{id}")]
+        public ActionResult<IEnumerable<ClientDto>> GetClientById()
+        {
+            var clientDto = _clientService.GetClientById();
+            return Ok(clientDto);
+        }
     }
 }
