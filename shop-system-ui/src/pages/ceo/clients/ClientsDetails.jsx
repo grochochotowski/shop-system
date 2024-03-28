@@ -37,23 +37,45 @@ export default function ClientsDetails() {
                     <h2>Client ID</h2>
                     <div className="invoice-info">
                         <h3>Invoice:</h3>
-                        <h4>Invoice type: </h4>
-                        <h4>NIP: </h4>
+                        <div className="line">
+                            <h4>Invoice type: </h4>
+                            <p>exampletext</p>
+                        </div>
+                        <div className="line">
+                            <h4>NIP: </h4>
+                            <p>exampletext</p>
+                        </div>
                     </div>
                 </div>
                 <div className="address-box glassy">
+                    <h1>Address</h1>
                     <div className="layer">
-                        <p>country</p>
-                        <p>city</p>
+                        <div className="line">
+                            <h4>Country:</h4>
+                            <p>exampletext</p>
+                        </div>
+                        <div className="line">
+                            <h4>City:</h4>
+                            <p>exampletext</p>
+                        </div>
                     </div>
                     <div className="layer">
-                        <p>postalCode</p>
-                        <p>street</p>
+                        <div className="line">
+                            <h4>Postal code:</h4>
+                            <p>exampletext</p>
+                        </div>
+                        <div className="line">
+                            <h4>Street:</h4>
+                            <p>exampletext</p>
+                        </div>
                     </div>
                     <div className="layer">
-                        <p>buidling</p>
-                        <p>/</p>
-                        <p>premises</p>
+                        <div className="line">
+                            <h4>Place: </h4>
+                            <p>buidling</p>
+                            <p>/</p>
+                            <p>premises</p>
+                        </div>
                     </div>
                 </div>
             </div>
