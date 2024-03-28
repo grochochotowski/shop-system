@@ -21,7 +21,6 @@ export default function ClientsDetails() {
                 }
                 const data = await response.json();
                 setClient(data);
-                console.log(data)
             } catch (error) {
                 console.error("Error fetching data:", error);
             }
@@ -41,15 +40,17 @@ export default function ClientsDetails() {
                     <h1>{client.address ? client.clientName : 'Loading...'}</h1>
                     <h2>ID: {client.address ? client.id : 'Loading...'}</h2>
                     <div className="invoice-info">
-                        <h3>{t("clients.details.invoice-txt")}</h3>
+                        <h3>{t("clients.details.invoice-txt")}:</h3>
                         <div className="line">
                             <h4>{t("clients.details.invoice-type-txt")}:</h4>
                             <p>{client.address ? client.invoiceType : 'Loading...'}</p>
                         </div>
-                        <div className="line">
-                            <h4>NIP:</h4>
-                            <p>{client.address ? client.nip : 'Loading...'}</p>
-                        </div>
+                        {client.address && client.invoiceType === "Company" && (
+                            <div className="line">
+                                <h4>NIP:</h4>
+                                <p>{client.nip}</p>
+                            </div>
+                        )}
                     </div>
                 </div>
                 <div className="address-box glassy">
