@@ -46,9 +46,9 @@ namespace shop_system.Controllers
 
 
         [HttpGet("details/client-{id}")]
-        public ActionResult<IEnumerable<ClientDto>> GetClientById()
+        public ActionResult<ClientDto> GetClientById([FromRoute] int id)
         {
-            var clientDto = _clientService.GetClientById();
+            var clientDto = _clientService.GetClientById(id);
             return Ok(clientDto);
         }
     }
