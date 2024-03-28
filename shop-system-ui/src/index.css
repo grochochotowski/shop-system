@@ -394,6 +394,33 @@ html, body, #root {
     border: 1px solid white;
 }
 
+.edit-button {
+    flex-basis: 10%;
+    flex-grow: 1;
+    max-height: 3rem;
+
+    padding: 5px 20px;
+
+    font-size: 1.2rem;
+    color: black;
+
+    background: rgba(0, 0, 0, 0);
+    
+    outline: none;
+    border: 2px solid black;
+    border-radius: 10px;
+
+    text-decoration: none;
+
+    cursor: pointer;
+
+    transition: 150ms ease-in-out;
+}
+.edit-button:hover {
+    background: var(--clr-acc-1);
+    color: white;
+}
+
 /* ---- Common styling ---- */
 .glassy {
     background: rgba(255, 255, 255, 0.16);
