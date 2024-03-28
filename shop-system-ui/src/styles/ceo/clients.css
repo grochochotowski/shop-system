@@ -219,6 +219,8 @@
 .client-details-container {
     display: flex;
 
+    flex-direction: column;
+
     height: 100vh;
     width: 100vw;
     gap: 20px;
