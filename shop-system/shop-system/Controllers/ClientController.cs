@@ -49,6 +49,7 @@ namespace shop_system.Controllers
         public ActionResult<ClientDto> GetClientById([FromRoute] int id)
         {
             var clientDto = _clientService.GetClientById(id);
+            if (clientDto == null) return NotFound($"Client does not exists.");
             return Ok(clientDto);
         }
     }
