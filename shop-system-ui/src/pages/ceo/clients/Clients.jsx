@@ -163,7 +163,7 @@ function Clients() {
                             <td>{c.notes}</td>
                             <td>
                                 <Link to={`details/${c.id}`}>
-                                        <i class="fa-regular fa-id-card"></i>
+                                        <i className="fa-regular fa-id-card"></i>
                                 </Link>
                             </td>
                         </tr>
