@@ -227,11 +227,20 @@
 }
 
 .client-details-container .manage-client {
+    padding: 10px;
+    margin: 50px;
+}
+.client-details-container .manage-client a {
 
 }
 
 .client-details-container .display-client {
-    
+    display: flex;
+
+    gap: 20px;
+
+    padding: 10px;
+    margin: 0 50px;
 }
 
 .client-details-container .client-box {
