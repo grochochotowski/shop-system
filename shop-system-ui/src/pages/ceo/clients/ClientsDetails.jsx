@@ -12,18 +12,19 @@ export default function ClientsDetails() {
 
     useEffect(() => {
         async function getUserData() {
-        try {
-            const response = await fetch(
-            `https://localhost:7057/api/clients/details/client-${id}`
-            );
-            if (!response.ok) {
-            throw new Error("Failed to fetch data - ", response.status);
+            try {
+                const response = await fetch(
+                `https://localhost:7057/api/clients/details/client-${id}`
+                );
+                if (!response.ok) {
+                throw new Error("Failed to fetch data - ", response.status);
+                }
+                const data = await response.json();
+                setClient(data);
+                console.log(data)
+            } catch (error) {
+                console.error("Error fetching data:", error);
             }
-            const data = await response.json();
-            setClient(data);
-        } catch (error) {
-            console.error("Error fetching data:", error);
-        }
         }
         getUserData();
     }, []);
@@ -37,17 +38,17 @@ export default function ClientsDetails() {
             </div>
             <div className="display-client">
                 <div className="client-box glassy">
-                    <h1>Client name</h1>
-                    <h2>Client ID</h2>
+                    <h1>{client.address ? client.clientName : 'Loading...'}</h1>
+                    <h2>ID: {client.address ? client.id : 'Loading...'}</h2>
                     <div className="invoice-info">
                         <h3>{t("clients.details.invoice-txt")}</h3>
                         <div className="line">
                             <h4>{t("clients.details.invoice-type-txt")}:</h4>
-                            <p>exampletext</p>
+                            <p>{client.address ? client.invoiceType : 'Loading...'}</p>
                         </div>
                         <div className="line">
                             <h4>NIP:</h4>
-                            <p>exampletext</p>
+                            <p>{client.address ? client.nip : 'Loading...'}</p>
                         </div>
                     </div>
                 </div>
@@ -56,29 +57,33 @@ export default function ClientsDetails() {
                     <div className="layer">
                         <div className="line">
                             <h4>{t("clients.details.country-txt")}:</h4>
-                            <p>exampletext</p>
+                            <p>{client.address ? client.address.country : 'Loading...'}</p>
                         </div>
                         <div className="line">
                             <h4>{t("clients.details.city-txt")}:</h4>
-                            <p>exampletext</p>
+                            <p>{client.address ? client.address.city : 'Loading...'}</p>
                         </div>
                     </div>
                     <div className="layer">
                         <div className="line">
                             <h4>{t("clients.details.postal-code-txt")}:</h4>
-                            <p>exampletext</p>
+                            <p>{client.address ? client.address.postalCode : 'Loading...'}</p>
                         </div>
                         <div className="line">
                             <h4>{t("clients.details.street-txt")}:</h4>
-                            <p>exampletext</p>
+                            <p>{client.address ? client.address.street : 'Loading...'}</p>
                         </div>
                     </div>
                     <div className="layer">
                         <div className="line">
                             <h4>{t("clients.details.place-txt")}: </h4>
-                            <p>buidling</p>
-                            <p>/</p>
-                            <p>premises</p>
+                            <p>{client.address ? client.address.building : 'Loading...'}</p>
+                            {client.address && client.address.premises && (
+                                <>
+                                    <p>/</p>
+                                    <p>{client.address.premises}</p>
+                                </>
+                            )}
                         </div>
                     </div>
                 </div>
