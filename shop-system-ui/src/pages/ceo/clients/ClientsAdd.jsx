@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import {useTranslation} from "react-i18next";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 
 import "../../../styles/ceo/clients.css"
 
@@ -174,6 +174,7 @@ export default function ClientsAdd() {
             </div>
             <div className="submit-add-client-button">
                 <button className="add-button middle" onClick={() => validateForm()}>{t("clients.add.add-btn")}</button>
+                <Link to={`/clients`} className="go-back-button">Go back</Link>
             </div>
         </div>
     )
