@@ -66,23 +66,31 @@ function Clients() {
     function changeSortDirection(column) {
         setSort(prev => {
             if (prev[0] === column) {
-                if (prev[1] === "asc") return [column, "dsc"]
-                if (prev[1] === "dsc") return [column, "asc"]
+                if (prev[1] === "asc") {
+                    clients.sort((a, b) => (a[column] > b[column]) ? -1 : ((a[column] < b[column]) ? 1 : 0))
+                    return [column, "dsc"]
+                }
+                if (prev[1] === "dsc") {
+                    clients.sort((a, b) => (a[column] < b[column]) ? -1 : ((a[column] > b[column]) ? 1 : 0))
+                    return [column, "asc"]
+                }
             }
+            clients.sort((a, b) => (a[column] < b[column]) ? -1 : ((a[column] > b[column]) ? 1 : 0))
             return [column, "asc"]
         })
     }
+    
 
     function GenerateClientTable() {
         return (
             <table>
                 <thead>
                     <tr>
-                        <th onClick={() => changeSortDirection("invoice-type")}>
+                        <th onClick={() => changeSortDirection("invoiceType")}>
                             <div className="header-content">
                                 <p>{t("clients.main.f-opt-invoice")}</p>
                                 {
-                                sort[0] === "invoice-type" && <div className="sortInfo">
+                                sort[0] === "invoiceType" && <div className="sortInfo">
                                 {
                                     sort[1] === "asc"
                                         ? <i className="fa-solid fa-arrow-down-a-z"></i>
@@ -92,11 +100,11 @@ function Clients() {
                             }
                             </div>
                         </th>
-                        <th onClick={() => changeSortDirection("client-name")}>
+                        <th onClick={() => changeSortDirection("clientName")}>
                             <div className="header-content">
                                 <p>{t("clients.main.f-opt-name")}</p>
                                 {
-                                sort[0] === "client-name" && <div className="sortInfo">
+                                sort[0] === "clientName" && <div className="sortInfo">
                                 {
                                     sort[1] === "asc"
                                         ? <i className="fa-solid fa-arrow-down-a-z"></i>
@@ -148,7 +156,7 @@ function Clients() {
                             }
                             </div>
                         </th>
-                        <th className="link-th"></th>
+                        <th className="no-sort"></th>
                     </tr>
                 </thead>
                 <tbody>{
@@ -186,6 +194,7 @@ function Clients() {
                 }
                 const data = await response.json();
                 setClients(data);
+                console.log(data)
             } catch (error) {
                 console.error('Error fetching data:', error);
             }
