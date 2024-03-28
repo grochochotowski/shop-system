@@ -79,7 +79,6 @@ function Clients() {
             return [column, "asc"]
         })
     }
-    
 
     function GenerateClientTable() {
         return (
