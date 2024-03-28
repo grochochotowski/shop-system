@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import {useTranslation} from "react-i18next";
 
-export default function FilterBox({filters, toggleCheck, names, clients}) {
+export default function FilterBox({filters, toggleCheck, names, filterIds}) {
 
     const { t } = useTranslation("global")
 
@@ -52,7 +52,7 @@ export default function FilterBox({filters, toggleCheck, names, clients}) {
         return opened.map((isOpen, i) => (
             <li className={isOpen ? "opened main" : "closed main"} key={names[i]}>
                 <h4 onClick={() => toggleFilter(i)}>{names[i]}</h4>
-                <ul className="inside" id={names[i]}>
+                <ul className="inside" id={filterIds[i]}>
                     <GenerateFiltersInOption opt={i} />
                 </ul>
             </li>
@@ -80,8 +80,8 @@ export default function FilterBox({filters, toggleCheck, names, clients}) {
     }
 
     function handleCheckboxChange(opt, elementName) {
-        setScrollPosition(document.getElementById(names[opt]).scrollTop)
-        setScrolledName(names[opt]);
+        setScrollPosition(document.getElementById(filterIds[opt]).scrollTop)
+        setScrolledName(filterIds[opt]);
         toggleCheck(opt, elementName);
     }
     

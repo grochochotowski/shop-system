@@ -18,21 +18,25 @@ function Clients() {
         t("clients.main.f-opt-nip"),
         t("clients.main.f-opt-address")
     ];
+    const filterIds = [
+        "invoice-type",
+        "client-name",
+        "nip",
+        "address"
+    ];
     const [sort, setSort] = useState(["invoice-type", "asc"]);
 
     useEffect(() => {
         var filterValues = {
             InvoiceType: new Set(),
-            Name: new Set(),
+            ClientName: new Set(),
             Nip: new Set(),
             Address: new Set()
         };
-    
-        filterValues.Nip.add('none');
 
         clients.forEach(client => {
             filterValues.InvoiceType.add(client.invoiceType);
-            filterValues.Name.add(client.name);
+            filterValues.ClientName.add(client.clientName);
             filterValues.Nip.add(client.nip);
             filterValues.Address.add(`${client.address.country}, ${client.address.city}, ${client.address.postalCode}, ${client.address.street} ${client.address.building}`);
         });
@@ -88,11 +92,11 @@ function Clients() {
                             }
                             </div>
                         </th>
-                        <th onClick={() => changeSortDirection("name")}>
+                        <th onClick={() => changeSortDirection("client-name")}>
                             <div className="header-content">
                                 <p>{t("clients.main.f-opt-name")}</p>
                                 {
-                                sort[0] === "name" && <div className="sortInfo">
+                                sort[0] === "client-name" && <div className="sortInfo">
                                 {
                                     sort[1] === "asc"
                                         ? <i className="fa-solid fa-arrow-down-a-z"></i>
@@ -195,7 +199,7 @@ function Clients() {
                 <div className="left">
                     <SearchBox name={t("clients.main.txt-search-for")}/>
                     <h2 className="filter-heading">{t("clients.main.txt-filters")}:</h2>
-                    <FilterBox filters={filters} toggleCheck={changeChecked} names={names} clients={clients}/>
+                    <FilterBox filters={filters} toggleCheck={changeChecked} names={names} filterIds={filterIds}/>
                 </div>
                 <div className="right">
                     <Link to="add" className="add-button">{t("clients.main.add-btn")}</Link>    
