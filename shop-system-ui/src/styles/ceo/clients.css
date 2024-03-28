@@ -228,6 +228,18 @@
     color: black;
 }
 
+.client-details-container .layer {
+    display: flex;
+    flex-direction: column;
+
+    margin: 5% 10% 0 10%;
+    gap: 20px;
+}
+.client-details-container .line {
+    display: flex;
+    gap: 20px;
+}
+
 .client-details-container .manage-client {
     padding: 10px;
     margin: 100px 50px 20px 50px;
@@ -280,6 +292,7 @@
 
     gap: 20px;
 }
-.client-details-container .layer {
-
+.client-details-container .address-box h1,h2,h3 {
+    text-align: center;
+    padding-top: 5%;
 }
