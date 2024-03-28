@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
 
+import "../../../styles/ceo/clients.css"
+
 export default function ClientsDetails() {
     const { id } = useParams();
     const [client, setClient] = useState({});
