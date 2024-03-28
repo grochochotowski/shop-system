@@ -144,9 +144,13 @@ function Clients() {
             return ((a.make > b.make) ? -1 : ((a.make < b.make) ? 1 : 0));
         },
         notesAsc : function(a,b) {
+            if (a.notes == null) return -1;
+            if (b.notes == null) return 1;
             return ((a.notes < b.notes) ? -1 : ((a.notes > b.notes) ? 1 : 0));
         },
         notesDsc : function(a,b) {
+            if (a.notes == null) return 1;
+            if (b.notes == null) return -1;
             return ((a.notes > b.notes) ? -1 : ((a.notes < b.notes) ? 1 : 0));
         }
     };
