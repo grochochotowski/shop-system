@@ -64,9 +64,12 @@ namespace shop_system.Services
 
 
         // Get client by ID
-        public IEnumerable<ClientDto> GetClientById()
+        public ClientDto GetClientById(int id)
         {
-            var client = _context.Clients.Include(c => c.Address).ToList();
+            var client = _context.Clients
+                .Include(c => c.Address)
+                .FirstOrDefault(c => c.Id == id);
+
             var clientDto = _mapper.Map<ClientDto>(client);
             return clientDto;
         }
