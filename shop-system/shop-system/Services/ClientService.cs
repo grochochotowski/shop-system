@@ -71,6 +71,8 @@ namespace shop_system.Services
                 .Include(c => c.Address)
                 .FirstOrDefault(c => c.Id == id);
 
+            if (client == null) return null;
+
             var clientDto = _mapper.Map<ClientDto>(client);
             return clientDto;
         }
