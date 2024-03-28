@@ -26,7 +26,7 @@ export default function ClientsDetails() {
             }
         }
         getUserData();
-    }, []);
+    }, [id]);
 
     return (
         <div className="client-details-container">
