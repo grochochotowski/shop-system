@@ -61,5 +61,14 @@ namespace shop_system.Services
             var clientDtos = _mapper.Map<List<ClientDto>>(clients);
             return clientDtos;
         }
+
+
+        // Get client by ID
+        public IEnumerable<ClientDto> GetClientById()
+        {
+            var client = _context.Clients.Include(c => c.Address).ToList();
+            var clientDto = _mapper.Map<ClientDto>(client);
+            return clientDto;
+        }
     }
 }
