@@ -174,7 +174,7 @@ export default function ClientsAdd() {
             </div>
             <div className="submit-add-client-button">
                 <button className="add-button middle" onClick={() => validateForm()}>{t("clients.add.add-btn")}</button>
-                <Link to={`/clients`} className="go-back-button">Go back</Link>
+                <Link to={`/clients`} className="go-back-button">{t("general.go-back-btn")}</Link>
             </div>
         </div>
     )
