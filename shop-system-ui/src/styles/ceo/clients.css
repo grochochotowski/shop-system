@@ -224,6 +224,8 @@
     height: 100vh;
     width: 100vw;
     gap: 20px;
+
+    color: black;
 }
 
 .client-details-container .manage-client {
@@ -244,14 +246,20 @@
 }
 
 .client-details-container .client-box {
-
+    display: flex;
+    flex-grow: 1;
+    flex-basis: 50%;
+    min-height: 50vh;
 }
 .client-details-container .invoice-info {
 
 }
 
 .client-details-container .address-box {
-
+    display: flex;
+    flex-grow: 1;
+    flex-basis: 50%;
+    min-height: 50vh;
 }
 .client-details-container .layer {
 
