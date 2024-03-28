@@ -31,7 +31,6 @@ function Header() {
         } else {
             i18n.changeLanguage("eng");
         }
-        console.log(i18n.language);
     }
 
     function toggleHeaderPos() {
