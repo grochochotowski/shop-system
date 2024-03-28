@@ -65,20 +65,91 @@ function Clients() {
 
     function changeSortDirection(column) {
         setSort(prev => {
-            if (prev[0] === column) {
+            if (column === "invoiceType") {
                 if (prev[1] === "asc") {
-                    clients.sort((a, b) => (a[column] > b[column]) ? -1 : ((a[column] < b[column]) ? 1 : 0))
+                    clients.sort(sorters.invoiceTypeDsc)
                     return [column, "dsc"]
                 }
                 if (prev[1] === "dsc") {
-                    clients.sort((a, b) => (a[column] < b[column]) ? -1 : ((a[column] > b[column]) ? 1 : 0))
+                    clients.sort(sorters.invoiceTypeAsc)
                     return [column, "asc"]
                 }
             }
-            clients.sort((a, b) => (a[column] < b[column]) ? -1 : ((a[column] > b[column]) ? 1 : 0))
-            return [column, "asc"]
+            else if (column === "clientName") {
+                if (prev[1] === "asc") {
+                    clients.sort(sorters.clientNameDsc)
+                    return [column, "dsc"]
+                }
+                if (prev[1] === "dsc") {
+                    clients.sort(sorters.clientNameAsc)
+                    return [column, "asc"]
+                }
+            }
+            else if (column === "nip") {
+                if (prev[1] === "asc") {
+                    clients.sort(sorters.nipDsc)
+                    return [column, "dsc"]
+                }
+                if (prev[1] === "dsc") {
+                    clients.sort(sorters.nipAsc)
+                    return [column, "asc"]
+                }
+            }
+            else if (column === "address") {
+                if (prev[1] === "asc") {
+                    clients.sort(sorters.addressDsc)
+                    return [column, "dsc"]
+                }
+                if (prev[1] === "dsc") {
+                    clients.sort(sorters.addressAsc)
+                    return [column, "asc"]
+                }
+            }
+            else if (column === "invoiceType") {
+                if (prev[1] === "asc") {
+                    clients.sort(sorters.notesDsc)
+                    return [column, "dsc"]
+                }
+                if (prev[1] === "dsc") {
+                    clients.sort(sorters.notesAsc)
+                    return [column, "asc"]
+                }
+            }
         })
     }
+
+    var sorters = {
+        invoiceTypeAsc : function(a,b) {
+            return ((a.invoiceType < b.invoiceType) ? -1 : ((a.invoiceType > b.invoiceType) ? 1 : 0));
+        },
+        invoiceTypeDsc : function(a,b) {
+            return ((a.invoiceType > b.invoiceType) ? -1 : ((a.invoiceType < b.invoiceType) ? 1 : 0));
+        },
+        clientNameAsc : function(a,b) {
+            return ((a.clientName < b.clientName) ? -1 : ((a.clientName > b.clientName) ? 1 : 0));
+        },
+        clientNameDsc : function(a,b) {
+            return ((a.clientName > b.clientName) ? -1 : ((a.clientName < b.clientName) ? 1 : 0));
+        },
+        nipAsc : function(a,b) {
+            return ((a.nip < b.nip) ? -1 : ((a.nip > b.nip) ? 1 : 0));
+        },
+        nipDsc : function(a,b) {
+            return ((a.nip > b.nip) ? -1 : ((a.nip < b.nip) ? 1 : 0));
+        },
+        addressAsc : function(a,b) {
+            return ((a.make < b.make) ? -1 : ((a.make > b.make) ? 1 : 0));
+        },
+        addressDsc : function(a,b) {
+            return ((a.make > b.make) ? -1 : ((a.make < b.make) ? 1 : 0));
+        },
+        notesAsc : function(a,b) {
+            return ((a.notes < b.notes) ? -1 : ((a.notes > b.notes) ? 1 : 0));
+        },
+        notesDsc : function(a,b) {
+            return ((a.notes > b.notes) ? -1 : ((a.notes < b.notes) ? 1 : 0));
+        }
+    };
 
     function GenerateClientTable() {
         return (
