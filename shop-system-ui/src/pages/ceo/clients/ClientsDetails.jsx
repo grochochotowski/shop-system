@@ -29,7 +29,7 @@ export default function ClientsDetails() {
         <div className="client-details-container">
             <div className="manage-client">
                 <Link to={`/clients/edit/${client.id}`} className="edit-button">Edit client</Link>
-                <button className="remove">Remove client</button>
+                <button className="remove-button">Remove client</button>
             </div>
             <div className="display-client">
                 <div className="client-box glassy">
