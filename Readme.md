@@ -10,8 +10,6 @@ To test the current state of a project:
 What is included in project: <br/>
 1.Company menager:<br/>
   &emsp;1.1. User <br/>
-    &emsp;&emsp;1.1.1. Register <br/>
-    &emsp;&emsp;1.1.2. Display users by shops <br/>
   &emsp;1.2. Shop <br/>
 
 For now used images will be here due to the fact that there is no place for them to put on page. Later these links will be moved. <br/>
