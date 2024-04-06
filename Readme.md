@@ -14,7 +14,6 @@ What is included in project: <br/>
     &emsp;&emsp;1.1.2. Display users by shops <br/>
   &emsp;1.2. Shop <br/>
 2. Shop menager: <br/>
-3. Cash register: <br/>
 
 For now used images will be here due to the fact that there is no place for them to put on page. Later these links will be moved. <br/>
 dashboard background - <a href="http://www.freepik.com">Designed by rawpixel.com / Freepik</a> <br/>
