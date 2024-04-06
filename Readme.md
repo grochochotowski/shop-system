@@ -2,6 +2,8 @@
 This is my project just to practise programming in react and .NET
 Idea came from my job for 2 year - I have been working as shop assistant in 4F and I really don't like the system that we got there. ;)
 
+App made with ReactJS and .NET
+
 To test the current state of a project:
 1. Copy repository
 2. Start front-end live server (VS Code recommended)
