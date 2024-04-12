@@ -23,4 +23,5 @@ company option -> <a href="https://www.pexels.com/pl-pl/zdjecie/bialy-budynek-15
 employee option -> <a href="https://www.freepik.com/free-photo/portrait-male-personal-shopper-working_13453242.htm#fromView=search&page=1&position=2&uuid=5abd07d6-a57a-4537-a782-5a403f7a1558">Image by freepik</a> <br/>
 sales option -> <a href="https://www.pexels.com/pl-pl/zdjecie/kobieta-w-czarnej-skorzanej-kurtce-trzymajac-czerwone-i-biale-pudelko-5868272/">Zdjęcie dodane przez Max Fischer</a> <br/>
 
-project on hold
+project on hold - 2 other projects are in focus
+
