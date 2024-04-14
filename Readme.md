@@ -24,4 +24,4 @@ employee option -> <a href="https://www.freepik.com/free-photo/portrait-male-per
 sales option -> <a href="https://www.pexels.com/pl-pl/zdjecie/kobieta-w-czarnej-skorzanej-kurtce-trzymajac-czerwone-i-biale-pudelko-5868272/">Zdjęcie dodane przez Max Fischer</a> <br/>
 
 project on hold - 2 other projects are in focus - stockatingIt, FoodOrdersApi
-It will be my focus after end of my term on studeis
+It will be my focus after end of my term on studies
