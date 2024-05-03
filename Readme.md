@@ -25,3 +25,5 @@ sales option -> <a href="https://www.pexels.com/pl-pl/zdjecie/kobieta-w-czarnej-
 
 project on hold - 2 other projects are in focus - stockatingIt, FoodOrdersApi
 It will be my focus after end of my term on studies (June 2024)
+
+There may be big change soon
