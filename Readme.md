@@ -9,11 +9,6 @@ To test the current state of a project:
 2. Start front-end live server (VS Code recommended)
 3. Start back-end live server (Visual Studio recommended)
 
-What is included in project: <br/>
-1.Company menager:<br/>
-  &emsp;1.1. User <br/>
-  &emsp;1.2. Shop <br/>
-
 For now used images will be here due to the fact that there is no place for them to put on page. Later these links will be moved. <br/>
 dashboard background - <a href="http://www.freepik.com">Designed by rawpixel.com / Freepik</a> <br/>
 clients option -> <a href="https://www.freepik.com/free-photo/two-confident-business-man-shaking-hands-meeting-office-success-dealing-greeting-partner-concept_1203162.htm#fromView=search&page=1&position=1&uuid=715f841c-83dd-4a5d-8196-4dfd7aba56e3">Image by snowing on Freepik</a> <br/>
