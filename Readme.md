@@ -1,6 +1,5 @@
 #Shop system
 This is my project just to practise programming in react and .NET
-Idea came from my job for 2 year - I have been working as shop assistant in 4F and I really don't like the system that we got there. ;)
 
 App made with ReactJS and .NET
 
